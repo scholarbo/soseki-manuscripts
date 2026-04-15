@@ -7,141 +7,25 @@
   <script src="https://unpkg.com/mirador@3.3.0/dist/mirador.min.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/mirador@3.3.0/dist/css/mirador-combined.min.css" />
   <style>
-    html, body {
+    html, body, #viewer {
       margin: 0;
       padding: 0;
       width: 100%;
       height: 100%;
-      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
-      background: #fff;
-    }
-    #topbar {
-      box-sizing: border-box;
-      width: 100%;
-      padding: 10px 14px;
-      border-bottom: 1px solid #ddd;
-      background: #fafafa;
-      display: flex;
-      gap: 14px;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    #status {
-      color: #444;
-      font-size: 14px;
-    }
-    #viewer {
-      width: 100%;
-      height: calc(100% - 53px);
-    }
-    .muted {
-      color: #777;
-      font-size: 13px;
     }
   </style>
 </head>
 <body>
-  <div id="topbar">
-    <strong>漱石漢詩原稿・草稿ビューア</strong>
-    <span id="status">manifest を確認中…</span>
-    <span class="muted">存在する manifest のみ自動表示</span>
-  </div>
   <div id="viewer"></div>
-
   <script>
-    const manifests = [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-001-kodai-01.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-002-kodai-02.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-003-daiga.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-004-okuda-kikoku.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-005-rishu-jiyujin-in.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-006-sokuji.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-007-sokuji-01.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-008-sokuji-02.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-009-nanakusa-01.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-010-nanakusa-02.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-011-nanakusa-03.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-012-nanakusa-04.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-013-nanakusa-05.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-014-nanakusa-06.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-015-nanakusa-07.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-016-nanakusa-08.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-017-nanakusa-09.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-018-bokusetsu-01.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-019-bokusetsu-02.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-020-bokusetsu-03.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-021-bokusetsu-04.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-022-bokusetsu-05.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-023-bokusetsu-06.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-024-bokusetsu-07.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-025-bokusetsu-08.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-026-bokusetsu-09-tojogan-choshi.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-027-bokusetsu-10.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-028-bokusetsu-11-tenmei-fune-hata.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-029-bokusetsu-12-kakuchu-okka.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-030-bokusetsu-13-betsugo-kyoyu.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-031-bokusetsu-14-jicho.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-032-mudai-1889-0920.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-033-yamaji-kanpu.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-034-mudai-1890-08-a.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-035-mudai-1890-08-b.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-036-kansan-01.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-037-kansan-02.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-038-kansan-03.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-039-kansan-04.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-040-kansan-05.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-041-kansan-06.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-042-kansan-07.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-043-kansan-08.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-044-send-friend-hakone-01.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-045-send-friend-hakone-02.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-046-send-friend-hakone-03.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-047-kito-kogo-01.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-048-kito-kogo-02.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-049-shiki-shozo-jihen.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-050-gohenji-jumon.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-051-oigawa-senchu.json"
-    ];
-
-    async function exists(url) {
-      try {
-        const res = await fetch(url, { cache: "no-store" });
-        return res.ok;
-      } catch (e) {
-        return false;
-      }
-    }
-
-    async function buildViewer() {
-      const status = document.getElementById("status");
-      status.textContent = "manifest を確認中…";
-
-      const checks = await Promise.all(
-        manifests.map(async (url) => ({
-          url,
-          ok: await exists(url)
-        }))
-      );
-
-      const available = checks
-        .filter(x => x.ok)
-        .map(x => ({
-          manifestId: x.url,
-          provider: "漱石漢詩原稿・草稿"
-        }));
-
-      status.textContent = `利用可能 manifest: ${available.length} / ${manifests.length}`;
-
-      Mirador.viewer({
-        id: "viewer",
-        language: "ja",
-        catalog: available,
-        windows: available.length ? [{ manifestId: available[0].manifestId }] : [],
-        workspace: { type: "single" }
-      });
-    }
-
-    buildViewer();
+    Mirador.viewer({
+      id: "viewer",
+      windows: [
+        {
+          manifestId: "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-001-kodai-01.json"
+        }
+      ]
+    });
   </script>
 </body>
 </html>
