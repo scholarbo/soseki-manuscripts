@@ -12,19 +12,69 @@
       padding: 0;
       width: 100%;
       height: 100%;
+      background: #fff;
     }
   </style>
 </head>
 <body>
   <div id="viewer"></div>
+
   <script>
+    const catalog = [
+      {
+        manifestId: "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-001-kodai-01.json",
+        provider: "漱石漢詩原稿・草稿"
+      },
+      {
+        manifestId: "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-002-kodai-02.json",
+        provider: "漱石漢詩原稿・草稿"
+      },
+      {
+        manifestId: "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-003-daiga.json",
+        provider: "漱石漢詩原稿・草稿"
+      },
+      {
+        manifestId: "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-004-okuda-kikoku.json",
+        provider: "漱石漢詩原稿・草稿"
+      },
+      {
+        manifestId: "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-005-rishu-jiyujin-in.json",
+        provider: "漱石漢詩原稿・草稿"
+      },
+      {
+        manifestId: "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-006-sokuji.json",
+        provider: "漱石漢詩原稿・草稿"
+      },
+      {
+        manifestId: "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-007-sokuji-01.json",
+        provider: "漱石漢詩原稿・草稿"
+      },
+      {
+        manifestId: "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-008-sokuji-02.json",
+        provider: "漱石漢詩原稿・草稿"
+      },
+      {
+        manifestId: "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-009-nanakusa-01.json",
+        provider: "漱石漢詩原稿・草稿"
+      },
+      {
+        manifestId: "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-010-nanakusa-02.json",
+        provider: "漱石漢詩原稿・草稿"
+      }
+    ];
+
     Mirador.viewer({
       id: "viewer",
+      language: "ja",
+      catalog: catalog,
       windows: [
         {
           manifestId: "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-001-kodai-01.json"
         }
-      ]
+      ],
+      workspace: {
+        type: "single"
+      }
     });
   </script>
 </body>
