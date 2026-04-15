@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>漱石漢詩原稿ビューア</title>
+  <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/mirador@latest/dist/css/mirador-combined.min.css" />
+  <style>
+    html, body, #viewer {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="viewer"></div>
+
+  <script>
+    const mirador = Mirador.viewer({
+      id: "viewer",
+      windows: [
+        {
+          loadedManifest:
+            "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-001-kodai-01.json"
+        }
+      ]
+    });
+  </script>
+</body>
+</html>
