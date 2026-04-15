@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>漱石漢詩原稿・草稿ビューア</title>
+  <script src="https://unpkg.com/mirador@3.3.0/dist/mirador.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/mirador@3.3.0/dist/css/mirador-combined.min.css" />
+  <style>
+    :root {
+      --bg: #f6f7f9;
+      --panel: #ffffff;
+      --line: #e5e7eb;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #374151;
+      --accent-soft: #eef2f7;
+      --shadow: 0 10px 30px rgba(17, 24, 39, 0.08);
+      --sidebar-w: 340px;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Noto Sans JP", sans-serif;
+    }
+    .app {
+      display: grid;
+      grid-template-columns: var(--sidebar-w) 1fr;
+      width: 100%;
+      height: 100%;
+      gap: 14px;
+      padding: 14px;
+    }
+    .sidebar {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      min-width: 280px;
+    }
+    .sidebar-header {
+      padding: 18px 18px 14px;
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(180deg, #ffffff 0%, #fafbfc 100%);
+    }
+    .title {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      margin-bottom: 6px;
+    }
+    .sub {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    .toolbar {
+      display: flex;
+      gap: 8px;
+      margin-top: 12px;
+    }
+    .btn {
+      appearance: none;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--text);
+      border-radius: 12px;
+      padding: 8px 11px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: 0.15s ease;
+    }
+    .btn:hover { background: #f8fafc; }
+    .btn.active {
+      background: var(--accent);
+      color: white;
+      border-color: var(--accent);
+    }
+    .search-wrap {
+      padding: 14px 18px 12px;
+      border-bottom: 1px solid var(--line);
+    }
+    .search {
+      width: 100%;
+      border: 1px solid var(--line);
+      background: #fbfbfc;
+      border-radius: 14px;
+      padding: 11px 13px;
+      font-size: 14px;
+      outline: none;
+    }
+    .search:focus {
+      border-color: #cbd5e1;
+      background: #fff;
+    }
+    .meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 18px 10px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .list {
+      flex: 1;
+      overflow: auto;
+      padding: 0 10px 12px;
+    }
+    .item {
+      display: grid;
+      grid-template-columns: 18px 1fr auto;
+      gap: 10px;
+      align-items: start;
+      padding: 11px 12px;
+      border-radius: 14px;
+      cursor: pointer;
+      transition: 0.15s ease;
+      margin: 3px 0;
+      border: 1px solid transparent;
+    }
+    .item:hover {
+      background: #fafafa;
+      border-color: #f0f0f0;
+    }
+    .item.selected {
+      background: var(--accent-soft);
+      border-color: #dbe4ef;
+    }
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 999px;
+      margin-top: 5px;
+      background: #d1d5db;
+      position: relative;
+    }
+    .dot.ok { background: #10b981; }
+    .dot.missing { background: #d1d5db; }
+    .seq {
+      color: var(--muted);
+      font-size: 12px;
+      margin-bottom: 3px;
+    }
+    .label {
+      font-size: 14px;
+      line-height: 1.45;
+      word-break: break-word;
+    }
+    .tag {
+      color: var(--muted);
+      font-size: 11px;
+      padding-top: 2px;
+      white-space: nowrap;
+    }
+    .hidden { display: none !important; }
+    .viewer-panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+    .viewer-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(180deg, #ffffff 0%, #fafbfc 100%);
+    }
+    .viewer-title {
+      font-size: 16px;
+      font-weight: 700;
+      min-width: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .viewer-sub {
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 2px;
+    }
+    #viewer {
+      width: 100%;
+      height: calc(100% - 64px);
+      min-height: 0;
+      background: #fff;
+    }
+    .empty {
+      height: calc(100% - 64px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-size: 14px;
+      padding: 30px;
+      text-align: center;
+    }
+    @media (max-width: 980px) {
+      .app {
+        grid-template-columns: 1fr;
+        grid-template-rows: 42% 1fr;
+      }
+      .sidebar {
+        min-height: 280px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="title">漱石漢詩原稿・草稿ビューア</div>
+        <div class="sub">左側に固定の総目录、右側に Mirador。存在する manifest のみ開きます。</div>
+        <div class="toolbar">
+          <button class="btn active" id="filterAvailable">已上传</button>
+          <button class="btn" id="filterAll">全部</button>
+        </div>
+      </div>
+      <div class="search-wrap">
+        <input class="search" id="search" type="text" placeholder="番号・題名で検索" />
+      </div>
+      <div class="meta">
+        <span id="countText">確認中…</span>
+        <span id="modeText">已上传のみ</span>
+      </div>
+      <div class="list" id="list"></div>
+    </aside>
+
+    <main class="viewer-panel">
+      <div class="viewer-header">
+        <div>
+          <div class="viewer-title" id="currentTitle">読み込み中…</div>
+          <div class="viewer-sub" id="currentSub">manifest を確認しています</div>
+        </div>
+      </div>
+      <div id="viewer"></div>
+      <div class="empty hidden" id="emptyState">表示できる manifest がまだありません。</div>
+    </main>
+  </div>
+
+  <script>
+    const ITEMS = [{"seq": 1, "file_name": "001-kodai-01", "title_ja": "001. 鴻台〔二首・其一〕", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-001-kodai-01.json"}, {"seq": 2, "file_name": "002-kodai-02", "title_ja": "002. 鴻台〔二首・其二〕", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-002-kodai-02.json"}, {"seq": 3, "file_name": "003-daiga", "title_ja": "003. 題画", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-003-daiga.json"}, {"seq": 4, "file_name": "004-okuda-kikoku", "title_ja": "004. 送奥田詞兄帰国", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-004-okuda-kikoku.json"}, {"seq": 5, "file_name": "005-rishu-jiyujin-in", "title_ja": "005. 離愁次友人韻", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-005-rishu-jiyujin-in.json"}, {"seq": 6, "file_name": "006-sokuji", "title_ja": "006. 即時", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-006-sokuji.json"}, {"seq": 7, "file_name": "007-sokuji-01", "title_ja": "007. 即時〔二首·其一〕", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-007-sokuji-01.json"}, {"seq": 8, "file_name": "008-sokuji-02", "title_ja": "008. 即時〔二首·其二〕", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-008-sokuji-02.json"}, {"seq": 9, "file_name": "009-nanakusa-01", "title_ja": "009. 〔「『七草集』評」より九首・其一〕明治二十二年五月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-009-nanakusa-01.json"}, {"seq": 10, "file_name": "010-nanakusa-02", "title_ja": "010. 〔「『七草集』評」より九首・其二〕明治二十二年五月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-010-nanakusa-02.json"}, {"seq": 11, "file_name": "011-nanakusa-03", "title_ja": "011. 〔「『七草集』評」より九首・其三〕明治二十二年五月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-011-nanakusa-03.json"}, {"seq": 12, "file_name": "012-nanakusa-04", "title_ja": "012. 〔「『七草集』評」より九首・其四〕明治二十二年五月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-012-nanakusa-04.json"}, {"seq": 13, "file_name": "013-nanakusa-05", "title_ja": "013. 〔「『七草集』評」より九首・其五〕明治二十二年五月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-013-nanakusa-05.json"}, {"seq": 14, "file_name": "014-nanakusa-06", "title_ja": "014. 〔「『七草集』評」より九首・其六〕明治二十二年五月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-014-nanakusa-06.json"}, {"seq": 15, "file_name": "015-nanakusa-07", "title_ja": "015. 〔「『七草集』評」より九首・其七〕明治二十二年五月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-015-nanakusa-07.json"}, {"seq": 16, "file_name": "016-nanakusa-08", "title_ja": "016. 〔「『七草集』評」より九首・其八〕明治二十二年五月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-016-nanakusa-08.json"}, {"seq": 17, "file_name": "017-nanakusa-09", "title_ja": "017. 〔「『七草集』評」より九首・其九〕明治二十二年五月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-017-nanakusa-09.json"}, {"seq": 18, "file_name": "018-bokusetsu-01", "title_ja": "018. 〔『木屑録』より十四首・其一〕明治二十二年九月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-018-bokusetsu-01.json"}, {"seq": 19, "file_name": "019-bokusetsu-02", "title_ja": "019. 〔『木屑録』より十四首・其二〕明治二十二年九月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-019-bokusetsu-02.json"}, {"seq": 20, "file_name": "020-bokusetsu-03", "title_ja": "020. 〔『木屑録』より十四首・其三〕明治二十二年九月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-020-bokusetsu-03.json"}, {"seq": 21, "file_name": "021-bokusetsu-04", "title_ja": "021. 〔『木屑録』より十四首・其四〕明治二十二年九月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-021-bokusetsu-04.json"}, {"seq": 22, "file_name": "022-bokusetsu-05", "title_ja": "022. 〔『木屑録』より十四首・其五〕明治二十二年九月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-022-bokusetsu-05.json"}, {"seq": 23, "file_name": "023-bokusetsu-06", "title_ja": "023. 〔『木屑録』より十四首・其六〕明治二十二年九月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-023-bokusetsu-06.json"}, {"seq": 24, "file_name": "024-bokusetsu-07", "title_ja": "024. 〔『木屑録』より十四首・其七〕明治二十二年九月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-024-bokusetsu-07.json"}, {"seq": 25, "file_name": "025-bokusetsu-08", "title_ja": "025. 〔『木屑録』より十四首・其八〕明治二十二年九月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-025-bokusetsu-08.json"}, {"seq": 26, "file_name": "026-bokusetsu-09-tojogan-choshi", "title_ja": "026. 〔『木屑録』より十四首・其九〕自東金至銚子途上口号", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-026-bokusetsu-09-tojogan-choshi.json"}, {"seq": 27, "file_name": "027-bokusetsu-10", "title_ja": "027. 〔『木屑録』より十四首・其十〕", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-027-bokusetsu-10.json"}, {"seq": 28, "file_name": "028-bokusetsu-11-tenmei-fune-hata", "title_ja": "028. 〔『木屑録』より十四首・其十一〕天明舟達三堀旗亭即事", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-028-bokusetsu-11-tenmei-fune-hata.json"}, {"seq": 29, "file_name": "029-bokusetsu-12-kakuchu-okka", "title_ja": "029. 〔『木屑録』より十四首・其十二〕客中憶家", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-029-bokusetsu-12-kakuchu-okka.json"}, {"seq": 30, "file_name": "030-bokusetsu-13-betsugo-kyoyu", "title_ja": "030. 〔『木屑録』より十四首・其十三〕別後憶京中諸友", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-030-bokusetsu-13-betsugo-kyoyu.json"}, {"seq": 31, "file_name": "031-bokusetsu-14-jicho", "title_ja": "031. 〔『木屑録』より十四首・其十四〕自嘲書木屑録後", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-031-bokusetsu-14-jicho.json"}, {"seq": 32, "file_name": "032-mudai-1889-0920", "title_ja": "032. 〔無題〕明治二十二年九月二十日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-032-mudai-1889-0920.json"}, {"seq": 33, "file_name": "033-yamaji-kanpu", "title_ja": "033. 山路観楓明治二十二年十一月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-033-yamaji-kanpu.json"}, {"seq": 34, "file_name": "034-mudai-1890-08-a", "title_ja": "034. 〔無題〕明治二十三年八月末", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-034-mudai-1890-08-a.json"}, {"seq": 35, "file_name": "035-mudai-1890-08-b", "title_ja": "035. 〔無題〕明治二十三年八月末", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-035-mudai-1890-08-b.json"}, {"seq": 36, "file_name": "036-kansan-01", "title_ja": "036. 函山雑詠〔八首・其一〕明治二十三年九月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-036-kansan-01.json"}, {"seq": 37, "file_name": "037-kansan-02", "title_ja": "037. 函山雑詠〔八首・其二〕明治二十三年九月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-037-kansan-02.json"}, {"seq": 38, "file_name": "038-kansan-03", "title_ja": "038. 函山雑詠〔八首・其三〕明治二十三年九月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-038-kansan-03.json"}, {"seq": 39, "file_name": "039-kansan-04", "title_ja": "039. 函山雑詠〔八首・其四〕明治二十三年九月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-039-kansan-04.json"}, {"seq": 40, "file_name": "040-kansan-05", "title_ja": "040. 函山雑詠〔八首・其五〕明治二十三年九月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-040-kansan-05.json"}, {"seq": 41, "file_name": "041-kansan-06", "title_ja": "041. 函山雑詠〔八首・其六〕明治二十三年九月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-041-kansan-06.json"}, {"seq": 42, "file_name": "042-kansan-07", "title_ja": "042. 函山雑詠〔八首・其七〕明治二十三年九月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-042-kansan-07.json"}, {"seq": 43, "file_name": "043-kansan-08", "title_ja": "043. 函山雑詠〔八首・其八〕明治二十三年九月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-043-kansan-08.json"}, {"seq": 44, "file_name": "044-send-friend-hakone-01", "title_ja": "044. 送友到元函根〔三首・其一〕明治二十三年九月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-044-send-friend-hakone-01.json"}, {"seq": 45, "file_name": "045-send-friend-hakone-02", "title_ja": "045. 送友到元函根〔三首・其二〕明治二十三年九月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-045-send-friend-hakone-02.json"}, {"seq": 46, "file_name": "046-send-friend-hakone-03", "title_ja": "046. 送友到元函根〔三首・其三〕明治二十三年九月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-046-send-friend-hakone-03.json"}, {"seq": 47, "file_name": "047-kito-kogo-01", "title_ja": "047. 帰途口号〔二首·其一〕明治二十三年九月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-047-kito-kogo-01.json"}, {"seq": 48, "file_name": "048-kito-kogo-02", "title_ja": "048. 帰途口号〔二首·其二〕明治二十三年九月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-048-kito-kogo-02.json"}, {"seq": 49, "file_name": "049-shiki-shozo-jihen", "title_ja": "049. 謝正岡子規見惠小照次其所贈詩韵却呈明治二十三年十月二十四日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-049-shiki-shozo-jihen.json"}, {"seq": 50, "file_name": "050-gohenji-jumon", "title_ja": "050. 御返事呪文明治二十四年七月二十四日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-050-gohenji-jumon.json"}, {"seq": 51, "file_name": "051-oigawa-senchu", "title_ja": "051. 大井川舟中", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-051-oigawa-senchu.json"}, {"seq": 52, "file_name": "052-mudai-1894-0309", "title_ja": "052. 〔無題〕明治二十七年三月九日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-052-mudai-1894-0309.json"}, {"seq": 53, "file_name": "053-mudai-5shu-01", "title_ja": "053. 無題〔五首・其一〕明治二十八年五月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-053-mudai-5shu-01.json"}, {"seq": 54, "file_name": "054-mudai-5shu-02", "title_ja": "054. 無題〔五首・其二〕明治二十八年五月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-054-mudai-5shu-02.json"}, {"seq": 55, "file_name": "055-mudai-5shu-03", "title_ja": "055. 無題〔五首・其三〕明治二十八年五月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-055-mudai-5shu-03.json"}, {"seq": 56, "file_name": "056-mudai-5shu-04", "title_ja": "056. 無題〔五首・其四〕明治二十八年五月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-056-mudai-5shu-04.json"}, {"seq": 57, "file_name": "057-mudai-5shu-05", "title_ja": "057. 無題〔五首・其五〕明治二十八年五月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-057-mudai-5shu-05.json"}, {"seq": 58, "file_name": "058-mudai-1896-0112", "title_ja": "058. 〔無題〕明治二十九年一月十二日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-058-mudai-1896-0112.json"}, {"seq": 59, "file_name": "059-reishi-01", "title_ja": "059. 丙申五月、恕卿所居、庭前生霊芝。恕卿因徵余詩。余辞以不文。恕卿不聴。賦以為贈。恕卿者片嶺氏、余僚友也。〔五首・其一〕明治二十九年十一月十五日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-059-reishi-01.json"}, {"seq": 60, "file_name": "060-reishi-02", "title_ja": "060. 〔五首・其二〕明治二十九年十一月十五日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-060-reishi-02.json"}, {"seq": 61, "file_name": "061-reishi-03", "title_ja": "061. 〔五首・其三〕明治二十九年十一月十五日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-061-reishi-03.json"}, {"seq": 62, "file_name": "062-reishi-04", "title_ja": "062. 〔五首・其四〕明治二十九年十一月十五日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-062-reishi-04.json"}, {"seq": 63, "file_name": "063-reishi-05", "title_ja": "063. 〔五首・其五〕明治二十九年十一月十五日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-063-reishi-05.json"}, {"seq": 64, "file_name": "064-mudai-1897-1212", "title_ja": "064. 〔無題〕明治三十年十二月十二日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-064-mudai-1897-1212.json"}, {"seq": 65, "file_name": "065-shunkyo", "title_ja": "065. 〔春興〕明治三十一年三月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-065-shunkyo.json"}, {"seq": 66, "file_name": "066-shitsudai-1898-03", "title_ja": "066. 失題明治三十一年三月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-066-shitsudai-1898-03.json"}, {"seq": 67, "file_name": "067-shunjitsu-seiza", "title_ja": "067. 春日静坐明治三十一年三月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-067-shunjitsu-seiza.json"}, {"seq": 68, "file_name": "068-naika-ko", "title_ja": "068. 菜花黄明治三十一年三月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-068-naika-ko.json"}, {"seq": 69, "file_name": "069-kakuchu-haru-shiki", "title_ja": "069. 客中逢春寄子規", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-069-kakuchu-haru-shiki.json"}, {"seq": 70, "file_name": "070-mudai-1899", "title_ja": "070. 〔無題〕明治三十二年", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-070-mudai-1899.json"}, {"seq": 71, "file_name": "071-kobetsuri", "title_ja": "071. 古別離明治三十二年四月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-071-kobetsuri.json"}, {"seq": 72, "file_name": "072-shitsudai-1899-04", "title_ja": "072. 失題明治三十二年四月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-072-shitsudai-1899-04.json"}, {"seq": 73, "file_name": "073-mudai-1900-a", "title_ja": "073. 〔無題〕明治三十三年", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-073-mudai-1900-a.json"}, {"seq": 74, "file_name": "074-mudai-1900-b", "title_ja": "074. 〔無題〕明治三十三年", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-074-mudai-1900-b.json"}, {"seq": 75, "file_name": "075-mudai-1900-c", "title_ja": "075. 〔無題〕明治三十三年", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-075-mudai-1900-c.json"}, {"seq": 76, "file_name": "076-mudai-undated-a", "title_ja": "076. 〔無題〕", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-076-mudai-undated-a.json"}, {"seq": 77, "file_name": "077-mudai-1910-0731", "title_ja": "077. 〔無題〕明治四十三年七月三十一日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-077-mudai-1910-0731.json"}, {"seq": 78, "file_name": "078-mudai-1910-0920", "title_ja": "078. 〔無題〕明治四十三年九月二十日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-078-mudai-1910-0920.json"}, {"seq": 79, "file_name": "079-mudai-1910-0922", "title_ja": "079. 〔無題〕明治四十三年九月二十二日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-079-mudai-1910-0922.json"}, {"seq": 80, "file_name": "080-mudai-1910-0925", "title_ja": "080. 〔無題〕明治四十三年九月二十五日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-080-mudai-1910-0925.json"}, {"seq": 81, "file_name": "081-mudai-1910-0929", "title_ja": "081. 〔無題〕明治四十三年九月二十九日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-081-mudai-1910-0929.json"}, {"seq": 82, "file_name": "082-mudai-1910-1001", "title_ja": "082. 〔無題〕明治四十三年十月一日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-082-mudai-1910-1001.json"}, {"seq": 83, "file_name": "083-mudai-1910-1002", "title_ja": "083. 〔無題〕明治四十三年十月二日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-083-mudai-1910-1002.json"}, {"seq": 84, "file_name": "084-mudai-1910-1003", "title_ja": "084. 〔無題〕明治四十三年十月三日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-084-mudai-1910-1003.json"}, {"seq": 85, "file_name": "085-mudai-1910-1004", "title_ja": "085. 〔無題〕明治四十三年十月四日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-085-mudai-1910-1004.json"}, {"seq": 86, "file_name": "086-mudai-1910-1006", "title_ja": "086. 〔無題〕明治四十三年十月六日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-086-mudai-1910-1006.json"}, {"seq": 87, "file_name": "087-mudai-1910-1007", "title_ja": "087. 〔無題〕明治四十三年十月七日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-087-mudai-1910-1007.json"}, {"seq": 88, "file_name": "088-mudai-1910-1008", "title_ja": "088. 〔無題〕明治四十三年十月八日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-088-mudai-1910-1008.json"}, {"seq": 89, "file_name": "089-mudai-1910-1010", "title_ja": "089. 〔無題〕明治四十三年十月十日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-089-mudai-1910-1010.json"}, {"seq": 90, "file_name": "090-mudai-1910-1011", "title_ja": "090. 〔無題〕明治四十三年十月十一日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-090-mudai-1910-1011.json"}, {"seq": 91, "file_name": "091-mudai-1910-1016", "title_ja": "091. 〔無題〕明治四十三年十月十六日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-091-mudai-1910-1016.json"}, {"seq": 92, "file_name": "092-mudai-1910-1024", "title_ja": "092. 〔無題〕明治四十三年十月二十四日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-092-mudai-1910-1024.json"}, {"seq": 93, "file_name": "093-mudai-1910-1027", "title_ja": "093. 〔無題〕明治四十三年十月二十七日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-093-mudai-1910-1027.json"}, {"seq": 94, "file_name": "094-shunjitsu-gusei-01", "title_ja": "094. 春日偶成〔十首・其一〕明治四十五年五月二十四日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-094-shunjitsu-gusei-01.json"}, {"seq": 95, "file_name": "095-shunjitsu-gusei-02", "title_ja": "095. 春日偶成〔十首・其二〕明治四十五年五月二十四日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-095-shunjitsu-gusei-02.json"}, {"seq": 96, "file_name": "096-shunjitsu-gusei-03", "title_ja": "096. 春日偶成〔十首・其三〕明治四十五年五月二十四日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-096-shunjitsu-gusei-03.json"}, {"seq": 97, "file_name": "097-shunjitsu-gusei-04", "title_ja": "097. 春日偶成〔十首・其四〕明治四十五年五月二十四日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-097-shunjitsu-gusei-04.json"}, {"seq": 98, "file_name": "098-shunjitsu-gusei-05", "title_ja": "098. 春日偶成〔十首・其五〕明治四十五年五月二十四日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-098-shunjitsu-gusei-05.json"}, {"seq": 99, "file_name": "099-shunjitsu-gusei-06", "title_ja": "099. 春日偶成〔十首・其六〕明治四十五年五月二十四日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-099-shunjitsu-gusei-06.json"}, {"seq": 100, "file_name": "100-shunjitsu-gusei-07", "title_ja": "100. 春日偶成〔十首・其七〕明治四十五年五月二十四日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-100-shunjitsu-gusei-07.json"}, {"seq": 101, "file_name": "101-shunjitsu-gusei-08", "title_ja": "101. 春日偶成〔十首・其八〕明治四十五年五月二十四日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-101-shunjitsu-gusei-08.json"}, {"seq": 102, "file_name": "102-shunjitsu-gusei-09", "title_ja": "102. 春日偶成〔十首・其九〕明治四十五年五月二十四日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-102-shunjitsu-gusei-09.json"}, {"seq": 103, "file_name": "103-shunjitsu-gusei-10", "title_ja": "103. 春日偶成〔十首・其十〕明治四十五年五月二十四日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-103-shunjitsu-gusei-10.json"}, {"seq": 104, "file_name": "104-mudai-1912-06-a", "title_ja": "104. 〔無題〕明治四十五年六月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-104-mudai-1912-06-a.json"}, {"seq": 105, "file_name": "105-mudai-1912-06-b", "title_ja": "105. 〔無題〕明治四十五年六月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-105-mudai-1912-06-b.json"}, {"seq": 106, "file_name": "106-mudai-1912-06-c", "title_ja": "106. 〔無題〕明治四十五年六月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-106-mudai-1912-06-c.json"}, {"seq": 107, "file_name": "107-mudai-1912-07", "title_ja": "107. 〔無題〕明治四十五年七月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-107-mudai-1912-07.json"}, {"seq": 108, "file_name": "108-yokoyama-ga-a", "title_ja": "108. 〔酬横山画伯惠画〕明治四十五年七月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-108-yokoyama-ga-a.json"}, {"seq": 109, "file_name": "109-yokoyama-ga-b", "title_ja": "109. 酬横山画伯惠画明治四十五年七月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-109-yokoyama-ga-b.json"}, {"seq": 110, "file_name": "110-hyakuhai-tanzaku-jo", "title_ja": "110. 〔明治百俳家短册帖序〕明治四十五年七月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-110-hyakuhai-tanzaku-jo.json"}, {"seq": 111, "file_name": "111-myouunji-kanbaku", "title_ja": "111. 妙雲寺観瀑大正元年九月十七日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-111-myouunji-kanbaku.json"}, {"seq": 112, "file_name": "112-jiga-1912-11-a", "title_ja": "112. 〔題自画〕大正元年十一月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-112-jiga-1912-11-a.json"}, {"seq": 113, "file_name": "113-jiga-1912-11-b", "title_ja": "113. 〔題自画〕大正元年十一月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-113-jiga-1912-11-b.json"}, {"seq": 114, "file_name": "114-mudai-undated-b", "title_ja": "114. 〔無題〕", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-114-mudai-undated-b.json"}, {"seq": 115, "file_name": "115-daiga-chiku", "title_ja": "115. 題画竹", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-115-daiga-chiku.json"}, {"seq": 116, "file_name": "116-gusei", "title_ja": "116. 偶成", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-116-gusei.json"}, {"seq": 117, "file_name": "117-giga-chiku-kasan", "title_ja": "117. 戯画竹加賛", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-117-giga-chiku-kasan.json"}, {"seq": 118, "file_name": "118-jiga-1914", "title_ja": "118. 〔題自画〕大正三年", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-118-jiga-1914.json"}, {"seq": 119, "file_name": "119-daiga-a", "title_ja": "119. 題画", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-119-daiga-a.json"}, {"seq": 120, "file_name": "120-daiga-b", "title_ja": "120. 題画", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-120-daiga-b.json"}, {"seq": 121, "file_name": "121-tokkendou-jiju-shi", "title_ja": "121. 得建堂先生自寿詩及七寿杯、次韵以祝大正三年", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-121-tokkendou-jiju-shi.json"}, {"seq": 122, "file_name": "122-kankyo-gusei-rinpu", "title_ja": "122. 閑居偶成、似臨風詞兄大正三年", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-122-kankyo-gusei-rinpu.json"}, {"seq": 123, "file_name": "123-yushigin-engetsu", "title_ja": "123. 游子吟、書似円月詞兄大正三年二月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-123-yushigin-engetsu.json"}, {"seq": 124, "file_name": "124-jiga-a", "title_ja": "124. 題自画", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-124-jiga-a.json"}, {"seq": 125, "file_name": "125-jiga-1914-11", "title_ja": "125. 〔題自画〕大正三年十一月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-125-jiga-1914-11.json"}, {"seq": 126, "file_name": "126-jiga-b", "title_ja": "126. 題自画", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-126-jiga-b.json"}, {"seq": 127, "file_name": "127-daiga-1915", "title_ja": "127. 題画大正四年", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-127-daiga-1915.json"}, {"seq": 128, "file_name": "128-nishikawa-issotei-ga", "title_ja": "128. 〔題西川一草亭画〕大正四年九月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-128-nishikawa-issotei-ga.json"}, {"seq": 129, "file_name": "129-jiga-1915-11", "title_ja": "129. 〔題自画〕大正四年十一月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-129-jiga-1915-11.json"}, {"seq": 130, "file_name": "130-yuki-somei-ga", "title_ja": "130. 題結城素明画", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-130-yuki-somei-ga.json"}, {"seq": 131, "file_name": "131-jiga-1916-01", "title_ja": "131. 題自画大正五年一月", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-131-jiga-1916-01.json"}, {"seq": 132, "file_name": "132-kankyo-gusei-1916-spring", "title_ja": "132. 閑居偶成大正五年春", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-132-kankyo-gusei-1916-spring.json"}, {"seq": 133, "file_name": "133-jiga-1916-spring", "title_ja": "133. 題自画大正五年春", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-133-jiga-1916-spring.json"}, {"seq": 134, "file_name": "134-mudai-1916-0814-yoru", "title_ja": "134. 〔無題〕大正五年八月十四日夜", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-134-mudai-1916-0814-yoru.json"}, {"seq": 135, "file_name": "135-mudai-1916-0815-a", "title_ja": "135. 〔無題〕大正五年八月十五日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-135-mudai-1916-0815-a.json"}, {"seq": 136, "file_name": "136-mudai-1916-0815-b", "title_ja": "136. 〔無題〕大正五年八月十五日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-136-mudai-1916-0815-b.json"}, {"seq": 137, "file_name": "137-mudai-1916-0816", "title_ja": "137. 〔無題〕大正五年八月十六日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-137-mudai-1916-0816.json"}, {"seq": 138, "file_name": "138-mudai-1916-0818", "title_ja": "138. 〔無題〕大正五年八月十八日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-138-mudai-1916-0818.json"}, {"seq": 139, "file_name": "139-mudai-1916-0819", "title_ja": "139. 〔無題〕大正五年八月十九日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-139-mudai-1916-0819.json"}, {"seq": 140, "file_name": "140-mudai-1916-0820", "title_ja": "140. 〔無題〕大正五年八月二十日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-140-mudai-1916-0820.json"}, {"seq": 141, "file_name": "141-mudai-1916-0821-a", "title_ja": "141. 〔無題〕大正五年八月二十一日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-141-mudai-1916-0821-a.json"}, {"seq": 142, "file_name": "142-mudai-1916-0821-b", "title_ja": "142. 〔無題〕大正五年八月二十一日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-142-mudai-1916-0821-b.json"}, {"seq": 143, "file_name": "143-mudai-1916-0822", "title_ja": "143. 〔無題〕大正五年八月二十二日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-143-mudai-1916-0822.json"}, {"seq": 144, "file_name": "144-mudai-1916-0823", "title_ja": "144. 〔無題〕大正五年八月二十三日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-144-mudai-1916-0823.json"}, {"seq": 145, "file_name": "145-heishin-hatsuboku", "title_ja": "145. 〔題丙辰潑墨〕大正五年八月二十六日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-145-heishin-hatsuboku.json"}, {"seq": 146, "file_name": "146-mudai-1916-0828", "title_ja": "146. 〔無題〕大正五年八月二十八日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-146-mudai-1916-0828.json"}, {"seq": 147, "file_name": "147-mudai-1916-0829", "title_ja": "147. 〔無題〕大正五年八月二十九日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-147-mudai-1916-0829.json"}, {"seq": 148, "file_name": "148-mudai-1916-0830-a", "title_ja": "148. 〔無題〕大正五年八月三十日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-148-mudai-1916-0830-a.json"}, {"seq": 149, "file_name": "149-mudai-1916-0830-b", "title_ja": "149. 〔無題〕大正五年八月三十日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-149-mudai-1916-0830-b.json"}, {"seq": 150, "file_name": "150-mudai-1916-0901-a", "title_ja": "150. 〔無題〕大正五年九月一日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-150-mudai-1916-0901-a.json"}, {"seq": 151, "file_name": "151-mudai-1916-0901-b", "title_ja": "151. 〔無題〕大正五年九月一日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-151-mudai-1916-0901-b.json"}, {"seq": 152, "file_name": "152-mudai-1916-0902-a", "title_ja": "152. 〔無題〕大正五年九月二日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-152-mudai-1916-0902-a.json"}, {"seq": 153, "file_name": "153-mudai-1916-0902-b", "title_ja": "153. 〔無題〕大正五年九月二日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-153-mudai-1916-0902-b.json"}, {"seq": 154, "file_name": "154-mudai-1916-0903", "title_ja": "154. 〔無題〕大正五年九月三日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-154-mudai-1916-0903.json"}, {"seq": 155, "file_name": "155-mudai-1916-0904-a", "title_ja": "155. 〔無題〕大正五年九月四日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-155-mudai-1916-0904-a.json"}, {"seq": 156, "file_name": "156-mudai-1916-0904-b", "title_ja": "156. 〔無題〕大正五年九月四日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-156-mudai-1916-0904-b.json"}, {"seq": 157, "file_name": "157-mudai-1916-0905", "title_ja": "157. 〔無題〕大正五年九月五日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-157-mudai-1916-0905.json"}, {"seq": 158, "file_name": "158-mudai-1916-0906", "title_ja": "158. 〔無題〕大正五年九月六日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-158-mudai-1916-0906.json"}, {"seq": 159, "file_name": "159-mudai-1916-0909", "title_ja": "159. 〔無題〕大正五年九月九日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-159-mudai-1916-0909.json"}, {"seq": 160, "file_name": "160-mudai-1916-0910", "title_ja": "160. 〔無題〕大正五年九月十日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-160-mudai-1916-0910.json"}, {"seq": 161, "file_name": "161-mudai-1916-0911", "title_ja": "161. 〔無題〕大正五年九月十一日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-161-mudai-1916-0911.json"}, {"seq": 162, "file_name": "162-mudai-1916-0912", "title_ja": "162. 〔無題〕大正五年九月十二日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-162-mudai-1916-0912.json"}, {"seq": 163, "file_name": "163-mudai-1916-0913-a", "title_ja": "163. 〔無題〕大正五年九月十三日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-163-mudai-1916-0913-a.json"}, {"seq": 164, "file_name": "164-mudai-1916-0913-b", "title_ja": "164. 〔無題〕大正五年九月十三日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-164-mudai-1916-0913-b.json"}, {"seq": 165, "file_name": "165-mudai-1916-0915", "title_ja": "165. 〔無題〕大正五年九月十五日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-165-mudai-1916-0915.json"}, {"seq": 166, "file_name": "166-mudai-1916-0916", "title_ja": "166. 〔無題〕大正五年九月十六日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-166-mudai-1916-0916.json"}, {"seq": 167, "file_name": "167-mudai-1916-0917", "title_ja": "167. 〔無題〕大正五年九月十七日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-167-mudai-1916-0917.json"}, {"seq": 168, "file_name": "168-mudai-1916-0918", "title_ja": "168. 〔無題〕大正五年九月十八日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-168-mudai-1916-0918.json"}, {"seq": 169, "file_name": "169-mudai-1916-0919", "title_ja": "169. 〔無題〕大正五年九月十九日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-169-mudai-1916-0919.json"}, {"seq": 170, "file_name": "170-mudai-1916-0920", "title_ja": "170. 〔無題〕大正五年九月二十日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-170-mudai-1916-0920.json"}, {"seq": 171, "file_name": "171-mudai-1916-0922", "title_ja": "171. 〔無題〕大正五年九月二十二日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-171-mudai-1916-0922.json"}, {"seq": 172, "file_name": "172-mudai-1916-0923-a", "title_ja": "172. 〔無題〕大正五年九月二十三日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-172-mudai-1916-0923-a.json"}, {"seq": 173, "file_name": "173-mudai-1916-0923-b", "title_ja": "173. 〔無題〕大正五年九月二十三日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-173-mudai-1916-0923-b.json"}, {"seq": 174, "file_name": "174-mudai-1916-0924", "title_ja": "174. 〔無題〕大正五年九月二十四日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-174-mudai-1916-0924.json"}, {"seq": 175, "file_name": "175-mudai-1916-0925", "title_ja": "175. 〔無題〕大正五年九月二十五日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-175-mudai-1916-0925.json"}, {"seq": 176, "file_name": "176-mudai-1916-0926", "title_ja": "176. 〔無題〕大正五年九月二十六日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-176-mudai-1916-0926.json"}, {"seq": 177, "file_name": "177-mudai-1916-0927", "title_ja": "177. 〔無題〕大正五年九月二十七日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-177-mudai-1916-0927.json"}, {"seq": 178, "file_name": "178-mudai-1916-0929", "title_ja": "178. 〔無題〕大正五年九月二十九日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-178-mudai-1916-0929.json"}, {"seq": 179, "file_name": "179-mudai-1916-0930", "title_ja": "179. 〔無題〕大正五年九月三十日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-179-mudai-1916-0930.json"}, {"seq": 180, "file_name": "180-mudai-1916-1001", "title_ja": "180. 〔無題〕大正五年十月一日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-180-mudai-1916-1001.json"}, {"seq": 181, "file_name": "181-mudai-1916-1002", "title_ja": "181. 〔無題〕大正五年十月二日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-181-mudai-1916-1002.json"}, {"seq": 182, "file_name": "182-mudai-1916-1003", "title_ja": "182. 〔無題〕大正五年十月三日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-182-mudai-1916-1003.json"}, {"seq": 183, "file_name": "183-mudai-1916-1004", "title_ja": "183. 〔無題〕大正五年十月四日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-183-mudai-1916-1004.json"}, {"seq": 184, "file_name": "184-mudai-1916-1006", "title_ja": "184. 〔無題〕大正五年十月六日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-184-mudai-1916-1006.json"}, {"seq": 185, "file_name": "185-mudai-1916-1007", "title_ja": "185. 〔無題〕大正五年十月七日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-185-mudai-1916-1007.json"}, {"seq": 186, "file_name": "186-mudai-1916-1008", "title_ja": "186. 〔無題〕大正五年十月八日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-186-mudai-1916-1008.json"}, {"seq": 187, "file_name": "187-mudai-1916-1009", "title_ja": "187. 〔無題〕大正五年十月九日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-187-mudai-1916-1009.json"}, {"seq": 188, "file_name": "188-mudai-1916-1010", "title_ja": "188. 〔無題〕大正五年十月十日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-188-mudai-1916-1010.json"}, {"seq": 189, "file_name": "189-mudai-1916-1011", "title_ja": "189. 〔無題〕大正五年十月十一日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-189-mudai-1916-1011.json"}, {"seq": 190, "file_name": "190-mudai-1916-1012", "title_ja": "190. 〔無題〕大正五年十月十二日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-190-mudai-1916-1012.json"}, {"seq": 191, "file_name": "191-mudai-1916-1015", "title_ja": "191. 〔無題〕大正五年十月十五日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-191-mudai-1916-1015.json"}, {"seq": 192, "file_name": "192-mudai-1916-1016", "title_ja": "192. 〔無題〕大正五年十月十六日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-192-mudai-1916-1016.json"}, {"seq": 193, "file_name": "193-mudai-1916-1017", "title_ja": "193. 〔無題〕大正五年十月十七日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-193-mudai-1916-1017.json"}, {"seq": 194, "file_name": "194-mudai-1916-1018", "title_ja": "194. 〔無題〕大正五年十月十八日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-194-mudai-1916-1018.json"}, {"seq": 195, "file_name": "195-mudai-1916-1019", "title_ja": "195. 〔無題〕大正五年十月十九日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-195-mudai-1916-1019.json"}, {"seq": 196, "file_name": "196-mudai-1916-1020", "title_ja": "196. 〔無題〕大正五年十月二十日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-196-mudai-1916-1020.json"}, {"seq": 197, "file_name": "197-mudai-1916-1021", "title_ja": "197. 〔無題〕大正五年十月二十一日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-197-mudai-1916-1021.json"}, {"seq": 198, "file_name": "198-mudai-3shu-1021-01", "title_ja": "198. 〔無題三首·其一〕大正五年十月二十一日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-198-mudai-3shu-1021-01.json"}, {"seq": 199, "file_name": "199-mudai-3shu-1021-02", "title_ja": "199. 〔無題三首·其二〕大正五年十月二十一日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-199-mudai-3shu-1021-02.json"}, {"seq": 200, "file_name": "200-mudai-3shu-1021-03", "title_ja": "200. 〔無題三首·其三〕大正五年十月二十一日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-200-mudai-3shu-1021-03.json"}, {"seq": 201, "file_name": "201-mudai-3shu-1022-01", "title_ja": "201. 〔無題三首·其一〕大正五年十月二十二日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-201-mudai-3shu-1022-01.json"}, {"seq": 202, "file_name": "202-mudai-3shu-1022-02", "title_ja": "202. 〔無題三首·其二〕大正五年十月二十二日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-202-mudai-3shu-1022-02.json"}, {"seq": 203, "file_name": "203-mudai-3shu-1022-03", "title_ja": "203. 〔無題三首·其三〕大正五年十月二十二日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-203-mudai-3shu-1022-03.json"}, {"seq": 204, "file_name": "204-gensei-zennin-bokuchiku", "title_ja": "204. 元成禅人、自德源大会回鉢到余家、淹留旬日。臨去需余画。余為禅人作墨竹三竿、併題詩以贈大正五年十月三十一日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-204-gensei-zennin-bokuchiku.json"}, {"seq": 205, "file_name": "205-keido-zennin-matsu", "title_ja": "205. 丙辰十月、余為元成禅人作墨竹。越一日、見壁間所挂図、興忽発。乃為珪堂禅人抽毫作松一株、配以石二三。不知禅人受余贈否也。", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-205-keido-zennin-matsu.json"}, {"seq": 206, "file_name": "206-mudai-1916-1113", "title_ja": "206. 〔無題〕大正五年十一月十三日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-206-mudai-1916-1113.json"}, {"seq": 207, "file_name": "207-mudai-1916-1119", "title_ja": "207. 〔無題〕大正五年十一月十九日", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-207-mudai-1916-1119.json"}, {"seq": 208, "file_name": "208-mudai-1916-1120-yoru", "title_ja": "208. 〔無題〕大正五年十一月二十日夜", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-208-mudai-1916-1120-yoru.json"}, {"seq": 209, "file_name": "209-mitei-01", "title_ja": "209. 未定稿一", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-209-mitei-01.json"}, {"seq": 210, "file_name": "210-mitei-02", "title_ja": "210. 未定稿二", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-210-mitei-02.json"}, {"seq": 211, "file_name": "211-mitei-03", "title_ja": "211. 未定稿三", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-211-mitei-03.json"}, {"seq": 212, "file_name": "212-mitei-04", "title_ja": "212. 未定稿四", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-212-mitei-04.json"}, {"seq": 213, "file_name": "213-mitei-05", "title_ja": "213. 未定稿五", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-213-mitei-05.json"}, {"seq": 214, "file_name": "214-mitei-06", "title_ja": "214. 未定稿六", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-214-mitei-06.json"}, {"seq": 215, "file_name": "215-mitei-07", "title_ja": "215. 未定稿七", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-215-mitei-07.json"}, {"seq": 216, "file_name": "216-mitei-08", "title_ja": "216. 未定稿八", "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-216-mitei-08.json"}];
+    let showAvailableOnly = true;
+    let availableMap = new Map();
+    let selectedId = null;
+    let viewerInstance = null;
+
+    const listEl = document.getElementById('list');
+    const searchEl = document.getElementById('search');
+    const countTextEl = document.getElementById('countText');
+    const modeTextEl = document.getElementById('modeText');
+    const currentTitleEl = document.getElementById('currentTitle');
+    const currentSubEl = document.getElementById('currentSub');
+    const emptyStateEl = document.getElementById('emptyState');
+    const viewerEl = document.getElementById('viewer');
+    const btnAvailable = document.getElementById('filterAvailable');
+    const btnAll = document.getElementById('filterAll');
+
+    function normalize(text) {
+      return (text || '').toLowerCase();
+    }
+
+    async function manifestExists(url) {
+      try {
+        const res = await fetch(url, { method: 'GET', cache: 'no-store' });
+        return res.ok;
+      } catch (e) {
+        return false;
+      }
+    }
+
+    function filteredItems() {
+      const q = normalize(searchEl.value);
+      return ITEMS.filter(item => {
+        const available = availableMap.get(item.file_name) === true;
+        if (showAvailableOnly && !available) return false;
+        if (!q) return true;
+        return normalize(item.file_name).includes(q) || normalize(item.title_ja).includes(q) || String(item.seq).padStart(3, '0').includes(q);
+      });
+    }
+
+    function renderList() {
+      const rows = filteredItems();
+      listEl.innerHTML = '';
+      const availableCount = ITEMS.filter(x => availableMap.get(x.file_name) === true).length;
+      countTextEl.textContent = `可用 ${availableCount} / 全部 ${ITEMS.length}`;
+      modeTextEl.textContent = showAvailableOnly ? '已上传のみ' : '显示全部';
+
+      if (!rows.length) {
+        const div = document.createElement('div');
+        div.style.color = '#6b7280';
+        div.style.fontSize = '13px';
+        div.style.padding = '14px';
+        div.textContent = '没有符合条件的条目。';
+        listEl.appendChild(div);
+        return;
+      }
+
+      for (const item of rows) {
+        const available = availableMap.get(item.file_name) === true;
+        const row = document.createElement('div');
+        row.className = 'item' + (item.file_name === selectedId ? ' selected' : '');
+        row.innerHTML = `
+          <div class="dot ${available ? 'ok' : 'missing'}"></div>
+          <div>
+            <div class="seq">${String(item.seq).padStart(3, '0')}</div>
+            <div class="label">${item.title_ja}</div>
+          </div>
+          <div class="tag">${available ? '可用' : '未上传'}</div>
+        `;
+        row.addEventListener('click', () => {
+          if (!available) return;
+          selectedId = item.file_name;
+          openManifest(item);
+          renderList();
+        });
+        listEl.appendChild(row);
+      }
+    }
+
+    function openManifest(item) {
+      currentTitleEl.textContent = item.title_ja;
+      currentSubEl.textContent = item.manifest;
+      emptyStateEl.classList.add('hidden');
+      viewerEl.classList.remove('hidden');
+      viewerEl.innerHTML = '';
+      viewerInstance = Mirador.viewer({
+        id: 'viewer',
+        language: 'ja',
+        windows: [{ manifestId: item.manifest }],
+        window: {
+          allowClose: false,
+          allowMaximize: true,
+          sideBarOpenByDefault: false
+        },
+        workspace: {
+          showZoomControls: true
+        }
+      });
+    }
+
+    async function init() {
+      currentTitleEl.textContent = 'manifest を確認中…';
+      currentSubEl.textContent = '少々お待ちください';
+
+      const checks = await Promise.all(
+        ITEMS.map(async item => {
+          const ok = await manifestExists(item.manifest);
+          availableMap.set(item.file_name, ok);
+          return ok;
+        })
+      );
+
+      const firstAvailable = ITEMS.find(item => availableMap.get(item.file_name) === true);
+
+      if (firstAvailable) {
+        selectedId = firstAvailable.file_name;
+        openManifest(firstAvailable);
+      } else {
+        viewerEl.classList.add('hidden');
+        emptyStateEl.classList.remove('hidden');
+        currentTitleEl.textContent = '表示可能な manifest がありません';
+        currentSubEl.textContent = 'GitHub に manifest をアップロードすると表示されます';
+      }
+
+      renderList();
+    }
+
+    btnAvailable.addEventListener('click', () => {
+      showAvailableOnly = true;
+      btnAvailable.classList.add('active');
+      btnAll.classList.remove('active');
+      renderList();
+    });
+
+    btnAll.addEventListener('click', () => {
+      showAvailableOnly = false;
+      btnAll.classList.add('active');
+      btnAvailable.classList.remove('active');
+      renderList();
+    });
+
+    searchEl.addEventListener('input', renderList);
+
+    init();
+  </script>
+</body>
+</html>
