@@ -1,0 +1,45 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-006-sokuji.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "006. 即時"
+    ]
+  },
+  "metadata": [],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/006-sokuji/p1",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "006. 即時"
+        ]
+      },
+      "height": 2316,
+      "width": 3088,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/page/006-sokuji/p1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/annotation/006-sokuji/p1-image",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/images/006-sokuji.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 2316,
+                "width": 3088
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/006-sokuji/p1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
