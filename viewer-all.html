@@ -7,16 +7,33 @@
   <script src="https://unpkg.com/mirador@3.3.0/dist/mirador.min.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/mirador@3.3.0/dist/css/mirador-combined.min.css" />
   <style>
-    html, body, #viewer {
+    html, body {
       margin: 0;
       padding: 0;
       width: 100%;
       height: 100%;
       background: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+    }
+    #topbar {
+      box-sizing: border-box;
+      width: 100%;
+      height: 48px;
+      padding: 10px 16px;
+      border-bottom: 1px solid #ddd;
+      background: #fafafa;
+      font-size: 16px;
+      font-weight: 600;
+      color: #333;
+    }
+    #viewer {
+      width: 100%;
+      height: calc(100% - 48px);
     }
   </style>
 </head>
 <body>
+  <div id="topbar">漱石漢詩原稿・草稿ビューア（前十首）</div>
   <div id="viewer"></div>
 
   <script>
@@ -33,10 +50,24 @@
       "010-nanakusa-02"
     ];
 
+    const labels = {
+      "001-kodai-01": "001. 鴻台〔二首・其一〕",
+      "002-kodai-02": "002. 鴻台〔二首・其二〕",
+      "003-daiga": "003. 題画",
+      "004-okuda-kikoku": "004. 送奥田詞兄帰国",
+      "005-rishu-jiyujin-in": "005. 離愁次友人韻",
+      "006-sokuji": "006. 即時",
+      "007-sokuji-01": "007. 即時〔二首·其一〕",
+      "008-sokuji-02": "008. 即時〔二首·其二〕",
+      "009-nanakusa-01": "009. 〔「『七草集』評」より九首・其一〕",
+      "010-nanakusa-02": "010. 〔「『七草集』評」より九首・其二〕"
+    };
+
     const base = "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-";
 
     const catalog = manifestIds.map(id => ({
       manifestId: `${base}${id}.json`,
+      title: labels[id],
       provider: "漱石漢詩原稿・草稿"
     }));
 
@@ -46,14 +77,18 @@
       catalog: catalog,
       windows: [
         {
-          manifestId: `${base}001-kodai-01.json`,
-          sideBarOpen: false
+          manifestId: `${base}001-kodai-01.json`
         },
         {
-          manifestId: `${base}002-kodai-02.json`,
-          sideBarOpen: false
+          manifestId: `${base}002-kodai-02.json`
         }
-      ]
+      ],
+      window: {
+        sideBarOpenByDefault: true
+      },
+      workspace: {
+        showZoomControls: true
+      }
     });
   </script>
 </body>
