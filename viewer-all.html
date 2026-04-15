@@ -40,32 +40,20 @@
       provider: "漱石漢詩原稿・草稿"
     }));
 
-    const windows = manifestIds.map((id, i) => {
-      const col = i % 2;              // 0,1
-      const row = Math.floor(i / 2);  // 0..4
-
-      return {
-        manifestId: `${base}${id}.json`,
-        thumbnailNavigationPosition: 'far-bottom',
-        sideBarOpen: false,
-        defaultView: 'gallery',
-        workspace: {
-          x: col * 600,
-          y: row * 360,
-          width: 580,
-          height: 340
-        }
-      };
-    });
-
     Mirador.viewer({
       id: "viewer",
       language: "ja",
       catalog: catalog,
-      windows: windows,
-      workspace: {
-        showZoomControls: true
-      }
+      windows: [
+        {
+          manifestId: `${base}001-kodai-01.json`,
+          sideBarOpen: false
+        },
+        {
+          manifestId: `${base}002-kodai-02.json`,
+          sideBarOpen: false
+        }
+      ]
     });
   </script>
 </body>
