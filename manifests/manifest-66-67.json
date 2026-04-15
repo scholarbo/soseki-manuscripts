@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "https://example.org/manifests/manifest-66-67.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-66-67.json",
   "type": "Manifest",
   "label": {
     "ja": ["夏目漱石漢詩草稿――66. 失題／67. 春日静坐"]
@@ -24,7 +24,7 @@
   ],
   "items": [
     {
-      "id": "https://example.org/canvas/66-shitsudai/p1",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/66-shitsudai/p1",
       "type": "Canvas",
       "label": {
         "ja": ["66. 失題　明治三十一年三月"]
@@ -33,28 +33,28 @@
       "width": 5262,
       "items": [
         {
-          "id": "https://example.org/page/66-shitsudai/p1",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/page/66-shitsudai/p1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://example.org/annotation/66-shitsudai/p1-image",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/annotation/66-shitsudai/p1-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://example.org/images/66-shitsudai.jpg",
+                "id": "https://scholarbo.github.io/soseki-manuscripts/images/66-shitsudai.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "height": 3456,
                 "width": 5262
               },
-              "target": "https://example.org/canvas/66-shitsudai/p1"
+              "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/66-shitsudai/p1"
             }
           ]
         }
       ]
     },
     {
-      "id": "https://example.org/canvas/67-shunjitsu-seiza/p1",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/67-shunjitsu-seiza/p1",
       "type": "Canvas",
       "label": {
         "ja": ["67. 春日静坐　明治三十一年三月"]
@@ -63,21 +63,21 @@
       "width": 4596,
       "items": [
         {
-          "id": "https://example.org/page/67-shunjitsu-seiza/p1",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/page/67-shunjitsu-seiza/p1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://example.org/annotation/67-shunjitsu-seiza/p1-image",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/annotation/67-shunjitsu-seiza/p1-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://example.org/images/67-shunjitsu-seiza.jpg",
+                "id": "https://scholarbo.github.io/soseki-manuscripts/images/67-shunjitsu-seiza.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
                 "height": 3498,
                 "width": 4596
               },
-              "target": "https://example.org/canvas/67-shunjitsu-seiza/p1"
+              "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/67-shunjitsu-seiza/p1"
             }
           ]
         }
