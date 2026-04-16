@@ -1,0 +1,45 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-058-mudai-1896-0112.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "058. 〔無題〕明治二十九年一月十二日"
+    ]
+  },
+  "metadata": [],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/058-mudai-1896-0112/p1",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "058. 〔無題〕明治二十九年一月十二日"
+        ]
+      },
+      "height": 3024,
+      "width": 4032,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/page/058-mudai-1896-0112/p1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/annotation/058-mudai-1896-0112/p1-image",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/images/058-mudai-1896-0112.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 3024,
+                "width": 4032
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/058-mudai-1896-0112/p1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

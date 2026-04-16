@@ -1,0 +1,45 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-023-bokusetsu-06.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "023. 〔『木屑録』より十四首・其六〕明治二十二年九月"
+    ]
+  },
+  "metadata": [],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/023-bokusetsu-06/p1",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "023. 〔『木屑録』より十四首・其六〕明治二十二年九月"
+        ]
+      },
+      "height": 3024,
+      "width": 4032,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/page/023-bokusetsu-06/p1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/annotation/023-bokusetsu-06/p1-image",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/images/023-bokusetsu-06.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 3024,
+                "width": 4032
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/023-bokusetsu-06/p1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

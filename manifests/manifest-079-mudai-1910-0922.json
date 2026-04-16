@@ -1,0 +1,45 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-079-mudai-1910-0922.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "079. 〔無題〕明治四十三年九月二十二日"
+    ]
+  },
+  "metadata": [],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/079-mudai-1910-0922/p1",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "079. 〔無題〕明治四十三年九月二十二日"
+        ]
+      },
+      "height": 3024,
+      "width": 4032,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/page/079-mudai-1910-0922/p1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/annotation/079-mudai-1910-0922/p1-image",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/images/079-mudai-1910-0922.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 3024,
+                "width": 4032
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/079-mudai-1910-0922/p1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

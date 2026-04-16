@@ -1,0 +1,45 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-040-kansan-05.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "040. 函山雑詠〔八首・其五〕明治二十三年九月"
+    ]
+  },
+  "metadata": [],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/040-kansan-05/p1",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "040. 函山雑詠〔八首・其五〕明治二十三年九月"
+        ]
+      },
+      "height": 1920,
+      "width": 1080,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/page/040-kansan-05/p1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/annotation/040-kansan-05/p1-image",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/images/040-kansan-05.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1920,
+                "width": 1080
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/040-kansan-05/p1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

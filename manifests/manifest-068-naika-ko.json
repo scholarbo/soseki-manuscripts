@@ -1,0 +1,45 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-068-naika-ko.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "068. 菜花黄明治三十一年三月"
+    ]
+  },
+  "metadata": [],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/068-naika-ko/p1",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "068. 菜花黄明治三十一年三月"
+        ]
+      },
+      "height": 2176,
+      "width": 1395,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/page/068-naika-ko/p1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/annotation/068-naika-ko/p1-image",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/images/068-naika-ko.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 2176,
+                "width": 1395
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/068-naika-ko/p1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

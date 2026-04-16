@@ -1,0 +1,45 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-029-bokusetsu-12-kakuchu-okka.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "029. 〔『木屑録』より十四首・其十二〕客中憶家"
+    ]
+  },
+  "metadata": [],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/029-bokusetsu-12-kakuchu-okka/p1",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "029. 〔『木屑録』より十四首・其十二〕客中憶家"
+        ]
+      },
+      "height": 3024,
+      "width": 4032,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/page/029-bokusetsu-12-kakuchu-okka/p1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/annotation/029-bokusetsu-12-kakuchu-okka/p1-image",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/images/029-bokusetsu-12-kakuchu-okka.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 3024,
+                "width": 4032
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/029-bokusetsu-12-kakuchu-okka/p1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

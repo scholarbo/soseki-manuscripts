@@ -1,0 +1,45 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-095-shunjitsu-gusei-02.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "095. 春日偶成〔十首・其二〕明治四十五年五月二十四日"
+    ]
+  },
+  "metadata": [],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/095-shunjitsu-gusei-02/p1",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "095. 春日偶成〔十首・其二〕明治四十五年五月二十四日"
+        ]
+      },
+      "height": 3024,
+      "width": 4032,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/page/095-shunjitsu-gusei-02/p1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/annotation/095-shunjitsu-gusei-02/p1-image",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/images/095-shunjitsu-gusei-02.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 3024,
+                "width": 4032
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/095-shunjitsu-gusei-02/p1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

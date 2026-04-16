@@ -1,0 +1,45 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-047-kito-kogo-01.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "047. 帰途口号〔二首·其一〕明治二十三年九月"
+    ]
+  },
+  "metadata": [],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/047-kito-kogo-01/p1",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "047. 帰途口号〔二首·其一〕明治二十三年九月"
+        ]
+      },
+      "height": 3024,
+      "width": 4032,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/page/047-kito-kogo-01/p1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/annotation/047-kito-kogo-01/p1-image",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/images/047-kito-kogo-01.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 3024,
+                "width": 4032
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/047-kito-kogo-01/p1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

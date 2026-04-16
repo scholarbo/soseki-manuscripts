@@ -1,0 +1,45 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-033-yamaji-kanpu.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "033. 山路観楓明治二十二年十一月"
+    ]
+  },
+  "metadata": [],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/033-yamaji-kanpu/p1",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "033. 山路観楓明治二十二年十一月"
+        ]
+      },
+      "height": 3024,
+      "width": 4032,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/page/033-yamaji-kanpu/p1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/annotation/033-yamaji-kanpu/p1-image",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/images/033-yamaji-kanpu.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 3024,
+                "width": 4032
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/033-yamaji-kanpu/p1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

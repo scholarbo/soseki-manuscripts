@@ -1,0 +1,45 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-031-bokusetsu-14-jicho.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "031. 〔『木屑録』より十四首・其十四〕自嘲書木屑録後"
+    ]
+  },
+  "metadata": [],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/031-bokusetsu-14-jicho/p1",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "031. 〔『木屑録』より十四首・其十四〕自嘲書木屑録後"
+        ]
+      },
+      "height": 3024,
+      "width": 4032,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/page/031-bokusetsu-14-jicho/p1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/annotation/031-bokusetsu-14-jicho/p1-image",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/images/031-bokusetsu-14-jicho.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 3024,
+                "width": 4032
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/031-bokusetsu-14-jicho/p1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
