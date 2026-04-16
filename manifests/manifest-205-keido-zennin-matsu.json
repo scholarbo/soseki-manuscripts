@@ -7,7 +7,20 @@
       "205. 丙辰十月、余為元成禅人作墨竹。越一日、見壁間所挂図、興忽発。乃為珪堂禅人抽毫作松一株、配以石二三。不知禅人受余贈否也。"
     ]
   },
-  "metadata": [],
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "引用元"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    }
+  ],
   "items": [
     {
       "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/205-keido-zennin-matsu/p1",
@@ -17,8 +30,8 @@
           "205. 丙辰十月、余為元成禅人作墨竹。越一日、見壁間所挂図、興忽発。乃為珪堂禅人抽毫作松一株、配以石二三。不知禅人受余贈否也。"
         ]
       },
-      "height": 3024,
-      "width": 4032,
+      "height": 4032,
+      "width": 3024,
       "items": [
         {
           "id": "https://scholarbo.github.io/soseki-manuscripts/page/205-keido-zennin-matsu/p1",
@@ -32,8 +45,8 @@
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/205-keido-zennin-matsu.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 3024,
-                "width": 4032
+                "height": 4032,
+                "width": 3024
               },
               "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/205-keido-zennin-matsu/p1"
             }

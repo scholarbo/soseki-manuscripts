@@ -17,8 +17,8 @@
           "211. 未定稿三"
         ]
       },
-      "height": 2316,
-      "width": 3088,
+      "height": 3088,
+      "width": 2316,
       "items": [
         {
           "id": "https://scholarbo.github.io/soseki-manuscripts/page/211-mitei-03/p1",
@@ -32,8 +32,8 @@
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/211-mitei-03.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 2316,
-                "width": 3088
+                "height": 3088,
+                "width": 2316
               },
               "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/211-mitei-03/p1"
             }
