@@ -1,0 +1,45 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-112-jiga-1912-11-a.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "112. 〔題自画〕大正元年十一月"
+    ]
+  },
+  "metadata": [],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/112-jiga-1912-11-a/p1",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "112. 〔題自画〕大正元年十一月"
+        ]
+      },
+      "height": 3024,
+      "width": 4032,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/page/112-jiga-1912-11-a/p1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/annotation/112-jiga-1912-11-a/p1-image",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/images/112-jiga-1912-11-a.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 3024,
+                "width": 4032
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/112-jiga-1912-11-a/p1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

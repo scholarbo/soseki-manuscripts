@@ -1,0 +1,45 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-149-mudai-1916-0830-b.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "149. 〔無題〕大正五年八月三十日"
+    ]
+  },
+  "metadata": [],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/149-mudai-1916-0830-b/p1",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "149. 〔無題〕大正五年八月三十日"
+        ]
+      },
+      "height": 3024,
+      "width": 4032,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/page/149-mudai-1916-0830-b/p1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/annotation/149-mudai-1916-0830-b/p1-image",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/images/149-mudai-1916-0830-b.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 3024,
+                "width": 4032
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/149-mudai-1916-0830-b/p1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

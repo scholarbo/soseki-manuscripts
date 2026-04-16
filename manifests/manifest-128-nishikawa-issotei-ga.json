@@ -1,0 +1,45 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-128-nishikawa-issotei-ga.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "128. 〔題西川一草亭画〕大正四年九月"
+    ]
+  },
+  "metadata": [],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/128-nishikawa-issotei-ga/p1",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "128. 〔題西川一草亭画〕大正四年九月"
+        ]
+      },
+      "height": 3024,
+      "width": 4032,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/page/128-nishikawa-issotei-ga/p1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/annotation/128-nishikawa-issotei-ga/p1-image",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/images/128-nishikawa-issotei-ga.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 3024,
+                "width": 4032
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/128-nishikawa-issotei-ga/p1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

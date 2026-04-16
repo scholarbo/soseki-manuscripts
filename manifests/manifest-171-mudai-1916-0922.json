@@ -1,0 +1,45 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-171-mudai-1916-0922.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "171. 〔無題〕大正五年九月二十二日"
+    ]
+  },
+  "metadata": [],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/171-mudai-1916-0922/p1",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "171. 〔無題〕大正五年九月二十二日"
+        ]
+      },
+      "height": 640,
+      "width": 852,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/page/171-mudai-1916-0922/p1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/annotation/171-mudai-1916-0922/p1-image",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/images/171-mudai-1916-0922.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 640,
+                "width": 852
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/171-mudai-1916-0922/p1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

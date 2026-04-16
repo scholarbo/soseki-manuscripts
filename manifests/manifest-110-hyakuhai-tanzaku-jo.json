@@ -1,0 +1,45 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-110-hyakuhai-tanzaku-jo.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "110. 〔明治百俳家短册帖序〕明治四十五年七月"
+    ]
+  },
+  "metadata": [],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/110-hyakuhai-tanzaku-jo/p1",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "110. 〔明治百俳家短册帖序〕明治四十五年七月"
+        ]
+      },
+      "height": 3024,
+      "width": 4032,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/page/110-hyakuhai-tanzaku-jo/p1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/annotation/110-hyakuhai-tanzaku-jo/p1-image",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/images/110-hyakuhai-tanzaku-jo.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 3024,
+                "width": 4032
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/110-hyakuhai-tanzaku-jo/p1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

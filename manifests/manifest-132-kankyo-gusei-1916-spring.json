@@ -1,0 +1,45 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-132-kankyo-gusei-1916-spring.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "132. 閑居偶成大正五年春"
+    ]
+  },
+  "metadata": [],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/132-kankyo-gusei-1916-spring/p1",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "132. 閑居偶成大正五年春"
+        ]
+      },
+      "height": 3024,
+      "width": 4032,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/page/132-kankyo-gusei-1916-spring/p1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/annotation/132-kankyo-gusei-1916-spring/p1-image",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/images/132-kankyo-gusei-1916-spring.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 3024,
+                "width": 4032
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/132-kankyo-gusei-1916-spring/p1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

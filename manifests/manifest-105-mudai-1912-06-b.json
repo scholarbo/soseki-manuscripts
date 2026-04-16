@@ -1,0 +1,45 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-105-mudai-1912-06-b.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "105. 〔無題〕明治四十五年六月"
+    ]
+  },
+  "metadata": [],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/105-mudai-1912-06-b/p1",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "105. 〔無題〕明治四十五年六月"
+        ]
+      },
+      "height": 1610,
+      "width": 906,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/page/105-mudai-1912-06-b/p1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/annotation/105-mudai-1912-06-b/p1-image",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/images/105-mudai-1912-06-b.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1610,
+                "width": 906
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/105-mudai-1912-06-b/p1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

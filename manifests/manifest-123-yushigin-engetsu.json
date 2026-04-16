@@ -1,0 +1,45 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-123-yushigin-engetsu.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "123. 游子吟、書似円月詞兄大正三年二月"
+    ]
+  },
+  "metadata": [],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/123-yushigin-engetsu/p1",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "123. 游子吟、書似円月詞兄大正三年二月"
+        ]
+      },
+      "height": 1920,
+      "width": 1080,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/page/123-yushigin-engetsu/p1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/annotation/123-yushigin-engetsu/p1-image",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/images/123-yushigin-engetsu.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1920,
+                "width": 1080
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/123-yushigin-engetsu/p1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
