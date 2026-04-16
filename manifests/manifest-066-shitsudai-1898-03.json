@@ -17,8 +17,8 @@
           "066. 失題明治三十一年三月"
         ]
       },
-      "height": 1920,
-      "width": 1080,
+      "height": 3456,
+      "width": 5262,
       "items": [
         {
           "id": "https://scholarbo.github.io/soseki-manuscripts/page/066-shitsudai-1898-03/p1",
@@ -32,8 +32,8 @@
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/066-shitsudai-1898-03.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1920,
-                "width": 1080
+                "height": 3456,
+                "width": 5262
               },
               "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/066-shitsudai-1898-03/p1"
             }

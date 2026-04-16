@@ -17,8 +17,8 @@
           "030. 〔『木屑録』より十四首・其十三〕別後憶京中諸友"
         ]
       },
-      "height": 3024,
-      "width": 4032,
+      "height": 1197,
+      "width": 1536,
       "items": [
         {
           "id": "https://scholarbo.github.io/soseki-manuscripts/page/030-bokusetsu-13-betsugo-kyoyu/p1",
@@ -32,8 +32,8 @@
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/030-bokusetsu-13-betsugo-kyoyu.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 3024,
-                "width": 4032
+                "height": 1197,
+                "width": 1536
               },
               "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/030-bokusetsu-13-betsugo-kyoyu/p1"
             }

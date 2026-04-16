@@ -17,8 +17,8 @@
           "016. 〔「『七草集』評」より九首・其八〕明治二十二年五月"
         ]
       },
-      "height": 3024,
-      "width": 4032,
+      "height": 800,
+      "width": 979,
       "items": [
         {
           "id": "https://scholarbo.github.io/soseki-manuscripts/page/016-nanakusa-08/p1",
@@ -32,8 +32,8 @@
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/016-nanakusa-08.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 3024,
-                "width": 4032
+                "height": 800,
+                "width": 979
               },
               "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/016-nanakusa-08/p1"
             }

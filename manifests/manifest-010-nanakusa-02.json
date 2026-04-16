@@ -17,8 +17,8 @@
           "010. 〔「『七草集』評」より九首・其二〕明治二十二年五月"
         ]
       },
-      "height": 1920,
-      "width": 1080,
+      "height": 800,
+      "width": 979,
       "items": [
         {
           "id": "https://scholarbo.github.io/soseki-manuscripts/page/010-nanakusa-02/p1",
@@ -32,8 +32,8 @@
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/010-nanakusa-02.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1920,
-                "width": 1080
+                "height": 800,
+                "width": 979
               },
               "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/010-nanakusa-02/p1"
             }

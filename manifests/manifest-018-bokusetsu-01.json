@@ -17,8 +17,8 @@
           "018. 〔『木屑録』より十四首・其一〕明治二十二年九月"
         ]
       },
-      "height": 3024,
-      "width": 4032,
+      "height": 1197,
+      "width": 1536,
       "items": [
         {
           "id": "https://scholarbo.github.io/soseki-manuscripts/page/018-bokusetsu-01/p1",
@@ -32,8 +32,8 @@
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/018-bokusetsu-01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 3024,
-                "width": 4032
+                "height": 1197,
+                "width": 1536
               },
               "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/018-bokusetsu-01/p1"
             }
