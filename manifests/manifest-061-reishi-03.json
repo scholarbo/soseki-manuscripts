@@ -17,8 +17,8 @@
           "061. 〔五首・其三〕明治二十九年十一月十五日"
         ]
       },
-      "height": 3024,
-      "width": 4032,
+      "height": 4032,
+      "width": 3024,
       "items": [
         {
           "id": "https://scholarbo.github.io/soseki-manuscripts/page/061-reishi-03/p1",
@@ -32,8 +32,8 @@
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/061-reishi-03.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 3024,
-                "width": 4032
+                "height": 4032,
+                "width": 3024
               },
               "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/061-reishi-03/p1"
             }

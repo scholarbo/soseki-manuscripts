@@ -17,8 +17,8 @@
           "044. 送友到元函根〔三首・其一〕明治二十三年九月"
         ]
       },
-      "height": 3024,
-      "width": 4032,
+      "height": 4032,
+      "width": 3024,
       "items": [
         {
           "id": "https://scholarbo.github.io/soseki-manuscripts/page/044-send-friend-hakone-01/p1",
@@ -32,8 +32,8 @@
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/044-send-friend-hakone-01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 3024,
-                "width": 4032
+                "height": 4032,
+                "width": 3024
               },
               "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/044-send-friend-hakone-01/p1"
             }

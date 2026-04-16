@@ -17,8 +17,8 @@
           "035. 〔無題〕明治二十三年八月末"
         ]
       },
-      "height": 3024,
-      "width": 4032,
+      "height": 4032,
+      "width": 3024,
       "items": [
         {
           "id": "https://scholarbo.github.io/soseki-manuscripts/page/035-mudai-1890-08-b/p1",
@@ -32,8 +32,8 @@
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/035-mudai-1890-08-b.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 3024,
-                "width": 4032
+                "height": 4032,
+                "width": 3024
               },
               "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/035-mudai-1890-08-b/p1"
             }

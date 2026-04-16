@@ -17,8 +17,8 @@
           "069. 客中逢春寄子規"
         ]
       },
-      "height": 3024,
-      "width": 4032,
+      "height": 4032,
+      "width": 3024,
       "items": [
         {
           "id": "https://scholarbo.github.io/soseki-manuscripts/page/069-kakuchu-haru-shiki/p1",
@@ -32,8 +32,8 @@
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/069-kakuchu-haru-shiki.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 3024,
-                "width": 4032
+                "height": 4032,
+                "width": 3024
               },
               "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/069-kakuchu-haru-shiki/p1"
             }

@@ -7,7 +7,20 @@
       "067. 春日静坐明治三十一年三月"
     ]
   },
-  "metadata": [],
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "引用元"
+        ]
+      },
+      "value": {
+        "ja": [
+          "県立神奈川近代文学館蔵"
+        ]
+      }
+    }
+  ],
   "items": [
     {
       "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/067-shunjitsu-seiza/p1",
@@ -17,8 +30,8 @@
           "067. 春日静坐明治三十一年三月"
         ]
       },
-      "height": 3024,
-      "width": 4032,
+      "height": 3498,
+      "width": 4596,
       "items": [
         {
           "id": "https://scholarbo.github.io/soseki-manuscripts/page/067-shunjitsu-seiza/p1",
@@ -32,8 +45,8 @@
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/067-shunjitsu-seiza.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 3024,
-                "width": 4032
+                "height": 3498,
+                "width": 4596
               },
               "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/067-shunjitsu-seiza/p1"
             }
