@@ -1,0 +1,45 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-215-mitei-07.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "215. 未定稿七"
+    ]
+  },
+  "metadata": [],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/215-mitei-07/p1",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "215. 未定稿七"
+        ]
+      },
+      "height": 1920,
+      "width": 1080,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/page/215-mitei-07/p1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/annotation/215-mitei-07/p1-image",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/images/215-mitei-07.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1920,
+                "width": 1080
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/215-mitei-07/p1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
