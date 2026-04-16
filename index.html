@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>夏目漱石自筆の漢詩原稿・草稿コレクション</title>
+    <style>
+    :root {
+      --bg: #f6f7f9;
+      --panel: #ffffff;
+      --line: #e5e7eb;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #eef2f7;
+      --accent-line: #d6deea;
+      --btn: #374151;
+      --btn-hover: #1f2937;
+      --sidebar-w: 380px;
+      --shadow: 0 10px 30px rgba(17, 24, 39, 0.08);
+      --radius: 22px;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Noto Sans JP", sans-serif;
+    }
+    .app {
+      display: grid;
+      grid-template-columns: var(--sidebar-w) 1fr;
+      gap: 14px;
+      width: 100%;
+      height: 100%;
+      padding: 14px;
+    }
+    .sidebar {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      min-width: 300px;
+    }
+    .header {
+      padding: 18px 18px 14px;
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(180deg, #ffffff 0%, #fafbfc 100%);
+    }
+    .title {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      margin-bottom: 6px;
+    }
+    .sub {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    .search-wrap {
+      padding: 14px 18px 12px;
+      border-bottom: 1px solid var(--line);
+    }
+    .search {
+      width: 100%;
+      border: 1px solid var(--line);
+      background: #fbfbfc;
+      border-radius: 14px;
+      padding: 11px 13px;
+      font-size: 14px;
+      outline: none;
+    }
+    .search:focus {
+      border-color: #cbd5e1;
+      background: #fff;
+    }
+    .meta {
+      padding: 0 18px 10px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .list {
+      overflow: auto;
+      padding: 8px 10px 14px;
+      flex: 1;
+    }
+    .item {
+      padding: 10px 12px;
+      border-radius: 14px;
+      cursor: pointer;
+      margin: 4px 0;
+      border: 1px solid transparent;
+      transition: 0.15s ease;
+    }
+    .item:hover {
+      background: #fafafa;
+      border-color: #f0f0f0;
+    }
+    .item.active {
+      background: var(--accent);
+      border-color: var(--accent-line);
+    }
+    .seq {
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 3px;
+    }
+    .label {
+      font-size: 14px;
+      line-height: 1.45;
+      word-break: break-word;
+    }
+    .viewer-wrap {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+    .viewer-header {
+      padding: 14px 18px 12px;
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(180deg, #ffffff 0%, #fafbfc 100%);
+    }
+    .viewer-title {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.35;
+      margin-bottom: 10px;
+    }
+    .viewer-meta {
+      display: grid;
+      gap: 4px;
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+    .viewer-meta strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+    .actions {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
+    }
+    .btn {
+      appearance: none;
+      border: 1px solid var(--line);
+      background: white;
+      color: var(--text);
+      border-radius: 12px;
+      padding: 8px 12px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: .15s ease;
+    }
+    .btn:hover { background: #f8fafc; }
+    .btn.primary {
+      background: var(--btn);
+      color: white;
+      border-color: var(--btn);
+    }
+    .btn.primary:hover { background: var(--btn-hover); }
+    .btn:disabled {
+      opacity: .45;
+      cursor: not-allowed;
+    }
+    .notice {
+      margin-top: 4px;
+      font-size: 12px;
+      color: #6b7280;
+      line-height: 1.5;
+    }
+    iframe {
+      width: 100%;
+      height: calc(100% - 190px);
+      border: 0;
+      background: #fff;
+    }
+    @media (max-width: 980px) {
+      .app {
+        grid-template-columns: 1fr;
+        grid-template-rows: 40% 1fr;
+      }
+      .sidebar { min-height: 260px; }
+      iframe { height: calc(100% - 220px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="header">
+  <div class="title">夏目漱石自筆の漢詩原稿・草稿コレクション</div>
+  <div class="sub">左側に固定の総目录、右側に Mirador。年・月・日ごとの並列表示に対応。</div>
+  <div class="sub" style="margin-top:6px;">製作者：薄鋒（BO Feng）</div>
+</div>
+      <div class="search-wrap">
+        <input id="search" class="search" type="text" placeholder="番号・題名で検索" />
+      </div>
+      <div class="meta">左側から作品を選び、右側で単独表示または同年・同月・同日並列表示ができます。</div>
+      <div id="list" class="list"></div>
+    </aside>
+
+    <main class="viewer-wrap">
+      <div class="viewer-header">
+        <div id="currentTitle" class="viewer-title">読み込み中…</div>
+        <div class="viewer-meta">
+          <div><strong>引用元:</strong> <span id="currentSource"></span></div>
+          <div><strong>日付:</strong> <span id="currentDate"></span></div>
+          <div><strong>表示方式:</strong> <span id="currentMode"></span></div>
+        </div>
+        <div class="actions">
+          <button id="btnSingle" class="btn primary">単独表示</button>
+          <button id="btnDay" class="btn">同日並列</button>
+          <button id="btnMonth" class="btn">同月並列</button>
+          <button id="btnYear" class="btn">同年並列</button>
+        </div>
+        <div class="notice">本頁では検証用画像を表示しています。</div>
+      </div>
+      <iframe id="frame"></iframe>
+    </main>
+  </div>
+
+ <script>
+  const base = "https://scholarbo.github.io/soseki-manuscripts";
+  let items = [];
+  let currentItem = null;
+
+  const list = document.getElementById("list");
+  const frame = document.getElementById("frame");
+  const search = document.getElementById("search");
+  const currentTitle = document.getElementById("currentTitle");
+  const currentSource = document.getElementById("currentSource");
+  const currentDate = document.getElementById("currentDate");
+  const currentMode = document.getElementById("currentMode");
+
+  const btnSingle = document.getElementById("btnSingle");
+  const btnDay = document.getElementById("btnDay");
+  const btnMonth = document.getElementById("btnMonth");
+  const btnYear = document.getElementById("btnYear");
+
+  async function loadItems() {
+    const res = await fetch(`./master.json?t=${Date.now()}`);
+    if (!res.ok) {
+      throw new Error(`master.json の読み込みに失敗しました: ${res.status}`);
+    }
+    items = await res.json();
+  }
+
+  function renderList(filter = "") {
+    list.innerHTML = "";
+    const q = (filter || "").toLowerCase();
+
+    items
+      .filter(item =>
+        (item.id || "").toLowerCase().includes(q) ||
+        (item.title || "").toLowerCase().includes(q)
+      )
+      .forEach((item) => {
+        const div = document.createElement("div");
+        div.className = "item";
+        div.dataset.id = item.id;
+        div.innerHTML = `<div class="seq">${item.id || ""}</div><div class="label">${item.title || ""}</div>`;
+        div.onclick = () => openSingle(item);
+        list.appendChild(div);
+      });
+
+    highlightCurrent();
+  }
+
+  function formatDate(item) {
+    return item.date_day || item.date_month || item.date_year || "未記入";
+  }
+
+  function highlightCurrent() {
+    [...document.querySelectorAll(".item")].forEach(el => {
+      el.classList.toggle("active", currentItem && el.dataset.id === currentItem.id);
+    });
+  }
+
+  function setButtons() {
+    const dayCount = currentItem && currentItem.date_day
+      ? items.filter(x => x.date_day === currentItem.date_day).length
+      : 0;
+    const monthCount = currentItem && currentItem.date_month
+      ? items.filter(x => x.date_month === currentItem.date_month).length
+      : 0;
+    const yearCount = currentItem && currentItem.date_year
+      ? items.filter(x => x.date_year === currentItem.date_year).length
+      : 0;
+
+    btnDay.disabled = dayCount < 2;
+    btnMonth.disabled = monthCount < 2;
+    btnYear.disabled = yearCount < 2;
+
+    btnDay.textContent = dayCount >= 2 ? `同日並列 (${dayCount})` : "同日並列";
+    btnMonth.textContent = monthCount >= 2 ? `同月並列 (${monthCount})` : "同月並列";
+    btnYear.textContent = yearCount >= 2 ? `同年並列 (${yearCount})` : "同年並列";
+  }
+
+  function loadManifests(manifests, modeLabel) {
+    const payload = encodeURIComponent(JSON.stringify(manifests));
+    frame.src = `./mirador-frame-multi-20260416-012702-f65f15.html?manifests=${payload}`;
+    currentMode.textContent = modeLabel;
+  }
+
+  function openSingle(item) {
+    currentItem = item;
+    currentTitle.textContent = item.title || "無題";
+    currentSource.textContent = item.source || "未記入";
+    currentDate.textContent = formatDate(item);
+    loadManifests([item.manifest], "単独表示");
+    highlightCurrent();
+    setButtons();
+    setActiveMode(btnSingle);
+  }
+
+  function openGroup(kind) {
+    if (!currentItem) return;
+    let group = [];
+    let label = "単独表示";
+
+    if (kind === "day" && currentItem.date_day) {
+      group = items.filter(x => x.date_day === currentItem.date_day);
+      label = `同日並列（${currentItem.date_day}）`;
+    } else if (kind === "month" && currentItem.date_month) {
+      group = items.filter(x => x.date_month === currentItem.date_month);
+      label = `同月並列（${currentItem.date_month}）`;
+    } else if (kind === "year" && currentItem.date_year) {
+      group = items.filter(x => x.date_year === currentItem.date_year);
+      label = `同年並列（${currentItem.date_year}）`;
+    }
+
+    if (!group.length) return;
+    loadManifests(group.map(x => x.manifest), label);
+    setActiveMode(kind === "day" ? btnDay : kind === "month" ? btnMonth : btnYear);
+  }
+
+  function setActiveMode(activeBtn) {
+    [btnSingle, btnDay, btnMonth, btnYear].forEach(btn => {
+      btn.classList.toggle("primary", btn === activeBtn);
+    });
+  }
+
+  search.addEventListener("input", e => {
+    renderList(e.target.value);
+  });
+
+  btnSingle.addEventListener("click", () => currentItem && openSingle(currentItem));
+  btnDay.addEventListener("click", () => openGroup("day"));
+  btnMonth.addEventListener("click", () => openGroup("month"));
+  btnYear.addEventListener("click", () => openGroup("year"));
+
+  async function init() {
+    try {
+      await loadItems();
+      renderList();
+      if (items.length) {
+        openSingle(items[0]);
+      } else {
+        currentTitle.textContent = "データがありません";
+        currentSource.textContent = "";
+        currentDate.textContent = "";
+        currentMode.textContent = "";
+      }
+    } catch (err) {
+      currentTitle.textContent = "主表の読み込みに失敗しました";
+      currentSource.textContent = "";
+      currentDate.textContent = "";
+      currentMode.textContent = "";
+      list.innerHTML = `<div class="meta">${err.message}</div>`;
+      console.error(err);
+    }
+  }
+
+  init();
+</script>
+</body>
+</html>
