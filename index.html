@@ -252,7 +252,7 @@
   const btnYear = document.getElementById("btnYear");
 
   async function loadItems() {
-    const res = await fetch(`./master.json?t=${Date.now()}`);
+    const res = await fetch(`${base}/master.json?t=${Date.now()}`);
     if (!res.ok) {
       throw new Error(`master.json の読み込みに失敗しました: ${res.status}`);
     }
@@ -312,7 +312,7 @@
 
   function loadManifests(manifests, modeLabel) {
     const payload = encodeURIComponent(JSON.stringify(manifests));
-    frame.src = `./mirador-frame-multi-20260416-012702-f65f15.html?manifests=${payload}`;
+    frame.src = `${base}/mirador-frame-multi-20260416-012702-f65f15.html?manifests=${payload}`;
     currentMode.textContent = modeLabel;
   }
 
