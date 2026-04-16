@@ -17,8 +17,8 @@
           "111. 妙雲寺観瀑大正元年九月十七日"
         ]
       },
-      "height": 2316,
-      "width": 3088,
+      "height": 3088,
+      "width": 2316,
       "items": [
         {
           "id": "https://scholarbo.github.io/soseki-manuscripts/page/111-myouunji-kanbaku/p1",
@@ -32,8 +32,8 @@
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/111-myouunji-kanbaku.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 2316,
-                "width": 3088
+                "height": 3088,
+                "width": 2316
               },
               "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/111-myouunji-kanbaku/p1"
             }

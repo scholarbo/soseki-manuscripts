@@ -7,7 +7,20 @@
       "194. 〔無題〕大正五年十月十八日"
     ]
   },
-  "metadata": [],
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "引用元"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    }
+  ],
   "items": [
     {
       "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/194-mudai-1916-1018/p1",
@@ -17,8 +30,8 @@
           "194. 〔無題〕大正五年十月十八日"
         ]
       },
-      "height": 3024,
-      "width": 4032,
+      "height": 4032,
+      "width": 3024,
       "items": [
         {
           "id": "https://scholarbo.github.io/soseki-manuscripts/page/194-mudai-1916-1018/p1",
@@ -32,8 +45,8 @@
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/194-mudai-1916-1018.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 3024,
-                "width": 4032
+                "height": 4032,
+                "width": 3024
               },
               "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/194-mudai-1916-1018/p1"
             }

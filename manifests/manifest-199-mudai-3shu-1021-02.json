@@ -7,7 +7,20 @@
       "199. 〔無題三首·其二〕大正五年十月二十一日"
     ]
   },
-  "metadata": [],
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "引用元"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    }
+  ],
   "items": [
     {
       "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/199-mudai-3shu-1021-02/p1",
@@ -17,8 +30,8 @@
           "199. 〔無題三首·其二〕大正五年十月二十一日"
         ]
       },
-      "height": 3024,
-      "width": 4032,
+      "height": 4032,
+      "width": 3024,
       "items": [
         {
           "id": "https://scholarbo.github.io/soseki-manuscripts/page/199-mudai-3shu-1021-02/p1",
@@ -32,8 +45,8 @@
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/199-mudai-3shu-1021-02.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 3024,
-                "width": 4032
+                "height": 4032,
+                "width": 3024
               },
               "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/199-mudai-3shu-1021-02/p1"
             }

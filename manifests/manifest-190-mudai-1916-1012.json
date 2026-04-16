@@ -7,7 +7,20 @@
       "190. 〔無題〕大正五年十月十二日"
     ]
   },
-  "metadata": [],
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "引用元"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    }
+  ],
   "items": [
     {
       "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/190-mudai-1916-1012/p1",
@@ -17,8 +30,8 @@
           "190. 〔無題〕大正五年十月十二日"
         ]
       },
-      "height": 3024,
-      "width": 4032,
+      "height": 4032,
+      "width": 3024,
       "items": [
         {
           "id": "https://scholarbo.github.io/soseki-manuscripts/page/190-mudai-1916-1012/p1",
@@ -32,8 +45,8 @@
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/190-mudai-1916-1012.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 3024,
-                "width": 4032
+                "height": 4032,
+                "width": 3024
               },
               "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/190-mudai-1916-1012/p1"
             }

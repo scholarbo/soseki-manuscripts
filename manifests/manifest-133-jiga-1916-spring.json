@@ -17,8 +17,8 @@
           "133. 題自画大正五年春"
         ]
       },
-      "height": 2316,
-      "width": 3088,
+      "height": 3088,
+      "width": 2316,
       "items": [
         {
           "id": "https://scholarbo.github.io/soseki-manuscripts/page/133-jiga-1916-spring/p1",
@@ -32,8 +32,8 @@
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/133-jiga-1916-spring.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 2316,
-                "width": 3088
+                "height": 3088,
+                "width": 2316
               },
               "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/133-jiga-1916-spring/p1"
             }

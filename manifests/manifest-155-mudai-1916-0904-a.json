@@ -7,7 +7,20 @@
       "155. 〔無題〕大正五年九月四日"
     ]
   },
-  "metadata": [],
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "引用元"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    }
+  ],
   "items": [
     {
       "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/155-mudai-1916-0904-a/p1",
@@ -17,8 +30,8 @@
           "155. 〔無題〕大正五年九月四日"
         ]
       },
-      "height": 2316,
-      "width": 3088,
+      "height": 3088,
+      "width": 2316,
       "items": [
         {
           "id": "https://scholarbo.github.io/soseki-manuscripts/page/155-mudai-1916-0904-a/p1",
@@ -32,8 +45,8 @@
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/155-mudai-1916-0904-a.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 2316,
-                "width": 3088
+                "height": 3088,
+                "width": 2316
               },
               "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/155-mudai-1916-0904-a/p1"
             }
