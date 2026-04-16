@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mirador Frame Multi</title>
+  <script src="https://unpkg.com/mirador@3.3.0/dist/mirador.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/mirador@3.3.0/dist/css/mirador-combined.min.css" />
+  <style>
+    html, body, #viewer { margin: 0; padding: 0; width: 100%; height: 100%; background: #fff; }
+    .msg { padding: 20px; color: #6b7280; font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif; }
+  </style>
+</head>
+<body>
+  <div id="viewer"></div>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const manifestsRaw = params.get("manifests");
+    let manifests = [];
+    try {
+      manifests = manifestsRaw ? JSON.parse(decodeURIComponent(manifestsRaw)) : [];
+    } catch (e) {
+      manifests = [];
+    }
+
+    if (Array.isArray(manifests) && manifests.length > 0) {
+      Mirador.viewer({
+        id: "viewer",
+        language: "ja",
+        windows: manifests.map(m => ({ manifestId: m })),
+        window: {
+          allowClose: true,
+          allowMaximize: true,
+          allowFullscreen: true
+        },
+        workspace: {
+          showZoomControls: true
+        }
+      });
+    } else {
+      document.body.innerHTML = '<div class="msg">manifest が指定されていません。</div>';
+    }
+  </script>
+</body>
+</html>
