@@ -1,1 +1,0 @@
-# soseki-manuscripts
