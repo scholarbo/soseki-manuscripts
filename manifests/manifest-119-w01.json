@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "119. 題画 (w01)"
+      "119. 題画"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "119"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,19 +35,7 @@
     {
       "label": {
         "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "東北大学附属図書館漱石文庫蔵"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -47,56 +47,44 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "119.題　画<br/>澗上淡煙横古駅　　澗上の淡煙　古駅に横たわり<br/>峡中白日照荒亭　　峡中の白日　荒亭を照す<br/>蕭条十里南山路　　蕭条たり　十里　南山の路<br/>馬背看過松竹青　　馬背に看て過ぐ　松竹の青きを"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "本文・訓読"
-        ]
-      },
-      "value": {
-        "ja": [
-          "119.題　画<br/>澗上淡煙横古駅　　澗上の淡煙　古駅に横たわり<br/>峡中白日照荒亭　　峡中の白日　荒亭を照す<br/>蕭条十里南山路　　蕭条たり　十里　南山の路<br/>馬背看過松竹青　　馬背に看て過ぐ　松竹の青きを"
+          "東北大学附属図書館漱石文庫蔵"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-119-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-119-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1200,
+      "height": 1600,
       "label": {
         "ja": [
-          "119. 題画 (w01)"
+          "119. 題画"
         ]
       },
-      "height": 1600,
-      "width": 1200,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-119-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-119-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-119-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-119-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-119-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/119-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1600,
-                "width": 1200
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-119-w01"
+                "width": 1200,
+                "height": 1600
+              }
             }
           ]
         }

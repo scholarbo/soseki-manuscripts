@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "006. 即時 (w01)"
+      "006. 即時"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "006"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,19 +35,7 @@
     {
       "label": {
         "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "『時運』"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -47,56 +47,44 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "6.即時　　即　時<br/>楊柳橋頭人往還　　楊柳の橋頭　人往還し<br/>緑蓑隠見暮烟間　　緑蓑　隠見す　暮烟の間<br/>疎鐘未破満江雨　　疎鐘　未だ満江の雨を破れざるに<br/>一帯斜陽照遠山　　一帯の斜陽　遠山を照らす"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "本文・訓読"
-        ]
-      },
-      "value": {
-        "ja": [
-          "6.即時　　即　時<br/>楊柳橋頭人往還　　楊柳の橋頭　人往還し<br/>緑蓑隠見暮烟間　　緑蓑　隠見す　暮烟の間<br/>疎鐘未破満江雨　　疎鐘　未だ満江の雨を破れざるに<br/>一帯斜陽照遠山　　一帯の斜陽　遠山を照らす"
+          "『時運』"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-006-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-006-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1200,
+      "height": 1600,
       "label": {
         "ja": [
-          "006. 即時 (w01)"
+          "006. 即時"
         ]
       },
-      "height": 1600,
-      "width": 1200,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-006-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-006-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-006-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-006-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-006-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/006-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1600,
-                "width": 1200
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-006-w01"
+                "width": 1200,
+                "height": 1600
+              }
             }
           ]
         }

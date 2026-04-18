@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "018. 〔『木屑録』より十四首・其一〕明治二十二年九月 (w01)"
+      "018. 〔『木屑録』より十四首・其一〕明治二十二年九月"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "018"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,31 +35,7 @@
     {
       "label": {
         "ja": [
-          "制作月"
-        ]
-      },
-      "value": {
-        "ja": [
-          "1889-09"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "https://dl.ndl.go.jp/pid/1192698"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -59,56 +47,68 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "18.〔『木屑録』より　十四首・其　一〕　明治二十二年九月<br/>風穏波平七月天　　風穏かに波は平かなり　七月の天<br/>韶光入夏自悠然　　韶光　夏に入りて　自ら悠然<br/>出雲帆影白千点　　雲を出づる帆影　白千点<br/>総在水天髣髴辺　　総べて水天髣髴の辺に在り"
+          "https://dl.ndl.go.jp/pid/1192698"
         ]
       }
     },
     {
       "label": {
         "ja": [
-          "本文・訓読"
+          "date_year"
         ]
       },
       "value": {
         "ja": [
-          "18.〔『木屑録』より　十四首・其　一〕　明治二十二年九月<br/>風穏波平七月天　　風穏かに波は平かなり　七月の天<br/>韶光入夏自悠然　　韶光　夏に入りて　自ら悠然<br/>出雲帆影白千点　　雲を出づる帆影　白千点<br/>総在水天髣髴辺　　総べて水天髣髴の辺に在り"
+          "1889"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_month"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1889-09"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-018-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-018-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1536,
+      "height": 1197,
       "label": {
         "ja": [
-          "018. 〔『木屑録』より十四首・其一〕明治二十二年九月 (w01)"
+          "018. 〔『木屑録』より十四首・其一〕明治二十二年九月"
         ]
       },
-      "height": 1197,
-      "width": 1536,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-018-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-018-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-018-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-018-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-018-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/018-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1197,
-                "width": 1536
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-018-w01"
+                "width": 1536,
+                "height": 1197
+              }
             }
           ]
         }

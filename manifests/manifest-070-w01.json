@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "070. 〔無題〕明治三十二年 (w01)"
+      "070. 〔無題〕明治三十二年"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "070"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,19 +35,7 @@
     {
       "label": {
         "ja": [
-          "制作年"
-        ]
-      },
-      "value": {
-        "ja": [
-          "1899"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -47,56 +47,44 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "date_year"
         ]
       },
       "value": {
         "ja": [
-          "70.〔無題〕　明治三十二年　無　題<br/>眼識東西字　　眼に東西の字を識り<br/>心抱古今憂　　心に古今の憂いを抱く<br/>廿年愧昏濁　　廿年　昏濁を愧じ<br/>而立纔回頭　　而立　纔かに頭を回らす<br/>静坐観復剥　　静坐して　復剥を観る<br/>虚懐役剛柔　　虚懐　剛柔を役す<br/>鳥入雲無迹　　鳥入りて　雲迹無く<br/>魚行水自流　　魚行きて　水自ら流る<br/>人間固無事　　人間　固より無事<br/>白雲自悠悠　　白雲　自ら悠悠"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "本文・訓読"
-        ]
-      },
-      "value": {
-        "ja": [
-          "70.〔無題〕　明治三十二年　無　題<br/>眼識東西字　　眼に東西の字を識り<br/>心抱古今憂　　心に古今の憂いを抱く<br/>廿年愧昏濁　　廿年　昏濁を愧じ<br/>而立纔回頭　　而立　纔かに頭を回らす<br/>静坐観復剥　　静坐して　復剥を観る<br/>虚懐役剛柔　　虚懐　剛柔を役す<br/>鳥入雲無迹　　鳥入りて　雲迹無く<br/>魚行水自流　　魚行きて　水自ら流る<br/>人間固無事　　人間　固より無事<br/>白雲自悠悠　　白雲　自ら悠悠"
+          "1899"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-070-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-070-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1200,
+      "height": 1600,
       "label": {
         "ja": [
-          "070. 〔無題〕明治三十二年 (w01)"
+          "070. 〔無題〕明治三十二年"
         ]
       },
-      "height": 1600,
-      "width": 1200,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-070-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-070-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-070-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-070-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-070-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/070-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1600,
-                "width": 1200
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-070-w01"
+                "width": 1200,
+                "height": 1600
+              }
             }
           ]
         }

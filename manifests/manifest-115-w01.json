@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "115. 題画竹 (w01)"
+      "115. 題画竹"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "115"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,19 +35,7 @@
     {
       "label": {
         "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "東北大学附属図書館漱石文庫蔵"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -47,56 +47,44 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "115.題画竹<br/>葉密看風動　　葉密にして　風の動くを看<br/>枝垂聴雨新　　枝垂れて　雨の新たなるを聴く<br/>南軒移植後　　南軒に移し植えし後<br/>君子不憂貧　　君子　貧しきを憂えず"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "本文・訓読"
-        ]
-      },
-      "value": {
-        "ja": [
-          "115.題画竹<br/>葉密看風動　　葉密にして　風の動くを看<br/>枝垂聴雨新　　枝垂れて　雨の新たなるを聴く<br/>南軒移植後　　南軒に移し植えし後<br/>君子不憂貧　　君子　貧しきを憂えず"
+          "東北大学附属図書館漱石文庫蔵"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-115-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-115-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1200,
+      "height": 1600,
       "label": {
         "ja": [
-          "115. 題画竹 (w01)"
+          "115. 題画竹"
         ]
       },
-      "height": 1600,
-      "width": 1200,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-115-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-115-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-115-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-115-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-115-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/115-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1600,
-                "width": 1200
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-115-w01"
+                "width": 1200,
+                "height": 1600
+              }
             }
           ]
         }

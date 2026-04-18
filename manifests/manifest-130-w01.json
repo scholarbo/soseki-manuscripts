@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "130. 題結城素明画 (w01)"
+      "130. 題結城素明画"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "130"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,19 +35,7 @@
     {
       "label": {
         "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "東北大学附属図書館漱石文庫蔵"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -47,56 +47,44 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "130.題結城素明画<br/>雪後榛荆裏　　雪後　榛荆の裏<br/>猗猗緑竹残　　猗猗として　緑竹残す<br/>却憐双凍雀　　却って憐れむ　双凍雀<br/>風急杪頭寒　　風急にして　杪頭寒し"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "本文・訓読"
-        ]
-      },
-      "value": {
-        "ja": [
-          "130.題結城素明画<br/>雪後榛荆裏　　雪後　榛荆の裏<br/>猗猗緑竹残　　猗猗として　緑竹残す<br/>却憐双凍雀　　却って憐れむ　双凍雀<br/>風急杪頭寒　　風急にして　杪頭寒し"
+          "東北大学附属図書館漱石文庫蔵"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-130-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-130-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1200,
+      "height": 1600,
       "label": {
         "ja": [
-          "130. 題結城素明画 (w01)"
+          "130. 題結城素明画"
         ]
       },
-      "height": 1600,
-      "width": 1200,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-130-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-130-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-130-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-130-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-130-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/130-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1600,
-                "width": 1200
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-130-w01"
+                "width": 1200,
+                "height": 1600
+              }
             }
           ]
         }

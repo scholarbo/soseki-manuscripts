@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "180. 〔無題〕大正五年十月一日 (w01)"
+      "180. 〔無題〕大正五年十月一日"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "180"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,31 +35,7 @@
     {
       "label": {
         "ja": [
-          "制作日"
-        ]
-      },
-      "value": {
-        "ja": [
-          "1916-10-01"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "東北大学附属図書館漱石文庫蔵"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -59,56 +47,80 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "180.〔無題〕　大正五年十月一日<br/>誰道蓬莱隔万濤　　誰か道う　蓬莱　万濤を隔つと<br/>于今仙境在春醪　　今に于て　仙境　春醪に在り<br/>風吹靺鞨虜塵尽　　風は靺鞨を吹いて　虜塵　尽き<br/>雨洗滄溟天日高　　雨は滄溟を洗いて　天日　高し<br/>大岳無雲輝積雪　　大岳　雲無くして　積雪に輝き<br/>碧空有影映紅桃　　碧空　影有りて　紅桃に映す<br/>擬将好謔消佳節　　好謔を将って　佳節を消さんと擬し<br/>直下長竿釣巨鼇　　直ちに長竿を下して　巨鼇を釣る"
+          "東北大学附属図書館漱石文庫蔵"
         ]
       }
     },
     {
       "label": {
         "ja": [
-          "本文・訓読"
+          "date_year"
         ]
       },
       "value": {
         "ja": [
-          "180.〔無題〕　大正五年十月一日<br/>誰道蓬莱隔万濤　　誰か道う　蓬莱　万濤を隔つと<br/>于今仙境在春醪　　今に于て　仙境　春醪に在り<br/>風吹靺鞨虜塵尽　　風は靺鞨を吹いて　虜塵　尽き<br/>雨洗滄溟天日高　　雨は滄溟を洗いて　天日　高し<br/>大岳無雲輝積雪　　大岳　雲無くして　積雪に輝き<br/>碧空有影映紅桃　　碧空　影有りて　紅桃に映す<br/>擬将好謔消佳節　　好謔を将って　佳節を消さんと擬し<br/>直下長竿釣巨鼇　　直ちに長竿を下して　巨鼇を釣る"
+          "1916"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_month"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-10"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_day"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-10-01"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-180-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-180-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1200,
+      "height": 1600,
       "label": {
         "ja": [
-          "180. 〔無題〕大正五年十月一日 (w01)"
+          "180. 〔無題〕大正五年十月一日"
         ]
       },
-      "height": 1600,
-      "width": 1200,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-180-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-180-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-180-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-180-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-180-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/180-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1600,
-                "width": 1200
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-180-w01"
+                "width": 1200,
+                "height": 1600
+              }
             }
           ]
         }

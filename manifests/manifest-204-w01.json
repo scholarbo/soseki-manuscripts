@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "204. 元成禅人、自德源大会回鉢到余家、淹留旬日。臨去需余画。余為禅人作墨竹三竿、併題詩以贈大正五年十月三十一日 (w01)"
+      "204. 元成禅人、自德源大会回鉢到余家、淹留旬日。臨去需余画。余為禅人作墨竹三竿、併題詩以贈大正五年十月三十一日"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "204"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,31 +35,7 @@
     {
       "label": {
         "ja": [
-          "制作日"
-        ]
-      },
-      "value": {
-        "ja": [
-          "1916-10-31"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "東北大学附属図書館漱石文庫蔵"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -59,56 +47,80 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "204.元成禅人、自德源大会回鉢到余家、淹留旬日。臨去需余画。余為禅人作墨竹三竿、併題詩以贈　大正五年十月三十一日<br/>秋意蕭条在画中　　秋意　蕭条として　画中に在り<br/>疏枝細葉不須工　　疏枝　細葉　工を須いず<br/>明朝鉄路西帰客　　明朝　鉄路　西帰の客<br/>聴否三竿墨竹風　　聴くや否や　三竿　墨竹の風"
+          "東北大学附属図書館漱石文庫蔵"
         ]
       }
     },
     {
       "label": {
         "ja": [
-          "本文・訓読"
+          "date_year"
         ]
       },
       "value": {
         "ja": [
-          "204.元成禅人、自德源大会回鉢到余家、淹留旬日。臨去需余画。余為禅人作墨竹三竿、併題詩以贈　大正五年十月三十一日<br/>秋意蕭条在画中　　秋意　蕭条として　画中に在り<br/>疏枝細葉不須工　　疏枝　細葉　工を須いず<br/>明朝鉄路西帰客　　明朝　鉄路　西帰の客<br/>聴否三竿墨竹風　　聴くや否や　三竿　墨竹の風"
+          "1916"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_month"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-10"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_day"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-10-31"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-204-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-204-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1200,
+      "height": 1600,
       "label": {
         "ja": [
-          "204. 元成禅人、自德源大会回鉢到余家、淹留旬日。臨去需余画。余為禅人作墨竹三竿、併題詩以贈大正五年十月三十一日 (w01)"
+          "204. 元成禅人、自德源大会回鉢到余家、淹留旬日。臨去需余画。余為禅人作墨竹三竿、併題詩以贈大正五年十月三十一日"
         ]
       },
-      "height": 1600,
-      "width": 1200,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-204-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-204-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-204-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-204-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-204-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/204-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1600,
-                "width": 1200
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-204-w01"
+                "width": 1200,
+                "height": 1600
+              }
             }
           ]
         }

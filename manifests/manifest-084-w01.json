@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "084. 〔無題〕明治四十三年十月三日 (w01)"
+      "084. 〔無題〕明治四十三年十月三日"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "084"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,31 +35,7 @@
     {
       "label": {
         "ja": [
-          "制作日"
-        ]
-      },
-      "value": {
-        "ja": [
-          "1910-10-03"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "東北大学附属図書館漱石文庫蔵"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -59,56 +47,80 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "84.〔無題〕　明治四十三年十月三日<br/>淋漓絳血腹中文　　淋漓たる絳血　腹中の文<br/>嘔照黄昏漾綺紋　　嘔いて黄昏を照らして　綺紋を漾わす<br/>入夜空疑身是骨　　夜に入りて空しく疑う　身は是れ骨かと<br/>臥牀如石夢寒雲　　臥牀　石の如く　寒雲を夢む"
+          "東北大学附属図書館漱石文庫蔵"
         ]
       }
     },
     {
       "label": {
         "ja": [
-          "本文・訓読"
+          "date_year"
         ]
       },
       "value": {
         "ja": [
-          "84.〔無題〕　明治四十三年十月三日<br/>淋漓絳血腹中文　　淋漓たる絳血　腹中の文<br/>嘔照黄昏漾綺紋　　嘔いて黄昏を照らして　綺紋を漾わす<br/>入夜空疑身是骨　　夜に入りて空しく疑う　身は是れ骨かと<br/>臥牀如石夢寒雲　　臥牀　石の如く　寒雲を夢む"
+          "1910"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_month"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1910-10"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_day"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1910-10-03"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-084-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-084-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1200,
+      "height": 1600,
       "label": {
         "ja": [
-          "084. 〔無題〕明治四十三年十月三日 (w01)"
+          "084. 〔無題〕明治四十三年十月三日"
         ]
       },
-      "height": 1600,
-      "width": 1200,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-084-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-084-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-084-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-084-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-084-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/084-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1600,
-                "width": 1200
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-084-w01"
+                "width": 1200,
+                "height": 1600
+              }
             }
           ]
         }

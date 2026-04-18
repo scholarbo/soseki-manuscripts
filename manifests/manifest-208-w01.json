@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "208. 〔無題〕大正五年十一月二十日夜 (w01)"
+      "208. 〔無題〕大正五年十一月二十日夜"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "208"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,31 +35,7 @@
     {
       "label": {
         "ja": [
-          "制作日"
-        ]
-      },
-      "value": {
-        "ja": [
-          "1916-11-20"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "東北大学附属図書館漱石文庫蔵"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -59,56 +47,80 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "208.〔無題〕　大正五年十一月二十日夜<br/>真蹤寂寞杳難尋　　真蹤　寂寞として　杳かに尋ね難く<br/>欲抱虚懐歩古今　　虚懐を抱きて　古今を歩まんと欲す<br/>碧水碧山何有我　　碧水　碧山　何ぞ我有らん<br/>蓋天蓋地是無心　　蓋天　蓋地　是れ無心<br/>依稀暮色月離草　　依稀たる暮色　月は草を離れ<br/>錯落秋声風在林　　錯落たる秋声　風は林に在り<br/>眼耳双忘身亦失　　眼耳　双つながら忘れて　身も亦た失い<br/>空中独唱白雲吟　　空中に独り唱う　白雲吟"
+          "東北大学附属図書館漱石文庫蔵"
         ]
       }
     },
     {
       "label": {
         "ja": [
-          "本文・訓読"
+          "date_year"
         ]
       },
       "value": {
         "ja": [
-          "208.〔無題〕　大正五年十一月二十日夜<br/>真蹤寂寞杳難尋　　真蹤　寂寞として　杳かに尋ね難く<br/>欲抱虚懐歩古今　　虚懐を抱きて　古今を歩まんと欲す<br/>碧水碧山何有我　　碧水　碧山　何ぞ我有らん<br/>蓋天蓋地是無心　　蓋天　蓋地　是れ無心<br/>依稀暮色月離草　　依稀たる暮色　月は草を離れ<br/>錯落秋声風在林　　錯落たる秋声　風は林に在り<br/>眼耳双忘身亦失　　眼耳　双つながら忘れて　身も亦た失い<br/>空中独唱白雲吟　　空中に独り唱う　白雲吟"
+          "1916"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_month"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-11"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_day"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-11-20"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-208-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-208-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1200,
+      "height": 1600,
       "label": {
         "ja": [
-          "208. 〔無題〕大正五年十一月二十日夜 (w01)"
+          "208. 〔無題〕大正五年十一月二十日夜"
         ]
       },
-      "height": 1600,
-      "width": 1200,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-208-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-208-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-208-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-208-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-208-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/208-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1600,
-                "width": 1200
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-208-w01"
+                "width": 1200,
+                "height": 1600
+              }
             }
           ]
         }

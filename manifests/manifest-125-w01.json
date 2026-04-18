@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "125. 〔題自画〕大正三年十一月 (w01)"
+      "125. 〔題自画〕大正三年十一月"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "125"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,31 +35,7 @@
     {
       "label": {
         "ja": [
-          "制作月"
-        ]
-      },
-      "value": {
-        "ja": [
-          "1914-11"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "東北大学附属図書館漱石文庫蔵"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -59,56 +47,68 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "125.〔題自画〕　大正三年十一月<br/>碧落孤雲尽　　碧落　孤雲尽き<br/>虚明鳥道通　　虚明　鳥道通す<br/>遲遲驢背客　　遲遲たり　驢背の客<br/>独入石門中　　独り入る　石門の中"
+          "東北大学附属図書館漱石文庫蔵"
         ]
       }
     },
     {
       "label": {
         "ja": [
-          "本文・訓読"
+          "date_year"
         ]
       },
       "value": {
         "ja": [
-          "125.〔題自画〕　大正三年十一月<br/>碧落孤雲尽　　碧落　孤雲尽き<br/>虚明鳥道通　　虚明　鳥道通す<br/>遲遲驢背客　　遲遲たり　驢背の客<br/>独入石門中　　独り入る　石門の中"
+          "1914"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_month"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1914-11"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-125-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-125-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1200,
+      "height": 1600,
       "label": {
         "ja": [
-          "125. 〔題自画〕大正三年十一月 (w01)"
+          "125. 〔題自画〕大正三年十一月"
         ]
       },
-      "height": 1600,
-      "width": 1200,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-125-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-125-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-125-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-125-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-125-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/125-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1600,
-                "width": 1200
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-125-w01"
+                "width": 1200,
+                "height": 1600
+              }
             }
           ]
         }

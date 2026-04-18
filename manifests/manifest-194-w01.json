@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "194. 〔無題〕大正五年十月十八日 (w01)"
+      "194. 〔無題〕大正五年十月十八日"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "194"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,31 +35,7 @@
     {
       "label": {
         "ja": [
-          "制作日"
-        ]
-      },
-      "value": {
-        "ja": [
-          "1916-10-18"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "東北大学附属図書館漱石文庫蔵"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -59,56 +47,80 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "194.〔無題〕　大正五年十月十八日<br/>旧識誰言別路遥　　旧識　誰か言う　別路　遥かなりと<br/>新知却在客中邀　　新知　却って客中に在りて　邀う<br/>花紅柳緑前縁尽　　花紅柳緑　前縁　尽き<br/>鷺暗鴉明今意饒　　鷺暗鴉明　今意　饒かなり<br/>石上長垂紈繡帳　　石上　長えに垂る　紈繡の帳<br/>巖頭忽見木蘭橈　　巖頭　忽ち見る　木蘭の橈<br/>眼睛百転無奇特　　眼睛　百転するも　奇特無く<br/>雞去鳳來我弄簫　　雞去り　鳳　來たらば　我は簫を弄ばん"
+          "東北大学附属図書館漱石文庫蔵"
         ]
       }
     },
     {
       "label": {
         "ja": [
-          "本文・訓読"
+          "date_year"
         ]
       },
       "value": {
         "ja": [
-          "194.〔無題〕　大正五年十月十八日<br/>旧識誰言別路遥　　旧識　誰か言う　別路　遥かなりと<br/>新知却在客中邀　　新知　却って客中に在りて　邀う<br/>花紅柳緑前縁尽　　花紅柳緑　前縁　尽き<br/>鷺暗鴉明今意饒　　鷺暗鴉明　今意　饒かなり<br/>石上長垂紈繡帳　　石上　長えに垂る　紈繡の帳<br/>巖頭忽見木蘭橈　　巖頭　忽ち見る　木蘭の橈<br/>眼睛百転無奇特　　眼睛　百転するも　奇特無く<br/>雞去鳳來我弄簫　　雞去り　鳳　來たらば　我は簫を弄ばん"
+          "1916"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_month"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-10"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_day"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-10-18"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-194-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-194-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1200,
+      "height": 1600,
       "label": {
         "ja": [
-          "194. 〔無題〕大正五年十月十八日 (w01)"
+          "194. 〔無題〕大正五年十月十八日"
         ]
       },
-      "height": 1600,
-      "width": 1200,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-194-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-194-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-194-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-194-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-194-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/194-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1600,
-                "width": 1200
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-194-w01"
+                "width": 1200,
+                "height": 1600
+              }
             }
           ]
         }

@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "071. 古別離明治三十二年四月 (w01)"
+      "071. 古別離明治三十二年四月"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "071"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,19 +35,7 @@
     {
       "label": {
         "ja": [
-          "制作月"
-        ]
-      },
-      "value": {
-        "ja": [
-          "1899-04"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -47,56 +47,56 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "date_year"
         ]
       },
       "value": {
         "ja": [
-          "71.古別離　明治三十二年四月<br/>上楼湘水緑　　楼に上れば　湘水緑に<br/>捲簾明月来　　簾を捲けば　明月来たる<br/>双袖薔薇香　　双袖　薔薇の香<br/>千金琥珀杯　　千金　琥珀の杯<br/>窈窕鳴紫篴　　窈窕として　紫篴を鳴らし<br/>徙倚暗涙催　　徙倚して　暗涙催す<br/>二八纔画眉　　二八　纔かに眉を画きしに<br/>早識别離哀　　早くも别離の哀しみを識る<br/>再会期何日　　再会　何れの日をか期せん<br/>臨江思邈哉　　江に臨んで　思い邈かなる哉<br/>徒道不相忘　　徒らに道う　相忘れずと<br/>君心曷得回　　君が心　曷ぞ回らすを得ん<br/>迢迢従此去　　迢迢として　此従り去り<br/>前路白雲堆　　前路　白雲　堆し<br/>撫君金錯刀　　君が金錯の刀を撫し<br/>憐君奪錦才　　君が奪錦の才を憐れむ<br/>不贈貂襜褕　　貂襜褕を贈られざるも<br/>却報英瓊瑰　　却って英瓊瑰を報ゆ<br/>春風吹翠鬟　　春風　翠鬟を吹き<br/>悵忉下高台　　悵忉　高台より下る<br/>欲遺君子佩　　君子に佩を遺らんと欲し<br/>蘭渚起徘徊　　蘭渚に起ちて徘徊す"
+          "1899"
         ]
       }
     },
     {
       "label": {
         "ja": [
-          "本文・訓読"
+          "date_month"
         ]
       },
       "value": {
         "ja": [
-          "71.古別離　明治三十二年四月<br/>上楼湘水緑　　楼に上れば　湘水緑に<br/>捲簾明月来　　簾を捲けば　明月来たる<br/>双袖薔薇香　　双袖　薔薇の香<br/>千金琥珀杯　　千金　琥珀の杯<br/>窈窕鳴紫篴　　窈窕として　紫篴を鳴らし<br/>徙倚暗涙催　　徙倚して　暗涙催す<br/>二八纔画眉　　二八　纔かに眉を画きしに<br/>早識别離哀　　早くも别離の哀しみを識る<br/>再会期何日　　再会　何れの日をか期せん<br/>臨江思邈哉　　江に臨んで　思い邈かなる哉<br/>徒道不相忘　　徒らに道う　相忘れずと<br/>君心曷得回　　君が心　曷ぞ回らすを得ん<br/>迢迢従此去　　迢迢として　此従り去り<br/>前路白雲堆　　前路　白雲　堆し<br/>撫君金錯刀　　君が金錯の刀を撫し<br/>憐君奪錦才　　君が奪錦の才を憐れむ<br/>不贈貂襜褕　　貂襜褕を贈られざるも<br/>却報英瓊瑰　　却って英瓊瑰を報ゆ<br/>春風吹翠鬟　　春風　翠鬟を吹き<br/>悵忉下高台　　悵忉　高台より下る<br/>欲遺君子佩　　君子に佩を遺らんと欲し<br/>蘭渚起徘徊　　蘭渚に起ちて徘徊す"
+          "1899-04"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-071-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-071-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1200,
+      "height": 1600,
       "label": {
         "ja": [
-          "071. 古別離明治三十二年四月 (w01)"
+          "071. 古別離明治三十二年四月"
         ]
       },
-      "height": 1600,
-      "width": 1200,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-071-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-071-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-071-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-071-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-071-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/071-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1600,
-                "width": 1200
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-071-w01"
+                "width": 1200,
+                "height": 1600
+              }
             }
           ]
         }

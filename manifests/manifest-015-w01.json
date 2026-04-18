@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "015. 〔「『七草集』評」より九首・其七〕明治二十二年五月 (w01)"
+      "015. 〔「『七草集』評」より九首・其七〕明治二十二年五月"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "015"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,31 +35,7 @@
     {
       "label": {
         "ja": [
-          "制作月"
-        ]
-      },
-      "value": {
-        "ja": [
-          "1889-05"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "東北大学附属図書館漱石文庫蔵"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -59,56 +47,68 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "15.〔「『七草集』評」より九首・其　七〕　その七<br/>洗尽塵懐忘我物　　塵懐を洗い尽くして　我と物とを忘れ<br/>只看窓外古松鬱　　只だ看る　窓外　古松鬱たるを<br/>乾坤深夜闃無声　　乾坤　深夜　闃として声無く<br/>黙坐空房如古仏　　空房に黙坐して　古仏の如く"
+          "東北大学附属図書館漱石文庫蔵"
         ]
       }
     },
     {
       "label": {
         "ja": [
-          "本文・訓読"
+          "date_year"
         ]
       },
       "value": {
         "ja": [
-          "15.〔「『七草集』評」より九首・其　七〕　その七<br/>洗尽塵懐忘我物　　塵懐を洗い尽くして　我と物とを忘れ<br/>只看窓外古松鬱　　只だ看る　窓外　古松鬱たるを<br/>乾坤深夜闃無声　　乾坤　深夜　闃として声無く<br/>黙坐空房如古仏　　空房に黙坐して　古仏の如く"
+          "1889"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_month"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1889-05"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-015-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-015-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 979,
+      "height": 800,
       "label": {
         "ja": [
-          "015. 〔「『七草集』評」より九首・其七〕明治二十二年五月 (w01)"
+          "015. 〔「『七草集』評」より九首・其七〕明治二十二年五月"
         ]
       },
-      "height": 800,
-      "width": 979,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-015-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-015-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-015-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-015-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-015-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/015-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 800,
-                "width": 979
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-015-w01"
+                "width": 979,
+                "height": 800
+              }
             }
           ]
         }

@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "112. 〔題自画〕大正元年十一月 (w01)"
+      "112. 〔題自画〕大正元年十一月"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "112"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,31 +35,7 @@
     {
       "label": {
         "ja": [
-          "制作月"
-        ]
-      },
-      "value": {
-        "ja": [
-          "1912-11"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "東北大学附属図書館漱石文庫蔵"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -59,56 +47,68 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "112.〔題自画〕　大正元年十一月<br/>山上有山路不通　　山上に山有りて　路通せず<br/>柳陰多柳水西東　　柳陰に柳多くして　水西東<br/>扁舟尽日孤村岸　　扁舟　尽日　孤村の岸<br/>幾度鵞群訪釣翁　　幾度か　鵞群　釣翁を訪う"
+          "東北大学附属図書館漱石文庫蔵"
         ]
       }
     },
     {
       "label": {
         "ja": [
-          "本文・訓読"
+          "date_year"
         ]
       },
       "value": {
         "ja": [
-          "112.〔題自画〕　大正元年十一月<br/>山上有山路不通　　山上に山有りて　路通せず<br/>柳陰多柳水西東　　柳陰に柳多くして　水西東<br/>扁舟尽日孤村岸　　扁舟　尽日　孤村の岸<br/>幾度鵞群訪釣翁　　幾度か　鵞群　釣翁を訪う"
+          "1912"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_month"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1912-11"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-112-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-112-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1200,
+      "height": 1600,
       "label": {
         "ja": [
-          "112. 〔題自画〕大正元年十一月 (w01)"
+          "112. 〔題自画〕大正元年十一月"
         ]
       },
-      "height": 1600,
-      "width": 1200,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-112-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-112-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-112-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-112-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-112-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/112-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1600,
-                "width": 1200
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-112-w01"
+                "width": 1200,
+                "height": 1600
+              }
             }
           ]
         }

@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "031. 〔『木屑録』より十四首・其十四〕自嘲書木屑録後 (w01)"
+      "031. 〔『木屑録』より十四首・其十四〕自嘲書木屑録後"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "031"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,31 +35,7 @@
     {
       "label": {
         "ja": [
-          "制作月"
-        ]
-      },
-      "value": {
-        "ja": [
-          "1889-09"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "https://dl.ndl.go.jp/pid/1192698"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -59,56 +47,68 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "31.〔『木屑録』より　十四首・其　十四〕自嘲書木屑録後<br/>白眼甘期与世疎　　白眼　甘んじて期す　世と疎なるを<br/>狂愚亦懶買嘉誉　　狂愚　亦た懶し　嘉誉を買うに<br/>為譏時輩背時勢　　時輩を譏らんが為に　時勢に背き<br/>欲罵古人対古書　　古人を罵らんと欲し　古書に対す<br/>才似老駘駑且騃　　才は老駘に似て　駑　且つ騃<br/>識如秋蛻薄兼虚　　識は秋蛻の如く　薄　虚を兼ぬ<br/>唯贏一片烟霞癖　　唯だ贏す　一片　烟霞の癖<br/>品水評山臥草廬　　水を品し　山を評して　草廬に臥す"
+          "https://dl.ndl.go.jp/pid/1192698"
         ]
       }
     },
     {
       "label": {
         "ja": [
-          "本文・訓読"
+          "date_year"
         ]
       },
       "value": {
         "ja": [
-          "31.〔『木屑録』より　十四首・其　十四〕自嘲書木屑録後<br/>白眼甘期与世疎　　白眼　甘んじて期す　世と疎なるを<br/>狂愚亦懶買嘉誉　　狂愚　亦た懶し　嘉誉を買うに<br/>為譏時輩背時勢　　時輩を譏らんが為に　時勢に背き<br/>欲罵古人対古書　　古人を罵らんと欲し　古書に対す<br/>才似老駘駑且騃　　才は老駘に似て　駑　且つ騃<br/>識如秋蛻薄兼虚　　識は秋蛻の如く　薄　虚を兼ぬ<br/>唯贏一片烟霞癖　　唯だ贏す　一片　烟霞の癖<br/>品水評山臥草廬　　水を品し　山を評して　草廬に臥す"
+          "1889"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_month"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1889-09"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-031-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-031-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1536,
+      "height": 1197,
       "label": {
         "ja": [
-          "031. 〔『木屑録』より十四首・其十四〕自嘲書木屑録後 (w01)"
+          "031. 〔『木屑録』より十四首・其十四〕自嘲書木屑録後"
         ]
       },
-      "height": 1197,
-      "width": 1536,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-031-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-031-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-031-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-031-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-031-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/031-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1197,
-                "width": 1536
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-031-w01"
+                "width": 1536,
+                "height": 1197
+              }
             }
           ]
         }

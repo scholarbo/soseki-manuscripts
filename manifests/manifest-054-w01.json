@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "054. 無題〔五首・其二〕明治二十八年五月 (w01)"
+      "054. 無題〔五首・其二〕明治二十八年五月"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "054"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,31 +35,7 @@
     {
       "label": {
         "ja": [
-          "制作月"
-        ]
-      },
-      "value": {
-        "ja": [
-          "1895-05"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "県立神奈川近代文学館蔵"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -59,56 +47,68 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "54.〔其　二〕<br/>辜負東風出故関　　東風に辜負して　故関に出づ<br/>鳥啼花謝幾時還　　鳥啼き花謝して　幾時か還る<br/>離愁似夢迢迢淡　　離愁　夢に似て　迢迢として淡く<br/>幽思与雲澹澹間　　幽思　雲と与に　澹澹として間かなり<br/>才子群中只守拙　　才子群中　只だ拙を守り<br/>小人囲裏独持頑　　小人囲裏　独り頑を持す<br/>寸心空托一杯酒　　寸心　空しく托す　一杯の酒<br/>剣気如霜照酔顔　　剣気　霜の如く　酔顔を照らす"
+          "県立神奈川近代文学館蔵"
         ]
       }
     },
     {
       "label": {
         "ja": [
-          "本文・訓読"
+          "date_year"
         ]
       },
       "value": {
         "ja": [
-          "54.〔其　二〕<br/>辜負東風出故関　　東風に辜負して　故関に出づ<br/>鳥啼花謝幾時還　　鳥啼き花謝して　幾時か還る<br/>離愁似夢迢迢淡　　離愁　夢に似て　迢迢として淡く<br/>幽思与雲澹澹間　　幽思　雲と与に　澹澹として間かなり<br/>才子群中只守拙　　才子群中　只だ拙を守り<br/>小人囲裏独持頑　　小人囲裏　独り頑を持す<br/>寸心空托一杯酒　　寸心　空しく托す　一杯の酒<br/>剣気如霜照酔顔　　剣気　霜の如く　酔顔を照らす"
+          "1895"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_month"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1895-05"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-054-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-054-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1200,
+      "height": 1600,
       "label": {
         "ja": [
-          "054. 無題〔五首・其二〕明治二十八年五月 (w01)"
+          "054. 無題〔五首・其二〕明治二十八年五月"
         ]
       },
-      "height": 1600,
-      "width": 1200,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-054-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-054-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-054-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-054-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-054-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/054-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1600,
-                "width": 1200
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-054-w01"
+                "width": 1200,
+                "height": 1600
+              }
             }
           ]
         }

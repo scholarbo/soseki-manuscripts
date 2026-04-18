@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "120. 題画 (w01)"
+      "120. 題画"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "120"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,19 +35,7 @@
     {
       "label": {
         "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "東北大学附属図書館漱石文庫蔵"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -47,56 +47,44 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "120.題　画<br/>起臥乾坤一草亭　　起臥す　乾坤一草亭<br/>眼中只有四山青　　眼中　只だ有り　四山の青<br/>閑来放鶴長松下　　閑来　鶴を長松の下に放ち<br/>又上虚堂読易経　　又虚堂に上って　易経を読む"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "本文・訓読"
-        ]
-      },
-      "value": {
-        "ja": [
-          "120.題　画<br/>起臥乾坤一草亭　　起臥す　乾坤一草亭<br/>眼中只有四山青　　眼中　只だ有り　四山の青<br/>閑来放鶴長松下　　閑来　鶴を長松の下に放ち<br/>又上虚堂読易経　　又虚堂に上って　易経を読む"
+          "東北大学附属図書館漱石文庫蔵"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-120-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-120-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1200,
+      "height": 1600,
       "label": {
         "ja": [
-          "120. 題画 (w01)"
+          "120. 題画"
         ]
       },
-      "height": 1600,
-      "width": 1200,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-120-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-120-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-120-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-120-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-120-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/120-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1600,
-                "width": 1200
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-120-w01"
+                "width": 1200,
+                "height": 1600
+              }
             }
           ]
         }

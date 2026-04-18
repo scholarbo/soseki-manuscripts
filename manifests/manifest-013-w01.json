@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "013. 〔「『七草集』評」より九首・其五〕明治二十二年五月 (w01)"
+      "013. 〔「『七草集』評」より九首・其五〕明治二十二年五月"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "013"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,31 +35,7 @@
     {
       "label": {
         "ja": [
-          "制作月"
-        ]
-      },
-      "value": {
-        "ja": [
-          "1889-05"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "東北大学附属図書館漱石文庫蔵"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -59,56 +47,68 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "13.〔「『七草集』評」より九首・其　五〕<br/>長堤尽処又長堤　　長堤尽くる処　又た長堤<br/>桜柳枝連桜柳枝　　桜柳の枝は連なる　桜柳の枝<br/>此裡風光君独有　　此の裡の風光　君独り有し<br/>六旬閑適百篇詩　　六旬の閑適　百篇の詩"
+          "東北大学附属図書館漱石文庫蔵"
         ]
       }
     },
     {
       "label": {
         "ja": [
-          "本文・訓読"
+          "date_year"
         ]
       },
       "value": {
         "ja": [
-          "13.〔「『七草集』評」より九首・其　五〕<br/>長堤尽処又長堤　　長堤尽くる処　又た長堤<br/>桜柳枝連桜柳枝　　桜柳の枝は連なる　桜柳の枝<br/>此裡風光君独有　　此の裡の風光　君独り有し<br/>六旬閑適百篇詩　　六旬の閑適　百篇の詩"
+          "1889"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_month"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1889-05"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-013-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-013-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 979,
+      "height": 800,
       "label": {
         "ja": [
-          "013. 〔「『七草集』評」より九首・其五〕明治二十二年五月 (w01)"
+          "013. 〔「『七草集』評」より九首・其五〕明治二十二年五月"
         ]
       },
-      "height": 800,
-      "width": 979,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-013-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-013-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-013-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-013-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-013-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/013-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 800,
-                "width": 979
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-013-w01"
+                "width": 979,
+                "height": 800
+              }
             }
           ]
         }

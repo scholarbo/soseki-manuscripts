@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "195. 〔無題〕大正五年十月十九日 (w01)"
+      "195. 〔無題〕大正五年十月十九日"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "195"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,31 +35,7 @@
     {
       "label": {
         "ja": [
-          "制作日"
-        ]
-      },
-      "value": {
-        "ja": [
-          "1916-10-19"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "東北大学附属図書館漱石文庫蔵"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -59,56 +47,80 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "195.〔無題〕　大正五年十月十九日<br/>門前高柳接花郊　　門前の高柳　花郊に接し<br/>幾段春光眼底交　　幾段の春光　眼底に交わる<br/>長着貂裘憐狗尾　　長く貂裘を着けて　狗尾を憐れみ<br/>愧收鵲翼在鳩巢　　鵲翼を收めて　鳩巢に在るを愧ず<br/>万紅乱起吾知異　　万紅　乱れ起こりて　吾は異とするを知り<br/>千紫吹消鬼不嘲　　千紫　吹き消えて　鬼は嘲らず<br/>忽地東風間一瞬　　忽地に　東風　一瞬を間て<br/>花飛柳散対空梢　　花飛び　柳散りて　空梢に対す"
+          "東北大学附属図書館漱石文庫蔵"
         ]
       }
     },
     {
       "label": {
         "ja": [
-          "本文・訓読"
+          "date_year"
         ]
       },
       "value": {
         "ja": [
-          "195.〔無題〕　大正五年十月十九日<br/>門前高柳接花郊　　門前の高柳　花郊に接し<br/>幾段春光眼底交　　幾段の春光　眼底に交わる<br/>長着貂裘憐狗尾　　長く貂裘を着けて　狗尾を憐れみ<br/>愧收鵲翼在鳩巢　　鵲翼を收めて　鳩巢に在るを愧ず<br/>万紅乱起吾知異　　万紅　乱れ起こりて　吾は異とするを知り<br/>千紫吹消鬼不嘲　　千紫　吹き消えて　鬼は嘲らず<br/>忽地東風間一瞬　　忽地に　東風　一瞬を間て<br/>花飛柳散対空梢　　花飛び　柳散りて　空梢に対す"
+          "1916"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_month"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-10"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_day"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-10-19"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-195-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-195-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1200,
+      "height": 1600,
       "label": {
         "ja": [
-          "195. 〔無題〕大正五年十月十九日 (w01)"
+          "195. 〔無題〕大正五年十月十九日"
         ]
       },
-      "height": 1600,
-      "width": 1200,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-195-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-195-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-195-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-195-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-195-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/195-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1600,
-                "width": 1200
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-195-w01"
+                "width": 1200,
+                "height": 1600
+              }
             }
           ]
         }

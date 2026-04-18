@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "191. 〔無題〕大正五年十月十五日 (w01)"
+      "191. 〔無題〕大正五年十月十五日"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "191"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,31 +35,7 @@
     {
       "label": {
         "ja": [
-          "制作日"
-        ]
-      },
-      "value": {
-        "ja": [
-          "1916-10-15"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "東北大学附属図書館漱石文庫蔵"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -59,56 +47,80 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "191.〔無題〕　大正五年十月十五日<br/>吾面難親向鏡親　　吾が面は親しみ難く　鏡に向って親しむも<br/>吾心不見独嗟貧　　吾が心は見えず　独り貧しきを嗟く<br/>明朝市上屠牛客　　明朝　市上　屠牛の客<br/>今日山中観道人　　今日　山中　観道の人<br/>行尽邐迤天始闊　　邐迤を行き尽くして　天始めて闊く<br/>踏残峆崉地猶新　　峆崉を踏み残りて　地猶お新たなり<br/>縦横曲折高還下　　縦横　曲折　高く　還た下く<br/>総是虚無総是真　　総べて是れ虚無　総べて是れ真"
+          "東北大学附属図書館漱石文庫蔵"
         ]
       }
     },
     {
       "label": {
         "ja": [
-          "本文・訓読"
+          "date_year"
         ]
       },
       "value": {
         "ja": [
-          "191.〔無題〕　大正五年十月十五日<br/>吾面難親向鏡親　　吾が面は親しみ難く　鏡に向って親しむも<br/>吾心不見独嗟貧　　吾が心は見えず　独り貧しきを嗟く<br/>明朝市上屠牛客　　明朝　市上　屠牛の客<br/>今日山中観道人　　今日　山中　観道の人<br/>行尽邐迤天始闊　　邐迤を行き尽くして　天始めて闊く<br/>踏残峆崉地猶新　　峆崉を踏み残りて　地猶お新たなり<br/>縦横曲折高還下　　縦横　曲折　高く　還た下く<br/>総是虚無総是真　　総べて是れ虚無　総べて是れ真"
+          "1916"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_month"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-10"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_day"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-10-15"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-191-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-191-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1200,
+      "height": 1600,
       "label": {
         "ja": [
-          "191. 〔無題〕大正五年十月十五日 (w01)"
+          "191. 〔無題〕大正五年十月十五日"
         ]
       },
-      "height": 1600,
-      "width": 1200,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-191-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-191-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-191-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-191-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-191-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/191-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1600,
-                "width": 1200
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-191-w01"
+                "width": 1200,
+                "height": 1600
+              }
             }
           ]
         }

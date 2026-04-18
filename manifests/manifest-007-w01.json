@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "007. 即時〔二首·其一〕 (w01)"
+      "007. 即時〔二首·其一〕"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "007"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,19 +35,7 @@
     {
       "label": {
         "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "『時運』"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -47,56 +47,44 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "7.即時〔二首·其　一〕　　即　時　其の一<br/>雨晴雲亦散　　雨晴れ　雲も亦た散じ<br/>夕照落漁湾　　夕照　漁湾に落つ<br/>誰道秋江浅　　誰か道う　秋江浅しと<br/>影長万丈山　　影は長し　万丈の山"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "本文・訓読"
-        ]
-      },
-      "value": {
-        "ja": [
-          "7.即時〔二首·其　一〕　　即　時　其の一<br/>雨晴雲亦散　　雨晴れ　雲も亦た散じ<br/>夕照落漁湾　　夕照　漁湾に落つ<br/>誰道秋江浅　　誰か道う　秋江浅しと<br/>影長万丈山　　影は長し　万丈の山"
+          "『時運』"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-007-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-007-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1200,
+      "height": 1600,
       "label": {
         "ja": [
-          "007. 即時〔二首·其一〕 (w01)"
+          "007. 即時〔二首·其一〕"
         ]
       },
-      "height": 1600,
-      "width": 1200,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-007-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-007-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-007-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-007-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-007-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/007-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1600,
-                "width": 1200
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-007-w01"
+                "width": 1200,
+                "height": 1600
+              }
             }
           ]
         }

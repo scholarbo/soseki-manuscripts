@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "010. 〔「『七草集』評」より九首・其二〕明治二十二年五月 (w01)"
+      "010. 〔「『七草集』評」より九首・其二〕明治二十二年五月"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "010"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,31 +35,7 @@
     {
       "label": {
         "ja": [
-          "制作月"
-        ]
-      },
-      "value": {
-        "ja": [
-          "1889-05"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "東北大学附属図書館漱石文庫蔵"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -59,56 +47,68 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "10.〔「『七草集』評」より九首・其　二〕<br/>幾年零落亦風流　　幾年の零落　亦た風流<br/>好賃江頭香月楼　　好し　賃らん　江頭の香月楼<br/>麦緑菜黄吟欲尽　　麦緑菜黄　吟　尽きんと欲し<br/>又逢紅蓼白蘋秋　　又た逢う　紅蓼白蘋の秋"
+          "東北大学附属図書館漱石文庫蔵"
         ]
       }
     },
     {
       "label": {
         "ja": [
-          "本文・訓読"
+          "date_year"
         ]
       },
       "value": {
         "ja": [
-          "10.〔「『七草集』評」より九首・其　二〕<br/>幾年零落亦風流　　幾年の零落　亦た風流<br/>好賃江頭香月楼　　好し　賃らん　江頭の香月楼<br/>麦緑菜黄吟欲尽　　麦緑菜黄　吟　尽きんと欲し<br/>又逢紅蓼白蘋秋　　又た逢う　紅蓼白蘋の秋"
+          "1889"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_month"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1889-05"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-010-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-010-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 979,
+      "height": 800,
       "label": {
         "ja": [
-          "010. 〔「『七草集』評」より九首・其二〕明治二十二年五月 (w01)"
+          "010. 〔「『七草集』評」より九首・其二〕明治二十二年五月"
         ]
       },
-      "height": 800,
-      "width": 979,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-010-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-010-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-010-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-010-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-010-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/010-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 800,
-                "width": 979
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-010-w01"
+                "width": 979,
+                "height": 800
+              }
             }
           ]
         }

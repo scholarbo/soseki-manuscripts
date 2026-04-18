@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "101. 春日偶成〔十首・其八〕明治四十五年五月二十四日 (w01)"
+      "101. 春日偶成〔十首・其八〕明治四十五年五月二十四日"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "101"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,31 +35,7 @@
     {
       "label": {
         "ja": [
-          "制作日"
-        ]
-      },
-      "value": {
-        "ja": [
-          "1912-05-24"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "東北大学附属図書館漱石文庫蔵"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -59,56 +47,80 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "101.〔其　八〕<br/>樹下開襟坐　　樹下　襟を開いて坐せば<br/>吟懐与道新　　吟懐　道と与に新たなり<br/>落花人不識　　落花　人識らず<br/>啼鳥自残春　　啼鳥　自ら残春"
+          "東北大学附属図書館漱石文庫蔵"
         ]
       }
     },
     {
       "label": {
         "ja": [
-          "本文・訓読"
+          "date_year"
         ]
       },
       "value": {
         "ja": [
-          "101.〔其　八〕<br/>樹下開襟坐　　樹下　襟を開いて坐せば<br/>吟懐与道新　　吟懐　道と与に新たなり<br/>落花人不識　　落花　人識らず<br/>啼鳥自残春　　啼鳥　自ら残春"
+          "1912"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_month"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1912-05"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_day"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1912-05-24"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-101-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-101-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1200,
+      "height": 1600,
       "label": {
         "ja": [
-          "101. 春日偶成〔十首・其八〕明治四十五年五月二十四日 (w01)"
+          "101. 春日偶成〔十首・其八〕明治四十五年五月二十四日"
         ]
       },
-      "height": 1600,
-      "width": 1200,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-101-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-101-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-101-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-101-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-101-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/101-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1600,
-                "width": 1200
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-101-w01"
+                "width": 1200,
+                "height": 1600
+              }
             }
           ]
         }

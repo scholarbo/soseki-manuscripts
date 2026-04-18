@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "165. 〔無題〕大正五年九月十五日 (w01)"
+      "165. 〔無題〕大正五年九月十五日"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "165"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,31 +35,7 @@
     {
       "label": {
         "ja": [
-          "制作日"
-        ]
-      },
-      "value": {
-        "ja": [
-          "1916-09-15"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "東北大学附属図書館漱石文庫蔵"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -59,56 +47,80 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "165.〔無題〕　大正五年九月十五日<br/>素秋揺落変山容　　素秋　揺落して　変山を容じ<br/>高臥掩門寒影重　　高臥　門を掩えば　寒影重なる<br/>寂寂空舲横浅渚　　寂寂たる空舲　浅渚に横たわり<br/>疏疏細雨湿芙蓉　　疏疏たる細雨　芙蓉を湿す<br/>愁前剔燭夜愈静　　愁前　燭を剔れば　夜愈いよ静かに<br/>詩後焚香字亦濃　　詩後　香を焚けば　字も亦た濃し<br/>時望水雲無限処　　時に水雲限り無き処を望み<br/>蕭然独聴隔林鐘　　蕭然として　独り聴く　隔林の鐘"
+          "東北大学附属図書館漱石文庫蔵"
         ]
       }
     },
     {
       "label": {
         "ja": [
-          "本文・訓読"
+          "date_year"
         ]
       },
       "value": {
         "ja": [
-          "165.〔無題〕　大正五年九月十五日<br/>素秋揺落変山容　　素秋　揺落して　変山を容じ<br/>高臥掩門寒影重　　高臥　門を掩えば　寒影重なる<br/>寂寂空舲横浅渚　　寂寂たる空舲　浅渚に横たわり<br/>疏疏細雨湿芙蓉　　疏疏たる細雨　芙蓉を湿す<br/>愁前剔燭夜愈静　　愁前　燭を剔れば　夜愈いよ静かに<br/>詩後焚香字亦濃　　詩後　香を焚けば　字も亦た濃し<br/>時望水雲無限処　　時に水雲限り無き処を望み<br/>蕭然独聴隔林鐘　　蕭然として　独り聴く　隔林の鐘"
+          "1916"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_month"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-09"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_day"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-09-15"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-165-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-165-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1200,
+      "height": 1600,
       "label": {
         "ja": [
-          "165. 〔無題〕大正五年九月十五日 (w01)"
+          "165. 〔無題〕大正五年九月十五日"
         ]
       },
-      "height": 1600,
-      "width": 1200,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-165-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-165-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-165-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-165-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-165-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/165-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1600,
-                "width": 1200
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-165-w01"
+                "width": 1200,
+                "height": 1600
+              }
             }
           ]
         }

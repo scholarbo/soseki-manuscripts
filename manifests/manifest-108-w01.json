@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "108. 〔酬横山画伯惠画〕明治四十五年七月 (w01)"
+      "108. 〔酬横山画伯惠画〕明治四十五年七月"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "108"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,31 +35,7 @@
     {
       "label": {
         "ja": [
-          "制作月"
-        ]
-      },
-      "value": {
-        "ja": [
-          "1912-07"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "東北大学附属図書館漱石文庫蔵"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -59,56 +47,68 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "108.〔酬横山画伯惠画〕　明治四十五年七月<br/>独坐空斎裏　　独り坐す　空斎の裏<br/>丹青引興長　　丹青　興を引くこと長し<br/>大観居士贈　　大観居士　贈り<br/>円覚道人蔵　　円覚道人　蔵す<br/>野水辞君巷　　野水　君が巷を辞し<br/>閑雲入我堂　　閑雲　我が堂に入る<br/>徂来随所澹　　徂来　随所に澹く<br/>住在自然郷　　住みて自然の郷にあり"
+          "東北大学附属図書館漱石文庫蔵"
         ]
       }
     },
     {
       "label": {
         "ja": [
-          "本文・訓読"
+          "date_year"
         ]
       },
       "value": {
         "ja": [
-          "108.〔酬横山画伯惠画〕　明治四十五年七月<br/>独坐空斎裏　　独り坐す　空斎の裏<br/>丹青引興長　　丹青　興を引くこと長し<br/>大観居士贈　　大観居士　贈り<br/>円覚道人蔵　　円覚道人　蔵す<br/>野水辞君巷　　野水　君が巷を辞し<br/>閑雲入我堂　　閑雲　我が堂に入る<br/>徂来随所澹　　徂来　随所に澹く<br/>住在自然郷　　住みて自然の郷にあり"
+          "1912"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_month"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1912-07"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-108-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-108-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1200,
+      "height": 1600,
       "label": {
         "ja": [
-          "108. 〔酬横山画伯惠画〕明治四十五年七月 (w01)"
+          "108. 〔酬横山画伯惠画〕明治四十五年七月"
         ]
       },
-      "height": 1600,
-      "width": 1200,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-108-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-108-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-108-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-108-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-108-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/108-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1600,
-                "width": 1200
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-108-w01"
+                "width": 1200,
+                "height": 1600
+              }
             }
           ]
         }

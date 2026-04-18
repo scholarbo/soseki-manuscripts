@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "003. 題画 (w01)"
+      "003. 題画"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "003"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,19 +35,7 @@
     {
       "label": {
         "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "『時運』"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -47,56 +47,44 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "3.題画　　画に題す<br/>何人鎮日掩柴扃　　何人か　鎮日　柴扃を掩う<br/>也是乾坤一草亭　　也た是れ乾坤の一草亭<br/>村静牧童翻野笛　　村静かにして　牧童　野笛を翻し<br/>簷虚闘雀蹴金鈴　　簷虚しくして　闘雀　金鈴を蹴る<br/>渓南秀竹雲垂地　　渓南の秀竹　雲　地に垂れ<br/>林後老槐風満庭　　林後の老槐　風　庭に満つ<br/>春去夏来無好興　　春去りて夏来たりて　好興無きも<br/>夢魂回処気冷冷　　夢魂回る処　気冷冷たり"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "本文・訓読"
-        ]
-      },
-      "value": {
-        "ja": [
-          "3.題画　　画に題す<br/>何人鎮日掩柴扃　　何人か　鎮日　柴扃を掩う<br/>也是乾坤一草亭　　也た是れ乾坤の一草亭<br/>村静牧童翻野笛　　村静かにして　牧童　野笛を翻し<br/>簷虚闘雀蹴金鈴　　簷虚しくして　闘雀　金鈴を蹴る<br/>渓南秀竹雲垂地　　渓南の秀竹　雲　地に垂れ<br/>林後老槐風満庭　　林後の老槐　風　庭に満つ<br/>春去夏来無好興　　春去りて夏来たりて　好興無きも<br/>夢魂回処気冷冷　　夢魂回る処　気冷冷たり"
+          "『時運』"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-003-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-003-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1200,
+      "height": 1600,
       "label": {
         "ja": [
-          "003. 題画 (w01)"
+          "003. 題画"
         ]
       },
-      "height": 1600,
-      "width": 1200,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-003-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-003-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-003-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-003-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-003-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/003-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1600,
-                "width": 1200
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-003-w01"
+                "width": 1200,
+                "height": 1600
+              }
             }
           ]
         }

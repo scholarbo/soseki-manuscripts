@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "068. 菜花黄明治三十一年三月 (w01)"
+      "068. 菜花黄明治三十一年三月"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "068"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,19 +35,7 @@
     {
       "label": {
         "ja": [
-          "制作月"
-        ]
-      },
-      "value": {
-        "ja": [
-          "1898-03"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -47,56 +47,56 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "date_year"
         ]
       },
       "value": {
         "ja": [
-          "68.菜花黄　明治三十一年三月<br/>菜花黄朝暾　　菜花　朝暾に黄に<br/>菜花黄夕陽　　菜花　夕陽に黄なり<br/>菜花黄裏人　　菜花　黄裏の人<br/>晨昏喜欲狂　　晨昏　喜びて狂わんと欲す<br/>曠懐随雲雀　　曠懐　雲雀に随い<br/>冲融入彼蒼　　冲融　彼の蒼に入る<br/>縹緲近天都　　縹緲として　天都に近く<br/>迢逓凌塵郷　　迢逓として　塵郷を凌ぐ<br/>斯心不可道　　斯の心　道う可からず<br/>厥楽自潢洋　　厥の楽しみ　自ら潢洋たり<br/>恨未化為鳥　　恨むらくは　未だ化して鳥と為り<br/>啼尽菜花黄　　菜花の黄を啼き尽くさざるを"
+          "1898"
         ]
       }
     },
     {
       "label": {
         "ja": [
-          "本文・訓読"
+          "date_month"
         ]
       },
       "value": {
         "ja": [
-          "68.菜花黄　明治三十一年三月<br/>菜花黄朝暾　　菜花　朝暾に黄に<br/>菜花黄夕陽　　菜花　夕陽に黄なり<br/>菜花黄裏人　　菜花　黄裏の人<br/>晨昏喜欲狂　　晨昏　喜びて狂わんと欲す<br/>曠懐随雲雀　　曠懐　雲雀に随い<br/>冲融入彼蒼　　冲融　彼の蒼に入る<br/>縹緲近天都　　縹緲として　天都に近く<br/>迢逓凌塵郷　　迢逓として　塵郷を凌ぐ<br/>斯心不可道　　斯の心　道う可からず<br/>厥楽自潢洋　　厥の楽しみ　自ら潢洋たり<br/>恨未化為鳥　　恨むらくは　未だ化して鳥と為り<br/>啼尽菜花黄　　菜花の黄を啼き尽くさざるを"
+          "1898-03"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-068-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-068-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1200,
+      "height": 1600,
       "label": {
         "ja": [
-          "068. 菜花黄明治三十一年三月 (w01)"
+          "068. 菜花黄明治三十一年三月"
         ]
       },
-      "height": 1600,
-      "width": 1200,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-068-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-068-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-068-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-068-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-068-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/068-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1600,
-                "width": 1200
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-068-w01"
+                "width": 1200,
+                "height": 1600
+              }
             }
           ]
         }

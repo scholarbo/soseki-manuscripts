@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "135. 〔無題〕大正五年八月十五日 (w01)"
+      "135. 〔無題〕大正五年八月十五日"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "135"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,31 +35,7 @@
     {
       "label": {
         "ja": [
-          "制作日"
-        ]
-      },
-      "value": {
-        "ja": [
-          "1916-08-15"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "東北大学附属図書館漱石文庫蔵"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -59,56 +47,80 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "135.〔無題〕大正五年八月十五日<br/>双鬢有糸無限情　　双鬢　糸有り　無限の情<br/>春秋幾度読還耕　　春秋　幾度か　読み還た耕す<br/>風吹弱柳枝枝動　　風は弱柳を吹いて　枝枝動き<br/>雨打高桐葉葉鳴　　雨は高桐を打って　葉葉鳴る<br/>遥見半峰吐月色　　遥かに見る　半峰　月を吐く色<br/>長聴一水落雲声　　長しえに聴く　一水　雲より落つる声<br/>幽居楽道狐裘古　　幽居　道を楽しみて　狐裘古り<br/>欲買縕袍時入城　　縕袍を買わんと欲して　時に城に入る"
+          "東北大学附属図書館漱石文庫蔵"
         ]
       }
     },
     {
       "label": {
         "ja": [
-          "本文・訓読"
+          "date_year"
         ]
       },
       "value": {
         "ja": [
-          "135.〔無題〕大正五年八月十五日<br/>双鬢有糸無限情　　双鬢　糸有り　無限の情<br/>春秋幾度読還耕　　春秋　幾度か　読み還た耕す<br/>風吹弱柳枝枝動　　風は弱柳を吹いて　枝枝動き<br/>雨打高桐葉葉鳴　　雨は高桐を打って　葉葉鳴る<br/>遥見半峰吐月色　　遥かに見る　半峰　月を吐く色<br/>長聴一水落雲声　　長しえに聴く　一水　雲より落つる声<br/>幽居楽道狐裘古　　幽居　道を楽しみて　狐裘古り<br/>欲買縕袍時入城　　縕袍を買わんと欲して　時に城に入る"
+          "1916"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_month"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-08"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_day"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-08-15"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-135-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-135-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1200,
+      "height": 1600,
       "label": {
         "ja": [
-          "135. 〔無題〕大正五年八月十五日 (w01)"
+          "135. 〔無題〕大正五年八月十五日"
         ]
       },
-      "height": 1600,
-      "width": 1200,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-135-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-135-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-135-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-135-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-135-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/135-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1600,
-                "width": 1200
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-135-w01"
+                "width": 1200,
+                "height": 1600
+              }
             }
           ]
         }

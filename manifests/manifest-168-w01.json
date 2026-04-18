@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "168. 〔無題〕大正五年九月十八日 (w01)"
+      "168. 〔無題〕大正五年九月十八日"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "168"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,31 +35,7 @@
     {
       "label": {
         "ja": [
-          "制作日"
-        ]
-      },
-      "value": {
-        "ja": [
-          "1916-09-18"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "東北大学附属図書館漱石文庫蔵"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -59,56 +47,80 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "168.〔無題〕　大正五年九月十八日<br/>飣餖焚時大道安　　飣餖を焚く時　大道　安し<br/>天然景物自然観　　天然の景物　自然に観る<br/>佳人不識虚心竹　　佳人は識らず　虚心の竹<br/>君子曷思空谷蘭　　君子　曷ぞ思わん　空谷の蘭<br/>黄耐霜来籬菊乱　　黄は霜に耐え来たりて　籬菊　乱れ<br/>白従月得野梅寒　　白は月従り得て　野梅　寒し<br/>勿拈華妄作微笑　　華を拈りて　妄に微笑を作す勿かれ<br/>雨打風翻任独看　　雨打ち　風翻して　独り看るに任かす"
+          "東北大学附属図書館漱石文庫蔵"
         ]
       }
     },
     {
       "label": {
         "ja": [
-          "本文・訓読"
+          "date_year"
         ]
       },
       "value": {
         "ja": [
-          "168.〔無題〕　大正五年九月十八日<br/>飣餖焚時大道安　　飣餖を焚く時　大道　安し<br/>天然景物自然観　　天然の景物　自然に観る<br/>佳人不識虚心竹　　佳人は識らず　虚心の竹<br/>君子曷思空谷蘭　　君子　曷ぞ思わん　空谷の蘭<br/>黄耐霜来籬菊乱　　黄は霜に耐え来たりて　籬菊　乱れ<br/>白従月得野梅寒　　白は月従り得て　野梅　寒し<br/>勿拈華妄作微笑　　華を拈りて　妄に微笑を作す勿かれ<br/>雨打風翻任独看　　雨打ち　風翻して　独り看るに任かす"
+          "1916"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_month"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-09"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_day"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-09-18"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-168-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-168-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1200,
+      "height": 1600,
       "label": {
         "ja": [
-          "168. 〔無題〕大正五年九月十八日 (w01)"
+          "168. 〔無題〕大正五年九月十八日"
         ]
       },
-      "height": 1600,
-      "width": 1200,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-168-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-168-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-168-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-168-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-168-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/168-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1600,
-                "width": 1200
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-168-w01"
+                "width": 1200,
+                "height": 1600
+              }
             }
           ]
         }

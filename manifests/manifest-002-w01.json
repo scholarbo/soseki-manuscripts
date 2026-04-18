@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "002. 鴻台〔二首・其二〕 (w01)"
+      "002. 鴻台〔二首・其二〕"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "002"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,19 +35,7 @@
     {
       "label": {
         "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "『時運』"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -47,56 +47,44 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "2.鴻台〔二首・其二〕　　鴻の台　〔二首・其の二〕<br/>高刹聳天無一物　　高刹　天に聳えて　一物無く<br/>伽藍半破長松鬱　　伽藍　半ば破れて　長松鬱たり<br/>当年遺跡有誰探　　当年の遺跡　誰有りてか探らん<br/>蛛網何心床古仏　　蛛網　何の心ぞ　古仏を床とす"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "本文・訓読"
-        ]
-      },
-      "value": {
-        "ja": [
-          "2.鴻台〔二首・其二〕　　鴻の台　〔二首・其の二〕<br/>高刹聳天無一物　　高刹　天に聳えて　一物無く<br/>伽藍半破長松鬱　　伽藍　半ば破れて　長松鬱たり<br/>当年遺跡有誰探　　当年の遺跡　誰有りてか探らん<br/>蛛網何心床古仏　　蛛網　何の心ぞ　古仏を床とす"
+          "『時運』"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-002-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-002-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1200,
+      "height": 1600,
       "label": {
         "ja": [
-          "002. 鴻台〔二首・其二〕 (w01)"
+          "002. 鴻台〔二首・其二〕"
         ]
       },
-      "height": 1600,
-      "width": 1200,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-002-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-002-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-002-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-002-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-002-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/002-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1600,
-                "width": 1200
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-002-w01"
+                "width": 1200,
+                "height": 1600
+              }
             }
           ]
         }

@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "188. 〔無題〕大正五年十月十日 (w01)"
+      "188. 〔無題〕大正五年十月十日"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "188"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,31 +35,7 @@
     {
       "label": {
         "ja": [
-          "制作日"
-        ]
-      },
-      "value": {
-        "ja": [
-          "1916-10-10"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "東北大学附属図書館漱石文庫蔵"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -59,56 +47,80 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "188.〔無題〕　大正五年十月十日<br/>忽怪空中躍百愁　　忽ち怪しむ　空中に百愁躍るを<br/>百愁躍処主人休　　百愁躍る処　主人　休す<br/>点春成仏江梅柳　　春を点じて　仏と成す　江梅柳<br/>食草訂交風馬牛　　草を食みて　交りを訂す　風馬牛<br/>途上相逢忘旧識　　途上　相逢うて　旧識を忘れ<br/>天涯遠別報深仇　　天涯　遠く別れて　深仇に報ず<br/>長磨一剣剣将尽　　長く一剣を磨きて　剣将に尽きんとし<br/>独使龍鳴復入秋　　独り龍鳴をして　復た秋に入ら使む"
+          "東北大学附属図書館漱石文庫蔵"
         ]
       }
     },
     {
       "label": {
         "ja": [
-          "本文・訓読"
+          "date_year"
         ]
       },
       "value": {
         "ja": [
-          "188.〔無題〕　大正五年十月十日<br/>忽怪空中躍百愁　　忽ち怪しむ　空中に百愁躍るを<br/>百愁躍処主人休　　百愁躍る処　主人　休す<br/>点春成仏江梅柳　　春を点じて　仏と成す　江梅柳<br/>食草訂交風馬牛　　草を食みて　交りを訂す　風馬牛<br/>途上相逢忘旧識　　途上　相逢うて　旧識を忘れ<br/>天涯遠別報深仇　　天涯　遠く別れて　深仇に報ず<br/>長磨一剣剣将尽　　長く一剣を磨きて　剣将に尽きんとし<br/>独使龍鳴復入秋　　独り龍鳴をして　復た秋に入ら使む"
+          "1916"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_month"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-10"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_day"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-10-10"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-188-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-188-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1200,
+      "height": 1600,
       "label": {
         "ja": [
-          "188. 〔無題〕大正五年十月十日 (w01)"
+          "188. 〔無題〕大正五年十月十日"
         ]
       },
-      "height": 1600,
-      "width": 1200,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-188-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-188-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-188-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-188-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-188-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/188-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1600,
-                "width": 1200
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-188-w01"
+                "width": 1200,
+                "height": 1600
+              }
             }
           ]
         }

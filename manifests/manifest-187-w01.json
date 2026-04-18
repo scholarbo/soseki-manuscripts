@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "187. 〔無題〕大正五年十月九日 (w01)"
+      "187. 〔無題〕大正五年十月九日"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "187"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,31 +35,7 @@
     {
       "label": {
         "ja": [
-          "制作日"
-        ]
-      },
-      "value": {
-        "ja": [
-          "1916-10-09"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "東北大学附属図書館漱石文庫蔵"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -59,56 +47,80 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "187.〔無題〕　大正五年十月九日<br/>詩人面目不嫌工　　詩人の面目　工みを嫌わず<br/>誰道眼前好悪同　　誰か道か　眼前の好悪同じと<br/>岸樹倒枝皆入水　　岸樹　枝を倒にして　皆　水に入り<br/>野花傾萼尽迎風　　野花　萼を傾けて　尽く風を迎う<br/>霜燃爛葉寒暉外　　霜は爛葉を燃やす　寒暉の外<br/>客送残鴉夕照中　　客は残鴉を送る　夕照の中<br/>古寺尋来無古仏　　古寺　尋ね来たるも　古仏無く<br/>倚筇独立断橋東　　筇に倚って　独り立つ　断橋の東"
+          "東北大学附属図書館漱石文庫蔵"
         ]
       }
     },
     {
       "label": {
         "ja": [
-          "本文・訓読"
+          "date_year"
         ]
       },
       "value": {
         "ja": [
-          "187.〔無題〕　大正五年十月九日<br/>詩人面目不嫌工　　詩人の面目　工みを嫌わず<br/>誰道眼前好悪同　　誰か道か　眼前の好悪同じと<br/>岸樹倒枝皆入水　　岸樹　枝を倒にして　皆　水に入り<br/>野花傾萼尽迎風　　野花　萼を傾けて　尽く風を迎う<br/>霜燃爛葉寒暉外　　霜は爛葉を燃やす　寒暉の外<br/>客送残鴉夕照中　　客は残鴉を送る　夕照の中<br/>古寺尋来無古仏　　古寺　尋ね来たるも　古仏無く<br/>倚筇独立断橋東　　筇に倚って　独り立つ　断橋の東"
+          "1916"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_month"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-10"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_day"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-10-09"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-187-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-187-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1200,
+      "height": 1600,
       "label": {
         "ja": [
-          "187. 〔無題〕大正五年十月九日 (w01)"
+          "187. 〔無題〕大正五年十月九日"
         ]
       },
-      "height": 1600,
-      "width": 1200,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-187-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-187-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-187-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-187-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-187-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/187-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1600,
-                "width": 1200
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-187-w01"
+                "width": 1200,
+                "height": 1600
+              }
             }
           ]
         }

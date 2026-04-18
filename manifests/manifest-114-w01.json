@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "114. 〔無題〕 (w01)"
+      "114. 〔無題〕"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "114"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,19 +35,7 @@
     {
       "label": {
         "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "東北大学附属図書館漱石文庫蔵"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -47,56 +47,44 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "114.〔無題〕<br/>夜色幽扉外　　夜色　幽扉の外<br/>辞僧出竹林　　僧に辞して　竹林を出づ<br/>浮雲回首尽　　浮雲　首を回らせば尽き<br/>明月自天心　　明月　自ら天心"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "本文・訓読"
-        ]
-      },
-      "value": {
-        "ja": [
-          "114.〔無題〕<br/>夜色幽扉外　　夜色　幽扉の外<br/>辞僧出竹林　　僧に辞して　竹林を出づ<br/>浮雲回首尽　　浮雲　首を回らせば尽き<br/>明月自天心　　明月　自ら天心"
+          "東北大学附属図書館漱石文庫蔵"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-114-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-114-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1200,
+      "height": 1600,
       "label": {
         "ja": [
-          "114. 〔無題〕 (w01)"
+          "114. 〔無題〕"
         ]
       },
-      "height": 1600,
-      "width": 1200,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-114-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-114-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-114-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-114-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-114-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/114-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1600,
-                "width": 1200
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-114-w01"
+                "width": 1200,
+                "height": 1600
+              }
             }
           ]
         }

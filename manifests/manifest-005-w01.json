@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "005. 離愁次友人韻 (w01)"
+      "005. 離愁次友人韻"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "005"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,19 +35,7 @@
     {
       "label": {
         "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "『時運』"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -47,56 +47,44 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "5.離愁次友人韻　　離愁　友人の韻に次す<br/>離愁別恨夢寥寥　　離愁　別恨　夢寥寥<br/>楊柳如烟翠堆遥　　楊柳　烟の如く　翠堆遥かなり<br/>幾歳春江分袂後　　幾歳か　春江に袂を分かちし後<br/>依稀繊月照紅橋　　依稀として繊月　紅橋を照す"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "本文・訓読"
-        ]
-      },
-      "value": {
-        "ja": [
-          "5.離愁次友人韻　　離愁　友人の韻に次す<br/>離愁別恨夢寥寥　　離愁　別恨　夢寥寥<br/>楊柳如烟翠堆遥　　楊柳　烟の如く　翠堆遥かなり<br/>幾歳春江分袂後　　幾歳か　春江に袂を分かちし後<br/>依稀繊月照紅橋　　依稀として繊月　紅橋を照す"
+          "『時運』"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-005-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-005-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1200,
+      "height": 1600,
       "label": {
         "ja": [
-          "005. 離愁次友人韻 (w01)"
+          "005. 離愁次友人韻"
         ]
       },
-      "height": 1600,
-      "width": 1200,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-005-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-005-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-005-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-005-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-005-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/005-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1600,
-                "width": 1200
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-005-w01"
+                "width": 1200,
+                "height": 1600
+              }
             }
           ]
         }

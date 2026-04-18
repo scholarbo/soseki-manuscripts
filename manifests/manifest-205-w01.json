@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "205. 丙辰十月、余為元成禅人作墨竹。越一日、見壁間所挂図、興忽発。乃為珪堂禅人抽毫作松一株、配以石二三。不知禅人受余贈否也。 (w01)"
+      "205. 丙辰十月、余為元成禅人作墨竹。越一日、見壁間所挂図、興忽発。乃為珪堂禅人抽毫作松一株、配以石二三。不知禅人受余贈否也。"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "205"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,31 +35,7 @@
     {
       "label": {
         "ja": [
-          "制作月"
-        ]
-      },
-      "value": {
-        "ja": [
-          "1916-10"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "東北大学附属図書館漱石文庫蔵"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -59,56 +47,68 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "205.丙辰十月、余為元成禅人作墨竹。越一日、見壁間所挂図、興忽発。乃為珪堂禅人抽毫作松一株、配以石二三。不知禅人受余贈否也。<br/>君臥一円中　　君は臥す　一円の中<br/>吾描松下石　　吾は描く　松下の石<br/>勿言不会禅　　言う勿かれ　禅を会せずと<br/>元是山林客　　元と是れ　山林の客"
+          "東北大学附属図書館漱石文庫蔵"
         ]
       }
     },
     {
       "label": {
         "ja": [
-          "本文・訓読"
+          "date_year"
         ]
       },
       "value": {
         "ja": [
-          "205.丙辰十月、余為元成禅人作墨竹。越一日、見壁間所挂図、興忽発。乃為珪堂禅人抽毫作松一株、配以石二三。不知禅人受余贈否也。<br/>君臥一円中　　君は臥す　一円の中<br/>吾描松下石　　吾は描く　松下の石<br/>勿言不会禅　　言う勿かれ　禅を会せずと<br/>元是山林客　　元と是れ　山林の客"
+          "1916"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_month"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-10"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-205-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-205-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1200,
+      "height": 1600,
       "label": {
         "ja": [
-          "205. 丙辰十月、余為元成禅人作墨竹。越一日、見壁間所挂図、興忽発。乃為珪堂禅人抽毫作松一株、配以石二三。不知禅人受余贈否也。 (w01)"
+          "205. 丙辰十月、余為元成禅人作墨竹。越一日、見壁間所挂図、興忽発。乃為珪堂禅人抽毫作松一株、配以石二三。不知禅人受余贈否也。"
         ]
       },
-      "height": 1600,
-      "width": 1200,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-205-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-205-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-205-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-205-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-205-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/205-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1600,
-                "width": 1200
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-205-w01"
+                "width": 1200,
+                "height": 1600
+              }
             }
           ]
         }

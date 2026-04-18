@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "024. 〔『木屑録』より十四首・其七〕明治二十二年九月 (w01)"
+      "024. 〔『木屑録』より十四首・其七〕明治二十二年九月"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "024"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,31 +35,7 @@
     {
       "label": {
         "ja": [
-          "制作月"
-        ]
-      },
-      "value": {
-        "ja": [
-          "1889-09"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "https://dl.ndl.go.jp/pid/1192698"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -59,56 +47,68 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "24.〔『木屑録』より　十四首・其　七〕<br/>鋸山如鋸碧崔嵬　　鋸山　鋸の如く　碧崔嵬たり<br/>上有伽藍倚曲隈　　上に伽藍の曲隈に倚れる有り<br/>山僧日高猶未起　　山僧　日高くして　猶お未だ起きず<br/>落葉不掃白雲堆　　落葉　掃わず　白雲堆し<br/>吾是北来帝京客　　吾は是れ北より来たりし帝京の客<br/>登臨此日懐往昔　　登臨して　此の日　往昔を懐う<br/>咨嗟一千五百年　　咨嗟す　一千五百年<br/>十二僧院空無迹　　十二僧院　空しく迹無し<br/>只有古仏坐磅磄　　只だ古仏の磅磄に坐せる有りて<br/>雨蝕苔蒸閲桑滄　　雨蝕み　苔蒸して　桑滄を閲す<br/>似嗤浮世荣枯事　　浮世荣枯の事を嗤うに似て<br/>冷眼下瞰太平洋　　冷眼　下し瞰る　太平洋"
+          "https://dl.ndl.go.jp/pid/1192698"
         ]
       }
     },
     {
       "label": {
         "ja": [
-          "本文・訓読"
+          "date_year"
         ]
       },
       "value": {
         "ja": [
-          "24.〔『木屑録』より　十四首・其　七〕<br/>鋸山如鋸碧崔嵬　　鋸山　鋸の如く　碧崔嵬たり<br/>上有伽藍倚曲隈　　上に伽藍の曲隈に倚れる有り<br/>山僧日高猶未起　　山僧　日高くして　猶お未だ起きず<br/>落葉不掃白雲堆　　落葉　掃わず　白雲堆し<br/>吾是北来帝京客　　吾は是れ北より来たりし帝京の客<br/>登臨此日懐往昔　　登臨して　此の日　往昔を懐う<br/>咨嗟一千五百年　　咨嗟す　一千五百年<br/>十二僧院空無迹　　十二僧院　空しく迹無し<br/>只有古仏坐磅磄　　只だ古仏の磅磄に坐せる有りて<br/>雨蝕苔蒸閲桑滄　　雨蝕み　苔蒸して　桑滄を閲す<br/>似嗤浮世荣枯事　　浮世荣枯の事を嗤うに似て<br/>冷眼下瞰太平洋　　冷眼　下し瞰る　太平洋"
+          "1889"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_month"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1889-09"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-024-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-024-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1536,
+      "height": 1197,
       "label": {
         "ja": [
-          "024. 〔『木屑録』より十四首・其七〕明治二十二年九月 (w01)"
+          "024. 〔『木屑録』より十四首・其七〕明治二十二年九月"
         ]
       },
-      "height": 1197,
-      "width": 1536,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-024-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-024-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-024-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-024-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-024-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/024-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1197,
-                "width": 1536
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-024-w01"
+                "width": 1536,
+                "height": 1197
+              }
             }
           ]
         }

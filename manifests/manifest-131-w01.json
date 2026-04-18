@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "131. 題自画大正五年一月 (w01)"
+      "131. 題自画大正五年一月"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "131"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,31 +35,7 @@
     {
       "label": {
         "ja": [
-          "制作月"
-        ]
-      },
-      "value": {
-        "ja": [
-          "1916-01"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "東北大学附属図書館漱石文庫蔵"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -59,56 +47,68 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "131.題自画　大正五年一月<br/>栽松人不到　　松を栽えて　人不到らず<br/>移石意常平　　石を移して　意常に平らかなり<br/>且喜霊芝紫　　且つは喜ぶ　霊芝の紫<br/>茎茎瑞色明　　茎茎　瑞色明らかなるを"
+          "東北大学附属図書館漱石文庫蔵"
         ]
       }
     },
     {
       "label": {
         "ja": [
-          "本文・訓読"
+          "date_year"
         ]
       },
       "value": {
         "ja": [
-          "131.題自画　大正五年一月<br/>栽松人不到　　松を栽えて　人不到らず<br/>移石意常平　　石を移して　意常に平らかなり<br/>且喜霊芝紫　　且つは喜ぶ　霊芝の紫<br/>茎茎瑞色明　　茎茎　瑞色明らかなるを"
+          "1916"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_month"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-01"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-131-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-131-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1200,
+      "height": 1600,
       "label": {
         "ja": [
-          "131. 題自画大正五年一月 (w01)"
+          "131. 題自画大正五年一月"
         ]
       },
-      "height": 1600,
-      "width": 1200,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-131-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-131-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-131-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-131-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-131-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/131-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1600,
-                "width": 1200
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-131-w01"
+                "width": 1200,
+                "height": 1600
+              }
             }
           ]
         }

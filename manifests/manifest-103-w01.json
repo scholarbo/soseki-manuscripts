@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "103. 春日偶成〔十首・其十〕明治四十五年五月二十四日 (w01)"
+      "103. 春日偶成〔十首・其十〕明治四十五年五月二十四日"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "103"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,31 +35,7 @@
     {
       "label": {
         "ja": [
-          "制作日"
-        ]
-      },
-      "value": {
-        "ja": [
-          "1912-05-24"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "東北大学附属図書館漱石文庫蔵"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -59,56 +47,80 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "103.〔其　十〕<br/>渡尽東西水　　渡り尽くす　東西の水<br/>三過翠柳橋　　三たび過ぐ　翠柳の橋<br/>春風吹不断　　春風　吹きて断たず<br/>春恨幾条条　　春恨　幾条条"
+          "東北大学附属図書館漱石文庫蔵"
         ]
       }
     },
     {
       "label": {
         "ja": [
-          "本文・訓読"
+          "date_year"
         ]
       },
       "value": {
         "ja": [
-          "103.〔其　十〕<br/>渡尽東西水　　渡り尽くす　東西の水<br/>三過翠柳橋　　三たび過ぐ　翠柳の橋<br/>春風吹不断　　春風　吹きて断たず<br/>春恨幾条条　　春恨　幾条条"
+          "1912"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_month"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1912-05"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_day"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1912-05-24"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-103-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-103-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1200,
+      "height": 1600,
       "label": {
         "ja": [
-          "103. 春日偶成〔十首・其十〕明治四十五年五月二十四日 (w01)"
+          "103. 春日偶成〔十首・其十〕明治四十五年五月二十四日"
         ]
       },
-      "height": 1600,
-      "width": 1200,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-103-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-103-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-103-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-103-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-103-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/103-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1600,
-                "width": 1200
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-103-w01"
+                "width": 1200,
+                "height": 1600
+              }
             }
           ]
         }

@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "192. 〔無題〕大正五年十月十六日 (w01)"
+      "192. 〔無題〕大正五年十月十六日"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "192"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,31 +35,7 @@
     {
       "label": {
         "ja": [
-          "制作日"
-        ]
-      },
-      "value": {
-        "ja": [
-          "1916-10-16"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "東北大学附属図書館漱石文庫蔵"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -59,56 +47,80 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "192.〔無題〕　大正五年十月十六日<br/>人間翻手是青山　　人間　手を翻せば　是れ青山<br/>朝入市塵白日間　　朝に市塵に入れば　白日　間かなり<br/>笑語何心雲漠漠　　笑語　何の心ぞ　雲　漠漠<br/>喧声幾所水潺潺　　喧声　幾所か　水　潺潺<br/>誤跨牛背馬鳴去　　誤って　牛背に跨れば　馬　鳴いて去り<br/>復得龍牙狗走還　　復た龍牙を得て　狗　走り還る<br/>抱月投炉紅火熟　　月を抱きて　炉に投ずれば　紅火　熟し<br/>忽然亡月碧浮湾　　忽然として　月亡く　碧　湾に浮かぶ"
+          "東北大学附属図書館漱石文庫蔵"
         ]
       }
     },
     {
       "label": {
         "ja": [
-          "本文・訓読"
+          "date_year"
         ]
       },
       "value": {
         "ja": [
-          "192.〔無題〕　大正五年十月十六日<br/>人間翻手是青山　　人間　手を翻せば　是れ青山<br/>朝入市塵白日間　　朝に市塵に入れば　白日　間かなり<br/>笑語何心雲漠漠　　笑語　何の心ぞ　雲　漠漠<br/>喧声幾所水潺潺　　喧声　幾所か　水　潺潺<br/>誤跨牛背馬鳴去　　誤って　牛背に跨れば　馬　鳴いて去り<br/>復得龍牙狗走還　　復た龍牙を得て　狗　走り還る<br/>抱月投炉紅火熟　　月を抱きて　炉に投ずれば　紅火　熟し<br/>忽然亡月碧浮湾　　忽然として　月亡く　碧　湾に浮かぶ"
+          "1916"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_month"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-10"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_day"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-10-16"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-192-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-192-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1200,
+      "height": 1600,
       "label": {
         "ja": [
-          "192. 〔無題〕大正五年十月十六日 (w01)"
+          "192. 〔無題〕大正五年十月十六日"
         ]
       },
-      "height": 1600,
-      "width": 1200,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-192-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-192-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-192-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-192-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-192-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/192-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1600,
-                "width": 1200
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-192-w01"
+                "width": 1200,
+                "height": 1600
+              }
             }
           ]
         }

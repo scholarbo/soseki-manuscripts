@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "021. 〔『木屑録』より十四首・其四〕明治二十二年九月 (w01)"
+      "021. 〔『木屑録』より十四首・其四〕明治二十二年九月"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "021"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,31 +35,7 @@
     {
       "label": {
         "ja": [
-          "制作月"
-        ]
-      },
-      "value": {
-        "ja": [
-          "1889-09"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "https://dl.ndl.go.jp/pid/1192698"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -59,56 +47,68 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "21.〔『木屑録』より　十四首・其　四〕<br/>南出家山百里程　　南のかた家山を出でて　百里の程<br/>海涯月黑暗愁生　　海涯　月黑く　暗愁生す<br/>濤声一夜欺郷夢　　濤声　一夜　郷夢を欺き<br/>漫作故園松籟声　　漫りに作す　故園松籟の声"
+          "https://dl.ndl.go.jp/pid/1192698"
         ]
       }
     },
     {
       "label": {
         "ja": [
-          "本文・訓読"
+          "date_year"
         ]
       },
       "value": {
         "ja": [
-          "21.〔『木屑録』より　十四首・其　四〕<br/>南出家山百里程　　南のかた家山を出でて　百里の程<br/>海涯月黑暗愁生　　海涯　月黑く　暗愁生す<br/>濤声一夜欺郷夢　　濤声　一夜　郷夢を欺き<br/>漫作故園松籟声　　漫りに作す　故園松籟の声"
+          "1889"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_month"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1889-09"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-021-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-021-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1536,
+      "height": 1197,
       "label": {
         "ja": [
-          "021. 〔『木屑録』より十四首・其四〕明治二十二年九月 (w01)"
+          "021. 〔『木屑録』より十四首・其四〕明治二十二年九月"
         ]
       },
-      "height": 1197,
-      "width": 1536,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-021-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-021-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-021-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-021-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-021-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/021-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1197,
-                "width": 1536
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-021-w01"
+                "width": 1536,
+                "height": 1197
+              }
             }
           ]
         }

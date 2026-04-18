@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "116. 偶成 (w01)"
+      "116. 偶成"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "116"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,19 +35,7 @@
     {
       "label": {
         "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "東北大学附属図書館漱石文庫蔵"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -47,56 +47,44 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "116.偶成<br/>竹裏清風起　　竹裏　清風起こり<br/>石頭白暈生　　石頭　白暈生ず<br/>幽人無一事　　幽人　一事無く<br/>好句嗒然成　　好句　嗒然として成る"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "本文・訓読"
-        ]
-      },
-      "value": {
-        "ja": [
-          "116.偶成<br/>竹裏清風起　　竹裏　清風起こり<br/>石頭白暈生　　石頭　白暈生ず<br/>幽人無一事　　幽人　一事無く<br/>好句嗒然成　　好句　嗒然として成る"
+          "東北大学附属図書館漱石文庫蔵"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-116-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-116-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1200,
+      "height": 1600,
       "label": {
         "ja": [
-          "116. 偶成 (w01)"
+          "116. 偶成"
         ]
       },
-      "height": 1600,
-      "width": 1200,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-116-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-116-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-116-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-116-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-116-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/116-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1600,
-                "width": 1200
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-116-w01"
+                "width": 1200,
+                "height": 1600
+              }
             }
           ]
         }

@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "085. 〔無題〕明治四十三年十月四日 (w01)"
+      "085. 〔無題〕明治四十三年十月四日"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "085"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,31 +35,7 @@
     {
       "label": {
         "ja": [
-          "制作日"
-        ]
-      },
-      "value": {
-        "ja": [
-          "1910-10-04"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "東北大学附属図書館漱石文庫蔵/県立神奈川近代文学館蔵"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -59,56 +47,80 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "85.〔無題〕　明治四十三年十月四日<br/>万事休時一息回　　万事休せし時　一息回る<br/>余生豈忍比残灰　　余生　豈に忍びんや　残灰に比するに<br/>風過古澗秋声起　　風は古澗を過ぎて　秋声起こり<br/>日落幽篁暝色来　　日は幽篁に落ちて　暝色来たる<br/>漫道山中三月滞　　漫りに道う　山中に三月滞ると<br/>詎知門外一天開　　詎ぞ知らん　門外に一天開くを<br/>帰期勿後黄花節　　帰期　後るる勿かれ　黄花の節<br/>恐有羈魂夢旧苔　　恐らくは有羈魂の旧苔を夢むる有らんや"
+          "東北大学附属図書館漱石文庫蔵/県立神奈川近代文学館蔵"
         ]
       }
     },
     {
       "label": {
         "ja": [
-          "本文・訓読"
+          "date_year"
         ]
       },
       "value": {
         "ja": [
-          "85.〔無題〕　明治四十三年十月四日<br/>万事休時一息回　　万事休せし時　一息回る<br/>余生豈忍比残灰　　余生　豈に忍びんや　残灰に比するに<br/>風過古澗秋声起　　風は古澗を過ぎて　秋声起こり<br/>日落幽篁暝色来　　日は幽篁に落ちて　暝色来たる<br/>漫道山中三月滞　　漫りに道う　山中に三月滞ると<br/>詎知門外一天開　　詎ぞ知らん　門外に一天開くを<br/>帰期勿後黄花節　　帰期　後るる勿かれ　黄花の節<br/>恐有羈魂夢旧苔　　恐らくは有羈魂の旧苔を夢むる有らんや"
+          "1910"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_month"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1910-10"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_day"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1910-10-04"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-085-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-085-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1200,
+      "height": 1600,
       "label": {
         "ja": [
-          "085. 〔無題〕明治四十三年十月四日 (w01)"
+          "085. 〔無題〕明治四十三年十月四日"
         ]
       },
-      "height": 1600,
-      "width": 1200,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-085-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-085-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-085-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-085-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-085-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/085-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1600,
-                "width": 1200
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-085-w01"
+                "width": 1200,
+                "height": 1600
+              }
             }
           ]
         }

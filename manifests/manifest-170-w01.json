@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "170. 〔無題〕大正五年九月二十日 (w01)"
+      "170. 〔無題〕大正五年九月二十日"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "170"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,31 +35,7 @@
     {
       "label": {
         "ja": [
-          "制作日"
-        ]
-      },
-      "value": {
-        "ja": [
-          "1916-09-20"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "東北大学附属図書館漱石文庫蔵"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -59,56 +47,80 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "170.〔無題〕　大正五年九月二十日<br/>作客誰知別路賖　　客と作りて　誰か知らん　別路の賖かなるを<br/>思詩半睡隔窓紗　　詩を思いて　半睡し　窓紗を隔つ<br/>逆追鶯語入残夢　　逆め鶯語を追いて　残夢に入る<br/>応抱春愁対晚花　　応に春愁を抱いて　晚花に対すべし<br/>晏起牀頭新影到　　晏起の牀頭　新影　到り<br/>曾游壁上旧題斜　　曾游の壁上　旧題　斜めなり<br/>欲将爛酔酬佳日　　欲に爛酔を将って　佳日に酬いんと欲すれば<br/>高揭青帘在酒家　　高く青帘を揭げて　酒家に在り"
+          "東北大学附属図書館漱石文庫蔵"
         ]
       }
     },
     {
       "label": {
         "ja": [
-          "本文・訓読"
+          "date_year"
         ]
       },
       "value": {
         "ja": [
-          "170.〔無題〕　大正五年九月二十日<br/>作客誰知別路賖　　客と作りて　誰か知らん　別路の賖かなるを<br/>思詩半睡隔窓紗　　詩を思いて　半睡し　窓紗を隔つ<br/>逆追鶯語入残夢　　逆め鶯語を追いて　残夢に入る<br/>応抱春愁対晚花　　応に春愁を抱いて　晚花に対すべし<br/>晏起牀頭新影到　　晏起の牀頭　新影　到り<br/>曾游壁上旧題斜　　曾游の壁上　旧題　斜めなり<br/>欲将爛酔酬佳日　　欲に爛酔を将って　佳日に酬いんと欲すれば<br/>高揭青帘在酒家　　高く青帘を揭げて　酒家に在り"
+          "1916"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_month"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-09"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_day"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-09-20"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-170-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-170-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1200,
+      "height": 1600,
       "label": {
         "ja": [
-          "170. 〔無題〕大正五年九月二十日 (w01)"
+          "170. 〔無題〕大正五年九月二十日"
         ]
       },
-      "height": 1600,
-      "width": 1200,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-170-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-170-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-170-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-170-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-170-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/170-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1600,
-                "width": 1200
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-170-w01"
+                "width": 1200,
+                "height": 1600
+              }
             }
           ]
         }

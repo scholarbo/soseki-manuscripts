@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "057. 無題〔五首・其五〕明治二十八年五月 (w01)"
+      "057. 無題〔五首・其五〕明治二十八年五月"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "057"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,31 +35,7 @@
     {
       "label": {
         "ja": [
-          "制作月"
-        ]
-      },
-      "value": {
-        "ja": [
-          "1895-05"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "県立神奈川近代文学館蔵"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -59,56 +47,68 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "57.〔其　五〕<br/>破砕空中百尺楼　　空中百尺の楼を破砕すれば<br/>巨濤却向月宮流　　巨濤　却って月宮に向って流る<br/>大魚不語没波底　　大魚　語らずして　波底に没し<br/>俊鶻将飛立岸頭　　俊鶻　将に飛ばんとして　岸頭に立つ<br/>剣上風鳴多殺気　　剣上　風鳴りて　殺気多く<br/>枕辺雨滴鎖閑愁　　枕辺　雨滴りて　閑愁を鎖ざす<br/>一任文字買奇禍　　一えに任す　文字の奇禍を買うを<br/>笑指青山入予洲　　笑うて青山を指して　予洲に入る"
+          "県立神奈川近代文学館蔵"
         ]
       }
     },
     {
       "label": {
         "ja": [
-          "本文・訓読"
+          "date_year"
         ]
       },
       "value": {
         "ja": [
-          "57.〔其　五〕<br/>破砕空中百尺楼　　空中百尺の楼を破砕すれば<br/>巨濤却向月宮流　　巨濤　却って月宮に向って流る<br/>大魚不語没波底　　大魚　語らずして　波底に没し<br/>俊鶻将飛立岸頭　　俊鶻　将に飛ばんとして　岸頭に立つ<br/>剣上風鳴多殺気　　剣上　風鳴りて　殺気多く<br/>枕辺雨滴鎖閑愁　　枕辺　雨滴りて　閑愁を鎖ざす<br/>一任文字買奇禍　　一えに任す　文字の奇禍を買うを<br/>笑指青山入予洲　　笑うて青山を指して　予洲に入る"
+          "1895"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_month"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1895-05"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-057-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-057-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1200,
+      "height": 1600,
       "label": {
         "ja": [
-          "057. 無題〔五首・其五〕明治二十八年五月 (w01)"
+          "057. 無題〔五首・其五〕明治二十八年五月"
         ]
       },
-      "height": 1600,
-      "width": 1200,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-057-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-057-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-057-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-057-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-057-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/057-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1600,
-                "width": 1200
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-057-w01"
+                "width": 1200,
+                "height": 1600
+              }
             }
           ]
         }

@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "199. 〔無題三首·其二〕大正五年十月二十一日 (w01)"
+      "199. 〔無題三首·其二〕大正五年十月二十一日"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "199"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,31 +35,7 @@
     {
       "label": {
         "ja": [
-          "制作日"
-        ]
-      },
-      "value": {
-        "ja": [
-          "1916-10-21"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "東北大学附属図書館漱石文庫蔵"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -59,56 +47,80 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "199.〔其　二〕<br/>元是喪家狗　　元と是れ　喪家の狗<br/>徘徊在草原　　徘徊して　草原に在り<br/>童児誤打殺　　童児　誤って打殺す<br/>何日入吾門　　何れの日か　吾が門に入らん"
+          "東北大学附属図書館漱石文庫蔵"
         ]
       }
     },
     {
       "label": {
         "ja": [
-          "本文・訓読"
+          "date_year"
         ]
       },
       "value": {
         "ja": [
-          "199.〔其　二〕<br/>元是喪家狗　　元と是れ　喪家の狗<br/>徘徊在草原　　徘徊して　草原に在り<br/>童児誤打殺　　童児　誤って打殺す<br/>何日入吾門　　何れの日か　吾が門に入らん"
+          "1916"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_month"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-10"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_day"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-10-21"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-199-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-199-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1200,
+      "height": 1600,
       "label": {
         "ja": [
-          "199. 〔無題三首·其二〕大正五年十月二十一日 (w01)"
+          "199. 〔無題三首·其二〕大正五年十月二十一日"
         ]
       },
-      "height": 1600,
-      "width": 1200,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-199-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-199-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-199-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-199-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-199-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/199-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1600,
-                "width": 1200
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-199-w01"
+                "width": 1200,
+                "height": 1600
+              }
             }
           ]
         }

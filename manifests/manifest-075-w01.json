@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "075. 〔無題〕明治三十三年 (w01)"
+      "075. 〔無題〕明治三十三年"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "075"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,19 +35,7 @@
     {
       "label": {
         "ja": [
-          "制作年"
-        ]
-      },
-      "value": {
-        "ja": [
-          "1900"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -47,56 +47,44 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "date_year"
         ]
       },
       "value": {
         "ja": [
-          "75.〔無題〕　明治三十三年<br/>君病風流謝俗紛　　君病んで　風流　俗紛を謝し<br/>吾愚牢落失鴻群　　吾愚かにして　牢落　鴻群を失う<br/>磨甎未徹古人句　　甎を磨きて　未だ徹せず　古人の句<br/>嘔血始看才子文　　血を嘔きて　始めて看る　才子の文<br/>陌柳映衣征意動　　陌柳　衣に映じて　征意動き<br/>館燈照鬢客愁分　　館燈　鬢を照らして　客愁分かる<br/>詩成投筆蹣跚起　　詩成り　筆を投じて　蹣跚として起つ<br/>此去西天多白雲　　此の去　西天　白雲多からん"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "本文・訓読"
-        ]
-      },
-      "value": {
-        "ja": [
-          "75.〔無題〕　明治三十三年<br/>君病風流謝俗紛　　君病んで　風流　俗紛を謝し<br/>吾愚牢落失鴻群　　吾愚かにして　牢落　鴻群を失う<br/>磨甎未徹古人句　　甎を磨きて　未だ徹せず　古人の句<br/>嘔血始看才子文　　血を嘔きて　始めて看る　才子の文<br/>陌柳映衣征意動　　陌柳　衣に映じて　征意動き<br/>館燈照鬢客愁分　　館燈　鬢を照らして　客愁分かる<br/>詩成投筆蹣跚起　　詩成り　筆を投じて　蹣跚として起つ<br/>此去西天多白雲　　此の去　西天　白雲多からん"
+          "1900"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-075-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-075-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1200,
+      "height": 1600,
       "label": {
         "ja": [
-          "075. 〔無題〕明治三十三年 (w01)"
+          "075. 〔無題〕明治三十三年"
         ]
       },
-      "height": 1600,
-      "width": 1200,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-075-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-075-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-075-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-075-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-075-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/075-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1600,
-                "width": 1200
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-075-w01"
+                "width": 1200,
+                "height": 1600
+              }
             }
           ]
         }

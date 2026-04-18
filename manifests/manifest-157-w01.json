@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "157. 〔無題〕大正五年九月五日 (w01)"
+      "157. 〔無題〕大正五年九月五日"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "157"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,31 +35,7 @@
     {
       "label": {
         "ja": [
-          "制作日"
-        ]
-      },
-      "value": {
-        "ja": [
-          "1916-09-05"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "所蔵"
-        ]
-      },
-      "value": {
-        "ja": [
-          "東北大学附属図書館漱石文庫蔵"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -59,56 +47,80 @@
     {
       "label": {
         "ja": [
-          "漢詩本文"
+          "source"
         ]
       },
       "value": {
         "ja": [
-          "157.〔無題〕　大正五年九月五日<br/>絶好文章天地大　　絶好の文章　天地大に<br/>四時寒暑不曾違　　四時の寒暑　曾て違わず<br/>夭夭正昼桃将発　　夭夭として　正昼　桃将に発かんとし<br/>歴歴晴空鶴始飛　　歴歴として　晴空　鶴始めて飛ぶ<br/>日月高懸何磊落　　日月　高く懸りて　何ぞ磊落たる<br/>陰阳默照是霊威　　陰阳　默し照らすは　是れ霊威<br/>勿令碧眼知消息　　碧眼をして消息を知ら令むる勿かれ<br/>欲弄言辞堕俗機　　言辞を弄せんと欲すれば　俗機に堕つ"
+          "東北大学附属図書館漱石文庫蔵"
         ]
       }
     },
     {
       "label": {
         "ja": [
-          "本文・訓読"
+          "date_year"
         ]
       },
       "value": {
         "ja": [
-          "157.〔無題〕　大正五年九月五日<br/>絶好文章天地大　　絶好の文章　天地大に<br/>四時寒暑不曾違　　四時の寒暑　曾て違わず<br/>夭夭正昼桃将発　　夭夭として　正昼　桃将に発かんとし<br/>歴歴晴空鶴始飛　　歴歴として　晴空　鶴始めて飛ぶ<br/>日月高懸何磊落　　日月　高く懸りて　何ぞ磊落たる<br/>陰阳默照是霊威　　陰阳　默し照らすは　是れ霊威<br/>勿令碧眼知消息　　碧眼をして消息を知ら令むる勿かれ<br/>欲弄言辞堕俗機　　言辞を弄せんと欲すれば　俗機に堕つ"
+          "1916"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_month"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-09"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_day"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-09-05"
         ]
       }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-157-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-157-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1200,
+      "height": 1600,
       "label": {
         "ja": [
-          "157. 〔無題〕大正五年九月五日 (w01)"
+          "157. 〔無題〕大正五年九月五日"
         ]
       },
-      "height": 1600,
-      "width": 1200,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-157-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-157-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-157-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-157-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-157-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/157-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1600,
-                "width": 1200
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-157-w01"
+                "width": 1200,
+                "height": 1600
+              }
             }
           ]
         }

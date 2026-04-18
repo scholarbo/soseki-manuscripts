@@ -3,7 +3,7 @@
     "seq": "1",
     "id": "001",
     "title": "001. 鴻台〔二首・其一〕",
-    "source": "『時運』",
+    "source": "『時運』a",
     "date_year": "",
     "date_month": "",
     "date_day": "",
@@ -14,7 +14,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-001-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-001-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-001-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-001-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-001-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -34,7 +38,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-002-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-002-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-002-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-002-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-002-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -54,7 +62,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-003-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-003-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-003-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-003-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-003-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -74,7 +86,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-004-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-004-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-004-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-004-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-004-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -94,7 +110,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-005-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-005-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-005-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-005-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-005-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -114,7 +134,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-006-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-006-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-006-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-006-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-006-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -134,7 +158,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-007-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-007-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-007-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-007-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-007-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -154,7 +182,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-008-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-008-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-008-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-008-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-008-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -174,7 +206,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-009-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-009-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-009-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-009-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-009-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -194,7 +230,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-010-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-010-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-010-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-010-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-010-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -214,7 +254,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-011-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-011-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-011-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-011-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-011-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -234,7 +278,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-012-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-012-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-012-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-012-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-012-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -254,7 +302,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-013-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-013-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-013-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-013-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-013-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -274,7 +326,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-014-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-014-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-014-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-014-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-014-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -294,7 +350,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-015-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-015-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-015-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-015-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-015-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -314,7 +374,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-016-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-016-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-016-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-016-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-016-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -334,7 +398,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-017-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-017-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-017-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-017-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-017-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -354,7 +422,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-018-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-018-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-018-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-018-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-018-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -374,7 +446,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-019-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-019-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-019-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-019-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-019-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -394,7 +470,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-020-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-020-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-020-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-020-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-020-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -414,7 +494,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-021-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-021-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-021-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-021-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-021-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -434,7 +518,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-022-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-022-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-022-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-022-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-022-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -454,7 +542,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-023-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-023-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-023-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-023-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-023-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -474,7 +566,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-024-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-024-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-024-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-024-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-024-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -494,7 +590,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-025-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-025-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-025-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-025-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-025-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -514,7 +614,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-026-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-026-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-026-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-026-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-026-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -534,7 +638,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-027-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-027-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-027-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-027-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-027-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -554,7 +662,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-028-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-028-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-028-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-028-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-028-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -574,7 +686,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-029-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-029-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-029-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-029-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-029-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -594,7 +710,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-030-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-030-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-030-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-030-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-030-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -614,7 +734,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-031-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-031-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-031-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-031-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-031-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -634,7 +758,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-032-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-032-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-032-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-032-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-032-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -654,7 +782,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-033-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-033-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-033-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-033-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-033-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -674,7 +806,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-034-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-034-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-034-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-034-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-034-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -694,7 +830,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-035-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-035-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-035-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-035-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-035-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -714,7 +854,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-036-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-036-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-036-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-036-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-036-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -734,7 +878,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-037-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-037-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-037-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-037-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-037-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -754,7 +902,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-038-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-038-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-038-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-038-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-038-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -774,7 +926,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-039-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-039-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-039-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-039-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-039-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -794,7 +950,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-040-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-040-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-040-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-040-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-040-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -814,7 +974,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-041-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-041-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-041-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-041-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-041-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -834,7 +998,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-042-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-042-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-042-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-042-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-042-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -854,7 +1022,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-043-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-043-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-043-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-043-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-043-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -874,7 +1046,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-044-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-044-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-044-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-044-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-044-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -894,7 +1070,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-045-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-045-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-045-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-045-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-045-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -914,7 +1094,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-046-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-046-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-046-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-046-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-046-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -934,7 +1118,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-047-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-047-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-047-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-047-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-047-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -954,7 +1142,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-048-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-048-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-048-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-048-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-048-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -974,7 +1166,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-049-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-049-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-049-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-049-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-049-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -994,7 +1190,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-050-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-050-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-050-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-050-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-050-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1014,7 +1214,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-051-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-051-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-051-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-051-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-051-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1034,7 +1238,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-052-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-052-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-052-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-052-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-052-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1054,7 +1262,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-053-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-053-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-053-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-053-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-053-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1074,7 +1286,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-054-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-054-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-054-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-054-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-054-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1094,7 +1310,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-055-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-055-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-055-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-055-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-055-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1114,7 +1334,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-056-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-056-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-056-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-056-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-056-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1134,7 +1358,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-057-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-057-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-057-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-057-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-057-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1154,7 +1382,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-058-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-058-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-058-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-058-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-058-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1174,7 +1406,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-059-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-059-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-059-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-059-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-059-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1194,7 +1430,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-060-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-060-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-060-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-060-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-060-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1214,7 +1454,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-061-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-061-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-061-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-061-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-061-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1234,7 +1478,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-062-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-062-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-062-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-062-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-062-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1254,7 +1502,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-063-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-063-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-063-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-063-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-063-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1274,7 +1526,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-064-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-064-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-064-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-064-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-064-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1294,7 +1550,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-065-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-065-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-065-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-065-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-065-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1314,7 +1574,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-066-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-066-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-066-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-066-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-066-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1335,8 +1599,16 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-067-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-067-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-067-w01.json",
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-067-w02.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-067-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-067-w01.json"
+      },
+      {
+        "witness_id": "w02",
+        "manifest_id": "manifest-067-w02",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-067-w02.json"
+      }
     ],
     "witness_count": "2",
     "has_multiple_witness": "1"
@@ -1356,7 +1628,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-068-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-068-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-068-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-068-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-068-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1376,7 +1652,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-069-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-069-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-069-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-069-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-069-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1396,7 +1676,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-070-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-070-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-070-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-070-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-070-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1416,7 +1700,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-071-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-071-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-071-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-071-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-071-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1436,7 +1724,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-072-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-072-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-072-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-072-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-072-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1456,7 +1748,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-073-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-073-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-073-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-073-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-073-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1476,7 +1772,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-074-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-074-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-074-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-074-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-074-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1496,7 +1796,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-075-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-075-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-075-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-075-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-075-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1516,7 +1820,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-076-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-076-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-076-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-076-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-076-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1536,7 +1844,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-077-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-077-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-077-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-077-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-077-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1556,7 +1868,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-078-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-078-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-078-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-078-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-078-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1576,7 +1892,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-079-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-079-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-079-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-079-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-079-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1596,7 +1916,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-080-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-080-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-080-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-080-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-080-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1616,7 +1940,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-081-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-081-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-081-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-081-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-081-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1636,7 +1964,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-082-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-082-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-082-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-082-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-082-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1656,7 +1988,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-083-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-083-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-083-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-083-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-083-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1676,7 +2012,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-084-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-084-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-084-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-084-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-084-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1696,7 +2036,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-085-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-085-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-085-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-085-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-085-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1716,7 +2060,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-086-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-086-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-086-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-086-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-086-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1736,7 +2084,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-087-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-087-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-087-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-087-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-087-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1756,7 +2108,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-088-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-088-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-088-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-088-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-088-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1776,7 +2132,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-089-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-089-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-089-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-089-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-089-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1796,7 +2156,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-090-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-090-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-090-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-090-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-090-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1816,7 +2180,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-091-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-091-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-091-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-091-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-091-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1836,7 +2204,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-092-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-092-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-092-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-092-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-092-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1856,7 +2228,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-093-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-093-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-093-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-093-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-093-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1876,7 +2252,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-094-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-094-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-094-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-094-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-094-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1896,7 +2276,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-095-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-095-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-095-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-095-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-095-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1916,7 +2300,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-096-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-096-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-096-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-096-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-096-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1936,7 +2324,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-097-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-097-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-097-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-097-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-097-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1956,7 +2348,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-098-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-098-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-098-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-098-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-098-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1976,7 +2372,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-099-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-099-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-099-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-099-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-099-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -1996,7 +2396,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-100-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-100-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-100-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-100-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-100-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2016,7 +2420,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-101-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-101-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-101-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-101-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-101-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2036,7 +2444,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-102-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-102-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-102-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-102-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-102-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2056,7 +2468,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-103-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-103-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-103-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-103-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-103-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2076,7 +2492,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-104-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-104-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-104-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-104-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-104-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2096,7 +2516,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-105-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-105-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-105-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-105-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-105-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2116,7 +2540,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-106-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-106-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-106-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-106-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-106-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2136,7 +2564,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-107-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-107-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-107-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-107-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-107-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2156,7 +2588,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-108-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-108-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-108-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-108-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-108-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2176,7 +2612,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-109-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-109-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-109-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-109-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-109-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2196,7 +2636,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-110-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-110-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-110-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-110-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-110-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2216,7 +2660,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-111-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-111-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-111-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-111-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-111-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2236,7 +2684,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-112-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-112-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-112-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-112-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-112-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2256,7 +2708,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-113-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-113-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-113-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-113-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-113-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2276,7 +2732,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-114-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-114-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-114-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-114-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-114-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2296,7 +2756,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-115-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-115-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-115-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-115-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-115-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2316,7 +2780,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-116-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-116-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-116-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-116-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-116-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2336,7 +2804,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-117-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-117-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-117-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-117-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-117-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2356,7 +2828,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-118-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-118-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-118-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-118-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-118-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2376,7 +2852,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-119-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-119-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-119-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-119-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-119-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2396,7 +2876,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-120-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-120-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-120-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-120-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-120-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2416,7 +2900,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-121-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-121-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-121-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-121-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-121-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2436,7 +2924,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-122-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-122-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-122-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-122-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-122-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2456,7 +2948,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-123-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-123-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-123-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-123-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-123-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2476,7 +2972,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-124-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-124-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-124-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-124-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-124-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2496,7 +2996,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-125-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-125-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-125-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-125-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-125-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2516,7 +3020,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-126-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-126-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-126-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-126-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-126-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2536,7 +3044,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-127-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-127-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-127-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-127-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-127-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2556,7 +3068,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-128-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-128-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-128-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-128-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-128-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2576,7 +3092,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-129-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-129-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-129-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-129-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-129-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2596,7 +3116,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-130-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-130-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-130-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-130-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-130-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2616,7 +3140,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-131-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-131-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-131-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-131-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-131-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2636,7 +3164,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-132-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-132-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-132-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-132-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-132-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2656,7 +3188,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-133-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-133-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-133-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-133-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-133-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2676,7 +3212,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-134-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-134-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-134-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-134-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-134-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2696,7 +3236,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-135-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-135-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-135-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-135-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-135-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2716,7 +3260,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-136-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-136-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-136-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-136-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-136-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2736,7 +3284,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-137-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-137-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-137-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-137-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-137-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2756,7 +3308,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-138-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-138-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-138-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-138-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-138-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2776,7 +3332,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-139-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-139-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-139-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-139-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-139-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2796,7 +3356,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-140-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-140-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-140-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-140-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-140-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2816,7 +3380,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-141-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-141-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-141-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-141-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-141-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2836,7 +3404,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-142-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-142-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-142-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-142-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-142-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2856,7 +3428,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-143-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-143-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-143-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-143-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-143-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2876,7 +3452,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-144-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-144-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-144-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-144-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-144-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2896,7 +3476,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-145-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-145-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-145-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-145-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-145-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2916,7 +3500,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-146-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-146-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-146-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-146-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-146-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2936,7 +3524,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-147-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-147-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-147-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-147-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-147-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2956,7 +3548,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-148-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-148-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-148-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-148-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-148-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2976,7 +3572,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-149-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-149-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-149-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-149-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-149-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -2996,7 +3596,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-150-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-150-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-150-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-150-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-150-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3016,7 +3620,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-151-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-151-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-151-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-151-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-151-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3036,7 +3644,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-152-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-152-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-152-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-152-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-152-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3056,7 +3668,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-153-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-153-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-153-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-153-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-153-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3076,7 +3692,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-154-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-154-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-154-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-154-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-154-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3096,7 +3716,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-155-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-155-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-155-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-155-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-155-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3116,7 +3740,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-156-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-156-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-156-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-156-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-156-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3136,7 +3764,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-157-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-157-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-157-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-157-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-157-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3156,7 +3788,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-158-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-158-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-158-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-158-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-158-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3176,7 +3812,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-159-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-159-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-159-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-159-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-159-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3196,7 +3836,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-160-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-160-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-160-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-160-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-160-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3216,7 +3860,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-161-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-161-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-161-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-161-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-161-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3236,7 +3884,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-162-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-162-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-162-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-162-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-162-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3256,7 +3908,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-163-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-163-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-163-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-163-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-163-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3276,7 +3932,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-164-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-164-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-164-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-164-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-164-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3296,7 +3956,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-165-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-165-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-165-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-165-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-165-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3316,7 +3980,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-166-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-166-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-166-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-166-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-166-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3336,7 +4004,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-167-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-167-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-167-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-167-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-167-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3356,7 +4028,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-168-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-168-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-168-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-168-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-168-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3376,7 +4052,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-169-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-169-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-169-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-169-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-169-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3396,7 +4076,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-170-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-170-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-170-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-170-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-170-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3416,7 +4100,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-171-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-171-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-171-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-171-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-171-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3436,7 +4124,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-172-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-172-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-172-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-172-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-172-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3456,7 +4148,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-173-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-173-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-173-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-173-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-173-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3476,7 +4172,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-174-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-174-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-174-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-174-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-174-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3496,7 +4196,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-175-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-175-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-175-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-175-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-175-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3516,7 +4220,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-176-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-176-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-176-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-176-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-176-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3536,7 +4244,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-177-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-177-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-177-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-177-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-177-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3556,7 +4268,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-178-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-178-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-178-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-178-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-178-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3576,7 +4292,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-179-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-179-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-179-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-179-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-179-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3596,7 +4316,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-180-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-180-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-180-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-180-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-180-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3616,7 +4340,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-181-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-181-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-181-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-181-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-181-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3636,7 +4364,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-182-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-182-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-182-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-182-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-182-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3656,7 +4388,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-183-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-183-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-183-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-183-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-183-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3676,7 +4412,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-184-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-184-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-184-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-184-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-184-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3696,7 +4436,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-185-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-185-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-185-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-185-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-185-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3716,7 +4460,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-186-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-186-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-186-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-186-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-186-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3736,7 +4484,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-187-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-187-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-187-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-187-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-187-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3756,7 +4508,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-188-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-188-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-188-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-188-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-188-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3776,7 +4532,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-189-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-189-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-189-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-189-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-189-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3796,7 +4556,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-190-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-190-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-190-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-190-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-190-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3816,7 +4580,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-191-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-191-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-191-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-191-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-191-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3836,7 +4604,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-192-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-192-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-192-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-192-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-192-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3856,7 +4628,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-193-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-193-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-193-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-193-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-193-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3876,7 +4652,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-194-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-194-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-194-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-194-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-194-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3896,7 +4676,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-195-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-195-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-195-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-195-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-195-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3916,7 +4700,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-196-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-196-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-196-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-196-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-196-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3936,7 +4724,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-197-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-197-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-197-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-197-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-197-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3956,7 +4748,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-198-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-198-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-198-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-198-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-198-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3976,7 +4772,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-199-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-199-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-199-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-199-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-199-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -3996,7 +4796,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-200-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-200-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-200-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-200-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-200-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -4016,7 +4820,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-201-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-201-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-201-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-201-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-201-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -4036,7 +4844,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-202-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-202-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-202-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-202-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-202-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -4056,7 +4868,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-203-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-203-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-203-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-203-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-203-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -4076,7 +4892,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-204-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-204-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-204-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-204-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-204-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -4096,7 +4916,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-205-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-205-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-205-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-205-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-205-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -4116,7 +4940,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-206-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-206-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-206-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-206-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-206-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -4136,7 +4964,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-207-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-207-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-207-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-207-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-207-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -4156,7 +4988,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-208-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-208-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-208-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-208-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-208-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -4176,7 +5012,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-209-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-209-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-209-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-209-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-209-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -4196,7 +5036,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-210-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-210-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-210-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-210-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-210-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -4216,7 +5060,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-211-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-211-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-211-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-211-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-211-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -4236,7 +5084,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-212-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-212-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-212-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-212-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-212-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -4256,7 +5108,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-213-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-213-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-213-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-213-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-213-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -4276,7 +5132,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-214-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-214-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-214-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-214-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-214-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -4296,7 +5156,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-215-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-215-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-215-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-215-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-215-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"
@@ -4316,7 +5180,11 @@
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-216-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-216-w01.json",
     "manifest_list": [
-      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-216-w01.json"
+      {
+        "witness_id": "w01",
+        "manifest_id": "manifest-216-w01",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-216-w01.json"
+      }
     ],
     "witness_count": "1",
     "has_multiple_witness": "0"

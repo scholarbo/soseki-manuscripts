@@ -4,14 +4,26 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "051. 大井川舟中 (w01)"
+      "051. 大井川舟中"
     ]
   },
   "metadata": [
     {
       "label": {
         "ja": [
-          "題名"
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "051"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
         ]
       },
       "value": {
@@ -23,7 +35,7 @@
     {
       "label": {
         "ja": [
-          "版本"
+          "Witness"
         ]
       },
       "value": {
@@ -31,60 +43,36 @@
           "w01"
         ]
       }
-    },
-    {
-      "label": {
-        "ja": [
-          "漢詩本文"
-        ]
-      },
-      "value": {
-        "ja": [
-          "51.大井川舟中<br/>青州従事好相親　　青州の従事　好し　相い親まん<br/>鼇背嘯風豪気伸　　鼇背　風に嘯けば　豪気伸ぶ<br/>十八洋頭秋似水　　十八洋頭　秋は水に似て<br/>一痕新月度蒼旻　　一痕の新月　蒼旻を度る"
-        ]
-      }
-    },
-    {
-      "label": {
-        "ja": [
-          "本文・訓読"
-        ]
-      },
-      "value": {
-        "ja": [
-          "51.大井川舟中<br/>青州従事好相親　　青州の従事　好し　相い親まん<br/>鼇背嘯風豪気伸　　鼇背　風に嘯けば　豪気伸ぶ<br/>十八洋頭秋似水　　十八洋頭　秋は水に似て<br/>一痕新月度蒼旻　　一痕の新月　蒼旻を度る"
-        ]
-      }
     }
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-051-w01",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-051-w01.json/canvas/1",
       "type": "Canvas",
+      "width": 1200,
+      "height": 1600,
       "label": {
         "ja": [
-          "051. 大井川舟中 (w01)"
+          "051. 大井川舟中"
         ]
       },
-      "height": 1600,
-      "width": 1200,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-051-w01",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-051-w01.json/page/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-051-w01",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-051-w01.json/annotation/1",
               "type": "Annotation",
               "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-051-w01.json/canvas/1",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/051-w01.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1600,
-                "width": 1200
-              },
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-051-w01"
+                "width": 1200,
+                "height": 1600
+              }
             }
           ]
         }
