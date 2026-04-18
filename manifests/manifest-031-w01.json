@@ -4,7 +4,7 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "031. 〔『木屑録』より十四首・其十四〕自嘲書木屑録後"
+      "031. 〔『木屑録』より十四首・其十四〕自嘲書木屑録後 (w01)"
     ]
   },
   "metadata": [
@@ -83,32 +83,32 @@
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/canvas-031-w01-p1",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-031-w01",
       "type": "Canvas",
       "label": {
         "ja": [
-          "031 第1頁"
+          "031. 〔『木屑録』より十四首・其十四〕自嘲書木屑録後 (w01)"
         ]
       },
       "height": 1197,
       "width": 1536,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/page/canvas-031-w01-p1",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-031-w01",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/annotation/canvas-031-w01-p1-image",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-031-w01",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/canvas-031-w01-p1",
               "body": {
-                "id": "https://scholarbo.github.io/soseki-manuscripts/images/031.jpg",
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/031-w01.jpg",
                 "type": "Image",
-                "format": "image/jpeg",
+                "format": "image/jpg",
                 "height": 1197,
                 "width": 1536
-              }
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-031-w01"
             }
           ]
         }

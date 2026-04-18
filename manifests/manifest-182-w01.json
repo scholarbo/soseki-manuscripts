@@ -1,0 +1,118 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-182-w01.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "182. 〔無題〕大正五年十月三日 (w01)"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "182. 〔無題〕大正五年十月三日"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作日"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-10-03"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "版本"
+        ]
+      },
+      "value": {
+        "ja": [
+          "w01"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "182.〔無題〕　大正五年十月三日<br/>逐蝶尋花忽失蹤　　蝶を逐い　花を尋ねて　忽ち蹤を失い<br/>晚帰林下幾人逢　　晚に林下に帰れば　幾人にか逢う<br/>朱評古聖空霊句　　朱もて評す　古聖空霊の句<br/>青隔時流偃蹇松　　青は時流を隔つ　偃蹇の松<br/>機外蕭風吹落寞　　機外の蕭風　落寞を吹き<br/>静中凝露向芙蓉　　静中の凝露　芙蓉に向かう<br/>山高日短秋将尽　　山高く　日短くして　秋将に尽きんとし<br/>復擁寒衾独入冬　　復た寒衾を擁して　独り冬に入る"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "182.〔無題〕　大正五年十月三日<br/>逐蝶尋花忽失蹤　　蝶を逐い　花を尋ねて　忽ち蹤を失い<br/>晚帰林下幾人逢　　晚に林下に帰れば　幾人にか逢う<br/>朱評古聖空霊句　　朱もて評す　古聖空霊の句<br/>青隔時流偃蹇松　　青は時流を隔つ　偃蹇の松<br/>機外蕭風吹落寞　　機外の蕭風　落寞を吹き<br/>静中凝露向芙蓉　　静中の凝露　芙蓉に向かう<br/>山高日短秋将尽　　山高く　日短くして　秋将に尽きんとし<br/>復擁寒衾独入冬　　復た寒衾を擁して　独り冬に入る"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-182-w01",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "182. 〔無題〕大正五年十月三日 (w01)"
+        ]
+      },
+      "height": 1600,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-182-w01",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-182-w01",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/182-w01.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1600,
+                "width": 1200
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-182-w01"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

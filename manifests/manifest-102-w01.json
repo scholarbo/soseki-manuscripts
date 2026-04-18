@@ -1,0 +1,118 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-102-w01.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "102. 春日偶成〔十首・其九〕明治四十五年五月二十四日 (w01)"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "102. 春日偶成〔十首・其九〕明治四十五年五月二十四日"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作日"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1912-05-24"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "版本"
+        ]
+      },
+      "value": {
+        "ja": [
+          "w01"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "102.〔其　九〕<br/>草色空階下　　草色　空階の下<br/>萋萋雨後青　　萋萋として　雨後に青し<br/>孤鶯呼偶去　　孤鶯　偶を呼びて去り<br/>遅日満閑庭　　遅日　閑庭に満つ"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "102.〔其　九〕<br/>草色空階下　　草色　空階の下<br/>萋萋雨後青　　萋萋として　雨後に青し<br/>孤鶯呼偶去　　孤鶯　偶を呼びて去り<br/>遅日満閑庭　　遅日　閑庭に満つ"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-102-w01",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "102. 春日偶成〔十首・其九〕明治四十五年五月二十四日 (w01)"
+        ]
+      },
+      "height": 1600,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-102-w01",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-102-w01",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/102-w01.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1600,
+                "width": 1200
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-102-w01"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -4,7 +4,7 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "028. 〔『木屑録』より十四首・其十一〕天明舟達三堀旗亭即事"
+      "028. 〔『木屑録』より十四首・其十一〕天明舟達三堀旗亭即事 (w01)"
     ]
   },
   "metadata": [
@@ -83,32 +83,32 @@
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/canvas-028-w01-p1",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-028-w01",
       "type": "Canvas",
       "label": {
         "ja": [
-          "028 第1頁"
+          "028. 〔『木屑録』より十四首・其十一〕天明舟達三堀旗亭即事 (w01)"
         ]
       },
       "height": 1197,
       "width": 1536,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/page/canvas-028-w01-p1",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-028-w01",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/annotation/canvas-028-w01-p1-image",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-028-w01",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/canvas-028-w01-p1",
               "body": {
-                "id": "https://scholarbo.github.io/soseki-manuscripts/images/028.jpg",
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/028-w01.jpg",
                 "type": "Image",
-                "format": "image/jpeg",
+                "format": "image/jpg",
                 "height": 1197,
                 "width": 1536
-              }
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-028-w01"
             }
           ]
         }

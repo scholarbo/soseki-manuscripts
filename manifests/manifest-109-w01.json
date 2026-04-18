@@ -1,0 +1,118 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-109-w01.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "109. 酬横山画伯惠画明治四十五年七月 (w01)"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "109. 酬横山画伯惠画明治四十五年七月"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作月"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1912-07"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "版本"
+        ]
+      },
+      "value": {
+        "ja": [
+          "w01"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "109.酬横山画伯惠画　明治四十五年七月<br/>大観天地趣　　大観す　天地の趣<br/>円覚自然情　　円覚す　自然の情<br/>信手時揮洒　　手に信せて　時に揮洒すれば<br/>雲煙笔底生　　雲煙　笔底より生ず"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "109.酬横山画伯惠画　明治四十五年七月<br/>大観天地趣　　大観す　天地の趣<br/>円覚自然情　　円覚す　自然の情<br/>信手時揮洒　　手に信せて　時に揮洒すれば<br/>雲煙笔底生　　雲煙　笔底より生ず"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-109-w01",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "109. 酬横山画伯惠画明治四十五年七月 (w01)"
+        ]
+      },
+      "height": 1600,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-109-w01",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-109-w01",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/109-w01.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1600,
+                "width": 1200
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-109-w01"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -4,7 +4,7 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "021. 〔『木屑録』より十四首・其四〕明治二十二年九月"
+      "021. 〔『木屑録』より十四首・其四〕明治二十二年九月 (w01)"
     ]
   },
   "metadata": [
@@ -83,32 +83,32 @@
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/canvas-021-w01-p1",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-021-w01",
       "type": "Canvas",
       "label": {
         "ja": [
-          "021 第1頁"
+          "021. 〔『木屑録』より十四首・其四〕明治二十二年九月 (w01)"
         ]
       },
       "height": 1197,
       "width": 1536,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/page/canvas-021-w01-p1",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-021-w01",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/annotation/canvas-021-w01-p1-image",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-021-w01",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/canvas-021-w01-p1",
               "body": {
-                "id": "https://scholarbo.github.io/soseki-manuscripts/images/021.jpg",
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/021-w01.jpg",
                 "type": "Image",
-                "format": "image/jpeg",
+                "format": "image/jpg",
                 "height": 1197,
                 "width": 1536
-              }
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-021-w01"
             }
           ]
         }

@@ -4,7 +4,7 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "016. 〔「『七草集』評」より九首・其八〕明治二十二年五月"
+      "016. 〔「『七草集』評」より九首・其八〕明治二十二年五月 (w01)"
     ]
   },
   "metadata": [
@@ -83,32 +83,32 @@
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/canvas-016-w01-p1",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-016-w01",
       "type": "Canvas",
       "label": {
         "ja": [
-          "016 第1頁"
+          "016. 〔「『七草集』評」より九首・其八〕明治二十二年五月 (w01)"
         ]
       },
       "height": 800,
       "width": 979,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/page/canvas-016-w01-p1",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-016-w01",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/annotation/canvas-016-w01-p1-image",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-016-w01",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/canvas-016-w01-p1",
               "body": {
-                "id": "https://scholarbo.github.io/soseki-manuscripts/images/016.jpg",
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/016-w01.jpg",
                 "type": "Image",
-                "format": "image/jpeg",
+                "format": "image/jpg",
                 "height": 800,
                 "width": 979
-              }
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-016-w01"
             }
           ]
         }

@@ -1,0 +1,118 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-122-w01.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "122. 閑居偶成、似臨風詞兄大正三年 (w01)"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "122. 閑居偶成、似臨風詞兄大正三年"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作年"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1914"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "版本"
+        ]
+      },
+      "value": {
+        "ja": [
+          "w01"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "122.閑居偶成、似臨風詞兄　大正三年<br/>野水辞花塢　　野水　花塢を辞し<br/>春風入草堂　　春風　草堂に入る<br/>徂来何澹淡　　徂来　何ぞ澹淡たる<br/>無我是仙郷　　無我　是れ仙郷"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "122.閑居偶成、似臨風詞兄　大正三年<br/>野水辞花塢　　野水　花塢を辞し<br/>春風入草堂　　春風　草堂に入る<br/>徂来何澹淡　　徂来　何ぞ澹淡たる<br/>無我是仙郷　　無我　是れ仙郷"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-122-w01",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "122. 閑居偶成、似臨風詞兄大正三年 (w01)"
+        ]
+      },
+      "height": 1600,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-122-w01",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-122-w01",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/122-w01.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1600,
+                "width": 1200
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-122-w01"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

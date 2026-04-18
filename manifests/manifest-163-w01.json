@@ -1,0 +1,118 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-163-w01.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "163. 〔無題〕大正五年九月十三日 (w01)"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "163. 〔無題〕大正五年九月十三日"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作日"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-09-13"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "版本"
+        ]
+      },
+      "value": {
+        "ja": [
+          "w01"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "163.〔無題〕　大正五年九月十三日<br/>挂剣微思不自知　　剣を挂くる微思　自ら知らず<br/>誤為季子愧無期　　誤って季子と為り　期無きを愧ず<br/>秋風破尽芭蕉夢　　秋風　破り尽くす　芭蕉の夢<br/>寒雨打成流落詩　　寒雨　打ちて成す　流落の詩<br/>天下何狂投笔起　　天下　何ぞ狂える　笔を投じて起ち<br/>人間有道挺身之　　人間　道有りて　身を挺して之かん<br/>吾当死処吾当死　　吾当に死すべき処　吾当に死すべし<br/>一日元来十二時　　一日　元来　十二時"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "163.〔無題〕　大正五年九月十三日<br/>挂剣微思不自知　　剣を挂くる微思　自ら知らず<br/>誤為季子愧無期　　誤って季子と為り　期無きを愧ず<br/>秋風破尽芭蕉夢　　秋風　破り尽くす　芭蕉の夢<br/>寒雨打成流落詩　　寒雨　打ちて成す　流落の詩<br/>天下何狂投笔起　　天下　何ぞ狂える　笔を投じて起ち<br/>人間有道挺身之　　人間　道有りて　身を挺して之かん<br/>吾当死処吾当死　　吾当に死すべき処　吾当に死すべし<br/>一日元来十二時　　一日　元来　十二時"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-163-w01",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "163. 〔無題〕大正五年九月十三日 (w01)"
+        ]
+      },
+      "height": 1600,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-163-w01",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-163-w01",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/163-w01.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1600,
+                "width": 1200
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-163-w01"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-181-w01.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "181. 〔無題〕大正五年十月二日 (w01)"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "181. 〔無題〕大正五年十月二日"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作日"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-10-02"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "版本"
+        ]
+      },
+      "value": {
+        "ja": [
+          "w01"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "181.〔無題〕　大正五年十月二日<br/>不愛紅塵不愛林　　紅塵を愛せず　林を愛せず<br/>蕭然浄室是知音　　蕭然たる浄室　是れ知音<br/>独摩拳石摸雲意　　独り拳石を摩して　雲意を摸し<br/>時対盆梅見蘚心　　時に盆梅に対し　蘚心を見る<br/>塵尾毿毫朱几側　　塵尾の毿毫　朱几の側<br/>蠅頭細字紫研陰　　蠅頭の細字　紫研の陰<br/>閑中有事喫茶後　　閑中　事有り　喫茶の後<br/>復賃晴暄照苦吟　　復た晴暄を賃いて　苦吟を照らさしむ"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "181.〔無題〕　大正五年十月二日<br/>不愛紅塵不愛林　　紅塵を愛せず　林を愛せず<br/>蕭然浄室是知音　　蕭然たる浄室　是れ知音<br/>独摩拳石摸雲意　　独り拳石を摩して　雲意を摸し<br/>時対盆梅見蘚心　　時に盆梅に対し　蘚心を見る<br/>塵尾毿毫朱几側　　塵尾の毿毫　朱几の側<br/>蠅頭細字紫研陰　　蠅頭の細字　紫研の陰<br/>閑中有事喫茶後　　閑中　事有り　喫茶の後<br/>復賃晴暄照苦吟　　復た晴暄を賃いて　苦吟を照らさしむ"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-181-w01",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "181. 〔無題〕大正五年十月二日 (w01)"
+        ]
+      },
+      "height": 1600,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-181-w01",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-181-w01",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/181-w01.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1600,
+                "width": 1200
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-181-w01"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

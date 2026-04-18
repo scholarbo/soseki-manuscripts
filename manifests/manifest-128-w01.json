@@ -1,0 +1,118 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-128-w01.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "128. 〔題西川一草亭画〕大正四年九月 (w01)"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "128. 〔題西川一草亭画〕大正四年九月"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作月"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1915-09"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "版本"
+        ]
+      },
+      "value": {
+        "ja": [
+          "w01"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "128.〔題西川一草亭画〕　大正四年九月<br/>十年仍旧灌花人　　十年　旧に仍って　花に灌ぐ人<br/>還対秋風詩思新　　還た秋風に対して　詩思新たなり<br/>一草亭中閑半日　　一草亭中　閑半日<br/>写従紅蓼到青蘋　　写して紅蓼従り青蘋に到る"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "128.〔題西川一草亭画〕　大正四年九月<br/>十年仍旧灌花人　　十年　旧に仍って　花に灌ぐ人<br/>還対秋風詩思新　　還た秋風に対して　詩思新たなり<br/>一草亭中閑半日　　一草亭中　閑半日<br/>写従紅蓼到青蘋　　写して紅蓼従り青蘋に到る"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-128-w01",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "128. 〔題西川一草亭画〕大正四年九月 (w01)"
+        ]
+      },
+      "height": 1600,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-128-w01",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-128-w01",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/128-w01.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1600,
+                "width": 1200
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-128-w01"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

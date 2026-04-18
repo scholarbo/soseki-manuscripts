@@ -4,7 +4,7 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "030. 〔『木屑録』より十四首・其十三〕別後憶京中諸友"
+      "030. 〔『木屑録』より十四首・其十三〕別後憶京中諸友 (w01)"
     ]
   },
   "metadata": [
@@ -83,32 +83,32 @@
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/canvas-030-w01-p1",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-030-w01",
       "type": "Canvas",
       "label": {
         "ja": [
-          "030 第1頁"
+          "030. 〔『木屑録』より十四首・其十三〕別後憶京中諸友 (w01)"
         ]
       },
       "height": 1197,
       "width": 1536,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/page/canvas-030-w01-p1",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-030-w01",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/annotation/canvas-030-w01-p1-image",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-030-w01",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/canvas-030-w01-p1",
               "body": {
-                "id": "https://scholarbo.github.io/soseki-manuscripts/images/030.jpg",
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/030-w01.jpg",
                 "type": "Image",
-                "format": "image/jpeg",
+                "format": "image/jpg",
                 "height": 1197,
                 "width": 1536
-              }
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-030-w01"
             }
           ]
         }

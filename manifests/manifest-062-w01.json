@@ -1,0 +1,106 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-062-w01.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "062. 〔五首・其四〕明治二十九年十一月十五日 (w01)"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "062. 〔五首・其四〕明治二十九年十一月十五日"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作日"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1896-11-15"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "版本"
+        ]
+      },
+      "value": {
+        "ja": [
+          "w01"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "62.〔其　四〕<br/>茯苓今懶採　　茯苓　今　採るに懶く<br/>石鼎那烹丹　　石鼎　那ぞ丹を烹んや<br/>日対霊芝坐　　日に霊芝に対して坐せば<br/>道心千古寒　　道心　千古に寒し"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "62.〔其　四〕<br/>茯苓今懶採　　茯苓　今　採るに懶く<br/>石鼎那烹丹　　石鼎　那ぞ丹を烹んや<br/>日対霊芝坐　　日に霊芝に対して坐せば<br/>道心千古寒　　道心　千古に寒し"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-062-w01",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "062. 〔五首・其四〕明治二十九年十一月十五日 (w01)"
+        ]
+      },
+      "height": 1600,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-062-w01",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-062-w01",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/062-w01.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1600,
+                "width": 1200
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-062-w01"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

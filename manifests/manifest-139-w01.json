@@ -1,0 +1,118 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-139-w01.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "139. 〔無題〕大正五年八月十九日 (w01)"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "139. 〔無題〕大正五年八月十九日"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作日"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-08-19"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "版本"
+        ]
+      },
+      "value": {
+        "ja": [
+          "w01"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "139.〔無題〕　大正五年八月十九日<br/>老去帰来臥故丘　　老い去って帰来し　故丘に臥す<br/>蕭然環堵意悠悠　　蕭然たる環堵　意　悠悠<br/>透過藻色魚眠穏　　藻色を透過して　魚眠　穏かに<br/>落尽梅花鳥語愁　　梅花を落し尽くして　鳥語　愁う<br/>空翠山遥蔵古寺　　空翠　山遥かにして　古寺を蔵し<br/>平蕪路遠没春流　　平蕪　路遠くして　春流を没す<br/>林塘日日教吾楽　　林塘　日日　吾をして楽しま教む<br/>富貴功名曷肯留　　富貴　功名　曷ぞ肯て留まらん"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "139.〔無題〕　大正五年八月十九日<br/>老去帰来臥故丘　　老い去って帰来し　故丘に臥す<br/>蕭然環堵意悠悠　　蕭然たる環堵　意　悠悠<br/>透過藻色魚眠穏　　藻色を透過して　魚眠　穏かに<br/>落尽梅花鳥語愁　　梅花を落し尽くして　鳥語　愁う<br/>空翠山遥蔵古寺　　空翠　山遥かにして　古寺を蔵し<br/>平蕪路遠没春流　　平蕪　路遠くして　春流を没す<br/>林塘日日教吾楽　　林塘　日日　吾をして楽しま教む<br/>富貴功名曷肯留　　富貴　功名　曷ぞ肯て留まらん"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-139-w01",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "139. 〔無題〕大正五年八月十九日 (w01)"
+        ]
+      },
+      "height": 1600,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-139-w01",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-139-w01",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/139-w01.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1600,
+                "width": 1200
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-139-w01"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

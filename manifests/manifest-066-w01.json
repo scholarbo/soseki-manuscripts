@@ -4,7 +4,7 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "066. 失題明治三十一年三月"
+      "066. 失題明治三十一年三月 (w01)"
     ]
   },
   "metadata": [
@@ -83,32 +83,32 @@
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/canvas-066-w01-p1",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-066-w01",
       "type": "Canvas",
       "label": {
         "ja": [
-          "066 第1頁"
+          "066. 失題明治三十一年三月 (w01)"
         ]
       },
       "height": 3456,
       "width": 5262,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/page/canvas-066-w01-p1",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-066-w01",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/annotation/canvas-066-w01-p1-image",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-066-w01",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/canvas-066-w01-p1",
               "body": {
-                "id": "https://scholarbo.github.io/soseki-manuscripts/images/066.jpg",
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/066-w01.jpg",
                 "type": "Image",
-                "format": "image/jpeg",
+                "format": "image/jpg",
                 "height": 3456,
                 "width": 5262
-              }
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-066-w01"
             }
           ]
         }

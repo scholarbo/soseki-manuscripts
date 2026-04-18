@@ -1,0 +1,106 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-120-w01.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "120. 題画 (w01)"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "120. 題画"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "版本"
+        ]
+      },
+      "value": {
+        "ja": [
+          "w01"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "120.題　画<br/>起臥乾坤一草亭　　起臥す　乾坤一草亭<br/>眼中只有四山青　　眼中　只だ有り　四山の青<br/>閑来放鶴長松下　　閑来　鶴を長松の下に放ち<br/>又上虚堂読易経　　又虚堂に上って　易経を読む"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "120.題　画<br/>起臥乾坤一草亭　　起臥す　乾坤一草亭<br/>眼中只有四山青　　眼中　只だ有り　四山の青<br/>閑来放鶴長松下　　閑来　鶴を長松の下に放ち<br/>又上虚堂読易経　　又虚堂に上って　易経を読む"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-120-w01",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "120. 題画 (w01)"
+        ]
+      },
+      "height": 1600,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-120-w01",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-120-w01",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/120-w01.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1600,
+                "width": 1200
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-120-w01"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

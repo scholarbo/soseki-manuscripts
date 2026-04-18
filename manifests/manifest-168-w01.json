@@ -1,0 +1,118 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-168-w01.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "168. 〔無題〕大正五年九月十八日 (w01)"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "168. 〔無題〕大正五年九月十八日"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作日"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-09-18"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "版本"
+        ]
+      },
+      "value": {
+        "ja": [
+          "w01"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "168.〔無題〕　大正五年九月十八日<br/>飣餖焚時大道安　　飣餖を焚く時　大道　安し<br/>天然景物自然観　　天然の景物　自然に観る<br/>佳人不識虚心竹　　佳人は識らず　虚心の竹<br/>君子曷思空谷蘭　　君子　曷ぞ思わん　空谷の蘭<br/>黄耐霜来籬菊乱　　黄は霜に耐え来たりて　籬菊　乱れ<br/>白従月得野梅寒　　白は月従り得て　野梅　寒し<br/>勿拈華妄作微笑　　華を拈りて　妄に微笑を作す勿かれ<br/>雨打風翻任独看　　雨打ち　風翻して　独り看るに任かす"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "168.〔無題〕　大正五年九月十八日<br/>飣餖焚時大道安　　飣餖を焚く時　大道　安し<br/>天然景物自然観　　天然の景物　自然に観る<br/>佳人不識虚心竹　　佳人は識らず　虚心の竹<br/>君子曷思空谷蘭　　君子　曷ぞ思わん　空谷の蘭<br/>黄耐霜来籬菊乱　　黄は霜に耐え来たりて　籬菊　乱れ<br/>白従月得野梅寒　　白は月従り得て　野梅　寒し<br/>勿拈華妄作微笑　　華を拈りて　妄に微笑を作す勿かれ<br/>雨打風翻任独看　　雨打ち　風翻して　独り看るに任かす"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-168-w01",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "168. 〔無題〕大正五年九月十八日 (w01)"
+        ]
+      },
+      "height": 1600,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-168-w01",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-168-w01",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/168-w01.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1600,
+                "width": 1200
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-168-w01"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

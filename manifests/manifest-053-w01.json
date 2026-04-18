@@ -1,0 +1,118 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-053-w01.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "053. 無題〔五首・其一〕明治二十八年五月 (w01)"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "053. 無題〔五首・其一〕明治二十八年五月"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作月"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1895-05"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "県立神奈川近代文学館蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "版本"
+        ]
+      },
+      "value": {
+        "ja": [
+          "w01"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "53.無題　〔五首・其　一〕　明治二十八年五月<br/>快刀切断两頭蛇　　快刀　切断す　两頭の蛇<br/>不顧人間笑語嘩　　顧みず　人間　笑語嘩しきを<br/>黄土千秋埋得失　　黄土　千秋　得失を埋め<br/>蒼天万古照賢邪　　蒼天　万古　賢邪を照らす<br/>微風易砕水中月　　微風　砕き易し　水中の月<br/>片雨難留枝上花　　片雨　留め難し　枝上の花<br/>大酔醒来寒徹骨　　大酔　醒め来たりて　寒　骨に徹し<br/>余生養得在山家　　余生　養い得て　山家に在り"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "53.無題　〔五首・其　一〕　明治二十八年五月<br/>快刀切断两頭蛇　　快刀　切断す　两頭の蛇<br/>不顧人間笑語嘩　　顧みず　人間　笑語嘩しきを<br/>黄土千秋埋得失　　黄土　千秋　得失を埋め<br/>蒼天万古照賢邪　　蒼天　万古　賢邪を照らす<br/>微風易砕水中月　　微風　砕き易し　水中の月<br/>片雨難留枝上花　　片雨　留め難し　枝上の花<br/>大酔醒来寒徹骨　　大酔　醒め来たりて　寒　骨に徹し<br/>余生養得在山家　　余生　養い得て　山家に在り"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-053-w01",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "053. 無題〔五首・其一〕明治二十八年五月 (w01)"
+        ]
+      },
+      "height": 1600,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-053-w01",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-053-w01",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/053-w01.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1600,
+                "width": 1200
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-053-w01"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

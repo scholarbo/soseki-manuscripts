@@ -1,0 +1,118 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-166-w01.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "166. 〔無題〕大正五年九月十六日 (w01)"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "166. 〔無題〕大正五年九月十六日"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作日"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-09-16"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "版本"
+        ]
+      },
+      "value": {
+        "ja": [
+          "w01"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "166.〔無題〕　大正五年九月十六日<br/>思白雲時心始降　　白雲を思う時　心　始めて降り<br/>顧虚影処意成双　　虚影を顧みる処　意　双を成す<br/>幽花独発涓涓水　　幽花　独り発く　涓涓の水<br/>細雨閑来寂寂窓　　細雨　閑に来たる　寂寂の窓<br/>欲倚孤筇看断碣　　孤筇に倚りて　断碣を看んと欲し<br/>還驚小鳥過苔矼　　還た小鳥を驚かせて　苔矼を過ぐ<br/>蕙蘭今尚在空谷　　蕙蘭　今尚お空谷に在り<br/>一脈風吹君子邦　　一脈　風は吹く　君子の邦"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "166.〔無題〕　大正五年九月十六日<br/>思白雲時心始降　　白雲を思う時　心　始めて降り<br/>顧虚影処意成双　　虚影を顧みる処　意　双を成す<br/>幽花独発涓涓水　　幽花　独り発く　涓涓の水<br/>細雨閑来寂寂窓　　細雨　閑に来たる　寂寂の窓<br/>欲倚孤筇看断碣　　孤筇に倚りて　断碣を看んと欲し<br/>還驚小鳥過苔矼　　還た小鳥を驚かせて　苔矼を過ぐ<br/>蕙蘭今尚在空谷　　蕙蘭　今尚お空谷に在り<br/>一脈風吹君子邦　　一脈　風は吹く　君子の邦"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-166-w01",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "166. 〔無題〕大正五年九月十六日 (w01)"
+        ]
+      },
+      "height": 1600,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-166-w01",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-166-w01",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/166-w01.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1600,
+                "width": 1200
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-166-w01"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

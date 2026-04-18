@@ -1,0 +1,118 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-140-w01.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "140. 〔無題〕大正五年八月二十日 (w01)"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "140. 〔無題〕大正五年八月二十日"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作日"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-08-20"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "版本"
+        ]
+      },
+      "value": {
+        "ja": [
+          "w01"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "140.〔無題〕　大正五年八月二十日<br/>两鬢衰来白幾茎　　两鬢　衰え来たりて　白きこと幾茎<br/>年華始識一朝傾　　年華　始めて識る　一朝にして傾く<br/>薰蕕臭裡求何物　　薰蕕臭裡　何物を求めん<br/>蝴蝶夢中寄此生　　蝴蝶夢中　此の生を寄す<br/>下履空階凄露散　　履を空階に下せば　凄露散じ<br/>移牀廃砌乱蟬驚　　牀を廃砌に移せば　乱蟬驚く<br/>清風満地芭蕉影　　清風　地に満つ　芭蕉の影<br/>揺曳午眠葉葉軽　　午眠を揺曳して　葉葉軽し"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "140.〔無題〕　大正五年八月二十日<br/>两鬢衰来白幾茎　　两鬢　衰え来たりて　白きこと幾茎<br/>年華始識一朝傾　　年華　始めて識る　一朝にして傾く<br/>薰蕕臭裡求何物　　薰蕕臭裡　何物を求めん<br/>蝴蝶夢中寄此生　　蝴蝶夢中　此の生を寄す<br/>下履空階凄露散　　履を空階に下せば　凄露散じ<br/>移牀廃砌乱蟬驚　　牀を廃砌に移せば　乱蟬驚く<br/>清風満地芭蕉影　　清風　地に満つ　芭蕉の影<br/>揺曳午眠葉葉軽　　午眠を揺曳して　葉葉軽し"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-140-w01",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "140. 〔無題〕大正五年八月二十日 (w01)"
+        ]
+      },
+      "height": 1600,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-140-w01",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-140-w01",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/140-w01.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1600,
+                "width": 1200
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-140-w01"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

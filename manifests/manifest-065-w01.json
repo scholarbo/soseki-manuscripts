@@ -1,0 +1,106 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-065-w01.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "065. 〔春興〕明治三十一年三月 (w01)"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "065. 〔春興〕明治三十一年三月"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作月"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1898-03"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "版本"
+        ]
+      },
+      "value": {
+        "ja": [
+          "w01"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "65.〔春興〕　明治三十一年三月　春　興<br/>出門多所思　　門を出でて　思う所多し<br/>春風吹吾衣　　春風　吾が衣を吹く<br/>芳草生車轍　　芳草　車轍に生じ<br/>癈道入霞微　　癈道　霞に入りて微かなり<br/>停筇而矚目　　筇を停めて　目を矚げば<br/>万象帯晴暉　　万象　晴暉を帯ぶ<br/>聴黄鳥宛転　　黄鳥の宛転たるを聴き<br/>睹落英紛霏　　落英の紛霏たるを睹る<br/>行尽平蕪遠　　行き尽くして　平蕪遠く<br/>題詩古寺扉　　詩を題す　古寺の扉<br/>孤愁高雲際　　孤愁　雲際高く<br/>大空断鴻帰　　大空　断鴻帰る<br/>寸心何窈窕　　寸心　何ぞ窈窕たる<br/>縹緲忘是非　　縹緲として　是非を忘る<br/>三十我欲老　　三十　我老いんと欲し<br/>韶光猶依依　　韶光　猶お依依たり<br/>逍遥随物化　　逍遥して　物化に随い<br/>悠然対芬菲　　悠然として　芬菲に対す"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "65.〔春興〕　明治三十一年三月　春　興<br/>出門多所思　　門を出でて　思う所多し<br/>春風吹吾衣　　春風　吾が衣を吹く<br/>芳草生車轍　　芳草　車轍に生じ<br/>癈道入霞微　　癈道　霞に入りて微かなり<br/>停筇而矚目　　筇を停めて　目を矚げば<br/>万象帯晴暉　　万象　晴暉を帯ぶ<br/>聴黄鳥宛転　　黄鳥の宛転たるを聴き<br/>睹落英紛霏　　落英の紛霏たるを睹る<br/>行尽平蕪遠　　行き尽くして　平蕪遠く<br/>題詩古寺扉　　詩を題す　古寺の扉<br/>孤愁高雲際　　孤愁　雲際高く<br/>大空断鴻帰　　大空　断鴻帰る<br/>寸心何窈窕　　寸心　何ぞ窈窕たる<br/>縹緲忘是非　　縹緲として　是非を忘る<br/>三十我欲老　　三十　我老いんと欲し<br/>韶光猶依依　　韶光　猶お依依たり<br/>逍遥随物化　　逍遥して　物化に随い<br/>悠然対芬菲　　悠然として　芬菲に対す"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-065-w01",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "065. 〔春興〕明治三十一年三月 (w01)"
+        ]
+      },
+      "height": 1600,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-065-w01",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-065-w01",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/065-w01.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1600,
+                "width": 1200
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-065-w01"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

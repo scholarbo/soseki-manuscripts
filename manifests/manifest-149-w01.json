@@ -1,0 +1,118 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-149-w01.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "149. 〔無題〕大正五年八月三十日 (w01)"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "149. 〔無題〕大正五年八月三十日"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作日"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-08-30"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "版本"
+        ]
+      },
+      "value": {
+        "ja": [
+          "w01"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "149.〔無題〕　大正五年八月三十日<br/>詩思杳在野橋東　　詩思　杳かに在り　野橋の東<br/>景物多横淡靄中　　景物　多く横たわる　淡靄の中<br/>緗水映辺帆露白　　緗水　映ずる辺　帆は白きを露し<br/>翠雲流処塔余紅　　翠雲　流るる処　塔は紅を余す<br/>桃花赫灼皆依日　　桃花　赫灼として　皆　日に依り<br/>柳色模糊不厭風　　柳色　模糊として　風を厭わず<br/>縹緲孤愁春欲尽　　縹緲たる孤愁　春　尽きんと欲し<br/>還令一鳥入虚空　　還た一鳥をして　虚空に入ら令む"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "149.〔無題〕　大正五年八月三十日<br/>詩思杳在野橋東　　詩思　杳かに在り　野橋の東<br/>景物多横淡靄中　　景物　多く横たわる　淡靄の中<br/>緗水映辺帆露白　　緗水　映ずる辺　帆は白きを露し<br/>翠雲流処塔余紅　　翠雲　流るる処　塔は紅を余す<br/>桃花赫灼皆依日　　桃花　赫灼として　皆　日に依り<br/>柳色模糊不厭風　　柳色　模糊として　風を厭わず<br/>縹緲孤愁春欲尽　　縹緲たる孤愁　春　尽きんと欲し<br/>還令一鳥入虚空　　還た一鳥をして　虚空に入ら令む"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-149-w01",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "149. 〔無題〕大正五年八月三十日 (w01)"
+        ]
+      },
+      "height": 1600,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-149-w01",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-149-w01",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/149-w01.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1600,
+                "width": 1200
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-149-w01"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

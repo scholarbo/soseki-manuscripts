@@ -1,0 +1,118 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-069-w01.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "069. 客中逢春寄子規 (w01)"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "069. 客中逢春寄子規"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作月"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1898-03"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "県立神奈川近代文学館蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "版本"
+        ]
+      },
+      "value": {
+        "ja": [
+          "w01"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "69.客中逢春寄子規<br/>春風遍東皋　　春風　東皋に遍く<br/>門前碧蕪新　　門前　碧蕪新たなり<br/>我懐在君子　　我が懐いは　君子に在り<br/>君子隔嶙峋　　君子　嶙峋を隔つ<br/>嶙峋不可跋　　嶙峋　跋ゆ可からず<br/>君子空穆忞　　君子　空しく穆忞<br/>悵望不可就　　悵望するも　就く可からず<br/>碧蕪徒傷神　　碧蕪　徒らに神を傷ましむるのみ<br/>憶昔交游日　　憶う　昔　交游の日<br/>共許管鮑貧　　共に許す　管鮑の貧<br/>斗酒凌乾坤　　斗酒　乾坤を凌ぐ<br/>豪気逼星辰　　豪気　星辰に逼る<br/>而今天一涯　　而今　天の一涯<br/>索居負我真　　索居　我が真に負く<br/>客土我問礼　　客土　我は礼を問い<br/>旧廬君賦春　　旧廬　君は春を賦す<br/>二百余里別　　二百余里の別れ<br/>三十一年塵　　三十一年の塵<br/>塵纓無由濯　　塵纓　濯うに由無く<br/>徘徊滄浪津　　徘徊　滄浪の津<br/>寄語子規子　　語を子規子に寄す<br/>莫為官遊人　　官遊の人と為る莫かれ"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "69.客中逢春寄子規<br/>春風遍東皋　　春風　東皋に遍く<br/>門前碧蕪新　　門前　碧蕪新たなり<br/>我懐在君子　　我が懐いは　君子に在り<br/>君子隔嶙峋　　君子　嶙峋を隔つ<br/>嶙峋不可跋　　嶙峋　跋ゆ可からず<br/>君子空穆忞　　君子　空しく穆忞<br/>悵望不可就　　悵望するも　就く可からず<br/>碧蕪徒傷神　　碧蕪　徒らに神を傷ましむるのみ<br/>憶昔交游日　　憶う　昔　交游の日<br/>共許管鮑貧　　共に許す　管鮑の貧<br/>斗酒凌乾坤　　斗酒　乾坤を凌ぐ<br/>豪気逼星辰　　豪気　星辰に逼る<br/>而今天一涯　　而今　天の一涯<br/>索居負我真　　索居　我が真に負く<br/>客土我問礼　　客土　我は礼を問い<br/>旧廬君賦春　　旧廬　君は春を賦す<br/>二百余里別　　二百余里の別れ<br/>三十一年塵　　三十一年の塵<br/>塵纓無由濯　　塵纓　濯うに由無く<br/>徘徊滄浪津　　徘徊　滄浪の津<br/>寄語子規子　　語を子規子に寄す<br/>莫為官遊人　　官遊の人と為る莫かれ"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-069-w01",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "069. 客中逢春寄子規 (w01)"
+        ]
+      },
+      "height": 1600,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-069-w01",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-069-w01",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/069-w01.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1600,
+                "width": 1200
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-069-w01"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

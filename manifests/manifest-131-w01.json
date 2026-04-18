@@ -1,0 +1,118 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-131-w01.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "131. 題自画大正五年一月 (w01)"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "131. 題自画大正五年一月"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作月"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-01"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "版本"
+        ]
+      },
+      "value": {
+        "ja": [
+          "w01"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "131.題自画　大正五年一月<br/>栽松人不到　　松を栽えて　人不到らず<br/>移石意常平　　石を移して　意常に平らかなり<br/>且喜霊芝紫　　且つは喜ぶ　霊芝の紫<br/>茎茎瑞色明　　茎茎　瑞色明らかなるを"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "131.題自画　大正五年一月<br/>栽松人不到　　松を栽えて　人不到らず<br/>移石意常平　　石を移して　意常に平らかなり<br/>且喜霊芝紫　　且つは喜ぶ　霊芝の紫<br/>茎茎瑞色明　　茎茎　瑞色明らかなるを"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-131-w01",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "131. 題自画大正五年一月 (w01)"
+        ]
+      },
+      "height": 1600,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-131-w01",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-131-w01",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/131-w01.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1600,
+                "width": 1200
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-131-w01"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

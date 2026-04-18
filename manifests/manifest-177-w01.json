@@ -1,0 +1,118 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-177-w01.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "177. 〔無題〕大正五年九月二十七日 (w01)"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "177. 〔無題〕大正五年九月二十七日"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作日"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-09-27"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "版本"
+        ]
+      },
+      "value": {
+        "ja": [
+          "w01"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "177.〔無題〕　大正五年九月二十七日<br/>欲求蕭散口須緘　　蕭散を求めんと欲すれば　口　須く緘すべし<br/>為愛曠夷脱旧衫　　曠夷を愛するが為に　旧衫を脱す<br/>春尽天辺人上塔　　春は天辺に尽きて　人は塔に上り<br/>望窮空際水吞帆　　望みは空際を窮めて　水は帆を吞む<br/>漸悲白髪親黄卷　　漸く白髪を悲しみて　黄卷に親しみ<br/>既入青山見紫巖　　既に青山入りて　紫巖を見る<br/>昨日孤雲東向去　　昨日　孤雲　東に向って去り<br/>今朝落影在溪杉　　今朝　落影　溪杉に在り"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "177.〔無題〕　大正五年九月二十七日<br/>欲求蕭散口須緘　　蕭散を求めんと欲すれば　口　須く緘すべし<br/>為愛曠夷脱旧衫　　曠夷を愛するが為に　旧衫を脱す<br/>春尽天辺人上塔　　春は天辺に尽きて　人は塔に上り<br/>望窮空際水吞帆　　望みは空際を窮めて　水は帆を吞む<br/>漸悲白髪親黄卷　　漸く白髪を悲しみて　黄卷に親しみ<br/>既入青山見紫巖　　既に青山入りて　紫巖を見る<br/>昨日孤雲東向去　　昨日　孤雲　東に向って去り<br/>今朝落影在溪杉　　今朝　落影　溪杉に在り"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-177-w01",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "177. 〔無題〕大正五年九月二十七日 (w01)"
+        ]
+      },
+      "height": 1600,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-177-w01",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-177-w01",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/177-w01.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1600,
+                "width": 1200
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-177-w01"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

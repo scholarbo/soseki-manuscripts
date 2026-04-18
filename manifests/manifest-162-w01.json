@@ -1,0 +1,118 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-162-w01.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "162. 〔無題〕大正五年九月十二日 (w01)"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "162. 〔無題〕大正五年九月十二日"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作日"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-09-12"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "版本"
+        ]
+      },
+      "value": {
+        "ja": [
+          "w01"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "162.〔無題〕　大正五年九月十二日<br/>我将帰処地無田　我将に帰らんとする処　地に田無く<br/>我未死時人有縁　　我未だ死せざる時　人に縁有り<br/>唧唧虫声皆月下　　唧唧たる虫声　皆月下<br/>蕭蕭客影落燈前　　蕭蕭たる客影　燈前に落つ<br/>頭添野菊重阳節　　頭に野菊を添え　重阳の節<br/>市見鱸魚秋暮天　　市に鱸魚を見る　秋暮の天<br/>明日送潮風復急　　明日　潮を送りて　風復た急に<br/>一帆去尽水如年　　一帆　去り尽くして　水　年の如し"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "162.〔無題〕　大正五年九月十二日<br/>我将帰処地無田　我将に帰らんとする処　地に田無く<br/>我未死時人有縁　　我未だ死せざる時　人に縁有り<br/>唧唧虫声皆月下　　唧唧たる虫声　皆月下<br/>蕭蕭客影落燈前　　蕭蕭たる客影　燈前に落つ<br/>頭添野菊重阳節　　頭に野菊を添え　重阳の節<br/>市見鱸魚秋暮天　　市に鱸魚を見る　秋暮の天<br/>明日送潮風復急　　明日　潮を送りて　風復た急に<br/>一帆去尽水如年　　一帆　去り尽くして　水　年の如し"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-162-w01",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "162. 〔無題〕大正五年九月十二日 (w01)"
+        ]
+      },
+      "height": 1600,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-162-w01",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-162-w01",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/162-w01.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1600,
+                "width": 1200
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-162-w01"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

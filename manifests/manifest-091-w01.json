@@ -1,0 +1,118 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-091-w01.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "091. 〔無題〕明治四十三年十月十六日 (w01)"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "091. 〔無題〕明治四十三年十月十六日"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作日"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1910-10-16"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵/県立神奈川近代文学館蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "版本"
+        ]
+      },
+      "value": {
+        "ja": [
+          "w01"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "91.〔無題〕　明治四十三年十月十六日<br/>縹緲玄黄外　　縹緲たる玄黄の外<br/>死生交謝時　　死生　交ごも謝する時<br/>寄託冥然去　　寄託　冥然として去り<br/>我心何所之　　我が心　何の之く所ぞ<br/>帰来覓命根　　帰来　命根を覓むるも<br/>杳窅竟難知　　杳窅として　竟に知り難し<br/>孤愁空遶夢　　孤愁　空しく夢を遶り<br/>宛動蕭瑟悲　　宛として蕭瑟の悲しみを動かす<br/>江山秋已老　　江山　秋已に老い<br/>粥藥髩将衰　　粥藥　髩将に衰えんとす<br/>廓寥天尚在　　廓寥として　天尚お在り<br/>高樹独余枝　　高樹　独り枝を余す<br/>晚懐如此澹　　晚懐　此くの如く澹に<br/>風露入詩遅　　風露　詩に入ること遅し"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "91.〔無題〕　明治四十三年十月十六日<br/>縹緲玄黄外　　縹緲たる玄黄の外<br/>死生交謝時　　死生　交ごも謝する時<br/>寄託冥然去　　寄託　冥然として去り<br/>我心何所之　　我が心　何の之く所ぞ<br/>帰来覓命根　　帰来　命根を覓むるも<br/>杳窅竟難知　　杳窅として　竟に知り難し<br/>孤愁空遶夢　　孤愁　空しく夢を遶り<br/>宛動蕭瑟悲　　宛として蕭瑟の悲しみを動かす<br/>江山秋已老　　江山　秋已に老い<br/>粥藥髩将衰　　粥藥　髩将に衰えんとす<br/>廓寥天尚在　　廓寥として　天尚お在り<br/>高樹独余枝　　高樹　独り枝を余す<br/>晚懐如此澹　　晚懐　此くの如く澹に<br/>風露入詩遅　　風露　詩に入ること遅し"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-091-w01",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "091. 〔無題〕明治四十三年十月十六日 (w01)"
+        ]
+      },
+      "height": 1600,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-091-w01",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-091-w01",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/091-w01.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1600,
+                "width": 1200
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-091-w01"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

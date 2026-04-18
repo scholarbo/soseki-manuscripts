@@ -1,0 +1,106 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-049-w01.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "049. 謝正岡子規見惠小照次其所贈詩韵却呈明治二十三年十月二十四日 (w01)"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "049. 謝正岡子規見惠小照次其所贈詩韵却呈明治二十三年十月二十四日"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作日"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1890-10-24"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "版本"
+        ]
+      },
+      "value": {
+        "ja": [
+          "w01"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "49.謝正岡子規見惠小照次其　所贈詩韵却呈　明治二十三年十月二十四日<br/>非是求名滞帝城　　是れ名を求めて帝城に滞るに非ず<br/>唯憐病羸帰思生　　唯だ憐れむ　病羸　帰思生ずるを<br/>憑親黄巻忘栄辱　　黄巻に親しむに憑って　栄辱を忘れ<br/>悔負青山休耨耕　　青山に負いて　耨耕を休めしを悔ゆ<br/>銀燭繡屏吟瘦影　　銀燭　繡屏　瘦影を吟じ<br/>竹風蕉雨聴秋声　　竹風蕉雨　秋声を聴く<br/>多情縦住絃歌巷　　多情　縦い絃歌の巷に住むとも<br/>漠漠塵中傲骨清　　漠漠たる塵中　傲骨清し"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "49.謝正岡子規見惠小照次其　所贈詩韵却呈　明治二十三年十月二十四日<br/>非是求名滞帝城　　是れ名を求めて帝城に滞るに非ず<br/>唯憐病羸帰思生　　唯だ憐れむ　病羸　帰思生ずるを<br/>憑親黄巻忘栄辱　　黄巻に親しむに憑って　栄辱を忘れ<br/>悔負青山休耨耕　　青山に負いて　耨耕を休めしを悔ゆ<br/>銀燭繡屏吟瘦影　　銀燭　繡屏　瘦影を吟じ<br/>竹風蕉雨聴秋声　　竹風蕉雨　秋声を聴く<br/>多情縦住絃歌巷　　多情　縦い絃歌の巷に住むとも<br/>漠漠塵中傲骨清　　漠漠たる塵中　傲骨清し"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-049-w01",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "049. 謝正岡子規見惠小照次其所贈詩韵却呈明治二十三年十月二十四日 (w01)"
+        ]
+      },
+      "height": 1600,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-049-w01",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-049-w01",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/049-w01.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1600,
+                "width": 1200
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-049-w01"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
