@@ -1,1946 +1,4324 @@
 [
   {
+    "seq": "1",
     "id": "001",
     "title": "001. 鴻台〔二首・其一〕",
     "source": "『時運』a",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-001.json",
     "date_year": "",
     "date_month": "",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-001-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-001-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-001-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "2",
     "id": "002",
     "title": "002. 鴻台〔二首・其二〕",
     "source": "『時運』",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-002.json",
     "date_year": "",
     "date_month": "",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-002-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-002-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-002-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "3",
     "id": "003",
     "title": "003. 題画",
     "source": "『時運』",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-003.json",
     "date_year": "",
     "date_month": "",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-003-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-003-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-003-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "4",
     "id": "004",
     "title": "004. 送奥田詞兄帰国",
     "source": "『時運』",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-004.json",
     "date_year": "",
     "date_month": "",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-004-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-004-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-004-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "5",
     "id": "005",
     "title": "005. 離愁次友人韻",
     "source": "『時運』",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-005.json",
     "date_year": "",
     "date_month": "",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-005-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-005-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-005-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "6",
     "id": "006",
     "title": "006. 即時",
     "source": "『時運』",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-006.json",
     "date_year": "",
     "date_month": "",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-006-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-006-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-006-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "7",
     "id": "007",
     "title": "007. 即時〔二首·其一〕",
     "source": "『時運』",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-007.json",
     "date_year": "",
     "date_month": "",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-007-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-007-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-007-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "8",
     "id": "008",
     "title": "008. 即時〔二首·其二〕",
     "source": "『時運』",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-008.json",
     "date_year": "",
     "date_month": "",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-008-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-008-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-008-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "9",
     "id": "009",
     "title": "009. 〔「『七草集』評」より九首・其一〕明治二十二年五月",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-009.json",
     "date_year": "1889",
     "date_month": "1889-05",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-009-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-009-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-009-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "10",
     "id": "010",
     "title": "010. 〔「『七草集』評」より九首・其二〕明治二十二年五月",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-010.json",
     "date_year": "1889",
     "date_month": "1889-05",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-010-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-010-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-010-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "11",
     "id": "011",
     "title": "011. 〔「『七草集』評」より九首・其三〕明治二十二年五月",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-011.json",
     "date_year": "1889",
     "date_month": "1889-05",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-011-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-011-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-011-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "12",
     "id": "012",
     "title": "012. 〔「『七草集』評」より九首・其四〕明治二十二年五月",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-012.json",
     "date_year": "1889",
     "date_month": "1889-05",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-012-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-012-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-012-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "13",
     "id": "013",
     "title": "013. 〔「『七草集』評」より九首・其五〕明治二十二年五月",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-013.json",
     "date_year": "1889",
     "date_month": "1889-05",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-013-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-013-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-013-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "14",
     "id": "014",
     "title": "014. 〔「『七草集』評」より九首・其六〕明治二十二年五月",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-014.json",
     "date_year": "1889",
     "date_month": "1889-05",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-014-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-014-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-014-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "15",
     "id": "015",
     "title": "015. 〔「『七草集』評」より九首・其七〕明治二十二年五月",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-015.json",
     "date_year": "1889",
     "date_month": "1889-05",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-015-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-015-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-015-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "16",
     "id": "016",
     "title": "016. 〔「『七草集』評」より九首・其八〕明治二十二年五月",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-016.json",
     "date_year": "1889",
     "date_month": "1889-05",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-016-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-016-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-016-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "17",
     "id": "017",
     "title": "017. 〔「『七草集』評」より九首・其九〕明治二十二年五月",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-017.json",
     "date_year": "1889",
     "date_month": "1889-05",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-017-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-017-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-017-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "18",
     "id": "018",
     "title": "018. 〔『木屑録』より十四首・其一〕明治二十二年九月",
     "source": "https://dl.ndl.go.jp/pid/1192698",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-018.json",
     "date_year": "1889",
     "date_month": "1889-09",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-018-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-018-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-018-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "19",
     "id": "019",
     "title": "019. 〔『木屑録』より十四首・其二〕明治二十二年九月",
     "source": "https://dl.ndl.go.jp/pid/1192698",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-019.json",
     "date_year": "1889",
     "date_month": "1889-09",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-019-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-019-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-019-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "20",
     "id": "020",
     "title": "020. 〔『木屑録』より十四首・其三〕明治二十二年九月",
     "source": "https://dl.ndl.go.jp/pid/1192698",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-020.json",
     "date_year": "1889",
     "date_month": "1889-09",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-020-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-020-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-020-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "21",
     "id": "021",
     "title": "021. 〔『木屑録』より十四首・其四〕明治二十二年九月",
     "source": "https://dl.ndl.go.jp/pid/1192698",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-021.json",
     "date_year": "1889",
     "date_month": "1889-09",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-021-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-021-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-021-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "22",
     "id": "022",
     "title": "022. 〔『木屑録』より十四首・其五〕明治二十二年九月",
     "source": "https://dl.ndl.go.jp/pid/1192698",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-022.json",
     "date_year": "1889",
     "date_month": "1889-09",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-022-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-022-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-022-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "23",
     "id": "023",
     "title": "023. 〔『木屑録』より十四首・其六〕明治二十二年九月",
     "source": "https://dl.ndl.go.jp/pid/1192698",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-023.json",
     "date_year": "1889",
     "date_month": "1889-09",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-023-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-023-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-023-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "24",
     "id": "024",
     "title": "024. 〔『木屑録』より十四首・其七〕明治二十二年九月",
     "source": "https://dl.ndl.go.jp/pid/1192698",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-024.json",
     "date_year": "1889",
     "date_month": "1889-09",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-024-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-024-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-024-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "25",
     "id": "025",
     "title": "025. 〔『木屑録』より十四首・其八〕明治二十二年九月",
     "source": "https://dl.ndl.go.jp/pid/1192698",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-025.json",
     "date_year": "1889",
     "date_month": "1889-09",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-025-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-025-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-025-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "26",
     "id": "026",
     "title": "026. 〔『木屑録』より十四首・其九〕自東金至銚子途上口号",
     "source": "https://dl.ndl.go.jp/pid/1192698",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-026.json",
     "date_year": "1889",
     "date_month": "1889-09",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-026-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-026-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-026-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "27",
     "id": "027",
     "title": "027. 〔『木屑録』より十四首・其十〕",
     "source": "https://dl.ndl.go.jp/pid/1192698",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-027.json",
     "date_year": "1889",
     "date_month": "1889-09",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-027-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-027-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-027-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "28",
     "id": "028",
     "title": "028. 〔『木屑録』より十四首・其十一〕天明舟達三堀旗亭即事",
     "source": "https://dl.ndl.go.jp/pid/1192698",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-028.json",
     "date_year": "1889",
     "date_month": "1889-09",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-028-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-028-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-028-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "29",
     "id": "029",
     "title": "029. 〔『木屑録』より十四首・其十二〕客中憶家",
     "source": "https://dl.ndl.go.jp/pid/1192698",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-029.json",
     "date_year": "1889",
     "date_month": "1889-09",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-029-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-029-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-029-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "30",
     "id": "030",
     "title": "030. 〔『木屑録』より十四首・其十三〕別後憶京中諸友",
     "source": "https://dl.ndl.go.jp/pid/1192698",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-030.json",
     "date_year": "1889",
     "date_month": "1889-09",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-030-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-030-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-030-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "31",
     "id": "031",
     "title": "031. 〔『木屑録』より十四首・其十四〕自嘲書木屑録後",
     "source": "https://dl.ndl.go.jp/pid/1192698",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-031.json",
     "date_year": "1889",
     "date_month": "1889-09",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-031-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-031-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-031-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "32",
     "id": "032",
     "title": "032. 〔無題〕明治二十二年九月二十日",
     "source": "",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-032.json",
     "date_year": "1889",
     "date_month": "1889-09",
-    "date_day": "1889-09-20"
+    "date_day": "1889-09-20",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-032-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-032-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-032-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "33",
     "id": "033",
     "title": "033. 山路観楓明治二十二年十一月",
     "source": "",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-033.json",
     "date_year": "1889",
     "date_month": "1889-11",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-033-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-033-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-033-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "34",
     "id": "034",
     "title": "034. 〔無題〕明治二十三年八月末",
     "source": "",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-034.json",
     "date_year": "1890",
     "date_month": "1890-08",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-034-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-034-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-034-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "35",
     "id": "035",
     "title": "035. 〔無題〕明治二十三年八月末",
     "source": "",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-035.json",
     "date_year": "1890",
     "date_month": "1890-08",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-035-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-035-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-035-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "36",
     "id": "036",
     "title": "036. 函山雑詠〔八首・其一〕明治二十三年九月",
     "source": "https://dl.ndl.go.jp/pid/1192698",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-036.json",
     "date_year": "1890",
     "date_month": "1890-09",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-036-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-036-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-036-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "37",
     "id": "037",
     "title": "037. 函山雑詠〔八首・其二〕明治二十三年九月",
     "source": "",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-037.json",
     "date_year": "1890",
     "date_month": "1890-09",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-037-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-037-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-037-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "38",
     "id": "038",
     "title": "038. 函山雑詠〔八首・其三〕明治二十三年九月",
     "source": "",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-038.json",
     "date_year": "1890",
     "date_month": "1890-09",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-038-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-038-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-038-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "39",
     "id": "039",
     "title": "039. 函山雑詠〔八首・其四〕明治二十三年九月",
     "source": "",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-039.json",
     "date_year": "1890",
     "date_month": "1890-09",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-039-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-039-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-039-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "40",
     "id": "040",
     "title": "040. 函山雑詠〔八首・其五〕明治二十三年九月",
     "source": "",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-040.json",
     "date_year": "1890",
     "date_month": "1890-09",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-040-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-040-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-040-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "41",
     "id": "041",
     "title": "041. 函山雑詠〔八首・其六〕明治二十三年九月",
     "source": "",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-041.json",
     "date_year": "1890",
     "date_month": "1890-09",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-041-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-041-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-041-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "42",
     "id": "042",
     "title": "042. 函山雑詠〔八首・其七〕明治二十三年九月",
     "source": "",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-042.json",
     "date_year": "1890",
     "date_month": "1890-09",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-042-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-042-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-042-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "43",
     "id": "043",
     "title": "043. 函山雑詠〔八首・其八〕明治二十三年九月",
     "source": "",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-043.json",
     "date_year": "1890",
     "date_month": "1890-09",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-043-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-043-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-043-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "44",
     "id": "044",
     "title": "044. 送友到元函根〔三首・其一〕明治二十三年九月",
     "source": "",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-044.json",
     "date_year": "1890",
     "date_month": "1890-09",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-044-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-044-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-044-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "45",
     "id": "045",
     "title": "045. 送友到元函根〔三首・其二〕明治二十三年九月",
     "source": "",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-045.json",
     "date_year": "1890",
     "date_month": "1890-09",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-045-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-045-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-045-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "46",
     "id": "046",
     "title": "046. 送友到元函根〔三首・其三〕明治二十三年九月",
     "source": "",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-046.json",
     "date_year": "1890",
     "date_month": "1890-09",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-046-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-046-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-046-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "47",
     "id": "047",
     "title": "047. 帰途口号〔二首·其一〕明治二十三年九月",
     "source": "",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-047.json",
     "date_year": "1890",
     "date_month": "1890-09",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-047-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-047-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-047-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "48",
     "id": "048",
     "title": "048. 帰途口号〔二首·其二〕明治二十三年九月",
     "source": "",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-048.json",
     "date_year": "1890",
     "date_month": "1890-09",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-048-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-048-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-048-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "49",
     "id": "049",
     "title": "049. 謝正岡子規見惠小照次其所贈詩韵却呈明治二十三年十月二十四日",
     "source": "",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-049.json",
     "date_year": "1890",
     "date_month": "1890-10",
-    "date_day": "1890-10-24"
+    "date_day": "1890-10-24",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-049-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-049-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-049-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "50",
     "id": "050",
     "title": "050. 御返事呪文明治二十四年七月二十四日",
     "source": "",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-050.json",
     "date_year": "1891",
     "date_month": "1891-07",
-    "date_day": "1891-07-24"
+    "date_day": "1891-07-24",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-050-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-050-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-050-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "51",
     "id": "051",
     "title": "051. 大井川舟中",
     "source": "",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-051.json",
     "date_year": "",
     "date_month": "",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-051-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-051-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-051-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "52",
     "id": "052",
     "title": "052. 〔無題〕明治二十七年三月九日",
     "source": "",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-052.json",
     "date_year": "1894",
     "date_month": "1894-03",
-    "date_day": "1894-03-09"
+    "date_day": "1894-03-09",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-052-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-052-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-052-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "53",
     "id": "053",
     "title": "053. 無題〔五首・其一〕明治二十八年五月",
     "source": "県立神奈川近代文学館蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-053.json",
     "date_year": "1895",
     "date_month": "1895-05",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-053-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-053-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-053-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "54",
     "id": "054",
     "title": "054. 無題〔五首・其二〕明治二十八年五月",
     "source": "県立神奈川近代文学館蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-054.json",
     "date_year": "1895",
     "date_month": "1895-05",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-054-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-054-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-054-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "55",
     "id": "055",
     "title": "055. 無題〔五首・其三〕明治二十八年五月",
     "source": "県立神奈川近代文学館蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-055.json",
     "date_year": "1895",
     "date_month": "1895-05",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-055-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-055-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-055-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "56",
     "id": "056",
     "title": "056. 無題〔五首・其四〕明治二十八年五月",
     "source": "県立神奈川近代文学館蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-056.json",
     "date_year": "1895",
     "date_month": "1895-05",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-056-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-056-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-056-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "57",
     "id": "057",
     "title": "057. 無題〔五首・其五〕明治二十八年五月",
     "source": "県立神奈川近代文学館蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-057.json",
     "date_year": "1895",
     "date_month": "1895-05",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-057-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-057-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-057-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "58",
     "id": "058",
     "title": "058. 〔無題〕明治二十九年一月十二日",
     "source": "",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-058.json",
     "date_year": "1896",
     "date_month": "1896-01",
-    "date_day": "1896-01-12"
+    "date_day": "1896-01-12",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-058-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-058-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-058-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "59",
     "id": "059",
     "title": "059. 丙申五月、恕卿所居、庭前生霊芝。恕卿因徵余詩。余辞以不文。恕卿不聴。賦以為贈。恕卿者片嶺氏、余僚友也。〔五首・其一〕明治二十九年十一月十五日",
     "source": "",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-059.json",
     "date_year": "1896",
     "date_month": "1896-11",
-    "date_day": "1896-11-15"
+    "date_day": "1896-11-15",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-059-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-059-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-059-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "60",
     "id": "060",
     "title": "060. 〔五首・其二〕明治二十九年十一月十五日",
     "source": "",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-060.json",
     "date_year": "1896",
     "date_month": "1896-11",
-    "date_day": "1896-11-15"
+    "date_day": "1896-11-15",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-060-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-060-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-060-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "61",
     "id": "061",
     "title": "061. 〔五首・其三〕明治二十九年十一月十五日",
     "source": "",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-061.json",
     "date_year": "1896",
     "date_month": "1896-11",
-    "date_day": "1896-11-15"
+    "date_day": "1896-11-15",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-061-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-061-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-061-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "62",
     "id": "062",
     "title": "062. 〔五首・其四〕明治二十九年十一月十五日",
     "source": "",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-062.json",
     "date_year": "1896",
     "date_month": "1896-11",
-    "date_day": "1896-11-15"
+    "date_day": "1896-11-15",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-062-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-062-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-062-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "63",
     "id": "063",
     "title": "063. 〔五首・其五〕明治二十九年十一月十五日",
     "source": "",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-063.json",
     "date_year": "1896",
     "date_month": "1896-11",
-    "date_day": "1896-11-15"
+    "date_day": "1896-11-15",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-063-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-063-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-063-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "64",
     "id": "064",
     "title": "064. 〔無題〕明治三十年十二月十二日",
     "source": "県立神奈川近代文学館蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-064.json",
     "date_year": "1897",
     "date_month": "1897-12",
-    "date_day": "1897-12-12"
+    "date_day": "1897-12-12",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-064-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-064-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-064-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "65",
     "id": "065",
     "title": "065. 〔春興〕明治三十一年三月",
     "source": "",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-065.json",
     "date_year": "1898",
     "date_month": "1898-03",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-065-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-065-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-065-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "66",
     "id": "066",
     "title": "066. 失題明治三十一年三月",
     "source": "県立神奈川近代文学館蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-066.json",
     "date_year": "1898",
     "date_month": "1898-03",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-066-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-066-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-066-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "67",
     "id": "067",
     "title": "067. 春日静坐明治三十一年三月",
     "source": "県立神奈川近代文学館蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-067.json",
     "date_year": "1898",
     "date_month": "1898-03",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01",
+      "w02"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-067-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-067-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-067-w01.json",
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-067-w02.json"
+    ],
+    "witness_count": "2",
+    "has_multiple_witness": "1"
   },
   {
+    "seq": "68",
     "id": "068",
     "title": "068. 菜花黄明治三十一年三月",
     "source": "",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-068.json",
     "date_year": "1898",
     "date_month": "1898-03",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-068-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-068-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-068-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "69",
     "id": "069",
     "title": "069. 客中逢春寄子規",
     "source": "県立神奈川近代文学館蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-069.json",
     "date_year": "1898",
     "date_month": "1898-03",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-069-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-069-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-069-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "70",
     "id": "070",
     "title": "070. 〔無題〕明治三十二年",
     "source": "",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-070.json",
     "date_year": "1899",
     "date_month": "",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-070-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-070-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-070-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "71",
     "id": "071",
     "title": "071. 古別離明治三十二年四月",
     "source": "",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-071.json",
     "date_year": "1899",
     "date_month": "1899-04",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-071-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-071-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-071-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "72",
     "id": "072",
     "title": "072. 失題明治三十二年四月",
     "source": "",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-072.json",
     "date_year": "1899",
     "date_month": "1899-04",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-072-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-072-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-072-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "73",
     "id": "073",
     "title": "073. 〔無題〕明治三十三年",
     "source": "",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-073.json",
     "date_year": "1900",
     "date_month": "",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-073-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-073-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-073-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "74",
     "id": "074",
     "title": "074. 〔無題〕明治三十三年",
     "source": "県立神奈川近代文学館蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-074.json",
     "date_year": "1900",
     "date_month": "",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-074-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-074-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-074-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "75",
     "id": "075",
     "title": "075. 〔無題〕明治三十三年",
     "source": "",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-075.json",
     "date_year": "1900",
     "date_month": "",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-075-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-075-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-075-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "76",
     "id": "076",
     "title": "076. 〔無題〕",
     "source": "県立神奈川近代文学館蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-076.json",
     "date_year": "",
     "date_month": "",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-076-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-076-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-076-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "77",
     "id": "077",
     "title": "077. 〔無題〕明治四十三年七月三十一日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-077.json",
     "date_year": "1910",
     "date_month": "1910-07",
-    "date_day": "1910-07-31"
+    "date_day": "1910-07-31",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-077-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-077-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-077-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "78",
     "id": "078",
     "title": "078. 〔無題〕明治四十三年九月二十日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-078.json",
     "date_year": "1910",
     "date_month": "1910-09",
-    "date_day": "1910-09-20"
+    "date_day": "1910-09-20",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-078-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-078-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-078-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "79",
     "id": "079",
     "title": "079. 〔無題〕明治四十三年九月二十二日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-079.json",
     "date_year": "1910",
     "date_month": "1910-09",
-    "date_day": "1910-09-22"
+    "date_day": "1910-09-22",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-079-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-079-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-079-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "80",
     "id": "080",
     "title": "080. 〔無題〕明治四十三年九月二十五日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-080.json",
     "date_year": "1910",
     "date_month": "1910-09",
-    "date_day": "1910-09-25"
+    "date_day": "1910-09-25",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-080-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-080-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-080-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "81",
     "id": "081",
     "title": "081. 〔無題〕明治四十三年九月二十九日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-081.json",
     "date_year": "1910",
     "date_month": "1910-09",
-    "date_day": "1910-09-29"
+    "date_day": "1910-09-29",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-081-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-081-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-081-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "82",
     "id": "082",
     "title": "082. 〔無題〕明治四十三年十月一日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-082.json",
     "date_year": "1910",
     "date_month": "1910-10",
-    "date_day": "1910-10-01"
+    "date_day": "1910-10-01",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-082-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-082-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-082-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "83",
     "id": "083",
     "title": "083. 〔無題〕明治四十三年十月二日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-083.json",
     "date_year": "1910",
     "date_month": "1910-10",
-    "date_day": "1910-10-02"
+    "date_day": "1910-10-02",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-083-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-083-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-083-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "84",
     "id": "084",
     "title": "084. 〔無題〕明治四十三年十月三日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-084.json",
     "date_year": "1910",
     "date_month": "1910-10",
-    "date_day": "1910-10-03"
+    "date_day": "1910-10-03",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-084-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-084-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-084-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "85",
     "id": "085",
     "title": "085. 〔無題〕明治四十三年十月四日",
     "source": "東北大学附属図書館漱石文庫蔵/県立神奈川近代文学館蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-085.json",
     "date_year": "1910",
     "date_month": "1910-10",
-    "date_day": "1910-10-04"
+    "date_day": "1910-10-04",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-085-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-085-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-085-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "86",
     "id": "086",
     "title": "086. 〔無題〕明治四十三年十月六日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-086.json",
     "date_year": "1910",
     "date_month": "1910-10",
-    "date_day": "1910-10-06"
+    "date_day": "1910-10-06",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-086-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-086-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-086-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "87",
     "id": "087",
     "title": "087. 〔無題〕明治四十三年十月七日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-087.json",
     "date_year": "1910",
     "date_month": "1910-10",
-    "date_day": "1910-10-07"
+    "date_day": "1910-10-07",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-087-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-087-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-087-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "88",
     "id": "088",
     "title": "088. 〔無題〕明治四十三年十月八日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-088.json",
     "date_year": "1910",
     "date_month": "1910-10",
-    "date_day": "1910-10-08"
+    "date_day": "1910-10-08",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-088-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-088-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-088-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "89",
     "id": "089",
     "title": "089. 〔無題〕明治四十三年十月十日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-089.json",
     "date_year": "1910",
     "date_month": "1910-10",
-    "date_day": "1910-10-10"
+    "date_day": "1910-10-10",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-089-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-089-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-089-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "90",
     "id": "090",
     "title": "090. 〔無題〕明治四十三年十月十一日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-090.json",
     "date_year": "1910",
     "date_month": "1910-10",
-    "date_day": "1910-10-11"
+    "date_day": "1910-10-11",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-090-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-090-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-090-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "91",
     "id": "091",
     "title": "091. 〔無題〕明治四十三年十月十六日",
     "source": "東北大学附属図書館漱石文庫蔵/県立神奈川近代文学館蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-091.json",
     "date_year": "1910",
     "date_month": "1910-10",
-    "date_day": "1910-10-16"
+    "date_day": "1910-10-16",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-091-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-091-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-091-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "92",
     "id": "092",
     "title": "092. 〔無題〕明治四十三年十月二十四日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-092.json",
     "date_year": "1910",
     "date_month": "1910-10",
-    "date_day": "1910-10-24"
+    "date_day": "1910-10-24",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-092-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-092-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-092-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "93",
     "id": "093",
     "title": "093. 〔無題〕明治四十三年十月二十七日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-093.json",
     "date_year": "1910",
     "date_month": "1910-10",
-    "date_day": "1910-10-27"
+    "date_day": "1910-10-27",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-093-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-093-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-093-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "94",
     "id": "094",
     "title": "094. 春日偶成〔十首・其一〕明治四十五年五月二十四日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-094.json",
     "date_year": "1912",
     "date_month": "1912-05",
-    "date_day": "1912-05-24"
+    "date_day": "1912-05-24",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-094-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-094-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-094-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "95",
     "id": "095",
     "title": "095. 春日偶成〔十首・其二〕明治四十五年五月二十四日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-095.json",
     "date_year": "1912",
     "date_month": "1912-05",
-    "date_day": "1912-05-24"
+    "date_day": "1912-05-24",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-095-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-095-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-095-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "96",
     "id": "096",
     "title": "096. 春日偶成〔十首・其三〕明治四十五年五月二十四日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-096.json",
     "date_year": "1912",
     "date_month": "1912-05",
-    "date_day": "1912-05-24"
+    "date_day": "1912-05-24",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-096-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-096-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-096-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "97",
     "id": "097",
     "title": "097. 春日偶成〔十首・其四〕明治四十五年五月二十四日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-097.json",
     "date_year": "1912",
     "date_month": "1912-05",
-    "date_day": "1912-05-24"
+    "date_day": "1912-05-24",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-097-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-097-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-097-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "98",
     "id": "098",
     "title": "098. 春日偶成〔十首・其五〕明治四十五年五月二十四日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-098.json",
     "date_year": "1912",
     "date_month": "1912-05",
-    "date_day": "1912-05-24"
+    "date_day": "1912-05-24",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-098-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-098-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-098-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "99",
     "id": "099",
     "title": "099. 春日偶成〔十首・其六〕明治四十五年五月二十四日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-099.json",
     "date_year": "1912",
     "date_month": "1912-05",
-    "date_day": "1912-05-24"
+    "date_day": "1912-05-24",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-099-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-099-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-099-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "100",
     "id": "100",
     "title": "100. 春日偶成〔十首・其七〕明治四十五年五月二十四日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-100.json",
     "date_year": "1912",
     "date_month": "1912-05",
-    "date_day": "1912-05-24"
+    "date_day": "1912-05-24",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-100-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-100-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-100-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "101",
     "id": "101",
     "title": "101. 春日偶成〔十首・其八〕明治四十五年五月二十四日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-101.json",
     "date_year": "1912",
     "date_month": "1912-05",
-    "date_day": "1912-05-24"
+    "date_day": "1912-05-24",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-101-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-101-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-101-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "102",
     "id": "102",
     "title": "102. 春日偶成〔十首・其九〕明治四十五年五月二十四日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-102.json",
     "date_year": "1912",
     "date_month": "1912-05",
-    "date_day": "1912-05-24"
+    "date_day": "1912-05-24",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-102-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-102-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-102-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "103",
     "id": "103",
     "title": "103. 春日偶成〔十首・其十〕明治四十五年五月二十四日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-103.json",
     "date_year": "1912",
     "date_month": "1912-05",
-    "date_day": "1912-05-24"
+    "date_day": "1912-05-24",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-103-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-103-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-103-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "104",
     "id": "104",
     "title": "104. 〔無題〕明治四十五年六月",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-104.json",
     "date_year": "1912",
     "date_month": "1912-06",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-104-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-104-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-104-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "105",
     "id": "105",
     "title": "105. 〔無題〕明治四十五年六月",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-105.json",
     "date_year": "1912",
     "date_month": "1912-06",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-105-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-105-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-105-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "106",
     "id": "106",
     "title": "106. 〔無題〕明治四十五年六月",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-106.json",
     "date_year": "1912",
     "date_month": "1912-06",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-106-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-106-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-106-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "107",
     "id": "107",
     "title": "107. 〔無題〕明治四十五年七月",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-107.json",
     "date_year": "1912",
     "date_month": "1912-07",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-107-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-107-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-107-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "108",
     "id": "108",
     "title": "108. 〔酬横山画伯惠画〕明治四十五年七月",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-108.json",
     "date_year": "1912",
     "date_month": "1912-07",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-108-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-108-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-108-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "109",
     "id": "109",
     "title": "109. 酬横山画伯惠画明治四十五年七月",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-109.json",
     "date_year": "1912",
     "date_month": "1912-07",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-109-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-109-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-109-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "110",
     "id": "110",
     "title": "110. 〔明治百俳家短册帖序〕明治四十五年七月",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-110.json",
     "date_year": "1912",
     "date_month": "1912-07",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-110-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-110-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-110-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "111",
     "id": "111",
     "title": "111. 妙雲寺観瀑大正元年九月十七日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-111.json",
     "date_year": "1912",
     "date_month": "1912-09",
-    "date_day": "1912-09-17"
+    "date_day": "1912-09-17",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-111-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-111-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-111-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "112",
     "id": "112",
     "title": "112. 〔題自画〕大正元年十一月",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-112.json",
     "date_year": "1912",
     "date_month": "1912-11",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-112-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-112-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-112-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "113",
     "id": "113",
     "title": "113. 〔題自画〕大正元年十一月",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-113.json",
     "date_year": "1912",
     "date_month": "1912-11",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-113-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-113-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-113-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "114",
     "id": "114",
     "title": "114. 〔無題〕",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-114.json",
     "date_year": "",
     "date_month": "",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-114-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-114-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-114-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "115",
     "id": "115",
     "title": "115. 題画竹",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-115.json",
     "date_year": "",
     "date_month": "",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-115-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-115-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-115-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "116",
     "id": "116",
     "title": "116. 偶成",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-116.json",
     "date_year": "",
     "date_month": "",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-116-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-116-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-116-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "117",
     "id": "117",
     "title": "117. 戯画竹加賛",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-117.json",
     "date_year": "",
     "date_month": "",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-117-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-117-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-117-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "118",
     "id": "118",
     "title": "118. 〔題自画〕大正三年",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-118.json",
     "date_year": "1914",
     "date_month": "",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-118-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-118-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-118-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "119",
     "id": "119",
     "title": "119. 題画",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-119.json",
     "date_year": "",
     "date_month": "",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-119-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-119-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-119-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "120",
     "id": "120",
     "title": "120. 題画",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-120.json",
     "date_year": "",
     "date_month": "",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-120-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-120-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-120-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "121",
     "id": "121",
     "title": "121. 得建堂先生自寿詩及七寿杯、次韵以祝大正三年",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-121.json",
     "date_year": "1914",
     "date_month": "",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-121-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-121-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-121-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "122",
     "id": "122",
     "title": "122. 閑居偶成、似臨風詞兄大正三年",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-122.json",
     "date_year": "1914",
     "date_month": "",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-122-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-122-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-122-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "123",
     "id": "123",
     "title": "123. 游子吟、書似円月詞兄大正三年二月",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-123.json",
     "date_year": "1914",
     "date_month": "1914-02",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-123-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-123-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-123-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "124",
     "id": "124",
     "title": "124. 題自画",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-124.json",
     "date_year": "",
     "date_month": "",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-124-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-124-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-124-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "125",
     "id": "125",
     "title": "125. 〔題自画〕大正三年十一月",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-125.json",
     "date_year": "1914",
     "date_month": "1914-11",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-125-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-125-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-125-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "126",
     "id": "126",
     "title": "126. 題自画",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-126.json",
     "date_year": "",
     "date_month": "",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-126-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-126-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-126-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "127",
     "id": "127",
     "title": "127. 題画大正四年",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-127.json",
     "date_year": "1915",
     "date_month": "",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-127-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-127-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-127-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "128",
     "id": "128",
     "title": "128. 〔題西川一草亭画〕大正四年九月",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-128.json",
     "date_year": "1915",
     "date_month": "1915-09",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-128-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-128-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-128-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "129",
     "id": "129",
     "title": "129. 〔題自画〕大正四年十一月",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-129.json",
     "date_year": "1915",
     "date_month": "1915-11",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-129-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-129-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-129-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "130",
     "id": "130",
     "title": "130. 題結城素明画",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-130.json",
     "date_year": "",
     "date_month": "",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-130-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-130-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-130-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "131",
     "id": "131",
     "title": "131. 題自画大正五年一月",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-131.json",
     "date_year": "1916",
     "date_month": "1916-01",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-131-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-131-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-131-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "132",
     "id": "132",
     "title": "132. 閑居偶成大正五年春",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-132.json",
     "date_year": "1916",
     "date_month": "",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-132-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-132-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-132-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "133",
     "id": "133",
     "title": "133. 題自画大正五年春",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-133.json",
     "date_year": "1916",
     "date_month": "",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-133-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-133-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-133-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "134",
     "id": "134",
     "title": "134. 〔無題〕大正五年八月十四日夜",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-134.json",
     "date_year": "1916",
     "date_month": "1916-08",
-    "date_day": "1916-08-14"
+    "date_day": "1916-08-14",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-134-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-134-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-134-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "135",
     "id": "135",
     "title": "135. 〔無題〕大正五年八月十五日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-135.json",
     "date_year": "1916",
     "date_month": "1916-08",
-    "date_day": "1916-08-15"
+    "date_day": "1916-08-15",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-135-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-135-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-135-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "136",
     "id": "136",
     "title": "136. 〔無題〕大正五年八月十五日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-136.json",
     "date_year": "1916",
     "date_month": "1916-08",
-    "date_day": "1916-08-15"
+    "date_day": "1916-08-15",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-136-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-136-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-136-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "137",
     "id": "137",
     "title": "137. 〔無題〕大正五年八月十六日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-137.json",
     "date_year": "1916",
     "date_month": "1916-08",
-    "date_day": "1916-08-16"
+    "date_day": "1916-08-16",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-137-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-137-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-137-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "138",
     "id": "138",
     "title": "138. 〔無題〕大正五年八月十八日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-138.json",
     "date_year": "1916",
     "date_month": "1916-08",
-    "date_day": "1916-08-18"
+    "date_day": "1916-08-18",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-138-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-138-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-138-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "139",
     "id": "139",
     "title": "139. 〔無題〕大正五年八月十九日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-139.json",
     "date_year": "1916",
     "date_month": "1916-08",
-    "date_day": "1916-08-19"
+    "date_day": "1916-08-19",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-139-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-139-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-139-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "140",
     "id": "140",
     "title": "140. 〔無題〕大正五年八月二十日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-140.json",
     "date_year": "1916",
     "date_month": "1916-08",
-    "date_day": "1916-08-20"
+    "date_day": "1916-08-20",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-140-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-140-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-140-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "141",
     "id": "141",
     "title": "141. 〔無題〕大正五年八月二十一日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-141.json",
     "date_year": "1916",
     "date_month": "1916-08",
-    "date_day": "1916-08-21"
+    "date_day": "1916-08-21",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-141-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-141-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-141-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "142",
     "id": "142",
     "title": "142. 〔無題〕大正五年八月二十一日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-142.json",
     "date_year": "1916",
     "date_month": "1916-08",
-    "date_day": "1916-08-21"
+    "date_day": "1916-08-21",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-142-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-142-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-142-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "143",
     "id": "143",
     "title": "143. 〔無題〕大正五年八月二十二日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-143.json",
     "date_year": "1916",
     "date_month": "1916-08",
-    "date_day": "1916-08-22"
+    "date_day": "1916-08-22",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-143-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-143-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-143-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "144",
     "id": "144",
     "title": "144. 〔無題〕大正五年八月二十三日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-144.json",
     "date_year": "1916",
     "date_month": "1916-08",
-    "date_day": "1916-08-23"
+    "date_day": "1916-08-23",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-144-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-144-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-144-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "145",
     "id": "145",
     "title": "145. 〔題丙辰潑墨〕大正五年八月二十六日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-145.json",
     "date_year": "1916",
     "date_month": "1916-08",
-    "date_day": "1916-08-26"
+    "date_day": "1916-08-26",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-145-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-145-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-145-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "146",
     "id": "146",
     "title": "146. 〔無題〕大正五年八月二十八日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-146.json",
     "date_year": "1916",
     "date_month": "1916-08",
-    "date_day": "1916-08-28"
+    "date_day": "1916-08-28",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-146-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-146-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-146-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "147",
     "id": "147",
     "title": "147. 〔無題〕大正五年八月二十九日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-147.json",
     "date_year": "1916",
     "date_month": "1916-08",
-    "date_day": "1916-08-29"
+    "date_day": "1916-08-29",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-147-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-147-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-147-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "148",
     "id": "148",
     "title": "148. 〔無題〕大正五年八月三十日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-148.json",
     "date_year": "1916",
     "date_month": "1916-08",
-    "date_day": "1916-08-30"
+    "date_day": "1916-08-30",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-148-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-148-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-148-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "149",
     "id": "149",
     "title": "149. 〔無題〕大正五年八月三十日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-149.json",
     "date_year": "1916",
     "date_month": "1916-08",
-    "date_day": "1916-08-30"
+    "date_day": "1916-08-30",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-149-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-149-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-149-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "150",
     "id": "150",
     "title": "150. 〔無題〕大正五年九月一日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-150.json",
     "date_year": "1916",
     "date_month": "1916-09",
-    "date_day": "1916-09-01"
+    "date_day": "1916-09-01",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-150-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-150-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-150-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "151",
     "id": "151",
     "title": "151. 〔無題〕大正五年九月一日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-151.json",
     "date_year": "1916",
     "date_month": "1916-09",
-    "date_day": "1916-09-01"
+    "date_day": "1916-09-01",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-151-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-151-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-151-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "152",
     "id": "152",
     "title": "152. 〔無題〕大正五年九月二日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-152.json",
     "date_year": "1916",
     "date_month": "1916-09",
-    "date_day": "1916-09-02"
+    "date_day": "1916-09-02",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-152-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-152-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-152-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "153",
     "id": "153",
     "title": "153. 〔無題〕大正五年九月二日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-153.json",
     "date_year": "1916",
     "date_month": "1916-09",
-    "date_day": "1916-09-02"
+    "date_day": "1916-09-02",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-153-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-153-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-153-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "154",
     "id": "154",
     "title": "154. 〔無題〕大正五年九月三日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-154.json",
     "date_year": "1916",
     "date_month": "1916-09",
-    "date_day": "1916-09-03"
+    "date_day": "1916-09-03",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-154-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-154-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-154-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "155",
     "id": "155",
     "title": "155. 〔無題〕大正五年九月四日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-155.json",
     "date_year": "1916",
     "date_month": "1916-09",
-    "date_day": "1916-09-04"
+    "date_day": "1916-09-04",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-155-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-155-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-155-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "156",
     "id": "156",
     "title": "156. 〔無題〕大正五年九月四日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-156.json",
     "date_year": "1916",
     "date_month": "1916-09",
-    "date_day": "1916-09-04"
+    "date_day": "1916-09-04",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-156-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-156-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-156-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "157",
     "id": "157",
     "title": "157. 〔無題〕大正五年九月五日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-157.json",
     "date_year": "1916",
     "date_month": "1916-09",
-    "date_day": "1916-09-05"
+    "date_day": "1916-09-05",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-157-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-157-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-157-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "158",
     "id": "158",
     "title": "158. 〔無題〕大正五年九月六日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-158.json",
     "date_year": "1916",
     "date_month": "1916-09",
-    "date_day": "1916-09-06"
+    "date_day": "1916-09-06",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-158-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-158-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-158-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "159",
     "id": "159",
     "title": "159. 〔無題〕大正五年九月九日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-159.json",
     "date_year": "1916",
     "date_month": "1916-09",
-    "date_day": "1916-09-09"
+    "date_day": "1916-09-09",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-159-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-159-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-159-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "160",
     "id": "160",
     "title": "160. 〔無題〕大正五年九月十日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-160.json",
     "date_year": "1916",
     "date_month": "1916-09",
-    "date_day": "1916-09-10"
+    "date_day": "1916-09-10",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-160-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-160-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-160-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "161",
     "id": "161",
     "title": "161. 〔無題〕大正五年九月十一日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-161.json",
     "date_year": "1916",
     "date_month": "1916-09",
-    "date_day": "1916-09-11"
+    "date_day": "1916-09-11",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-161-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-161-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-161-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "162",
     "id": "162",
     "title": "162. 〔無題〕大正五年九月十二日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-162.json",
     "date_year": "1916",
     "date_month": "1916-09",
-    "date_day": "1916-09-12"
+    "date_day": "1916-09-12",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-162-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-162-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-162-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "163",
     "id": "163",
     "title": "163. 〔無題〕大正五年九月十三日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-163.json",
     "date_year": "1916",
     "date_month": "1916-09",
-    "date_day": "1916-09-13"
+    "date_day": "1916-09-13",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-163-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-163-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-163-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "164",
     "id": "164",
     "title": "164. 〔無題〕大正五年九月十三日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-164.json",
     "date_year": "1916",
     "date_month": "1916-09",
-    "date_day": "1916-09-13"
+    "date_day": "1916-09-13",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-164-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-164-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-164-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "165",
     "id": "165",
     "title": "165. 〔無題〕大正五年九月十五日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-165.json",
     "date_year": "1916",
     "date_month": "1916-09",
-    "date_day": "1916-09-15"
+    "date_day": "1916-09-15",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-165-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-165-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-165-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "166",
     "id": "166",
     "title": "166. 〔無題〕大正五年九月十六日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-166.json",
     "date_year": "1916",
     "date_month": "1916-09",
-    "date_day": "1916-09-16"
+    "date_day": "1916-09-16",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-166-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-166-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-166-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "167",
     "id": "167",
     "title": "167. 〔無題〕大正五年九月十七日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-167.json",
     "date_year": "1916",
     "date_month": "1916-09",
-    "date_day": "1916-09-17"
+    "date_day": "1916-09-17",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-167-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-167-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-167-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "168",
     "id": "168",
     "title": "168. 〔無題〕大正五年九月十八日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-168.json",
     "date_year": "1916",
     "date_month": "1916-09",
-    "date_day": "1916-09-18"
+    "date_day": "1916-09-18",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-168-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-168-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-168-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "169",
     "id": "169",
     "title": "169. 〔無題〕大正五年九月十九日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-169.json",
     "date_year": "1916",
     "date_month": "1916-09",
-    "date_day": "1916-09-19"
+    "date_day": "1916-09-19",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-169-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-169-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-169-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "170",
     "id": "170",
     "title": "170. 〔無題〕大正五年九月二十日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-170.json",
     "date_year": "1916",
     "date_month": "1916-09",
-    "date_day": "1916-09-20"
+    "date_day": "1916-09-20",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-170-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-170-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-170-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "171",
     "id": "171",
     "title": "171. 〔無題〕大正五年九月二十二日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-171.json",
     "date_year": "1916",
     "date_month": "1916-09",
-    "date_day": "1916-09-22"
+    "date_day": "1916-09-22",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-171-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-171-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-171-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "172",
     "id": "172",
     "title": "172. 〔無題〕大正五年九月二十三日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-172.json",
     "date_year": "1916",
     "date_month": "1916-09",
-    "date_day": "1916-09-23"
+    "date_day": "1916-09-23",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-172-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-172-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-172-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "173",
     "id": "173",
     "title": "173. 〔無題〕大正五年九月二十三日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-173.json",
     "date_year": "1916",
     "date_month": "1916-09",
-    "date_day": "1916-09-23"
+    "date_day": "1916-09-23",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-173-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-173-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-173-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "174",
     "id": "174",
     "title": "174. 〔無題〕大正五年九月二十四日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-174.json",
     "date_year": "1916",
     "date_month": "1916-09",
-    "date_day": "1916-09-24"
+    "date_day": "1916-09-24",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-174-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-174-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-174-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "175",
     "id": "175",
     "title": "175. 〔無題〕大正五年九月二十五日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-175.json",
     "date_year": "1916",
     "date_month": "1916-09",
-    "date_day": "1916-09-25"
+    "date_day": "1916-09-25",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-175-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-175-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-175-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "176",
     "id": "176",
     "title": "176. 〔無題〕大正五年九月二十六日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-176.json",
     "date_year": "1916",
     "date_month": "1916-09",
-    "date_day": "1916-09-26"
+    "date_day": "1916-09-26",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-176-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-176-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-176-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "177",
     "id": "177",
     "title": "177. 〔無題〕大正五年九月二十七日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-177.json",
     "date_year": "1916",
     "date_month": "1916-09",
-    "date_day": "1916-09-27"
+    "date_day": "1916-09-27",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-177-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-177-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-177-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "178",
     "id": "178",
     "title": "178. 〔無題〕大正五年九月二十九日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-178.json",
     "date_year": "1916",
     "date_month": "1916-09",
-    "date_day": "1916-09-29"
+    "date_day": "1916-09-29",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-178-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-178-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-178-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "179",
     "id": "179",
     "title": "179. 〔無題〕大正五年九月三十日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-179.json",
     "date_year": "1916",
     "date_month": "1916-09",
-    "date_day": "1916-09-30"
+    "date_day": "1916-09-30",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-179-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-179-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-179-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "180",
     "id": "180",
     "title": "180. 〔無題〕大正五年十月一日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-180.json",
     "date_year": "1916",
     "date_month": "1916-10",
-    "date_day": "1916-10-01"
+    "date_day": "1916-10-01",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-180-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-180-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-180-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "181",
     "id": "181",
     "title": "181. 〔無題〕大正五年十月二日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-181.json",
     "date_year": "1916",
     "date_month": "1916-10",
-    "date_day": "1916-10-02"
+    "date_day": "1916-10-02",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-181-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-181-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-181-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "182",
     "id": "182",
     "title": "182. 〔無題〕大正五年十月三日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-182.json",
     "date_year": "1916",
     "date_month": "1916-10",
-    "date_day": "1916-10-03"
+    "date_day": "1916-10-03",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-182-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-182-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-182-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "183",
     "id": "183",
     "title": "183. 〔無題〕大正五年十月四日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-183.json",
     "date_year": "1916",
     "date_month": "1916-10",
-    "date_day": "1916-10-04"
+    "date_day": "1916-10-04",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-183-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-183-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-183-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "184",
     "id": "184",
     "title": "184. 〔無題〕大正五年十月六日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-184.json",
     "date_year": "1916",
     "date_month": "1916-10",
-    "date_day": "1916-10-06"
+    "date_day": "1916-10-06",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-184-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-184-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-184-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "185",
     "id": "185",
     "title": "185. 〔無題〕大正五年十月七日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-185.json",
     "date_year": "1916",
     "date_month": "1916-10",
-    "date_day": "1916-10-07"
+    "date_day": "1916-10-07",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-185-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-185-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-185-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "186",
     "id": "186",
     "title": "186. 〔無題〕大正五年十月八日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-186.json",
     "date_year": "1916",
     "date_month": "1916-10",
-    "date_day": "1916-10-08"
+    "date_day": "1916-10-08",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-186-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-186-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-186-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "187",
     "id": "187",
     "title": "187. 〔無題〕大正五年十月九日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-187.json",
     "date_year": "1916",
     "date_month": "1916-10",
-    "date_day": "1916-10-09"
+    "date_day": "1916-10-09",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-187-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-187-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-187-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "188",
     "id": "188",
     "title": "188. 〔無題〕大正五年十月十日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-188.json",
     "date_year": "1916",
     "date_month": "1916-10",
-    "date_day": "1916-10-10"
+    "date_day": "1916-10-10",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-188-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-188-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-188-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "189",
     "id": "189",
     "title": "189. 〔無題〕大正五年十月十一日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-189.json",
     "date_year": "1916",
     "date_month": "1916-10",
-    "date_day": "1916-10-11"
+    "date_day": "1916-10-11",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-189-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-189-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-189-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "190",
     "id": "190",
     "title": "190. 〔無題〕大正五年十月十二日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-190.json",
     "date_year": "1916",
     "date_month": "1916-10",
-    "date_day": "1916-10-12"
+    "date_day": "1916-10-12",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-190-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-190-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-190-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "191",
     "id": "191",
     "title": "191. 〔無題〕大正五年十月十五日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-191.json",
     "date_year": "1916",
     "date_month": "1916-10",
-    "date_day": "1916-10-15"
+    "date_day": "1916-10-15",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-191-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-191-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-191-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "192",
     "id": "192",
     "title": "192. 〔無題〕大正五年十月十六日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-192.json",
     "date_year": "1916",
     "date_month": "1916-10",
-    "date_day": "1916-10-16"
+    "date_day": "1916-10-16",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-192-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-192-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-192-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "193",
     "id": "193",
     "title": "193. 〔無題〕大正五年十月十七日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-193.json",
     "date_year": "1916",
     "date_month": "1916-10",
-    "date_day": "1916-10-17"
+    "date_day": "1916-10-17",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-193-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-193-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-193-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "194",
     "id": "194",
     "title": "194. 〔無題〕大正五年十月十八日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-194.json",
     "date_year": "1916",
     "date_month": "1916-10",
-    "date_day": "1916-10-18"
+    "date_day": "1916-10-18",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-194-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-194-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-194-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "195",
     "id": "195",
     "title": "195. 〔無題〕大正五年十月十九日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-195.json",
     "date_year": "1916",
     "date_month": "1916-10",
-    "date_day": "1916-10-19"
+    "date_day": "1916-10-19",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-195-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-195-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-195-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "196",
     "id": "196",
     "title": "196. 〔無題〕大正五年十月二十日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-196.json",
     "date_year": "1916",
     "date_month": "1916-10",
-    "date_day": "1916-10-20"
+    "date_day": "1916-10-20",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-196-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-196-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-196-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "197",
     "id": "197",
     "title": "197. 〔無題〕大正五年十月二十一日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-197.json",
     "date_year": "1916",
     "date_month": "1916-10",
-    "date_day": "1916-10-21"
+    "date_day": "1916-10-21",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-197-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-197-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-197-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "198",
     "id": "198",
     "title": "198. 〔無題三首·其一〕大正五年十月二十一日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-198.json",
     "date_year": "1916",
     "date_month": "1916-10",
-    "date_day": "1916-10-21"
+    "date_day": "1916-10-21",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-198-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-198-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-198-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "199",
     "id": "199",
     "title": "199. 〔無題三首·其二〕大正五年十月二十一日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-199.json",
     "date_year": "1916",
     "date_month": "1916-10",
-    "date_day": "1916-10-21"
+    "date_day": "1916-10-21",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-199-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-199-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-199-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "200",
     "id": "200",
     "title": "200. 〔無題三首·其三〕大正五年十月二十一日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-200.json",
     "date_year": "1916",
     "date_month": "1916-10",
-    "date_day": "1916-10-21"
+    "date_day": "1916-10-21",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-200-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-200-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-200-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "201",
     "id": "201",
     "title": "201. 〔無題三首·其一〕大正五年十月二十二日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-201.json",
     "date_year": "1916",
     "date_month": "1916-10",
-    "date_day": "1916-10-22"
+    "date_day": "1916-10-22",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-201-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-201-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-201-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "202",
     "id": "202",
     "title": "202. 〔無題三首·其二〕大正五年十月二十二日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-202.json",
     "date_year": "1916",
     "date_month": "1916-10",
-    "date_day": "1916-10-22"
+    "date_day": "1916-10-22",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-202-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-202-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-202-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "203",
     "id": "203",
     "title": "203. 〔無題三首·其三〕大正五年十月二十二日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-203.json",
     "date_year": "1916",
     "date_month": "1916-10",
-    "date_day": "1916-10-22"
+    "date_day": "1916-10-22",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-203-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-203-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-203-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "204",
     "id": "204",
     "title": "204. 元成禅人、自德源大会回鉢到余家、淹留旬日。臨去需余画。余為禅人作墨竹三竿、併題詩以贈大正五年十月三十一日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-204.json",
     "date_year": "1916",
     "date_month": "1916-10",
-    "date_day": "1916-10-31"
+    "date_day": "1916-10-31",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-204-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-204-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-204-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "205",
     "id": "205",
     "title": "205. 丙辰十月、余為元成禅人作墨竹。越一日、見壁間所挂図、興忽発。乃為珪堂禅人抽毫作松一株、配以石二三。不知禅人受余贈否也。",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-205.json",
     "date_year": "1916",
     "date_month": "1916-10",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-205-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-205-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-205-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "206",
     "id": "206",
     "title": "206. 〔無題〕大正五年十一月十三日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-206.json",
     "date_year": "1916",
     "date_month": "1916-11",
-    "date_day": "1916-11-13"
+    "date_day": "1916-11-13",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-206-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-206-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-206-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "207",
     "id": "207",
     "title": "207. 〔無題〕大正五年十一月十九日",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-207.json",
     "date_year": "1916",
     "date_month": "1916-11",
-    "date_day": "1916-11-19"
+    "date_day": "1916-11-19",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-207-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-207-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-207-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "208",
     "id": "208",
     "title": "208. 〔無題〕大正五年十一月二十日夜",
     "source": "東北大学附属図書館漱石文庫蔵",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-208.json",
     "date_year": "1916",
     "date_month": "1916-11",
-    "date_day": "1916-11-20"
+    "date_day": "1916-11-20",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-208-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-208-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-208-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "209",
     "id": "209",
     "title": "209. 未定稿一",
     "source": "",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-209.json",
     "date_year": "",
     "date_month": "",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-209-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-209-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-209-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "210",
     "id": "210",
     "title": "210. 未定稿二",
     "source": "",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-210.json",
     "date_year": "",
     "date_month": "",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-210-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-210-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-210-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "211",
     "id": "211",
     "title": "211. 未定稿三",
     "source": "",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-211.json",
     "date_year": "",
     "date_month": "",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-211-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-211-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-211-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "212",
     "id": "212",
     "title": "212. 未定稿四",
     "source": "",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-212.json",
     "date_year": "",
     "date_month": "",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-212-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-212-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-212-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "213",
     "id": "213",
     "title": "213. 未定稿五",
     "source": "",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-213.json",
     "date_year": "",
     "date_month": "",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-213-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-213-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-213-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "214",
     "id": "214",
     "title": "214. 未定稿六",
     "source": "",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-214.json",
     "date_year": "",
     "date_month": "",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-214-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-214-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-214-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "215",
     "id": "215",
     "title": "215. 未定稿七",
     "source": "",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-215.json",
     "date_year": "",
     "date_month": "",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-215-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-215-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-215-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   },
   {
+    "seq": "216",
     "id": "216",
     "title": "216. 未定稿八",
     "source": "",
-    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-216.json",
     "date_year": "",
     "date_month": "",
-    "date_day": ""
+    "date_day": "",
+    "default_witness": "w01",
+    "witness_list": [
+      "w01"
+    ],
+    "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-216-w01.json",
+    "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-216-w01.json",
+    "manifest_list": [
+      "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-216-w01.json"
+    ],
+    "witness_count": "1",
+    "has_multiple_witness": "0"
   }
 ]
