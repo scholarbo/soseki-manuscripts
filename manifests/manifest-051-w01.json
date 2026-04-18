@@ -78,9 +78,9 @@
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/051-w01.jpg",
+                "id": "https://scholarbo.github.io/soseki-manuscripts/images/051-w01.jpg",
                 "type": "Image",
-                "format": "image/jpg",
+                "format": "image/jpeg",
                 "height": 1600,
                 "width": 1200
               },
