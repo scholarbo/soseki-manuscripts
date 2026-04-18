@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>夏目漱石自筆の漢詩原稿・草稿コレクション</title>
+  <title>夏目漱石自筆の漢詩原稿・草稿コレクション (Natsume Sōseki Manuscript Collection of Kanshi Drafts and Fair Copies)</title>
   <style>
     :root {
       --bg: #f6f7f9;
@@ -15,8 +15,10 @@
       --accent-line: #d6deea;
       --btn: #374151;
       --btn-hover: #1f2937;
-      --sidebar-w: 300px;
-      --text-pane-w: 420px;
+      --sidebar-w: 220px;
+      --sidebar-collapsed-w: 54px;
+      --text-pane-w: 480px;
+      --text-pane-collapsed-w: 46px;
       --shadow: 0 10px 30px rgba(17, 24, 39, 0.08);
       --radius: 22px;
     }
@@ -32,7 +34,10 @@
       gap: 12px;
       width: 100%; height: 100%;
       padding: 12px;
+      transition: grid-template-columns .18s ease;
     }
+    .app.sidebar-collapsed { grid-template-columns: var(--sidebar-collapsed-w) 1fr; }
+
     .sidebar, .viewer-wrap {
       background: var(--panel);
       border: 1px solid var(--line);
@@ -41,12 +46,31 @@
       overflow: hidden;
     }
     .sidebar {
-      display: flex; flex-direction: column; min-width: 260px;
+      display: flex; flex-direction: column; min-width: 0; position: relative;
     }
     .header {
       padding: 16px 16px 12px;
       border-bottom: 1px solid var(--line);
       background: linear-gradient(180deg, #ffffff 0%, #fafbfc 100%);
+      position: relative;
+      padding-right: 52px;
+    }
+    .toggle-btn {
+      appearance: none;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--text);
+      border-radius: 10px;
+      width: 34px; height: 34px;
+      display: inline-flex; align-items: center; justify-content: center;
+      cursor: pointer; transition: .15s ease;
+      font-size: 16px; line-height: 1;
+    }
+    .toggle-btn:hover { background: #f8fafc; }
+    .sidebar-toggle {
+      position: absolute; top: 14px; right: 14px; z-index: 20;
+      box-shadow: 0 2px 8px rgba(17,24,39,.10);
+      font-weight: 700;
     }
     .title { font-size: 18px; font-weight: 700; margin-bottom: 6px; }
     .sub { color: var(--muted); font-size: 12px; line-height: 1.45; }
@@ -58,25 +82,60 @@
     .meta { padding: 0 14px 10px; color: var(--muted); font-size: 11px; }
     .list { overflow: auto; padding: 6px 8px 12px; flex: 1; }
     .item {
-      padding: 8px 10px; border-radius: 12px; cursor: pointer;
-      margin: 3px 0; border: 1px solid transparent; transition: 0.15s ease;
+      padding: 8px 10px; border-radius: 12px; cursor: pointer; margin: 4px 0;
+      border: 1px solid transparent; transition: 0.15s ease;
     }
     .item:hover { background: #fafafa; border-color: #f0f0f0; }
     .item.active { background: var(--accent); border-color: var(--accent-line); }
     .seq { font-size: 11px; color: var(--muted); margin-bottom: 2px; }
     .label { font-size: 13px; line-height: 1.4; word-break: break-word; }
 
+    .sidebar-collapsed .sidebar .header,
+    .sidebar-collapsed .sidebar .search-wrap,
+    .sidebar-collapsed .sidebar .meta,
+    .sidebar-collapsed .sidebar .list { display: none; }
+    .sidebar-collapsed .sidebar {
+      align-items: center; justify-content: flex-start; padding-top: 12px;
+    }
+    .sidebar-collapsed .sidebar::after {
+      content: "目次\A(Contents)";
+      writing-mode: vertical-rl;
+      white-space: pre;
+      line-height: 1.35;
+      text-align: center;
+      font-size: 11px;
+      color: var(--muted);
+      margin-top: 14px;
+      letter-spacing: .12em;
+    }
+    .sidebar-collapsed .sidebar .sidebar-toggle {
+      position: static;
+      margin-top: 4px;
+    }
+
     .viewer-wrap {
       display: flex; flex-direction: column; min-width: 0;
     }
+    .viewer-wrap.header-collapsed .viewer-header {
+      padding: 10px 52px 10px 16px;
+    }
+    .viewer-wrap.header-collapsed .viewer-meta,
+    .viewer-wrap.header-collapsed .actions,
+    .viewer-wrap.header-collapsed .notice { display: none; }
+    .viewer-wrap.header-collapsed .viewer-title { margin-bottom: 0; font-size: 15px; line-height: 1.25; }
+
     .viewer-header {
-      padding: 12px 16px 10px;
+      padding: 14px 52px 12px 18px;
       border-bottom: 1px solid var(--line);
       background: linear-gradient(180deg, #ffffff 0%, #fafbfc 100%);
+      position: relative;
+    }
+    .header-toggle {
+      position: absolute; top: 12px; right: 12px;
     }
     .viewer-title { font-size: 16px; font-weight: 700; line-height: 1.35; margin-bottom: 8px; }
     .viewer-meta {
-      display: grid; gap: 3px; font-size: 12px; color: var(--muted); line-height: 1.4; margin-bottom: 8px;
+      display: grid; gap: 3px; font-size: 12px; color: var(--muted); line-height: 1.45; margin-bottom: 10px;
     }
     .viewer-meta strong { color: var(--text); font-weight: 600; }
     .actions { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 6px; }
@@ -85,126 +144,226 @@
       border-radius: 12px; padding: 8px 12px; font-size: 13px; cursor: pointer; transition: .15s ease;
     }
     .btn:hover { background: #f8fafc; }
-    .btn.primary { background: var(--btn); color: white; border-color: var(--btn); }
-    .btn.primary:hover { background: var(--btn-hover); }
+    .btn.primary, .btn.active { background: var(--btn); color: white; border-color: var(--btn); }
+    .btn.primary:hover, .btn.active:hover { background: var(--btn-hover); }
     .btn:disabled { opacity: .45; cursor: not-allowed; }
-    .notice { margin-top: 4px; font-size: 12px; color: #6b7280; line-height: 1.5; }
+    .notice { margin-top: 4px; font-size: 12px; color: var(--muted); line-height: 1.5; }
 
     .viewer-body {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) var(--text-pane-w);
-      gap: 10px;
-      flex: 1;
+      grid-template-columns: 1fr var(--text-pane-w);
       min-height: 0;
-      padding: 10px;
+      flex: 1;
+      transition: grid-template-columns .18s ease;
     }
+    .viewer-body.text-collapsed { grid-template-columns: 1fr var(--text-pane-collapsed-w); }
+
     .manuscript-pane {
       min-width: 0; min-height: 0;
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      overflow: hidden;
-      background: #fff;
+      border-right: 1px solid var(--line);
     }
-    iframe { width: 100%; height: 100%; border: 0; background: #fff; }
+    iframe {
+      width: 100%; height: 100%; border: 0; background: #fff;
+      min-height: 560px;
+    }
 
     .text-pane {
-      min-width: 0;
-      border: 1px solid var(--line);
-      border-radius: 18px;
+      min-width: 0; min-height: 0;
+      display: flex; flex-direction: column;
       background: #fbfbfc;
-      display: flex;
-      flex-direction: column;
-      min-height: 0;
-      overflow: hidden;
+      position: relative;
     }
-    .text-header {
-      padding: 12px 14px 8px;
+    .text-toolbar {
+      display: flex; align-items: center; justify-content: space-between; gap: 10px;
+      padding: 10px 12px 8px;
       border-bottom: 1px solid var(--line);
-      background: #ffffff;
+      background: linear-gradient(180deg, #ffffff 0%, #fafbfc 100%);
+      padding-right: 52px;
+      min-height: 54px;
     }
-    .text-title { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
-    .text-sub { font-size: 11px; color: var(--muted); line-height: 1.4; }
-    .text-content {
-      flex: 1;
-      overflow: auto;
-      padding: 12px 14px 14px;
+    .text-tabs {
+      display: flex; gap: 8px; flex-wrap: wrap; align-items: center;
+    }
+    .text-tab {
+      appearance: none;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--text);
+      border-radius: 999px;
+      padding: 7px 12px;
       font-size: 12px;
-      line-height: 1.42;
-      color: #111827;
-      white-space: pre-wrap;
-      word-break: break-word;
+      font-weight: 600;
+      letter-spacing: .01em;
+      cursor: pointer;
+      transition: .15s ease;
     }
-    .text-block-title {
-      font-size: 13px; font-weight: 700; line-height: 1.4; margin-bottom: 10px; color: #1f2937;
-    }
-    .text-block-body {
-      font-size: 11.5px; line-height: 1.45; white-space: pre-wrap; word-break: break-word;
+    .text-tab:hover { background: #f8fafc; }
+    .text-tab.active { background: var(--btn); color: #fff; border-color: var(--btn); }
+
+    .text-toggle {
+      position: absolute; top: 10px; right: 10px;
     }
 
-    @media (max-width: 1180px) {
-      .app { grid-template-columns: 280px 1fr; }
-      :root { --text-pane-w: 360px; }
+    .text-inner {
+      display: flex; flex-direction: column;
+      min-height: 0; flex: 1;
     }
-    @media (max-width: 980px) {
-      .app { grid-template-columns: 1fr; grid-template-rows: 34% 1fr; }
-      .viewer-body { grid-template-columns: 1fr; grid-template-rows: 1fr 240px; }
-      .sidebar { min-height: 240px; }
+    .text-header {
+      padding: 10px 14px 8px;
+      border-bottom: 1px solid var(--line);
+      background: #fff;
+    }
+    .text-title { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
+    .text-sub { font-size: 11px; color: var(--muted); line-height: 1.45; }
+    .text-content {
+      padding: 10px 12px 12px;
+      overflow: auto;
+      font-size: 13px;
+      line-height: 1.7;
+      white-space: pre;
+      background: #fbfbfc;
+      flex: 1;
+    }
+    .text-block-title {
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      line-height: 1.45;
+    }
+    .text-block-body {
+      white-space: pre;
+      font-size: 13.5px;
+      line-height: 1.72;
+      letter-spacing: 0;
+      word-break: keep-all;
+    }
+    .text-placeholder {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    .viewer-body.text-collapsed .text-inner,
+    .viewer-body.text-collapsed .text-tabs { display: none; }
+    .viewer-body.text-collapsed .text-pane::after {
+      content: "テクスト\A(Texts)";
+      writing-mode: vertical-rl;
+      color: var(--muted);
+      font-size: 12px;
+      letter-spacing: .12em;
+      margin: 54px auto 0;
+    }
+    .viewer-body.text-collapsed .text-toolbar {
+      justify-content: center;
+      padding: 10px 4px;
+      min-height: 54px;
+    }
+    .viewer-body.text-collapsed .text-toggle {
+      position: static;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 1100px) {
+      .app { grid-template-columns: 208px 1fr; }
+      .viewer-body { grid-template-columns: 1fr 420px; }
+    }
+    @media (max-width: 900px) {
+      .app, .app.sidebar-collapsed {
+        grid-template-columns: 1fr;
+        grid-template-rows: 260px 1fr;
+      }
+      .sidebar-collapsed .sidebar .header,
+      .sidebar-collapsed .sidebar .search-wrap,
+      .sidebar-collapsed .sidebar .meta,
+      .sidebar-collapsed .sidebar .list { display: block; }
+      .sidebar-collapsed .sidebar::after { content: none; }
+      .sidebar-collapsed .sidebar .sidebar-toggle {
+        position: absolute; top: 14px; right: 14px; margin-top: 0;
+      }
+      .viewer-body, .viewer-body.text-collapsed {
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(360px, 1fr) 280px;
+      }
+      .manuscript-pane { border-right: 0; border-bottom: 1px solid var(--line); }
+      .viewer-body.text-collapsed .text-inner,
+      .viewer-body.text-collapsed .text-tabs { display: flex; }
+      .viewer-body.text-collapsed .text-pane::after { content: none; }
+      .viewer-body.text-collapsed .text-toggle {
+        position: absolute; top: 10px; right: 10px;
+      }
     }
   </style>
 </head>
+
 <body>
-  <div class="app">
+  <div class="app" id="app">
     <aside class="sidebar">
+      <button id="toggleSidebar" class="toggle-btn sidebar-toggle" title="目次を開閉 (Toggle Contents)">◀</button>
       <div class="header">
-        <div class="title">夏目漱石自筆の漢詩原稿・草稿コレクション</div>
-        <div class="sub">左側に総目录、右側に手稿画像と完成テクストを対照表示。</div>
+        <div class="title">夏目漱石自筆の漢詩原稿・草稿コレクション (Natsume Sōseki Manuscript Collection of Kanshi Drafts and Fair Copies)</div>
+        <div class="sub">左側に総目录、右側で手稿画像とテクスト資料を対照表示。</div>
         <div class="sub" style="margin-top:6px;">製作者：薄鋒（BO Feng）</div>
       </div>
       <div class="search-wrap">
-        <input id="search" class="search" type="text" placeholder="番号・題名で検索" />
+        <input id="search" class="search" type="text" placeholder="番号・題名で検索 (Search by number or title)" />
       </div>
-      <div class="meta">左から作品を選択すると、右側で手稿と完成テクストを並べて閲覧できます。</div>
+      <div class="meta">左から作品を選択すると、右側で手稿と完成テクスト (Completed Text)等を対照できます。</div>
       <div id="list" class="list"></div>
     </aside>
 
     <main class="viewer-wrap">
       <div class="viewer-header">
+        <button id="toggleHeader" class="toggle-btn header-toggle" title="情報欄を開閉 (Toggle Header)">▲</button>
         <div id="currentTitle" class="viewer-title">読み込み中…</div>
         <div class="viewer-meta">
-          <div><strong>引用元:</strong> <span id="currentSource"></span></div>
-          <div><strong>日付:</strong> <span id="currentDate"></span></div>
-          <div><strong>表示方式:</strong> <span id="currentMode"></span></div>
+          <div><strong>引用元 (Source):</strong> <span id="currentSource"></span></div>
+          <div><strong>日付 (Date):</strong> <span id="currentDate"></span></div>
+          <div><strong>表示方式 (View Mode):</strong> <span id="currentMode"></span></div>
         </div>
         <div class="actions">
-          <button id="btnSingle" class="btn primary">単独表示</button>
-          <button id="btnDay" class="btn">同日並列</button>
-          <button id="btnMonth" class="btn">同月並列</button>
-          <button id="btnYear" class="btn">同年並列</button>
+          <button id="btnSingle" class="btn primary">単独表示 (Single View)</button>
+          <button id="btnDay" class="btn">同日並列 (Same Day)</button>
+          <button id="btnMonth" class="btn">同月並列 (Same Month)</button>
+          <button id="btnYear" class="btn">同年並列 (Same Year)</button>
         </div>
-        <div class="notice">右側には完成テクストを首単位で表示しています。</div>
+        <div class="notice">右側には首単位の完成テクスト (Completed Text)、添削、推敲資料を切替表示できます。 (The right panel can switch between poem-level completed text, corrections, and revision materials.)</div>
       </div>
 
-      <div class="viewer-body">
+      <div class="viewer-body" id="viewerBody">
         <div class="manuscript-pane">
           <iframe id="frame"></iframe>
         </div>
         <div class="text-pane">
-          <div class="text-header">
-            <div id="textTitle" class="text-title">完成テクスト</div>
-            <div id="textSub" class="text-sub">作品を選択すると、この欄に当該作品の完成テクストを首単位で表示します。</div>
+          <div class="text-toolbar">
+            <div class="text-tabs">
+              <button id="tabCompleted" class="text-tab active">完成テクスト (Completed Text)</button>
+              <button id="tabEditor" class="text-tab">他者による添削 (Third-Party Corrections)</button>
+              <button id="tabRevision" class="text-tab">漱石自らの推敲 (Sōseki’s Authorial Revisions)</button>
+            </div>
+            <button id="toggleTextPane" class="toggle-btn text-toggle" title="テクスト欄を開閉 (Toggle Text Panel)">▶</button>
           </div>
-          <div id="textContent" class="text-content">完成テクストを読み込み中…</div>
+          <div class="text-inner">
+            <div class="text-header">
+              <div id="textTitle" class="text-title">完成テクスト (Completed Text)</div>
+              <div id="textSub" class="text-sub">作品を選択すると、右側に首単位のテクスト資料を表示します。</div>
+            </div>
+            <div id="textContent" class="text-content">テクストを読み込み中…</div>
+          </div>
         </div>
       </div>
     </main>
   </div>
+
 
 <script>
   const base = "https://scholarbo.github.io/soseki-manuscripts";
   let items = [];
   let currentItem = null;
   let completedTexts = {};
+  let activeTextMode = "completed";
 
+  const app = document.getElementById("app");
+  const viewerBody = document.getElementById("viewerBody");
   const list = document.getElementById("list");
   const frame = document.getElementById("frame");
   const search = document.getElementById("search");
@@ -217,6 +376,16 @@
   const btnDay = document.getElementById("btnDay");
   const btnMonth = document.getElementById("btnMonth");
   const btnYear = document.getElementById("btnYear");
+
+  const toggleSidebar = document.getElementById("toggleSidebar");
+  const toggleTextPane = document.getElementById("toggleTextPane");
+  const toggleHeader = document.getElementById("toggleHeader");
+  const viewerWrap = document.querySelector(".viewer-wrap");
+
+  const tabCompleted = document.getElementById("tabCompleted");
+  const tabEditor = document.getElementById("tabEditor");
+  const tabRevision = document.getElementById("tabRevision");
+
   const textTitle = document.getElementById("textTitle");
   const textSub = document.getElementById("textSub");
   const textContent = document.getElementById("textContent");
@@ -269,9 +438,9 @@
     btnMonth.disabled = monthCount < 2;
     btnYear.disabled = yearCount < 2;
 
-    btnDay.textContent = dayCount >= 2 ? `同日並列 (${dayCount})` : "同日並列";
-    btnMonth.textContent = monthCount >= 2 ? `同月並列 (${monthCount})` : "同月並列";
-    btnYear.textContent = yearCount >= 2 ? `同年並列 (${yearCount})` : "同年並列";
+    btnDay.textContent = dayCount >= 2 ? `同日並列 (Same Day) (${dayCount})` : "同日並列 (Same Day)";
+    btnMonth.textContent = monthCount >= 2 ? `同月並列 (Same Month) (${monthCount})` : "同月並列 (Same Month)";
+    btnYear.textContent = yearCount >= 2 ? `同年並列 (Same Year) (${yearCount})` : "同年並列 (Same Year)";
   }
 
   function normalizeManifestList(value) {
@@ -294,7 +463,7 @@
   function loadManifests(manifests, modeLabel) {
     const clean = manifests.filter(Boolean);
     if (!clean.length) {
-      currentMode.textContent = "manifest未設定";
+      currentMode.textContent = "manifest未設定 (No manifest assigned)";
       frame.src = "about:blank";
       return;
     }
@@ -303,26 +472,50 @@
     currentMode.textContent = modeLabel;
   }
 
+  function escapeHtml(str) {
+    return String(str ?? "")
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;");
+  }
+
+  function setTextTabs(mode) {
+    activeTextMode = mode;
+    tabCompleted.classList.toggle("active", mode === "completed");
+    tabEditor.classList.toggle("active", mode === "editor");
+    tabRevision.classList.toggle("active", mode === "revision");
+    if (currentItem) renderTextByMode(currentItem.id);
+  }
+
   function renderCompletedText(workId) {
     const data = completedTexts[workId];
     if (!data) {
-      textTitle.textContent = "完成テクスト";
-      textSub.textContent = "該当作品の完成テクスト未登録";
-      textContent.innerHTML = "未登録";
+      textTitle.textContent = "完成テクスト (Completed Text)";
+      textSub.textContent = "該当作品の完成テクスト (Completed Text)未登録";
+      textContent.innerHTML = `<div class="text-placeholder">未登録</div>`;
       return;
     }
-    textTitle.textContent = "完成テクスト";
+    textTitle.textContent = "完成テクスト (Completed Text)";
     textSub.textContent = data.title || "";
     const titleHtml = `<div class="text-block-title">${escapeHtml(data.title || "")}</div>`;
     const bodyHtml = `<div class="text-block-body">${escapeHtml(data.text_block || "")}</div>`;
     textContent.innerHTML = titleHtml + bodyHtml;
   }
 
-  function escapeHtml(str) {
-    return String(str)
-      .replaceAll("&", "&amp;")
-      .replaceAll("<", "&lt;")
-      .replaceAll(">", "&gt;");
+  function renderPlaceholder(title, message) {
+    textTitle.textContent = title;
+    textSub.textContent = currentItem ? (currentItem.title || "") : "";
+    textContent.innerHTML = `<div class="text-placeholder">${escapeHtml(message)}</div>`;
+  }
+
+  function renderTextByMode(workId) {
+    if (activeTextMode === "completed") {
+      renderCompletedText(workId);
+    } else if (activeTextMode === "editor") {
+      renderPlaceholder("他者による添削 (Third-Party Corrections)", "この資料はまだ未準備です。今後ここに他者による添削 (Third-Party Corrections)テクストを表示できます。");
+    } else if (activeTextMode === "revision") {
+      renderPlaceholder("漱石自らの推敲 (Sōseki’s Authorial Revisions)", "この資料はまだ未準備です。今後ここに漱石自らの推敲 (Sōseki’s Authorial Revisions)テクストを表示できます。");
+    }
   }
 
   function openSingle(item) {
@@ -331,9 +524,9 @@
     currentSource.textContent = item.source || "未記入";
     currentDate.textContent = formatDate(item);
     const manifests = getManifestList(item);
-    const modeLabel = manifests.length > 1 ? `作品表示（${manifests.length}版）` : "単独表示";
+    const modeLabel = manifests.length > 1 ? `作品表示 (Work View)（${manifests.length}版）` : "単独表示 (Single View)";
     loadManifests(manifests, modeLabel);
-    renderCompletedText(item.id);
+    renderTextByMode(item.id);
     highlightCurrent();
     setButtons();
     setActiveMode(btnSingle);
@@ -342,34 +535,63 @@
   function openGroup(kind) {
     if (!currentItem) return;
     let group = [];
-    let label = "単独表示";
+    let label = "単独表示 (Single View)";
 
     if (kind === "day" && currentItem.date_day) {
       group = items.filter(x => x.date_day === currentItem.date_day);
-      label = `同日並列（${currentItem.date_day}）`;
+      label = `同日並列 (Same Day)（${currentItem.date_day}）`;
     } else if (kind === "month" && currentItem.date_month) {
       group = items.filter(x => x.date_month === currentItem.date_month);
-      label = `同月並列（${currentItem.date_month}）`;
+      label = `同月並列 (Same Month)（${currentItem.date_month}）`;
     } else if (kind === "year" && currentItem.date_year) {
       group = items.filter(x => x.date_year === currentItem.date_year);
-      label = `同年並列（${currentItem.date_year}）`;
+      label = `同年並列 (Same Year)（${currentItem.date_year}）`;
     }
 
     if (!group.length) return;
     loadManifests(group.map(x => getDefaultManifest(x)), label);
-    renderCompletedText(currentItem.id);
     setActiveMode(kind === "day" ? btnDay : kind === "month" ? btnMonth : btnYear);
   }
 
   function setActiveMode(activeBtn) {
-    [btnSingle, btnDay, btnMonth, btnYear].forEach(btn => btn.classList.toggle("primary", btn === activeBtn));
+    [btnSingle, btnDay, btnMonth, btnYear].forEach(btn => {
+      btn.classList.toggle("primary", btn === activeBtn);
+    });
+  }
+
+  function toggleSidebarState() {
+    const collapsed = app.classList.toggle("sidebar-collapsed");
+    toggleSidebar.textContent = collapsed ? "▶" : "◀";
+    toggleSidebar.title = collapsed ? "目次を開く (Open Contents)" : "目次を閉じる (Close Contents)";
+  }
+
+  function toggleTextPaneState() {
+    const collapsed = viewerBody.classList.toggle("text-collapsed");
+    toggleTextPane.textContent = collapsed ? "◀" : "▶";
+    toggleTextPane.title = collapsed ? "テクスト欄を開く (Open Text Panel)" : "テクスト欄を閉じる (Close Text Panel)";
+  }
+
+
+  function toggleHeaderState() {
+    const collapsed = viewerWrap.classList.toggle("header-collapsed");
+    toggleHeader.textContent = collapsed ? "▼" : "▲";
+    toggleHeader.title = collapsed ? "情報欄を開く (Open Header)" : "情報欄を閉じる (Close Header)";
   }
 
   search.addEventListener("input", e => renderList(e.target.value));
+
   btnSingle.addEventListener("click", () => currentItem && openSingle(currentItem));
   btnDay.addEventListener("click", () => openGroup("day"));
   btnMonth.addEventListener("click", () => openGroup("month"));
   btnYear.addEventListener("click", () => openGroup("year"));
+
+  toggleSidebar.addEventListener("click", toggleSidebarState);
+  toggleTextPane.addEventListener("click", toggleTextPaneState);
+  toggleHeader.addEventListener("click", toggleHeaderState);
+
+  tabCompleted.addEventListener("click", () => setTextTabs("completed"));
+  tabEditor.addEventListener("click", () => setTextTabs("editor"));
+  tabRevision.addEventListener("click", () => setTextTabs("revision"));
 
   async function init() {
     try {
@@ -378,11 +600,11 @@
       if (items.length) {
         openSingle(items[0]);
       } else {
-        currentTitle.textContent = "データがありません";
+        currentTitle.textContent = "データがありません (No data available)";
         currentSource.textContent = "";
         currentDate.textContent = "";
         currentMode.textContent = "";
-        textContent.innerHTML = "データがありません";
+        textContent.innerHTML = "データがありません (No data available)";
       }
     } catch (err) {
       currentTitle.textContent = "読み込みに失敗しました";
