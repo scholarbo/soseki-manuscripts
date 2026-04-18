@@ -310,8 +310,33 @@
     btnYear.textContent = yearCount >= 2 ? `同年並列 (${yearCount})` : "同年並列";
   }
 
+  function normalizeManifestList(value) {
+    if (Array.isArray(value)) return value.filter(Boolean);
+    if (typeof value === "string" && value.trim()) {
+      return value.split("|").map(v => v.trim()).filter(Boolean);
+    }
+    return [];
+  }
+
+  function getDefaultManifest(item) {
+    return item.default_manifest || item.manifest || normalizeManifestList(item.manifest_list)[0] || "";
+  }
+
+  function getManifestList(item) {
+    const list = normalizeManifestList(item.manifest_list);
+    if (list.length) return list;
+    const single = getDefaultManifest(item);
+    return single ? [single] : [];
+  }
+
   function loadManifests(manifests, modeLabel) {
-    const payload = encodeURIComponent(JSON.stringify(manifests));
+    const clean = manifests.filter(Boolean);
+    if (!clean.length) {
+      currentMode.textContent = "manifest未設定";
+      frame.src = "about:blank";
+      return;
+    }
+    const payload = encodeURIComponent(JSON.stringify(clean));
     frame.src = `${base}/mirador-frame-multi-20260416-012702-f65f15.html?manifests=${payload}`;
     currentMode.textContent = modeLabel;
   }
@@ -321,7 +346,9 @@
     currentTitle.textContent = item.title || "無題";
     currentSource.textContent = item.source || "未記入";
     currentDate.textContent = formatDate(item);
-    loadManifests([item.manifest], "単独表示");
+    const manifests = getManifestList(item);
+    const modeLabel = manifests.length > 1 ? `作品表示（${manifests.length}版）` : "単独表示";
+    loadManifests(manifests, modeLabel);
     highlightCurrent();
     setButtons();
     setActiveMode(btnSingle);
@@ -344,7 +371,7 @@
     }
 
     if (!group.length) return;
-    loadManifests(group.map(x => x.manifest), label);
+    loadManifests(group.map(x => getDefaultManifest(x)), label);
     setActiveMode(kind === "day" ? btnDay : kind === "month" ? btnMonth : btnYear);
   }
 
