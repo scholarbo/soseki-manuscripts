@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>夏目漱石自筆の漢詩原稿・草稿コレクション</title>
-    <style>
+  <style>
     :root {
       --bg: #f6f7f9;
       --panel: #ffffff;
@@ -15,287 +15,140 @@
       --accent-line: #d6deea;
       --btn: #374151;
       --btn-hover: #1f2937;
-      --sidebar-w: 380px;
+      --sidebar-w: 300px;
+      --text-pane-w: 420px;
       --shadow: 0 10px 30px rgba(17, 24, 39, 0.08);
       --radius: 22px;
     }
     * { box-sizing: border-box; }
     html, body {
-      margin: 0;
-      width: 100%;
-      height: 100%;
-      background: var(--bg);
-      color: var(--text);
+      margin: 0; width: 100%; height: 100%;
+      background: var(--bg); color: var(--text);
       font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Noto Sans JP", sans-serif;
     }
     .app {
       display: grid;
       grid-template-columns: var(--sidebar-w) 1fr;
-      gap: 14px;
-      width: 100%;
-      height: 100%;
-      padding: 14px;
+      gap: 12px;
+      width: 100%; height: 100%;
+      padding: 12px;
+    }
+    .sidebar, .viewer-wrap {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
     }
     .sidebar {
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      min-width: 300px;
+      display: flex; flex-direction: column; min-width: 260px;
     }
     .header {
-      padding: 18px 18px 14px;
+      padding: 16px 16px 12px;
       border-bottom: 1px solid var(--line);
       background: linear-gradient(180deg, #ffffff 0%, #fafbfc 100%);
     }
-    .title {
-      font-size: 18px;
-      font-weight: 700;
-      letter-spacing: 0.02em;
-      margin-bottom: 6px;
-    }
-    .sub {
-      color: var(--muted);
-      font-size: 13px;
-      line-height: 1.5;
-    }
-    .search-wrap {
-      padding: 14px 18px 12px;
-      border-bottom: 1px solid var(--line);
-    }
+    .title { font-size: 18px; font-weight: 700; margin-bottom: 6px; }
+    .sub { color: var(--muted); font-size: 12px; line-height: 1.45; }
+    .search-wrap { padding: 12px 14px 10px; border-bottom: 1px solid var(--line); }
     .search {
-      width: 100%;
-      border: 1px solid var(--line);
-      background: #fbfbfc;
-      border-radius: 14px;
-      padding: 11px 13px;
-      font-size: 14px;
-      outline: none;
+      width: 100%; border: 1px solid var(--line); background: #fbfbfc;
+      border-radius: 12px; padding: 10px 12px; font-size: 14px; outline: none;
     }
-    .search:focus {
-      border-color: #cbd5e1;
-      background: #fff;
-    }
-    .meta {
-      padding: 0 18px 10px;
-      color: var(--muted);
-      font-size: 12px;
-    }
-    .list {
-      overflow: auto;
-      padding: 8px 10px 14px;
-      flex: 1;
-    }
+    .meta { padding: 0 14px 10px; color: var(--muted); font-size: 11px; }
+    .list { overflow: auto; padding: 6px 8px 12px; flex: 1; }
     .item {
-      padding: 10px 12px;
-      border-radius: 14px;
-      cursor: pointer;
-      margin: 4px 0;
-      border: 1px solid transparent;
-      transition: 0.15s ease;
+      padding: 8px 10px; border-radius: 12px; cursor: pointer;
+      margin: 3px 0; border: 1px solid transparent; transition: 0.15s ease;
     }
-    .item:hover {
-      background: #fafafa;
-      border-color: #f0f0f0;
-    }
-    .item.active {
-      background: var(--accent);
-      border-color: var(--accent-line);
-    }
-    .seq {
-      font-size: 12px;
-      color: var(--muted);
-      margin-bottom: 3px;
-    }
-    .label {
-      font-size: 14px;
-      line-height: 1.45;
-      word-break: break-word;
-    }
+    .item:hover { background: #fafafa; border-color: #f0f0f0; }
+    .item.active { background: var(--accent); border-color: var(--accent-line); }
+    .seq { font-size: 11px; color: var(--muted); margin-bottom: 2px; }
+    .label { font-size: 13px; line-height: 1.4; word-break: break-word; }
+
     .viewer-wrap {
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      min-width: 0;
+      display: flex; flex-direction: column; min-width: 0;
     }
     .viewer-header {
-      padding: 14px 18px 12px;
+      padding: 12px 16px 10px;
       border-bottom: 1px solid var(--line);
       background: linear-gradient(180deg, #ffffff 0%, #fafbfc 100%);
     }
-    .viewer-title {
-      font-size: 16px;
-      font-weight: 700;
-      line-height: 1.35;
-      margin-bottom: 10px;
-    }
+    .viewer-title { font-size: 16px; font-weight: 700; line-height: 1.35; margin-bottom: 8px; }
     .viewer-meta {
-      display: grid;
-      gap: 4px;
-      font-size: 12px;
-      color: var(--muted);
-      line-height: 1.5;
-      margin-bottom: 10px;
+      display: grid; gap: 3px; font-size: 12px; color: var(--muted); line-height: 1.4; margin-bottom: 8px;
     }
-    .viewer-meta strong {
-      color: var(--text);
-      font-weight: 600;
-    }
-    .actions {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-      margin-bottom: 8px;
-    }
+    .viewer-meta strong { color: var(--text); font-weight: 600; }
+    .actions { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 6px; }
     .btn {
-      appearance: none;
-      border: 1px solid var(--line);
-      background: white;
-      color: var(--text);
-      border-radius: 12px;
-      padding: 8px 12px;
-      font-size: 13px;
-      cursor: pointer;
-      transition: .15s ease;
+      appearance: none; border: 1px solid var(--line); background: white; color: var(--text);
+      border-radius: 12px; padding: 8px 12px; font-size: 13px; cursor: pointer; transition: .15s ease;
     }
     .btn:hover { background: #f8fafc; }
-    .btn.primary {
-      background: var(--btn);
-      color: white;
-      border-color: var(--btn);
-    }
+    .btn.primary { background: var(--btn); color: white; border-color: var(--btn); }
     .btn.primary:hover { background: var(--btn-hover); }
-    .btn:disabled {
-      opacity: .45;
-      cursor: not-allowed;
-    }
-    .notice {
-      margin-top: 4px;
-      font-size: 12px;
-      color: #6b7280;
-      line-height: 1.5;
-    }
+    .btn:disabled { opacity: .45; cursor: not-allowed; }
+    .notice { margin-top: 4px; font-size: 12px; color: #6b7280; line-height: 1.5; }
 
     .viewer-body {
-      position: relative;
-      min-height: 0;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) var(--text-pane-w);
+      gap: 10px;
       flex: 1;
-      background: #fff;
+      min-height: 0;
+      padding: 10px;
     }
     .manuscript-pane {
-      width: 100%;
-      height: 100%;
-      min-width: 0;
-      background: #fff;
-    }
-    .text-pane {
-      position: absolute;
-      top: 14px;
-      right: 14px;
-      width: min(34%, 430px);
-      height: calc(50% - 20px);
-      min-width: 300px;
-      display: flex;
-      flex-direction: column;
-      background: rgba(252, 252, 253, 0.96);
+      min-width: 0; min-height: 0;
       border: 1px solid var(--line);
       border-radius: 18px;
-      box-shadow: 0 10px 26px rgba(17, 24, 39, 0.12);
-      backdrop-filter: blur(4px);
+      overflow: hidden;
+      background: #fff;
+    }
+    iframe { width: 100%; height: 100%; border: 0; background: #fff; }
+
+    .text-pane {
+      min-width: 0;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: #fbfbfc;
+      display: flex;
+      flex-direction: column;
+      min-height: 0;
       overflow: hidden;
     }
     .text-header {
-      padding: 10px 12px 8px;
+      padding: 12px 14px 8px;
       border-bottom: 1px solid var(--line);
-      background: linear-gradient(180deg, rgba(255,255,255,.98) 0%, rgba(250,251,252,.95) 100%);
+      background: #ffffff;
     }
-    .text-title {
-      font-size: 13px;
-      font-weight: 700;
-      line-height: 1.3;
-      margin-bottom: 5px;
-    }
-    .text-sub {
-      font-size: 11px;
-      color: var(--muted);
-      line-height: 1.35;
-    }
-    .text-actions {
-      display: flex;
-      gap: 6px;
-      flex-wrap: wrap;
-      margin-top: 8px;
-    }
-    .text-actions .btn {
-      padding: 5px 8px;
-      font-size: 11px;
-      border-radius: 10px;
-    }
+    .text-title { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
+    .text-sub { font-size: 11px; color: var(--muted); line-height: 1.4; }
     .text-content {
       flex: 1;
       overflow: auto;
-      padding: 10px 12px 12px;
+      padding: 12px 14px 14px;
       font-size: 12px;
-      line-height: 1.45;
+      line-height: 1.42;
+      color: #111827;
       white-space: pre-wrap;
       word-break: break-word;
     }
-    .poem-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 6px;
+    .text-block-title {
+      font-size: 13px; font-weight: 700; line-height: 1.4; margin-bottom: 10px; color: #1f2937;
     }
-    .poem-cell {
-      background: rgba(255,255,255,.98);
-      border: 1px solid #eef2f7;
-      border-radius: 10px;
-      padding: 7px 9px;
-    }
-    .poem-cell .line-no {
-      color: var(--muted);
-      font-size: 10px;
-      margin-bottom: 2px;
-    }
-    .poem-cell .line-text {
-      font-size: 12px;
-      line-height: 1.42;
-    }
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: 0;
-      background: #fff;
+    .text-block-body {
+      font-size: 11.5px; line-height: 1.45; white-space: pre-wrap; word-break: break-word;
     }
 
+    @media (max-width: 1180px) {
+      .app { grid-template-columns: 280px 1fr; }
+      :root { --text-pane-w: 360px; }
+    }
     @media (max-width: 980px) {
-      .app {
-        grid-template-columns: 1fr;
-        grid-template-rows: 40% 1fr;
-      }
-      .sidebar { min-height: 260px; }
-      .text-pane {
-        position: static;
-        width: 100%;
-        height: 42%;
-        min-width: 0;
-        border-radius: 0;
-        border-left: 0;
-        border-right: 0;
-        border-bottom: 0;
-        box-shadow: none;
-        backdrop-filter: none;
-      }
-      .viewer-body {
-        display: grid;
-        grid-template-rows: 58% 42%;
-      }
+      .app { grid-template-columns: 1fr; grid-template-rows: 34% 1fr; }
+      .viewer-body { grid-template-columns: 1fr; grid-template-rows: 1fr 240px; }
+      .sidebar { min-height: 240px; }
     }
   </style>
 </head>
@@ -303,14 +156,14 @@
   <div class="app">
     <aside class="sidebar">
       <div class="header">
-  <div class="title">夏目漱石自筆の漢詩原稿・草稿コレクション</div>
-  <div class="sub">左側に固定の総目录、右側に Mirador。年・月・日ごとの並列表示に対応。</div>
-  <div class="sub" style="margin-top:6px;">製作者：薄鋒（BO Feng）</div>
-</div>
+        <div class="title">夏目漱石自筆の漢詩原稿・草稿コレクション</div>
+        <div class="sub">左側に総目录、右側に手稿画像と完成テクストを対照表示。</div>
+        <div class="sub" style="margin-top:6px;">製作者：薄鋒（BO Feng）</div>
+      </div>
       <div class="search-wrap">
         <input id="search" class="search" type="text" placeholder="番号・題名で検索" />
       </div>
-      <div class="meta">左側から作品を選び、右側で単独表示または同年・同月・同日並列表示ができます。</div>
+      <div class="meta">左から作品を選択すると、右側で手稿と完成テクストを並べて閲覧できます。</div>
       <div id="list" class="list"></div>
     </aside>
 
@@ -328,8 +181,9 @@
           <button id="btnMonth" class="btn">同月並列</button>
           <button id="btnYear" class="btn">同年並列</button>
         </div>
-        <div class="notice">本頁では検証用画像を表示しています。</div>
+        <div class="notice">右側には完成テクストを首単位で表示しています。</div>
       </div>
+
       <div class="viewer-body">
         <div class="manuscript-pane">
           <iframe id="frame"></iframe>
@@ -337,12 +191,7 @@
         <div class="text-pane">
           <div class="text-header">
             <div id="textTitle" class="text-title">完成テクスト</div>
-            <div id="textSub" class="text-sub">該当作品を選択すると、ここに完成テクストが表示されます。</div>
-            <div class="text-actions">
-              <button id="btnTextBoth" class="btn primary">原文＋訓読</button>
-              <button id="btnTextKanbun" class="btn">原文</button>
-              <button id="btnTextKundoku" class="btn">訓読</button>
-            </div>
+            <div id="textSub" class="text-sub">作品を選択すると、この欄に当該作品の完成テクストを首単位で表示します。</div>
           </div>
           <div id="textContent" class="text-content">完成テクストを読み込み中…</div>
         </div>
@@ -350,12 +199,11 @@
     </main>
   </div>
 
- <script>
+<script>
   const base = "https://scholarbo.github.io/soseki-manuscripts";
   let items = [];
   let currentItem = null;
   let completedTexts = {};
-  let currentTextMode = 'both';
 
   const list = document.getElementById("list");
   const frame = document.getElementById("frame");
@@ -372,23 +220,16 @@
   const textTitle = document.getElementById("textTitle");
   const textSub = document.getElementById("textSub");
   const textContent = document.getElementById("textContent");
-  const btnTextBoth = document.getElementById("btnTextBoth");
-  const btnTextKanbun = document.getElementById("btnTextKanbun");
-  const btnTextKundoku = document.getElementById("btnTextKundoku");
 
   async function loadItems() {
     const res = await fetch(`${base}/master.json?t=${Date.now()}`);
-    if (!res.ok) {
-      throw new Error(`master.json の読み込みに失敗しました: ${res.status}`);
-    }
+    if (!res.ok) throw new Error(`master.json の読み込みに失敗しました: ${res.status}`);
     items = await res.json();
   }
 
   async function loadCompletedTexts() {
     const res = await fetch(`${base}/completed_texts.json?t=${Date.now()}`);
-    if (!res.ok) {
-      throw new Error(`completed_texts.json の読み込みに失敗しました: ${res.status}`);
-    }
+    if (!res.ok) throw new Error(`completed_texts.json の読み込みに失敗しました: ${res.status}`);
     const arr = await res.json();
     completedTexts = Object.fromEntries(arr.map(x => [x.id, x]));
   }
@@ -396,12 +237,8 @@
   function renderList(filter = "") {
     list.innerHTML = "";
     const q = (filter || "").toLowerCase();
-
     items
-      .filter(item =>
-        (item.id || "").toLowerCase().includes(q) ||
-        (item.title || "").toLowerCase().includes(q)
-      )
+      .filter(item => (item.id || "").toLowerCase().includes(q) || (item.title || "").toLowerCase().includes(q))
       .forEach((item) => {
         const div = document.createElement("div");
         div.className = "item";
@@ -410,7 +247,6 @@
         div.onclick = () => openSingle(item);
         list.appendChild(div);
       });
-
     highlightCurrent();
   }
 
@@ -425,15 +261,9 @@
   }
 
   function setButtons() {
-    const dayCount = currentItem && currentItem.date_day
-      ? items.filter(x => x.date_day === currentItem.date_day).length
-      : 0;
-    const monthCount = currentItem && currentItem.date_month
-      ? items.filter(x => x.date_month === currentItem.date_month).length
-      : 0;
-    const yearCount = currentItem && currentItem.date_year
-      ? items.filter(x => x.date_year === currentItem.date_year).length
-      : 0;
+    const dayCount = currentItem && currentItem.date_day ? items.filter(x => x.date_day === currentItem.date_day).length : 0;
+    const monthCount = currentItem && currentItem.date_month ? items.filter(x => x.date_month === currentItem.date_month).length : 0;
+    const yearCount = currentItem && currentItem.date_year ? items.filter(x => x.date_year === currentItem.date_year).length : 0;
 
     btnDay.disabled = dayCount < 2;
     btnMonth.disabled = monthCount < 2;
@@ -446,9 +276,7 @@
 
   function normalizeManifestList(value) {
     if (Array.isArray(value)) return value.filter(Boolean);
-    if (typeof value === "string" && value.trim()) {
-      return value.split("|").map(v => v.trim()).filter(Boolean);
-    }
+    if (typeof value === "string" && value.trim()) return value.split("|").map(v => v.trim()).filter(Boolean);
     return [];
   }
 
@@ -475,75 +303,26 @@
     currentMode.textContent = modeLabel;
   }
 
-  function setTextMode(activeBtn) {
-    [btnTextBoth, btnTextKanbun, btnTextKundoku].forEach(btn => {
-      btn.classList.toggle("primary", btn === activeBtn);
-    });
-  }
-
-  function escapeHtml(str) {
-    return String(str || "")
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;")
-      .replace(/'/g, "&#39;");
-  }
-
   function renderCompletedText(workId) {
     const data = completedTexts[workId];
     if (!data) {
       textTitle.textContent = "完成テクスト";
-      textSub.textContent = "この作品の完成テクストは未登録です。";
-      textContent.innerHTML = "<p>完成テクスト未登録</p>";
+      textSub.textContent = "該当作品の完成テクスト未登録";
+      textContent.innerHTML = "未登録";
       return;
     }
+    textTitle.textContent = "完成テクスト";
+    textSub.textContent = data.title || "";
+    const titleHtml = `<div class="text-block-title">${escapeHtml(data.title || "")}</div>`;
+    const bodyHtml = `<div class="text-block-body">${escapeHtml(data.text_block || "")}</div>`;
+    textContent.innerHTML = titleHtml + bodyHtml;
+  }
 
-    textTitle.textContent = `${workId}　${data.title_kanbun || ""}`;
-    textSub.textContent = data.title_kundoku || "訓読なし";
-
-    if (currentTextMode === "kanbun") {
-      textContent.innerHTML = `
-        <div class="poem-grid">
-          ${data.lines.map((line, idx) => `
-            <div class="poem-cell">
-              <div class="line-no">${idx + 1}</div>
-              <div class="line-text">${escapeHtml(line.kanbun || "")}</div>
-            </div>
-          `).join("")}
-        </div>
-      `;
-      return;
-    }
-
-    if (currentTextMode === "kundoku") {
-      textContent.innerHTML = `
-        <div class="poem-grid">
-          ${data.lines.map((line, idx) => `
-            <div class="poem-cell">
-              <div class="line-no">${idx + 1}</div>
-              <div class="line-text">${escapeHtml(line.kundoku || "")}</div>
-            </div>
-          `).join("")}
-        </div>
-      `;
-      return;
-    }
-
-    textContent.innerHTML = `
-      <div class="poem-grid">
-        ${data.lines.map((line, idx) => `
-          <div class="poem-cell">
-            <div class="line-no">${idx + 1} 原文</div>
-            <div class="line-text">${escapeHtml(line.kanbun || "")}</div>
-          </div>
-          <div class="poem-cell">
-            <div class="line-no">${idx + 1} 訓読</div>
-            <div class="line-text">${escapeHtml(line.kundoku || "")}</div>
-          </div>
-        `).join("")}
-      </div>
-    `;
+  function escapeHtml(str) {
+    return String(str)
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;");
   }
 
   function openSingle(item) {
@@ -578,43 +357,23 @@
 
     if (!group.length) return;
     loadManifests(group.map(x => getDefaultManifest(x)), label);
+    renderCompletedText(currentItem.id);
     setActiveMode(kind === "day" ? btnDay : kind === "month" ? btnMonth : btnYear);
   }
 
   function setActiveMode(activeBtn) {
-    [btnSingle, btnDay, btnMonth, btnYear].forEach(btn => {
-      btn.classList.toggle("primary", btn === activeBtn);
-    });
+    [btnSingle, btnDay, btnMonth, btnYear].forEach(btn => btn.classList.toggle("primary", btn === activeBtn));
   }
 
-  search.addEventListener("input", e => {
-    renderList(e.target.value);
-  });
-
+  search.addEventListener("input", e => renderList(e.target.value));
   btnSingle.addEventListener("click", () => currentItem && openSingle(currentItem));
   btnDay.addEventListener("click", () => openGroup("day"));
   btnMonth.addEventListener("click", () => openGroup("month"));
   btnYear.addEventListener("click", () => openGroup("year"));
-  btnTextBoth.addEventListener("click", () => {
-    currentTextMode = "both";
-    setTextMode(btnTextBoth);
-    if (currentItem) renderCompletedText(currentItem.id);
-  });
-  btnTextKanbun.addEventListener("click", () => {
-    currentTextMode = "kanbun";
-    setTextMode(btnTextKanbun);
-    if (currentItem) renderCompletedText(currentItem.id);
-  });
-  btnTextKundoku.addEventListener("click", () => {
-    currentTextMode = "kundoku";
-    setTextMode(btnTextKundoku);
-    if (currentItem) renderCompletedText(currentItem.id);
-  });
 
   async function init() {
     try {
-      await loadItems();
-      await loadCompletedTexts();
+      await Promise.all([loadItems(), loadCompletedTexts()]);
       renderList();
       if (items.length) {
         openSingle(items[0]);
@@ -623,12 +382,14 @@
         currentSource.textContent = "";
         currentDate.textContent = "";
         currentMode.textContent = "";
+        textContent.innerHTML = "データがありません";
       }
     } catch (err) {
-      currentTitle.textContent = "主表の読み込みに失敗しました";
+      currentTitle.textContent = "読み込みに失敗しました";
       currentSource.textContent = "";
       currentDate.textContent = "";
       currentMode.textContent = "";
+      textContent.textContent = err.message;
       list.innerHTML = `<div class="meta">${err.message}</div>`;
       console.error(err);
     }
