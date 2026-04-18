@@ -1,0 +1,45 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-013-w01.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "013. 〔「『七草集』評」より九首・其五〕明治二十二年五月 第1頁"
+    ]
+  },
+  "metadata": [],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/canvas-013-w01-p1",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "013. 〔「『七草集』評」より九首・其五〕明治二十二年五月 第1頁"
+        ]
+      },
+      "height": 1000,
+      "width": 1000,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/page/canvas-013-w01-p1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/annotation/canvas-013-w01-p1-image",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/canvas-013-w01-p1",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/images/013.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1000,
+                "width": 1000
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-029-w01.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "029. 〔『木屑録』より十四首・其十二〕客中憶家 第1頁"
+    ]
+  },
+  "metadata": [],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/canvas-029-w01-p1",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "029. 〔『木屑録』より十四首・其十二〕客中憶家 第1頁"
+        ]
+      },
+      "height": 1000,
+      "width": 1000,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/page/canvas-029-w01-p1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/annotation/canvas-029-w01-p1-image",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/canvas-029-w01-p1",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/images/029.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1000,
+                "width": 1000
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

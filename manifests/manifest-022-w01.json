@@ -1,0 +1,45 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-022-w01.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "022. 〔『木屑録』より十四首・其五〕明治二十二年九月 第1頁"
+    ]
+  },
+  "metadata": [],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/canvas-022-w01-p1",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "022. 〔『木屑録』より十四首・其五〕明治二十二年九月 第1頁"
+        ]
+      },
+      "height": 1000,
+      "width": 1000,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/page/canvas-022-w01-p1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/annotation/canvas-022-w01-p1-image",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/canvas-022-w01-p1",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/images/022.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1000,
+                "width": 1000
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
