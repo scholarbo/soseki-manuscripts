@@ -97,8 +97,8 @@
     {
       "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-207-w01.json/canvas/1",
       "type": "Canvas",
-      "width": 1200,
-      "height": 1600,
+      "width": 8688,
+      "height": 5792,
       "label": {
         "ja": [
           "207. 〔無題〕大正五年十一月十九日"
@@ -115,11 +115,11 @@
               "motivation": "painting",
               "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-207-w01.json/canvas/1",
               "body": {
-                "id": "https://scholarbo.github.io/soseki-manuscripts/images/207-w01.jpg",
+                "id": "https://scholarbo.github.io/soseki-manuscripts/images/207-w01.jpeg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "width": 1200,
-                "height": 1600
+                "width": 8688,
+                "height": 5792
               }
             }
           ]
