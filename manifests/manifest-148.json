@@ -1,0 +1,106 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-148.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "148. 〔無題〕大正五年八月三十日"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "148. 〔無題〕大正五年八月三十日"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作日"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-08-30"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "148.〔無題〕　大正五年八月三十日<br/>経来世故漫為憂　　世故を経て来りて　漫に憂いを為し<br/>胸次欲攄不自由　　胸次　攄べんと欲して　自由ならず<br/>誰道文章千古事　　誰か道う　文章は千古の事と<br/>曾思質素百年謀　　曾て思う　質素は百年の謀と<br/>小才幾度行新境　　小才　幾度か　新境を行きしも<br/>大悟何時臥故丘　　大悟　何れの時か　故丘に臥せん<br/>昨日閑庭風雨悪　　昨日　閑庭　風雨悪し<br/>芭蕉葉上復知秋　　芭蕉葉上　復た秋を知る"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "148.〔無題〕　大正五年八月三十日<br/>経来世故漫為憂　　世故を経て来りて　漫に憂いを為し<br/>胸次欲攄不自由　　胸次　攄べんと欲して　自由ならず<br/>誰道文章千古事　　誰か道う　文章は千古の事と<br/>曾思質素百年謀　　曾て思う　質素は百年の謀と<br/>小才幾度行新境　　小才　幾度か　新境を行きしも<br/>大悟何時臥故丘　　大悟　何れの時か　故丘に臥せん<br/>昨日閑庭風雨悪　　昨日　閑庭　風雨悪し<br/>芭蕉葉上復知秋　　芭蕉葉上　復た秋を知る"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-148",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "148. 〔無題〕大正五年八月三十日"
+        ]
+      },
+      "height": 1600,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-148",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-148",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/148.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1600,
+                "width": 1200
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-148"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

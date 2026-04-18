@@ -4,21 +4,94 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "009. 〔「『七草集』評」より九首・其一〕明治二十二年五月 第1頁"
+      "009. 〔「『七草集』評」より九首・其一〕明治二十二年五月"
     ]
   },
-  "metadata": [],
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "009. 〔「『七草集』評」より九首・其一〕明治二十二年五月"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作月"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1889-05"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "版本"
+        ]
+      },
+      "value": {
+        "ja": [
+          "w01"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "9.〔「『七草集』評」より九首・其　一〕明治二十二年五月<br/>青袍幾閲帝京秋　　青袍　幾たびか閲す　帝京の秋<br/>酒点涙痕憶旧遊　　酒点　涙痕　旧遊を憶う<br/>故国烟花空一夢　　故国の烟花　空しく一夢<br/>不耐他郷写閑愁　　耐えず　他郷　閑愁を写すに"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "9.〔「『七草集』評」より九首・其　一〕明治二十二年五月<br/>青袍幾閲帝京秋　　青袍　幾たびか閲す　帝京の秋<br/>酒点涙痕憶旧遊　　酒点　涙痕　旧遊を憶う<br/>故国烟花空一夢　　故国の烟花　空しく一夢<br/>不耐他郷写閑愁　　耐えず　他郷　閑愁を写すに"
+        ]
+      }
+    }
+  ],
   "items": [
     {
       "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/canvas-009-w01-p1",
       "type": "Canvas",
       "label": {
         "ja": [
-          "009. 〔「『七草集』評」より九首・其一〕明治二十二年五月 第1頁"
+          "009 第1頁"
         ]
       },
-      "height": 1000,
-      "width": 1000,
+      "height": 800,
+      "width": 979,
       "items": [
         {
           "id": "https://scholarbo.github.io/soseki-manuscripts/page/canvas-009-w01-p1",
@@ -33,8 +106,8 @@
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/009.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1000,
-                "width": 1000
+                "height": 800,
+                "width": 979
               }
             }
           ]

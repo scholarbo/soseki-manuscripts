@@ -1,0 +1,106 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-159.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "159. 〔無題〕大正五年九月九日"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "159. 〔無題〕大正五年九月九日"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作日"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-09-09"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "159.〔無題〕　大正五年九月九日<br/>曾見人間今見天　　曾て人間を見　今　天を見る<br/>醍醐上味色空辺　　醍醐の上味　色空の辺<br/>白蓮暁破詩僧夢　　白蓮　暁に破る　詩僧の夢<br/>翠柳長吹精舍縁　　翠柳　長く吹く　精舍の縁<br/>道到虚明長語絶　　道は虚明に到りて　長語絶え<br/>煙帰曖曃妙香伝　　煙は曖曃に帰して　妙香伝う<br/>入門還愛無他事　　門に入りて　還た愛す　他事無きを<br/>手折幽花供仏前　　手ずから幽花を折りて　仏前に供う"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "159.〔無題〕　大正五年九月九日<br/>曾見人間今見天　　曾て人間を見　今　天を見る<br/>醍醐上味色空辺　　醍醐の上味　色空の辺<br/>白蓮暁破詩僧夢　　白蓮　暁に破る　詩僧の夢<br/>翠柳長吹精舍縁　　翠柳　長く吹く　精舍の縁<br/>道到虚明長語絶　　道は虚明に到りて　長語絶え<br/>煙帰曖曃妙香伝　　煙は曖曃に帰して　妙香伝う<br/>入門還愛無他事　　門に入りて　還た愛す　他事無きを<br/>手折幽花供仏前　　手ずから幽花を折りて　仏前に供う"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-159",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "159. 〔無題〕大正五年九月九日"
+        ]
+      },
+      "height": 1600,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-159",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-159",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/159.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1600,
+                "width": 1200
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-159"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

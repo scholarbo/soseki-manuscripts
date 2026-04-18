@@ -1,0 +1,106 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-101.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "101. 春日偶成〔十首・其八〕明治四十五年五月二十四日"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "101. 春日偶成〔十首・其八〕明治四十五年五月二十四日"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作日"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1912-05-24"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "101.〔其　八〕<br/>樹下開襟坐　　樹下　襟を開いて坐せば<br/>吟懐与道新　　吟懐　道と与に新たなり<br/>落花人不識　　落花　人識らず<br/>啼鳥自残春　　啼鳥　自ら残春"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "101.〔其　八〕<br/>樹下開襟坐　　樹下　襟を開いて坐せば<br/>吟懐与道新　　吟懐　道と与に新たなり<br/>落花人不識　　落花　人識らず<br/>啼鳥自残春　　啼鳥　自ら残春"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-101",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "101. 春日偶成〔十首・其八〕明治四十五年五月二十四日"
+        ]
+      },
+      "height": 1600,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-101",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-101",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/101.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1600,
+                "width": 1200
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-101"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

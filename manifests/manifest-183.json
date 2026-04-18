@@ -1,0 +1,106 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-183.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "183. 〔無題〕大正五年十月四日"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "183. 〔無題〕大正五年十月四日"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作日"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-10-04"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "183.〔無題〕　大正五年十月四日<br/>百年功過有吾知　　百年の功過　吾の知る有り<br/>百殺百愁亡了期　　百殺　百愁　了期亡し<br/>作意西風吹短髪　　意を作して　西風　短髪を吹き<br/>無端北斗落長眉　　端無くも　北斗　長眉に落つ<br/>室中仰毒真人死　　室中に毒を仰いで　真人　死し<br/>門外追仇賊子飢　　門外に仇を追いて　賊子　飢う<br/>誰道閑庭秋索寞　　誰か道う　閑庭　秋　索寞たりと<br/>忙看黄葉自離枝　　忙しく看る　黄葉の自ら枝を離るるを"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "183.〔無題〕　大正五年十月四日<br/>百年功過有吾知　　百年の功過　吾の知る有り<br/>百殺百愁亡了期　　百殺　百愁　了期亡し<br/>作意西風吹短髪　　意を作して　西風　短髪を吹き<br/>無端北斗落長眉　　端無くも　北斗　長眉に落つ<br/>室中仰毒真人死　　室中に毒を仰いで　真人　死し<br/>門外追仇賊子飢　　門外に仇を追いて　賊子　飢う<br/>誰道閑庭秋索寞　　誰か道う　閑庭　秋　索寞たりと<br/>忙看黄葉自離枝　　忙しく看る　黄葉の自ら枝を離るるを"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-183",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "183. 〔無題〕大正五年十月四日"
+        ]
+      },
+      "height": 1600,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-183",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-183",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/183.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1600,
+                "width": 1200
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-183"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

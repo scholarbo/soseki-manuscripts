@@ -1,0 +1,106 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-096.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "096. 春日偶成〔十首・其三〕明治四十五年五月二十四日"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "096. 春日偶成〔十首・其三〕明治四十五年五月二十四日"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作日"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1912-05-24"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "96.〔其　三〕<br/>細雨看花後　　細雨　花を看るの後<br/>光風静坐中　　光風　静坐の中<br/>虚堂迎昼永　　虚堂　昼の永きを迎え<br/>流水出門空　　流水　門を出でて空し"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "96.〔其　三〕<br/>細雨看花後　　細雨　花を看るの後<br/>光風静坐中　　光風　静坐の中<br/>虚堂迎昼永　　虚堂　昼の永きを迎え<br/>流水出門空　　流水　門を出でて空し"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-096",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "096. 春日偶成〔十首・其三〕明治四十五年五月二十四日"
+        ]
+      },
+      "height": 1600,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-096",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-096",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/096.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1600,
+                "width": 1200
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-096"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -4,21 +4,94 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "016. 〔「『七草集』評」より九首・其八〕明治二十二年五月 第1頁"
+      "016. 〔「『七草集』評」より九首・其八〕明治二十二年五月"
     ]
   },
-  "metadata": [],
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "016. 〔「『七草集』評」より九首・其八〕明治二十二年五月"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作月"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1889-05"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "版本"
+        ]
+      },
+      "value": {
+        "ja": [
+          "w01"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "16.〔「『七草集』評」より九首・其　八〕<br/>京客多情都鳥謡　　京客　多情　都鳥の謡<br/>美人有涙満叉潮　　美人　涙有りて　叉に満つ潮<br/>香髏艶骨两黄壤　　香髏　艶骨　两つながら黄壤<br/>片月長高双枕橋　　片月　長えに高し　双枕橋"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "16.〔「『七草集』評」より九首・其　八〕<br/>京客多情都鳥謡　　京客　多情　都鳥の謡<br/>美人有涙満叉潮　　美人　涙有りて　叉に満つ潮<br/>香髏艶骨两黄壤　　香髏　艶骨　两つながら黄壤<br/>片月長高双枕橋　　片月　長えに高し　双枕橋"
+        ]
+      }
+    }
+  ],
   "items": [
     {
       "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/canvas-016-w01-p1",
       "type": "Canvas",
       "label": {
         "ja": [
-          "016. 〔「『七草集』評」より九首・其八〕明治二十二年五月 第1頁"
+          "016 第1頁"
         ]
       },
-      "height": 1000,
-      "width": 1000,
+      "height": 800,
+      "width": 979,
       "items": [
         {
           "id": "https://scholarbo.github.io/soseki-manuscripts/page/canvas-016-w01-p1",
@@ -33,8 +106,8 @@
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/016.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1000,
-                "width": 1000
+                "height": 800,
+                "width": 979
               }
             }
           ]

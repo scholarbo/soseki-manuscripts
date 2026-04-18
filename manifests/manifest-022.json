@@ -1,0 +1,106 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-022.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "022. 〔『木屑録』より十四首・其五〕明治二十二年九月"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "022. 〔『木屑録』より十四首・其五〕明治二十二年九月"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作月"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1889-09"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "https://dl.ndl.go.jp/pid/1192698"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "22.〔『木屑録』より　十四首・其　五〕<br/>鹹気射顔顔欲黄　　鹹気　顔を射て　顔　黄ならんと欲す<br/>醜容対鏡易悲傷　　醜容　鏡に対すれば　悲傷し易し<br/>馬齢今日廿三歳　　馬齢　今日　廿三歳<br/>始被佳人呼我郎　　始めて佳人に我が郎と呼ばる"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "22.〔『木屑録』より　十四首・其　五〕<br/>鹹気射顔顔欲黄　　鹹気　顔を射て　顔　黄ならんと欲す<br/>醜容対鏡易悲傷　　醜容　鏡に対すれば　悲傷し易し<br/>馬齢今日廿三歳　　馬齢　今日　廿三歳<br/>始被佳人呼我郎　　始めて佳人に我が郎と呼ばる"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-022",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "022. 〔『木屑録』より十四首・其五〕明治二十二年九月"
+        ]
+      },
+      "height": 1197,
+      "width": 1536,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-022",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-022",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/022.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1197,
+                "width": 1536
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-022"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

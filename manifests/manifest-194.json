@@ -1,0 +1,106 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-194.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "194. 〔無題〕大正五年十月十八日"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "194. 〔無題〕大正五年十月十八日"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作日"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-10-18"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "194.〔無題〕　大正五年十月十八日<br/>旧識誰言別路遥　　旧識　誰か言う　別路　遥かなりと<br/>新知却在客中邀　　新知　却って客中に在りて　邀う<br/>花紅柳緑前縁尽　　花紅柳緑　前縁　尽き<br/>鷺暗鴉明今意饒　　鷺暗鴉明　今意　饒かなり<br/>石上長垂紈繡帳　　石上　長えに垂る　紈繡の帳<br/>巖頭忽見木蘭橈　　巖頭　忽ち見る　木蘭の橈<br/>眼睛百転無奇特　　眼睛　百転するも　奇特無く<br/>雞去鳳來我弄簫　　雞去り　鳳　來たらば　我は簫を弄ばん"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "194.〔無題〕　大正五年十月十八日<br/>旧識誰言別路遥　　旧識　誰か言う　別路　遥かなりと<br/>新知却在客中邀　　新知　却って客中に在りて　邀う<br/>花紅柳緑前縁尽　　花紅柳緑　前縁　尽き<br/>鷺暗鴉明今意饒　　鷺暗鴉明　今意　饒かなり<br/>石上長垂紈繡帳　　石上　長えに垂る　紈繡の帳<br/>巖頭忽見木蘭橈　　巖頭　忽ち見る　木蘭の橈<br/>眼睛百転無奇特　　眼睛　百転するも　奇特無く<br/>雞去鳳來我弄簫　　雞去り　鳳　來たらば　我は簫を弄ばん"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-194",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "194. 〔無題〕大正五年十月十八日"
+        ]
+      },
+      "height": 1600,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-194",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-194",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/194.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1600,
+                "width": 1200
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-194"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

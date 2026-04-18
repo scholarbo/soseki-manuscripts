@@ -1,0 +1,106 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-082.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "082. 〔無題〕明治四十三年十月一日"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "082. 〔無題〕明治四十三年十月一日"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作日"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1910-10-01"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "82.〔無題〕　明治四十三年十月一日<br/>日似三春永　　日は三春に似て永く<br/>心随野水空　　心は野水に随って空し<br/>牀頭花一片　　牀頭　花一片<br/>閑落小眠中　　閑に落つ　小眠の中"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "82.〔無題〕　明治四十三年十月一日<br/>日似三春永　　日は三春に似て永く<br/>心随野水空　　心は野水に随って空し<br/>牀頭花一片　　牀頭　花一片<br/>閑落小眠中　　閑に落つ　小眠の中"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-082",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "082. 〔無題〕明治四十三年十月一日"
+        ]
+      },
+      "height": 1600,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-082",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-082",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/082.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1600,
+                "width": 1200
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-082"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

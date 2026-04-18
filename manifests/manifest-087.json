@@ -1,0 +1,106 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-087.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "087. 〔無題〕明治四十三年十月七日"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "087. 〔無題〕明治四十三年十月七日"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作日"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1910-10-07"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "87.〔無題〕　明治四十三年十月七日<br/>傷心秋已到　　傷心　秋已に到り<br/>嘔血骨猶存　　嘔血　骨猶お存す<br/>病起期何日　　病起　期するは　何れの日ぞ<br/>夕陽還一村　　夕陽　還た一村"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "87.〔無題〕　明治四十三年十月七日<br/>傷心秋已到　　傷心　秋已に到り<br/>嘔血骨猶存　　嘔血　骨猶お存す<br/>病起期何日　　病起　期するは　何れの日ぞ<br/>夕陽還一村　　夕陽　還た一村"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-087",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "087. 〔無題〕明治四十三年十月七日"
+        ]
+      },
+      "height": 1600,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-087",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-087",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/087.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1600,
+                "width": 1200
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-087"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

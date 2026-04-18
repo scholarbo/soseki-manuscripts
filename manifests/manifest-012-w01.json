@@ -4,21 +4,94 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "012. 〔「『七草集』評」より九首・其四〕明治二十二年五月 第1頁"
+      "012. 〔「『七草集』評」より九首・其四〕明治二十二年五月"
     ]
   },
-  "metadata": [],
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "012. 〔「『七草集』評」より九首・其四〕明治二十二年五月"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作月"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1889-05"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "版本"
+        ]
+      },
+      "value": {
+        "ja": [
+          "w01"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "12.〔「『七草集』評」より九首・其　四〕<br/>艶骨化成塚上苔　　艶骨　化して成る　塚上の苔<br/>于今江上杜鵑哀　　今に于いて江上　杜鵑哀しむ<br/>憐君多病多情処　　憐れむ　君が多病多情の処<br/>偏弔梅児薄命来　　偏えに梅児の薄命を弔い来たるを"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "12.〔「『七草集』評」より九首・其　四〕<br/>艶骨化成塚上苔　　艶骨　化して成る　塚上の苔<br/>于今江上杜鵑哀　　今に于いて江上　杜鵑哀しむ<br/>憐君多病多情処　　憐れむ　君が多病多情の処<br/>偏弔梅児薄命来　　偏えに梅児の薄命を弔い来たるを"
+        ]
+      }
+    }
+  ],
   "items": [
     {
       "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/canvas-012-w01-p1",
       "type": "Canvas",
       "label": {
         "ja": [
-          "012. 〔「『七草集』評」より九首・其四〕明治二十二年五月 第1頁"
+          "012 第1頁"
         ]
       },
-      "height": 1000,
-      "width": 1000,
+      "height": 800,
+      "width": 979,
       "items": [
         {
           "id": "https://scholarbo.github.io/soseki-manuscripts/page/canvas-012-w01-p1",
@@ -33,8 +106,8 @@
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/012.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1000,
-                "width": 1000
+                "height": 800,
+                "width": 979
               }
             }
           ]

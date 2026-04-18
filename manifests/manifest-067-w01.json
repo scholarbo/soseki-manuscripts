@@ -4,38 +4,111 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "067. 春日静坐明治三十一年三月 第1頁"
+      "067. 春日静坐明治三十一年三月 (w01)"
     ]
   },
-  "metadata": [],
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "067. 春日静坐明治三十一年三月"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作月"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1898-03"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "県立神奈川近代文学館蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "版本"
+        ]
+      },
+      "value": {
+        "ja": [
+          "w01"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "67.春日静坐　明治三十一年三月　春日静坐<br/>青春二三月　　青春　二三月<br/>愁随芳草長　　愁いは芳草に随って長し<br/>閑花落空庭　　閑花　空庭に落ち<br/>素琴横虚堂　　素琴　虚堂に横たう<br/>蠨蛸挂不動　　蠨蛸　挂かりて動かず<br/>篆烟繞竹梁　　篆烟　竹梁を繞る<br/>独坐無隻語　　独坐　隻語無く<br/>方寸認微光　　方寸　微光を認む<br/>人間徒多事　　人間　徒らに多事<br/>此境孰可忘　　此の境　孰か忘る可けん<br/>会得一日静　　会たま一日の静を得て<br/>正知百年忙　　正に知る　百年の忙<br/>遐懐寄何処　　遐懐　何れかの処にか寄せん<br/>緬邈白雲郷　　緬邈たり　白雲の郷"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "67.春日静坐　明治三十一年三月　春日静坐<br/>青春二三月　　青春　二三月<br/>愁随芳草長　　愁いは芳草に随って長し<br/>閑花落空庭　　閑花　空庭に落ち<br/>素琴横虚堂　　素琴　虚堂に横たう<br/>蠨蛸挂不動　　蠨蛸　挂かりて動かず<br/>篆烟繞竹梁　　篆烟　竹梁を繞る<br/>独坐無隻語　　独坐　隻語無く<br/>方寸認微光　　方寸　微光を認む<br/>人間徒多事　　人間　徒らに多事<br/>此境孰可忘　　此の境　孰か忘る可けん<br/>会得一日静　　会たま一日の静を得て<br/>正知百年忙　　正に知る　百年の忙<br/>遐懐寄何処　　遐懐　何れかの処にか寄せん<br/>緬邈白雲郷　　緬邈たり　白雲の郷"
+        ]
+      }
+    }
+  ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/canvas-067-w01-p1",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-067-w01",
       "type": "Canvas",
       "label": {
         "ja": [
-          "067. 春日静坐明治三十一年三月 第1頁"
+          "067. 春日静坐明治三十一年三月 (w01)"
         ]
       },
-      "height": 1000,
-      "width": 1000,
+      "height": 3498,
+      "width": 4596,
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/page/canvas-067-w01-p1",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-067-w01",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/annotation/canvas-067-w01-p1-image",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-067-w01",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://scholarbo.github.io/soseki-manuscripts/canvas/canvas-067-w01-p1",
               "body": {
-                "id": "https://scholarbo.github.io/soseki-manuscripts/images/067/067-w01.jpg",
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/067/067-w01.jpg",
                 "type": "Image",
-                "format": "image/jpeg",
-                "height": 1000,
-                "width": 1000
-              }
+                "format": "image/jpg",
+                "height": 3498,
+                "width": 4596
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-067-w01"
             }
           ]
         }

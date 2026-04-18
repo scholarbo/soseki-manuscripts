@@ -1,0 +1,106 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-142.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "142. 〔無題〕大正五年八月二十一日"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "142. 〔無題〕大正五年八月二十一日"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作日"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-08-21"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "142.〔無題〕　大正五年八月二十一日<br/>不作文章不論経　　文章を作らず　経を論ぜず<br/>漫走東西似泛萍　　漫りに東西に走りて　泛萍に似たり<br/>故国無花思竹径　　故国　花無くして　竹径を思い<br/>他郷有酒上旗亭　　他郷　酒有りて　旗亭に上る<br/>愁中片月三更白　　愁中の片月　三更に白く<br/>夢裏連山半夜青　　夢裏の連山　半夜に青し<br/>到処緡錢堪買石　　到る処　緡錢　石を買うに堪うるも<br/>傭誰大字撰碑銘　　誰を傭いて　大字もて　碑銘を撰せしめん"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "142.〔無題〕　大正五年八月二十一日<br/>不作文章不論経　　文章を作らず　経を論ぜず<br/>漫走東西似泛萍　　漫りに東西に走りて　泛萍に似たり<br/>故国無花思竹径　　故国　花無くして　竹径を思い<br/>他郷有酒上旗亭　　他郷　酒有りて　旗亭に上る<br/>愁中片月三更白　　愁中の片月　三更に白く<br/>夢裏連山半夜青　　夢裏の連山　半夜に青し<br/>到処緡錢堪買石　　到る処　緡錢　石を買うに堪うるも<br/>傭誰大字撰碑銘　　誰を傭いて　大字もて　碑銘を撰せしめん"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-142",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "142. 〔無題〕大正五年八月二十一日"
+        ]
+      },
+      "height": 1600,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-142",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-142",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/142.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1600,
+                "width": 1200
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-142"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-200.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "200. 〔無題三首·其三〕大正五年十月二十一日"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "200. 〔無題三首·其三〕大正五年十月二十一日"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作日"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-10-21"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "200.〔其　三〕<br/>元是錦衣子　　元と是れ　錦衣の子<br/>売衣又売珠　　衣を売り　又た珠を売る<br/>長身無估客　　長身　估客無く<br/>赤裸裸中愚　　赤裸裸中の愚"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "200.〔其　三〕<br/>元是錦衣子　　元と是れ　錦衣の子<br/>売衣又売珠　　衣を売り　又た珠を売る<br/>長身無估客　　長身　估客無く<br/>赤裸裸中愚　　赤裸裸中の愚"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-200",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "200. 〔無題三首·其三〕大正五年十月二十一日"
+        ]
+      },
+      "height": 1600,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-200",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-200",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/200.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1600,
+                "width": 1200
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-200"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

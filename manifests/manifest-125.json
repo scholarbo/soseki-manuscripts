@@ -1,0 +1,106 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-125.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "125. 〔題自画〕大正三年十一月"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "125. 〔題自画〕大正三年十一月"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作月"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1914-11"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "125.〔題自画〕　大正三年十一月<br/>碧落孤雲尽　　碧落　孤雲尽き<br/>虚明鳥道通　　虚明　鳥道通す<br/>遲遲驢背客　　遲遲たり　驢背の客<br/>独入石門中　　独り入る　石門の中"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "125.〔題自画〕　大正三年十一月<br/>碧落孤雲尽　　碧落　孤雲尽き<br/>虚明鳥道通　　虚明　鳥道通す<br/>遲遲驢背客　　遲遲たり　驢背の客<br/>独入石門中　　独り入る　石門の中"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-125",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "125. 〔題自画〕大正三年十一月"
+        ]
+      },
+      "height": 1600,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-125",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-125",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/125.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1600,
+                "width": 1200
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-125"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

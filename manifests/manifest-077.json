@@ -1,0 +1,106 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-077.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "077. 〔無題〕明治四十三年七月三十一日"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "077. 〔無題〕明治四十三年七月三十一日"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作日"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1910-07-31"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "77.〔無題〕　明治四十三年七月三十一日<br/>来宿山中寺　　来たり宿る　山中の寺<br/>更加老衲衣　　更に加う　老衲の衣<br/>寂然禅夢底　　寂然たる禅夢の底<br/>窓外白雲帰　　窓外　白雲帰る"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "77.〔無題〕　明治四十三年七月三十一日<br/>来宿山中寺　　来たり宿る　山中の寺<br/>更加老衲衣　　更に加う　老衲の衣<br/>寂然禅夢底　　寂然たる禅夢の底<br/>窓外白雲帰　　窓外　白雲帰る"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-077",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "077. 〔無題〕明治四十三年七月三十一日"
+        ]
+      },
+      "height": 1600,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-077",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-077",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/077.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1600,
+                "width": 1200
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-077"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

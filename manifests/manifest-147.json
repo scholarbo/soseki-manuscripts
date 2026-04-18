@@ -1,0 +1,106 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-147.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "147. 〔無題〕大正五年八月二十九日"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "147. 〔無題〕大正五年八月二十九日"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作日"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-08-29"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "147.〔無題〕　大正五年八月二十九日<br/>不愛帝城車馬喧　　愛せず　帝城　車馬の喧しきを<br/>故山帰臥掩柴門　　故山に帰臥して　柴門を掩わん<br/>紅桃碧水春雲寺　　紅桃　碧水　春雲の寺<br/>暖日和風野靄村　　暖日　和風　野靄の村<br/>人到渡頭垂柳尽　　人　渡頭に到りて　垂柳尽き<br/>鳥来樹杪落花繁　　鳥　樹杪に来たりて　落花繁し<br/>前塘昨夜蕭蕭雨　　前塘　昨夜　蕭蕭の雨<br/>促得細鱗入小园　　細鱗を促し得て　小园に入らしむ"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "147.〔無題〕　大正五年八月二十九日<br/>不愛帝城車馬喧　　愛せず　帝城　車馬の喧しきを<br/>故山帰臥掩柴門　　故山に帰臥して　柴門を掩わん<br/>紅桃碧水春雲寺　　紅桃　碧水　春雲の寺<br/>暖日和風野靄村　　暖日　和風　野靄の村<br/>人到渡頭垂柳尽　　人　渡頭に到りて　垂柳尽き<br/>鳥来樹杪落花繁　　鳥　樹杪に来たりて　落花繁し<br/>前塘昨夜蕭蕭雨　　前塘　昨夜　蕭蕭の雨<br/>促得細鱗入小园　　細鱗を促し得て　小园に入らしむ"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-147",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "147. 〔無題〕大正五年八月二十九日"
+        ]
+      },
+      "height": 1600,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-147",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-147",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/147.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1600,
+                "width": 1200
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-147"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

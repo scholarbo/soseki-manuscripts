@@ -1,0 +1,106 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-010.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "010. 〔「『七草集』評」より九首・其二〕明治二十二年五月"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "010. 〔「『七草集』評」より九首・其二〕明治二十二年五月"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作月"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1889-05"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "10.〔「『七草集』評」より九首・其　二〕<br/>幾年零落亦風流　　幾年の零落　亦た風流<br/>好賃江頭香月楼　　好し　賃らん　江頭の香月楼<br/>麦緑菜黄吟欲尽　　麦緑菜黄　吟　尽きんと欲し<br/>又逢紅蓼白蘋秋　　又た逢う　紅蓼白蘋の秋"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "10.〔「『七草集』評」より九首・其　二〕<br/>幾年零落亦風流　　幾年の零落　亦た風流<br/>好賃江頭香月楼　　好し　賃らん　江頭の香月楼<br/>麦緑菜黄吟欲尽　　麦緑菜黄　吟　尽きんと欲し<br/>又逢紅蓼白蘋秋　　又た逢う　紅蓼白蘋の秋"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-010",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "010. 〔「『七草集』評」より九首・其二〕明治二十二年五月"
+        ]
+      },
+      "height": 800,
+      "width": 979,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-010",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-010",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/010.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 800,
+                "width": 979
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-010"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

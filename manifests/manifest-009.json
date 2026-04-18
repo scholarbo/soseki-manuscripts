@@ -1,0 +1,106 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-009.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "009. 〔「『七草集』評」より九首・其一〕明治二十二年五月"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "009. 〔「『七草集』評」より九首・其一〕明治二十二年五月"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作月"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1889-05"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "9.〔「『七草集』評」より九首・其　一〕明治二十二年五月<br/>青袍幾閲帝京秋　　青袍　幾たびか閲す　帝京の秋<br/>酒点涙痕憶旧遊　　酒点　涙痕　旧遊を憶う<br/>故国烟花空一夢　　故国の烟花　空しく一夢<br/>不耐他郷写閑愁　　耐えず　他郷　閑愁を写すに"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "9.〔「『七草集』評」より九首・其　一〕明治二十二年五月<br/>青袍幾閲帝京秋　　青袍　幾たびか閲す　帝京の秋<br/>酒点涙痕憶旧遊　　酒点　涙痕　旧遊を憶う<br/>故国烟花空一夢　　故国の烟花　空しく一夢<br/>不耐他郷写閑愁　　耐えず　他郷　閑愁を写すに"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-009",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "009. 〔「『七草集』評」より九首・其一〕明治二十二年五月"
+        ]
+      },
+      "height": 800,
+      "width": 979,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-009",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-009",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/009.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 800,
+                "width": 979
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-009"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

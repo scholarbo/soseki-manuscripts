@@ -4,21 +4,94 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "013. 〔「『七草集』評」より九首・其五〕明治二十二年五月 第1頁"
+      "013. 〔「『七草集』評」より九首・其五〕明治二十二年五月"
     ]
   },
-  "metadata": [],
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "013. 〔「『七草集』評」より九首・其五〕明治二十二年五月"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作月"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1889-05"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "版本"
+        ]
+      },
+      "value": {
+        "ja": [
+          "w01"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "13.〔「『七草集』評」より九首・其　五〕<br/>長堤尽処又長堤　　長堤尽くる処　又た長堤<br/>桜柳枝連桜柳枝　　桜柳の枝は連なる　桜柳の枝<br/>此裡風光君独有　　此の裡の風光　君独り有し<br/>六旬閑適百篇詩　　六旬の閑適　百篇の詩"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "13.〔「『七草集』評」より九首・其　五〕<br/>長堤尽処又長堤　　長堤尽くる処　又た長堤<br/>桜柳枝連桜柳枝　　桜柳の枝は連なる　桜柳の枝<br/>此裡風光君独有　　此の裡の風光　君独り有し<br/>六旬閑適百篇詩　　六旬の閑適　百篇の詩"
+        ]
+      }
+    }
+  ],
   "items": [
     {
       "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/canvas-013-w01-p1",
       "type": "Canvas",
       "label": {
         "ja": [
-          "013. 〔「『七草集』評」より九首・其五〕明治二十二年五月 第1頁"
+          "013 第1頁"
         ]
       },
-      "height": 1000,
-      "width": 1000,
+      "height": 800,
+      "width": 979,
       "items": [
         {
           "id": "https://scholarbo.github.io/soseki-manuscripts/page/canvas-013-w01-p1",
@@ -33,8 +106,8 @@
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/013.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1000,
-                "width": 1000
+                "height": 800,
+                "width": 979
               }
             }
           ]

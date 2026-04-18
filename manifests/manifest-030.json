@@ -1,0 +1,106 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-030.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "030. 〔『木屑録』より十四首・其十三〕別後憶京中諸友"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "030. 〔『木屑録』より十四首・其十三〕別後憶京中諸友"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作月"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1889-09"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "https://dl.ndl.go.jp/pid/1192698"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "30.〔『木屑録』より　十四首・其　十三〕　別後憶京中諸友<br/>魂飛千里墨江湄　　魂は飛ぶ　千里　墨江の湄<br/>湄上画楼楊柳枝　　湄上の画楼　楊柳の枝<br/>酒帯離愁醒更早　　酒は離愁を帯びて　醒むること更に早く<br/>詩含別恨唱殊遅　　詩は別恨を含んで　唱うること殊に遅し<br/>銀釭照夢見蛾聚　　銀釭　夢を照して　蛾の聚まるを見<br/>素月匿秋知雨随　　素月　秋に匿れて　雨の随うを知る<br/>料得洛陽才子伴　　料り得たり　洛陽才子の伴<br/>錦箋応写断腸詞　　錦箋　応に写すべし　断腸の詞"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "30.〔『木屑録』より　十四首・其　十三〕　別後憶京中諸友<br/>魂飛千里墨江湄　　魂は飛ぶ　千里　墨江の湄<br/>湄上画楼楊柳枝　　湄上の画楼　楊柳の枝<br/>酒帯離愁醒更早　　酒は離愁を帯びて　醒むること更に早く<br/>詩含別恨唱殊遅　　詩は別恨を含んで　唱うること殊に遅し<br/>銀釭照夢見蛾聚　　銀釭　夢を照して　蛾の聚まるを見<br/>素月匿秋知雨随　　素月　秋に匿れて　雨の随うを知る<br/>料得洛陽才子伴　　料り得たり　洛陽才子の伴<br/>錦箋応写断腸詞　　錦箋　応に写すべし　断腸の詞"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-030",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "030. 〔『木屑録』より十四首・其十三〕別後憶京中諸友"
+        ]
+      },
+      "height": 1197,
+      "width": 1536,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-030",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-030",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/030.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1197,
+                "width": 1536
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-030"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

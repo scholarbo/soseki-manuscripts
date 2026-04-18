@@ -4,21 +4,94 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "021. 〔『木屑録』より十四首・其四〕明治二十二年九月 第1頁"
+      "021. 〔『木屑録』より十四首・其四〕明治二十二年九月"
     ]
   },
-  "metadata": [],
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "021. 〔『木屑録』より十四首・其四〕明治二十二年九月"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作月"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1889-09"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "https://dl.ndl.go.jp/pid/1192698"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "版本"
+        ]
+      },
+      "value": {
+        "ja": [
+          "w01"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "21.〔『木屑録』より　十四首・其　四〕<br/>南出家山百里程　　南のかた家山を出でて　百里の程<br/>海涯月黑暗愁生　　海涯　月黑く　暗愁生す<br/>濤声一夜欺郷夢　　濤声　一夜　郷夢を欺き<br/>漫作故園松籟声　　漫りに作す　故園松籟の声"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "21.〔『木屑録』より　十四首・其　四〕<br/>南出家山百里程　　南のかた家山を出でて　百里の程<br/>海涯月黑暗愁生　　海涯　月黑く　暗愁生す<br/>濤声一夜欺郷夢　　濤声　一夜　郷夢を欺き<br/>漫作故園松籟声　　漫りに作す　故園松籟の声"
+        ]
+      }
+    }
+  ],
   "items": [
     {
       "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/canvas-021-w01-p1",
       "type": "Canvas",
       "label": {
         "ja": [
-          "021. 〔『木屑録』より十四首・其四〕明治二十二年九月 第1頁"
+          "021 第1頁"
         ]
       },
-      "height": 1000,
-      "width": 1000,
+      "height": 1197,
+      "width": 1536,
       "items": [
         {
           "id": "https://scholarbo.github.io/soseki-manuscripts/page/canvas-021-w01-p1",
@@ -33,8 +106,8 @@
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/021.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1000,
-                "width": 1000
+                "height": 1197,
+                "width": 1536
               }
             }
           ]

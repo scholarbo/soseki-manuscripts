@@ -1,0 +1,94 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-035.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "035. 〔無題〕明治二十三年八月末"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "035. 〔無題〕明治二十三年八月末"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作月"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1890-08"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "35.〔無題〕　明治二十三年八月末<br/>仙人堕俗界　　仙人　俗界に堕つれば<br/>遂不免喜悲　　遂に喜悲を免れず<br/>啼血又吐血　　啼血　又た吐血<br/>憔悴憐君姿　　憔悴　君が姿を憐れむ<br/>漱石又枕石　　漱石　又た枕石<br/>固陋歓吾痴　　固陋　吾が痴を歓ぶ<br/>君痾猶可癒　　君が痾　猶お癒す可く<br/>僕痴不可医　　僕が痴　医す可からず<br/>素懐定沈鬱　　素懐　定めて沈鬱ならん<br/>愁緒乱如糸　　愁緒　乱れて糸の如し<br/>浩歌時幾曲　　浩歌　時に幾曲<br/>〔一句欠〕　　0<br/>一曲唾壺砕　　一曲　唾壺砕け<br/>二曲双涙垂　　二曲　双涙垂る<br/>曲闋呼咄咄　　曲闋りて呼ぶこと咄咄<br/>衷情欲訴誰　　衷情　誰にか訴えんと欲する<br/>白雲蓬勃起　　白雲　蓬勃として起こり<br/>天際看蛟螭　　天際に蛟螭を看る<br/>笑指函山頂　　笑って函山の頂を指し<br/>去臥葦湖湄　　去きて葦湖の湄を臥せん<br/>歳月固悠久　　歳月　固より悠久<br/>宇宙独無涯　　宇宙　独り涯無し<br/>蜉蝣飛湫上　　蜉蝣　湫上を飛べば<br/>大鵬嗤其卑　　大鵬　其の卑きを嗤う<br/>嗤者亦泯滅　　嗤う者も亦た泯滅す<br/>得喪皆一時　　得喪　皆一時<br/>寄語功名客　　語を寄す　功名の客に<br/>役役欲何為　　役役　何をか為さんと欲すと"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "35.〔無題〕　明治二十三年八月末<br/>仙人堕俗界　　仙人　俗界に堕つれば<br/>遂不免喜悲　　遂に喜悲を免れず<br/>啼血又吐血　　啼血　又た吐血<br/>憔悴憐君姿　　憔悴　君が姿を憐れむ<br/>漱石又枕石　　漱石　又た枕石<br/>固陋歓吾痴　　固陋　吾が痴を歓ぶ<br/>君痾猶可癒　　君が痾　猶お癒す可く<br/>僕痴不可医　　僕が痴　医す可からず<br/>素懐定沈鬱　　素懐　定めて沈鬱ならん<br/>愁緒乱如糸　　愁緒　乱れて糸の如し<br/>浩歌時幾曲　　浩歌　時に幾曲<br/>〔一句欠〕　　0<br/>一曲唾壺砕　　一曲　唾壺砕け<br/>二曲双涙垂　　二曲　双涙垂る<br/>曲闋呼咄咄　　曲闋りて呼ぶこと咄咄<br/>衷情欲訴誰　　衷情　誰にか訴えんと欲する<br/>白雲蓬勃起　　白雲　蓬勃として起こり<br/>天際看蛟螭　　天際に蛟螭を看る<br/>笑指函山頂　　笑って函山の頂を指し<br/>去臥葦湖湄　　去きて葦湖の湄を臥せん<br/>歳月固悠久　　歳月　固より悠久<br/>宇宙独無涯　　宇宙　独り涯無し<br/>蜉蝣飛湫上　　蜉蝣　湫上を飛べば<br/>大鵬嗤其卑　　大鵬　其の卑きを嗤う<br/>嗤者亦泯滅　　嗤う者も亦た泯滅す<br/>得喪皆一時　　得喪　皆一時<br/>寄語功名客　　語を寄す　功名の客に<br/>役役欲何為　　役役　何をか為さんと欲すと"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-035",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "035. 〔無題〕明治二十三年八月末"
+        ]
+      },
+      "height": 1600,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-035",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-035",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/035.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1600,
+                "width": 1200
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-035"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

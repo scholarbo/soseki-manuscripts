@@ -1,0 +1,106 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-066.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "066. 失題明治三十一年三月"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "066. 失題明治三十一年三月"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作月"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1898-03"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "県立神奈川近代文学館蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "66.失題　明治三十一年三月　失　題<br/>吾心若有苦　　吾が心　苦しみ有るが若し<br/>求之遂難求　　之を求むるも　遂に求め難し<br/>俯仰天地際　　俯仰す　天地の際<br/>胡為発哀声　　胡為れぞ哀声を発す<br/>春花幾开落　　春花　幾たびか開き落ち<br/>世事幾迭更　　世事　幾たびか迭更す<br/>烏兎促髩髪　　烏兎　髩髪を促し<br/>意気軽功名　　意気　功名を軽んず<br/>昨夜生月暈　　昨夜　月暈生じ<br/>飆風朝満城　　飆風　朝　城に満つ<br/>夢醒枕上聴　　夢醒めて　枕上に聴く<br/>孤剣匣底鳴　　孤剣　匣底に鳴くを<br/>慨然振衣起　　慨然として　衣を振って起ち<br/>登楼望前程　　楼に登りて　前程を望む<br/>前程望不見　　前程　望めども見えず<br/>漠漠愁雲横　　漠漠として　愁雲横たわる"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "66.失題　明治三十一年三月　失　題<br/>吾心若有苦　　吾が心　苦しみ有るが若し<br/>求之遂難求　　之を求むるも　遂に求め難し<br/>俯仰天地際　　俯仰す　天地の際<br/>胡為発哀声　　胡為れぞ哀声を発す<br/>春花幾开落　　春花　幾たびか開き落ち<br/>世事幾迭更　　世事　幾たびか迭更す<br/>烏兎促髩髪　　烏兎　髩髪を促し<br/>意気軽功名　　意気　功名を軽んず<br/>昨夜生月暈　　昨夜　月暈生じ<br/>飆風朝満城　　飆風　朝　城に満つ<br/>夢醒枕上聴　　夢醒めて　枕上に聴く<br/>孤剣匣底鳴　　孤剣　匣底に鳴くを<br/>慨然振衣起　　慨然として　衣を振って起ち<br/>登楼望前程　　楼に登りて　前程を望む<br/>前程望不見　　前程　望めども見えず<br/>漠漠愁雲横　　漠漠として　愁雲横たわる"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-066",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "066. 失題明治三十一年三月"
+        ]
+      },
+      "height": 3456,
+      "width": 5262,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-066",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-066",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/066.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 3456,
+                "width": 5262
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-066"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

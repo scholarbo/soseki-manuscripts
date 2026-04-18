@@ -1,0 +1,106 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-036.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "036. 函山雑詠〔八首・其一〕明治二十三年九月"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "036. 函山雑詠〔八首・其一〕明治二十三年九月"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作月"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1890-09"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "https://dl.ndl.go.jp/pid/1192698"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "36.函山雑詠　〔八首・其　一〕　明治二十三年九月<br/>昨夜着征衣　　昨夜　征衣を着け<br/>今朝入翠微　　今朝　翠微に入る<br/>雲深山欲滅　　雲深くして　山滅せんと欲し<br/>天闊鳥頻飛　　天闊くして　鳥頻りに飛ぶ<br/>驛馬鈴声遠　　驛馬　鈴声遠く<br/>行人笑語稀　　行人　笑語稀なり<br/>蕭蕭三十里　　蕭蕭たる三十里<br/>孤客已思帰　　孤客　已に帰るを思う"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "36.函山雑詠　〔八首・其　一〕　明治二十三年九月<br/>昨夜着征衣　　昨夜　征衣を着け<br/>今朝入翠微　　今朝　翠微に入る<br/>雲深山欲滅　　雲深くして　山滅せんと欲し<br/>天闊鳥頻飛　　天闊くして　鳥頻りに飛ぶ<br/>驛馬鈴声遠　　驛馬　鈴声遠く<br/>行人笑語稀　　行人　笑語稀なり<br/>蕭蕭三十里　　蕭蕭たる三十里<br/>孤客已思帰　　孤客　已に帰るを思う"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-036",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "036. 函山雑詠〔八首・其一〕明治二十三年九月"
+        ]
+      },
+      "height": 1600,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-036",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-036",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/036.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1600,
+                "width": 1200
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-036"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

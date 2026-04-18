@@ -1,0 +1,106 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-133.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "133. 題自画大正五年春"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "133. 題自画大正五年春"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作年"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "133.題自画　大正五年春<br/>唐詩読罷倚蘭干　　唐詩を読み罷めて　蘭干に倚れば<br/>午院沈沈緑意寒　　午院　沈沈として　緑意寒し<br/>借問春風何処有　　借問す　春風　何れの処にか有ると<br/>石前幽竹石間蘭　　石前の幽竹　石間の蘭"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "133.題自画　大正五年春<br/>唐詩読罷倚蘭干　　唐詩を読み罷めて　蘭干に倚れば<br/>午院沈沈緑意寒　　午院　沈沈として　緑意寒し<br/>借問春風何処有　　借問す　春風　何れの処にか有ると<br/>石前幽竹石間蘭　　石前の幽竹　石間の蘭"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-133",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "133. 題自画大正五年春"
+        ]
+      },
+      "height": 1600,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-133",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-133",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/133.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1600,
+                "width": 1200
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-133"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

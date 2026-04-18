@@ -4,21 +4,94 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "026. 〔『木屑録』より十四首・其九〕自東金至銚子途上口号 第1頁"
+      "026. 〔『木屑録』より十四首・其九〕自東金至銚子途上口号"
     ]
   },
-  "metadata": [],
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "026. 〔『木屑録』より十四首・其九〕自東金至銚子途上口号"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作月"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1889-09"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "https://dl.ndl.go.jp/pid/1192698"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "版本"
+        ]
+      },
+      "value": {
+        "ja": [
+          "w01"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "26.〔『木屑録』より　十四首・其　九〕　自東金至銚子途上口号<br/>風行空際乱雲飛　　風は空際を行きて　乱雲飛び<br/>雨鎖秋林倦鳥帰　　雨は秋林を鎖ざして　倦鳥帰る<br/>一路蕭蕭荒駅晚　　一路　蕭蕭たり　荒駅の晚<br/>野花香濺緑蓑衣　　野花　香は濺く　緑蓑の衣"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "26.〔『木屑録』より　十四首・其　九〕　自東金至銚子途上口号<br/>風行空際乱雲飛　　風は空際を行きて　乱雲飛び<br/>雨鎖秋林倦鳥帰　　雨は秋林を鎖ざして　倦鳥帰る<br/>一路蕭蕭荒駅晚　　一路　蕭蕭たり　荒駅の晚<br/>野花香濺緑蓑衣　　野花　香は濺く　緑蓑の衣"
+        ]
+      }
+    }
+  ],
   "items": [
     {
       "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/canvas-026-w01-p1",
       "type": "Canvas",
       "label": {
         "ja": [
-          "026. 〔『木屑録』より十四首・其九〕自東金至銚子途上口号 第1頁"
+          "026 第1頁"
         ]
       },
-      "height": 1000,
-      "width": 1000,
+      "height": 1197,
+      "width": 1536,
       "items": [
         {
           "id": "https://scholarbo.github.io/soseki-manuscripts/page/canvas-026-w01-p1",
@@ -33,8 +106,8 @@
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/026.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1000,
-                "width": 1000
+                "height": 1197,
+                "width": 1536
               }
             }
           ]

@@ -1,0 +1,106 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-093.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "093. 〔無題〕明治四十三年十月二十七日"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "093. 〔無題〕明治四十三年十月二十七日"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作日"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1910-10-27"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "93.〔無題〕　明治四十三年十月二十七日<br/>馬上青年老　　馬上　青年老い<br/>鏡中白髪新　　鏡中　白髪新たなり<br/>幸生天子国　　幸に天子の国に生まる<br/>願作太平民　　願わくは太平の民と作らん"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "93.〔無題〕　明治四十三年十月二十七日<br/>馬上青年老　　馬上　青年老い<br/>鏡中白髪新　　鏡中　白髪新たなり<br/>幸生天子国　　幸に天子の国に生まる<br/>願作太平民　　願わくは太平の民と作らん"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-093",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "093. 〔無題〕明治四十三年十月二十七日"
+        ]
+      },
+      "height": 1600,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-093",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-093",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/093.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1600,
+                "width": 1200
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-093"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

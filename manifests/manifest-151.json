@@ -1,0 +1,106 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-151.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "151. 〔無題〕大正五年九月一日"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "151. 〔無題〕大正五年九月一日"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作日"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-09-01"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "151.〔無題〕　大正五年九月一日<br/>石門路遠不容尋　　石門　路遠くして　尋ねるを容さず<br/>曄日高懸雲外林　　曄日　高く懸かる　雲外の林<br/>独与青松同素志　　独り青松と素志を同じくし<br/>終令白鶴解丹心　　終に白鶴をして　丹心を解せ令む<br/>空山有影梅花冷　　空山　影有りて　梅花冷やかに<br/>春澗無風薬草深　　春澗　風無くして　薬草深し<br/>黄髯老漢憐無事　　黄髯の老漢　無事を憐れみ<br/>復坐虚堂独撫琴　　復た虚堂に坐して　独り琴を撫す"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "151.〔無題〕　大正五年九月一日<br/>石門路遠不容尋　　石門　路遠くして　尋ねるを容さず<br/>曄日高懸雲外林　　曄日　高く懸かる　雲外の林<br/>独与青松同素志　　独り青松と素志を同じくし<br/>終令白鶴解丹心　　終に白鶴をして　丹心を解せ令む<br/>空山有影梅花冷　　空山　影有りて　梅花冷やかに<br/>春澗無風薬草深　　春澗　風無くして　薬草深し<br/>黄髯老漢憐無事　　黄髯の老漢　無事を憐れみ<br/>復坐虚堂独撫琴　　復た虚堂に坐して　独り琴を撫す"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-151",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "151. 〔無題〕大正五年九月一日"
+        ]
+      },
+      "height": 1600,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-151",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-151",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/151.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1600,
+                "width": 1200
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-151"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

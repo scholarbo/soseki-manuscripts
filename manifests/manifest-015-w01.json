@@ -4,21 +4,94 @@
   "type": "Manifest",
   "label": {
     "ja": [
-      "015. 〔「『七草集』評」より九首・其七〕明治二十二年五月 第1頁"
+      "015. 〔「『七草集』評」より九首・其七〕明治二十二年五月"
     ]
   },
-  "metadata": [],
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "015. 〔「『七草集』評」より九首・其七〕明治二十二年五月"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作月"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1889-05"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "版本"
+        ]
+      },
+      "value": {
+        "ja": [
+          "w01"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "15.〔「『七草集』評」より九首・其　七〕　その七<br/>洗尽塵懐忘我物　　塵懐を洗い尽くして　我と物とを忘れ<br/>只看窓外古松鬱　　只だ看る　窓外　古松鬱たるを<br/>乾坤深夜闃無声　　乾坤　深夜　闃として声無く<br/>黙坐空房如古仏　　空房に黙坐して　古仏の如く"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "15.〔「『七草集』評」より九首・其　七〕　その七<br/>洗尽塵懐忘我物　　塵懐を洗い尽くして　我と物とを忘れ<br/>只看窓外古松鬱　　只だ看る　窓外　古松鬱たるを<br/>乾坤深夜闃無声　　乾坤　深夜　闃として声無く<br/>黙坐空房如古仏　　空房に黙坐して　古仏の如く"
+        ]
+      }
+    }
+  ],
   "items": [
     {
       "id": "https://scholarbo.github.io/soseki-manuscripts/canvas/canvas-015-w01-p1",
       "type": "Canvas",
       "label": {
         "ja": [
-          "015. 〔「『七草集』評」より九首・其七〕明治二十二年五月 第1頁"
+          "015 第1頁"
         ]
       },
-      "height": 1000,
-      "width": 1000,
+      "height": 800,
+      "width": 979,
       "items": [
         {
           "id": "https://scholarbo.github.io/soseki-manuscripts/page/canvas-015-w01-p1",
@@ -33,8 +106,8 @@
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/015.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 1000,
-                "width": 1000
+                "height": 800,
+                "width": 979
               }
             }
           ]

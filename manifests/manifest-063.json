@@ -1,0 +1,94 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-063.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "063. 〔五首・其五〕明治二十九年十一月十五日"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "063. 〔五首・其五〕明治二十九年十一月十五日"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作日"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1896-11-15"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "63.〔其　五〕<br/>氤氳出石罅　　氤氳として出石罅より出で<br/>幽気逼禅心　　幽気　禅心に逼る<br/>時誦寒山句　　時に寒山の句を誦し<br/>看芝坐竹陰　　芝を看て竹陰に坐す"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "63.〔其　五〕<br/>氤氳出石罅　　氤氳として出石罅より出で<br/>幽気逼禅心　　幽気　禅心に逼る<br/>時誦寒山句　　時に寒山の句を誦し<br/>看芝坐竹陰　　芝を看て竹陰に坐す"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-063",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "063. 〔五首・其五〕明治二十九年十一月十五日"
+        ]
+      },
+      "height": 1600,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-063",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-063",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/063.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1600,
+                "width": 1200
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-063"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

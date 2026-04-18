@@ -1,0 +1,106 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-064.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "064. 〔無題〕明治三十年十二月十二日"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "題名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "064. 〔無題〕明治三十年十二月十二日"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "制作日"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1897-12-12"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "所蔵"
+        ]
+      },
+      "value": {
+        "ja": [
+          "県立神奈川近代文学館蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "漢詩本文"
+        ]
+      },
+      "value": {
+        "ja": [
+          "64.〔無題〕　明治三十年十二月十二日<br/>掉頭辞帝闕　　頭を掉りて　帝闕を辞し<br/>倚剣出城闉　　剣に倚りて　城闉を出づ<br/>崒嵂肥山尽　　崒嵂として　肥山尽き<br/>滂洋筑水新　　滂洋として　筑水新たなり<br/>秋風吹落日　　秋風　落日を吹き<br/>大野絶行人　　大野　行人を絶つ<br/>索寞乾坤黮　　索寞として　乾坤黮く<br/>蒼冥哀雁頻　　蒼冥　哀雁頻なり"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "本文・訓読"
+        ]
+      },
+      "value": {
+        "ja": [
+          "64.〔無題〕　明治三十年十二月十二日<br/>掉頭辞帝闕　　頭を掉りて　帝闕を辞し<br/>倚剣出城闉　　剣に倚りて　城闉を出づ<br/>崒嵂肥山尽　　崒嵂として　肥山尽き<br/>滂洋筑水新　　滂洋として　筑水新たなり<br/>秋風吹落日　　秋風　落日を吹き<br/>大野絶行人　　大野　行人を絶つ<br/>索寞乾坤黮　　索寞として　乾坤黮く<br/>蒼冥哀雁頻　　蒼冥　哀雁頻なり"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-064",
+      "type": "Canvas",
+      "label": {
+        "ja": [
+          "064. 〔無題〕明治三十年十二月十二日"
+        ]
+      },
+      "height": 1600,
+      "width": 1200,
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/page-064",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/anno-064",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/iiif/images/064.jpg",
+                "type": "Image",
+                "format": "image/jpg",
+                "height": 1600,
+                "width": 1200
+              },
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/canvas-064"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
