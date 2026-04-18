@@ -182,19 +182,93 @@
       color: #6b7280;
       line-height: 1.5;
     }
+
+    .viewer-body {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
+      min-height: 0;
+      flex: 1;
+    }
+    .manuscript-pane {
+      min-width: 0;
+      border-right: 1px solid var(--line);
+      background: #fff;
+    }
+    .text-pane {
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      background: #fcfcfd;
+    }
+    .text-header {
+      padding: 12px 16px 10px;
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(180deg, #ffffff 0%, #fafbfc 100%);
+    }
+    .text-title {
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 1.4;
+      margin-bottom: 8px;
+    }
+    .text-sub {
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    .text-actions {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+    .text-actions .btn {
+      padding: 7px 11px;
+      font-size: 12px;
+    }
+    .text-content {
+      flex: 1;
+      overflow: auto;
+      padding: 16px;
+      font-size: 14px;
+      line-height: 1.8;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+    .poem-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px 16px;
+    }
+    .poem-cell {
+      background: #fff;
+      border: 1px solid #eef2f7;
+      border-radius: 12px;
+      padding: 10px 12px;
+    }
+    .poem-cell .line-no {
+      color: var(--muted);
+      font-size: 11px;
+      margin-bottom: 4px;
+    }
+    .poem-cell .line-text {
+      font-size: 14px;
+      line-height: 1.7;
+    }
     iframe {
       width: 100%;
-      height: calc(100% - 190px);
+      height: 100%;
       border: 0;
       background: #fff;
     }
+
     @media (max-width: 980px) {
       .app {
         grid-template-columns: 1fr;
         grid-template-rows: 40% 1fr;
       }
       .sidebar { min-height: 260px; }
-      iframe { height: calc(100% - 220px); }
+      .viewer-body { grid-template-columns: 1fr; grid-template-rows: 52% 48%; }
     }
   </style>
 </head>
@@ -229,7 +303,23 @@
         </div>
         <div class="notice">本頁では検証用画像を表示しています。</div>
       </div>
-      <iframe id="frame"></iframe>
+      <div class="viewer-body">
+        <div class="manuscript-pane">
+          <iframe id="frame"></iframe>
+        </div>
+        <div class="text-pane">
+          <div class="text-header">
+            <div id="textTitle" class="text-title">完成テクスト</div>
+            <div id="textSub" class="text-sub">該当作品を選択すると、ここに完成テクストが表示されます。</div>
+            <div class="text-actions">
+              <button id="btnTextBoth" class="btn primary">原文＋訓読</button>
+              <button id="btnTextKanbun" class="btn">原文</button>
+              <button id="btnTextKundoku" class="btn">訓読</button>
+            </div>
+          </div>
+          <div id="textContent" class="text-content">完成テクストを読み込み中…</div>
+        </div>
+      </div>
     </main>
   </div>
 
@@ -237,6 +327,8 @@
   const base = "https://scholarbo.github.io/soseki-manuscripts";
   let items = [];
   let currentItem = null;
+  let completedTexts = {};
+  let currentTextMode = 'both';
 
   const list = document.getElementById("list");
   const frame = document.getElementById("frame");
@@ -250,6 +342,12 @@
   const btnDay = document.getElementById("btnDay");
   const btnMonth = document.getElementById("btnMonth");
   const btnYear = document.getElementById("btnYear");
+  const textTitle = document.getElementById("textTitle");
+  const textSub = document.getElementById("textSub");
+  const textContent = document.getElementById("textContent");
+  const btnTextBoth = document.getElementById("btnTextBoth");
+  const btnTextKanbun = document.getElementById("btnTextKanbun");
+  const btnTextKundoku = document.getElementById("btnTextKundoku");
 
   async function loadItems() {
     const res = await fetch(`${base}/master.json?t=${Date.now()}`);
@@ -257,6 +355,15 @@
       throw new Error(`master.json の読み込みに失敗しました: ${res.status}`);
     }
     items = await res.json();
+  }
+
+  async function loadCompletedTexts() {
+    const res = await fetch(`${base}/completed_texts.json?t=${Date.now()}`);
+    if (!res.ok) {
+      throw new Error(`completed_texts.json の読み込みに失敗しました: ${res.status}`);
+    }
+    const arr = await res.json();
+    completedTexts = Object.fromEntries(arr.map(x => [x.id, x]));
   }
 
   function renderList(filter = "") {
@@ -341,6 +448,77 @@
     currentMode.textContent = modeLabel;
   }
 
+  function setTextMode(activeBtn) {
+    [btnTextBoth, btnTextKanbun, btnTextKundoku].forEach(btn => {
+      btn.classList.toggle("primary", btn === activeBtn);
+    });
+  }
+
+  function escapeHtml(str) {
+    return String(str || "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#39;");
+  }
+
+  function renderCompletedText(workId) {
+    const data = completedTexts[workId];
+    if (!data) {
+      textTitle.textContent = "完成テクスト";
+      textSub.textContent = "この作品の完成テクストは未登録です。";
+      textContent.innerHTML = "<p>完成テクスト未登録</p>";
+      return;
+    }
+
+    textTitle.textContent = `${workId}　${data.title_kanbun || ""}`;
+    textSub.textContent = data.title_kundoku || "訓読なし";
+
+    if (currentTextMode === "kanbun") {
+      textContent.innerHTML = `
+        <div class="poem-grid">
+          ${data.lines.map((line, idx) => `
+            <div class="poem-cell">
+              <div class="line-no">${idx + 1}</div>
+              <div class="line-text">${escapeHtml(line.kanbun || "")}</div>
+            </div>
+          `).join("")}
+        </div>
+      `;
+      return;
+    }
+
+    if (currentTextMode === "kundoku") {
+      textContent.innerHTML = `
+        <div class="poem-grid">
+          ${data.lines.map((line, idx) => `
+            <div class="poem-cell">
+              <div class="line-no">${idx + 1}</div>
+              <div class="line-text">${escapeHtml(line.kundoku || "")}</div>
+            </div>
+          `).join("")}
+        </div>
+      `;
+      return;
+    }
+
+    textContent.innerHTML = `
+      <div class="poem-grid">
+        ${data.lines.map((line, idx) => `
+          <div class="poem-cell">
+            <div class="line-no">${idx + 1} 原文</div>
+            <div class="line-text">${escapeHtml(line.kanbun || "")}</div>
+          </div>
+          <div class="poem-cell">
+            <div class="line-no">${idx + 1} 訓読</div>
+            <div class="line-text">${escapeHtml(line.kundoku || "")}</div>
+          </div>
+        `).join("")}
+      </div>
+    `;
+  }
+
   function openSingle(item) {
     currentItem = item;
     currentTitle.textContent = item.title || "無題";
@@ -349,6 +527,7 @@
     const manifests = getManifestList(item);
     const modeLabel = manifests.length > 1 ? `作品表示（${manifests.length}版）` : "単独表示";
     loadManifests(manifests, modeLabel);
+    renderCompletedText(item.id);
     highlightCurrent();
     setButtons();
     setActiveMode(btnSingle);
@@ -389,10 +568,26 @@
   btnDay.addEventListener("click", () => openGroup("day"));
   btnMonth.addEventListener("click", () => openGroup("month"));
   btnYear.addEventListener("click", () => openGroup("year"));
+  btnTextBoth.addEventListener("click", () => {
+    currentTextMode = "both";
+    setTextMode(btnTextBoth);
+    if (currentItem) renderCompletedText(currentItem.id);
+  });
+  btnTextKanbun.addEventListener("click", () => {
+    currentTextMode = "kanbun";
+    setTextMode(btnTextKanbun);
+    if (currentItem) renderCompletedText(currentItem.id);
+  });
+  btnTextKundoku.addEventListener("click", () => {
+    currentTextMode = "kundoku";
+    setTextMode(btnTextKundoku);
+    if (currentItem) renderCompletedText(currentItem.id);
+  });
 
   async function init() {
     try {
       await loadItems();
+      await loadCompletedTexts();
       renderList();
       if (items.length) {
         openSingle(items[0]);
