@@ -15,14 +15,14 @@
       --accent-soft: #eef2f7;
       --shadow: 0 8px 24px rgba(17,24,39,.08);
       --radius: 18px;
-      --sidebar-w: 260px;
-      --sidebar-collapsed-w: 44px;
+      --sidebar-w: 212px;
+      --sidebar-collapsed-w: 38px;
       --current-sidebar-w: var(--sidebar-w);
       --topbar-h: 132px;
-      --text-panel-w: 34%;
-      --text-panel-collapsed-w: 44px;
-      --current-text-panel-w: minmax(340px, var(--text-panel-w));
-      --body-font: 18px;
+      --text-panel-w: 24%;
+      --text-panel-collapsed-w: 38px;
+      --current-text-panel-w: minmax(290px, var(--text-panel-w));
+      --body-font: 19px;
       --body-line: 1.52;
       --body-letter: 0.01em;
     }
@@ -30,17 +30,20 @@
     html, body {
       margin: 0;
       width: 100%;
-      height: 100%;
+      min-height: 100%;
       background: var(--bg);
       color: var(--text);
       font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Noto Sans JP", sans-serif;
     }
-    body { overflow: hidden; }
+    body {
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
     .app {
       display: grid;
       grid-template-columns: var(--current-sidebar-w) 1fr;
       width: 100%;
-      height: 100%;
+      min-height: 100%;
       gap: 12px;
       padding: 12px;
       transition: grid-template-columns .2s ease;
@@ -128,7 +131,7 @@
     .seq { font-size: 11px; color: var(--muted); margin-bottom: 3px; }
     .label { font-size: 13px; line-height: 1.42; }
 
-    .main { min-width: 0; display: flex; flex-direction: column; gap: 12px; }
+    .main { min-width: 0; display: flex; flex-direction: column; gap: 16px; min-height: calc(100vh - 36px); }
     .topbar {
       position: relative;
       background: var(--panel);
@@ -169,13 +172,18 @@
     .btn:disabled { opacity: .45; cursor: not-allowed; }
 
     .workarea {
-      min-height: 0; flex: 1; display: grid; grid-template-columns: minmax(0,1fr) var(--current-text-panel-w); gap: 12px;
+      min-height: clamp(720px, calc(100vh - 220px), 980px);
+      flex: 0 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0,1fr) var(--current-text-panel-w);
+      gap: 16px;
+      align-items: stretch;
     }
     .manuscript-panel, .text-panel {
       background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden;
       min-width: 0; min-height: 0; position: relative;
     }
-    .manuscript-panel { min-height: 480px; }
+    .manuscript-panel { min-height: 0; height: 100%; }
     .text-panel.collapsed { width: var(--text-panel-collapsed-w) !important; min-width: var(--text-panel-collapsed-w) !important; }
     .text-panel.collapsed .text-inner { display: none; }
     .text-toggle {
@@ -216,6 +224,16 @@
     .placeholder { color: var(--muted); font-size: 13px; line-height: 1.6; }
     iframe { width:100%; height:100%; border:0; background:#fff; }
 
+    body::-webkit-scrollbar { width: 12px; }
+    body::-webkit-scrollbar-track { background: transparent; }
+    body::-webkit-scrollbar-thumb {
+      background: rgba(107,114,128,.28);
+      border-radius: 999px;
+      border: 3px solid var(--bg);
+    }
+    body::-webkit-scrollbar-thumb:hover { background: rgba(107,114,128,.42); }
+
+
     @media (max-width: 1120px) {
       body { overflow: auto; }
       .app {
@@ -223,8 +241,8 @@
         grid-template-rows: auto auto 1fr;
         height: auto;
         min-height: 100%;
-        gap: 10px;
-        padding: 10px;
+        gap: 12px;
+        padding: 12px;
       }
       .sidebar {
         width: 100% !important;
@@ -253,7 +271,7 @@
         grid-template-rows: minmax(52vh, 64vh) auto;
         gap: 10px;
       }
-      .manuscript-panel { min-height: 52vh; }
+      .manuscript-panel { min-height: 64vh; height: auto; }
       .text-panel {
         min-height: 280px;
       }
@@ -319,6 +337,2521 @@
       }
       .topbar.collapsed { height: 44px !important; }
     }
+  
+    /* Right-column compact info card */
+    .text-panel .topbar{
+      margin: 12px 12px 0;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(17,24,39,.06);
+      overflow: hidden;
+      flex: 0 0 auto;
+    }
+    .text-panel .topbar.collapsed { height: 40px !important; }
+    .text-panel .topbar-toggle{
+      top: 8px;
+      right: 8px;
+      width: 26px;
+      height: 26px;
+    }
+    .text-panel .topbar-head{
+      padding: 10px 40px 10px 12px;
+      border-bottom: 1px solid var(--line);
+    }
+    .text-panel .viewer-title{
+      font-size: 14px;
+      line-height: 1.35;
+      margin-bottom: 6px;
+    }
+    .text-panel .viewer-meta{
+      grid-template-columns: 1fr;
+      gap: 4px;
+      font-size: 11px;
+    }
+    .text-panel .actions{
+      padding: 10px 12px 12px;
+      gap: 6px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .text-panel .actions .btn{
+      width: 100%;
+      padding: 8px 10px;
+      border-radius: 12px;
+      font-size: 11px;
+    }
+
+    /* Manuscript takes visual priority */
+    .workarea{
+      grid-template-columns: minmax(0,1fr) var(--current-text-panel-w);
+      align-items: start;
+    }
+    .manuscript-panel{
+      min-height: 620px;
+      height: min(72vh, 820px);
+    }
+    .text-panel{
+      align-self: start;
+    }
+    .text-panel .text-head{
+      padding-top: 10px;
+    }
+
+    @media (max-width: 1120px){
+      .text-panel .topbar{
+        margin: 10px 10px 0;
+      }
+      .text-panel .actions{
+        grid-template-columns: 1fr 1fr;
+      }
+      .manuscript-panel{
+        min-height: 58vh;
+        height: 58vh;
+      }
+    }
+
+  
+    /* ---- Right side refinement ---- */
+    #textPanel{
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      padding: 12px;
+      background: linear-gradient(180deg, rgba(255,255,255,.92) 0%, rgba(248,250,252,.96) 100%);
+    }
+    #textPanel.collapsed{
+      padding: 0;
+      gap: 0;
+    }
+    #textPanel .text-inner{
+      background: rgba(255,255,255,.92);
+      border: 1px solid rgba(223,229,236,.95);
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(17,24,39,.05);
+      overflow: hidden;
+      min-height: 0;
+    }
+    #textPanel .topbar{
+      margin: 0;
+      background: rgba(255,255,255,.96);
+      border: 1px solid rgba(223,229,236,.95);
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(17,24,39,.05);
+    }
+    #textPanel .topbar.collapsed{
+      height: 42px !important;
+    }
+    #textPanel .topbar-head{
+      padding: 12px 42px 12px 14px;
+      background: linear-gradient(180deg, rgba(255,255,255,.98) 0%, rgba(250,251,253,.98) 100%);
+    }
+    #textPanel .viewer-title{
+      font-size: 14px;
+      line-height: 1.4;
+      font-weight: 700;
+      margin-bottom: 8px;
+      letter-spacing: .01em;
+    }
+    #textPanel .viewer-meta{
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 5px;
+      font-size: 11px;
+      line-height: 1.5;
+      color: #6b7280;
+    }
+    #textPanel .actions{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      padding: 12px 14px 14px;
+      border-top: 1px solid rgba(242,244,247,.9);
+      background: rgba(255,255,255,.9);
+    }
+    #textPanel .actions .btn{
+      width: 100%;
+      min-height: 36px;
+      border-radius: 12px;
+      padding: 8px 10px;
+      font-size: 11px;
+    }
+    #textPanel .text-head{
+      padding: 12px 14px 10px 44px;
+      background: linear-gradient(180deg, rgba(255,255,255,.98) 0%, rgba(250,251,253,.98) 100%);
+    }
+    #textPanel .text-toolbar{
+      flex-direction: column;
+      align-items: stretch;
+      gap: 10px;
+    }
+    #textPanel .text-tabs{
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 7px;
+    }
+    #textPanel .tab-btn,
+    #textPanel .zoom-btn{
+      border-radius: 12px;
+      min-height: 36px;
+      font-size: 11px;
+      padding: 8px 10px;
+    }
+    #textPanel .text-zoom{
+      justify-content: space-between;
+      gap: 8px;
+    }
+    #textPanel .text-zoom .zoom-btn{
+      flex: 1 1 0;
+    }
+    #textPanel .text-body{
+      padding: 16px 16px 18px;
+      background: rgba(255,255,255,.94);
+    }
+    #textPanel .text-poem{
+      font-size: calc(var(--body-font) - 1px);
+      line-height: 1.62;
+    }
+
+    /* Make manuscript area feel larger and calmer */
+    .app{
+      gap: 12px;
+      padding: 12px;
+    }
+    .workarea{
+      gap: 12px;
+    }
+    .manuscript-panel{
+      border-radius: 20px;
+      min-height: 620px;
+      height: min(72vh, 820px);
+    }
+
+    @media (max-width: 1120px){
+      #textPanel{
+        padding: 10px;
+      }
+      #textPanel .actions{
+        grid-template-columns: 1fr 1fr;
+      }
+      .manuscript-panel{
+        min-height: 58vh;
+        height: 58vh;
+      }
+    }
+
+  
+    /* Bottom alignment for the three main columns */
+    .app{
+      align-items: stretch;
+      min-height: 100vh;
+    }
+    .sidebar,
+    .main{
+      height: 100%;
+      min-height: calc(100vh - 72px);
+    }
+    .main{
+      display: flex;
+      flex-direction: column;
+    }
+    .workarea{
+      flex: 1 1 auto;
+      align-items: stretch;
+    }
+    .manuscript-panel,
+    #textPanel{
+      height: 100%;
+      align-self: stretch;
+    }
+    #textPanel{
+      min-height: 0;
+    }
+
+    @media (max-width: 1120px){
+      .sidebar,
+      .main{
+        height: auto;
+        min-height: 0;
+      }
+      .manuscript-panel,
+      #textPanel{
+        height: auto;
+      }
+    }
+
+  
+    /* ---- Cleaner right text panel: controls live in info card ---- */
+        #textPanel .text-body{
+      padding-top: 18px;
+    }
+    #textPanel .topbar.collapsed .actions,
+    #textPanel .topbar.collapsed .viewer-meta{
+      display: none !important;
+    }
+    #textPanel .text-body{
+      background: rgba(255,255,255,.97);
+    }
+    #textPanel .text-poem{
+      line-height: 1.66;
+    }
+
+
+  
+    /* Compact overall frame height */
+    .sidebar,
+    .main{
+      max-height: calc(100vh - 24px);
+    }
+    @media (max-width: 1120px){
+      .sidebar,
+      .main{
+        max-height: none;
+      }
+    }
+
+  
+    /* ==== Apple-like refined glass effect ==== */
+    :root{
+      --bg: #eef3f8;
+      --panel: rgba(255,255,255,.56);
+      --panel-strong: rgba(255,255,255,.72);
+      --panel-soft: rgba(255,255,255,.42);
+      --line: rgba(255,255,255,.42);
+      --line-soft: rgba(209,218,229,.50);
+      --shadow: 0 14px 34px rgba(31,41,55,.10), 0 2px 10px rgba(31,41,55,.05);
+      --shadow-soft: 0 8px 24px rgba(31,41,55,.08);
+      --accent: #2f3a49;
+      --accent-soft: rgba(230,236,244,.78);
+      --text: #1f2937;
+      --muted: #667085;
+    }
+
+    html, body{
+      background:
+        radial-gradient(1200px 700px at -10% -10%, rgba(255,255,255,.95) 0%, rgba(255,255,255,0) 55%),
+        radial-gradient(900px 600px at 110% 0%, rgba(214,229,245,.55) 0%, rgba(214,229,245,0) 45%),
+        linear-gradient(180deg, #edf2f7 0%, #e8eef5 100%);
+      background-attachment: fixed;
+    }
+
+    .sidebar,
+    .topbar,
+    .manuscript-panel,
+    .text-panel,
+    #textPanel .topbar,
+    #textPanel .text-inner{
+      background: linear-gradient(180deg, rgba(255,255,255,.64) 0%, rgba(255,255,255,.50) 100%) !important;
+      backdrop-filter: blur(22px) saturate(150%);
+      -webkit-backdrop-filter: blur(22px) saturate(150%);
+      border: 1px solid rgba(255,255,255,.38) !important;
+      box-shadow: var(--shadow) !important;
+    }
+
+    .header,
+    .topbar-head,
+    .text-head{
+      background: linear-gradient(180deg, rgba(255,255,255,.50) 0%, rgba(255,255,255,.30) 100%) !important;
+      border-bottom: 1px solid rgba(255,255,255,.28) !important;
+      backdrop-filter: blur(18px) saturate(145%);
+      -webkit-backdrop-filter: blur(18px) saturate(145%);
+    }
+
+    .actions,
+    #textPanel .actions{
+      background: linear-gradient(180deg, rgba(255,255,255,.34) 0%, rgba(255,255,255,.24) 100%) !important;
+      border-top: 1px solid rgba(255,255,255,.24) !important;
+    }
+
+    .search,
+    .btn,
+    .tab-btn,
+    .zoom-btn,
+    .sidebar-toggle,
+    .topbar-toggle,
+    .text-toggle{
+      background: linear-gradient(180deg, rgba(255,255,255,.72) 0%, rgba(255,255,255,.52) 100%) !important;
+      backdrop-filter: blur(16px) saturate(145%);
+      -webkit-backdrop-filter: blur(16px) saturate(145%);
+      border: 1px solid rgba(255,255,255,.52) !important;
+      box-shadow: 0 6px 16px rgba(31,41,55,.07), inset 0 1px 0 rgba(255,255,255,.55);
+    }
+
+    .btn:hover,
+    .tab-btn:hover,
+    .zoom-btn:hover,
+    .sidebar-toggle:hover,
+    .topbar-toggle:hover,
+    .text-toggle:hover{
+      background: linear-gradient(180deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.60) 100%) !important;
+      transform: translateY(-0.5px);
+      transition: .18s ease;
+    }
+
+    .btn.primary{
+      background: linear-gradient(180deg, rgba(47,58,73,.92) 0%, rgba(34,44,59,.96) 100%) !important;
+      color: #fff !important;
+      border-color: rgba(47,58,73,.72) !important;
+      box-shadow: 0 10px 20px rgba(31,41,55,.18), inset 0 1px 0 rgba(255,255,255,.12);
+    }
+
+    .item{
+      border-color: transparent !important;
+    }
+    .item:hover{
+      background: rgba(255,255,255,.42) !important;
+      border-color: rgba(255,255,255,.32) !important;
+    }
+    .item.active{
+      background: linear-gradient(180deg, rgba(255,255,255,.62) 0%, rgba(236,241,247,.58) 100%) !important;
+      border-color: rgba(255,255,255,.38) !important;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.40);
+    }
+
+    .search{
+      color: var(--text);
+    }
+    .search::placeholder{
+      color: #7a8595;
+    }
+
+    .manuscript-panel{
+      border-radius: 22px;
+      overflow: hidden;
+    }
+    .sidebar,
+    .text-panel,
+    #textPanel .topbar,
+    #textPanel .text-inner{
+      border-radius: 20px !important;
+    }
+
+    .title,
+    .viewer-title,
+    .text-poem .poem-title{
+      letter-spacing: .01em;
+    }
+
+    .sub,
+    .meta,
+    .viewer-meta,
+    .seq,
+    .collapsed-rail,
+    .text-collapsed-rail{
+      color: #667085 !important;
+    }
+
+    #textPanel{
+      background: linear-gradient(180deg, rgba(255,255,255,.28) 0%, rgba(255,255,255,.18) 100%) !important;
+      backdrop-filter: blur(18px) saturate(140%);
+      -webkit-backdrop-filter: blur(18px) saturate(140%);
+      border-color: rgba(255,255,255,.30) !important;
+    }
+
+    #textPanel .text-body{
+      background: rgba(255,255,255,.36) !important;
+    }
+
+    iframe{
+      background: rgba(255,255,255,.28);
+    }
+
+    /* subtle scrollbar */
+    *::-webkit-scrollbar{
+      width: 10px;
+      height: 10px;
+    }
+    *::-webkit-scrollbar-track{
+      background: rgba(255,255,255,.18);
+      border-radius: 999px;
+    }
+    *::-webkit-scrollbar-thumb{
+      background: rgba(111,123,139,.42);
+      border-radius: 999px;
+      border: 2px solid rgba(255,255,255,.18);
+    }
+    *::-webkit-scrollbar-thumb:hover{
+      background: rgba(93,105,121,.58);
+    }
+
+  
+    /* Fix: when the right text column is collapsed, hide the embedded info card and all its controls */
+    #textPanel.collapsed{
+      padding: 0 !important;
+      gap: 0 !important;
+      overflow: hidden;
+    }
+    #textPanel.collapsed > #topbar{
+      display: none !important;
+    }
+    #textPanel.collapsed .text-inner{
+      display: none !important;
+    }
+    #textPanel.collapsed .text-collapsed-rail{
+      display: flex !important;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Keep the right-side info card visually clean when it is collapsed */
+    #textPanel > #topbar.collapsed{
+      overflow: hidden;
+    }
+    #textPanel > #topbar.collapsed .actions,
+    #textPanel > #topbar.collapsed .topbar-controls,
+    #textPanel > #topbar.collapsed .viewer-meta{
+      display: none !important;
+    }
+
+  
+    /* Real edge-hugging collapse: side columns give space back to manuscript */
+    .app{
+      grid-template-columns: var(--current-sidebar-w) 1fr;
+      transition: grid-template-columns .22s ease, gap .22s ease, padding .22s ease;
+    }
+    .workarea{
+      grid-template-columns: minmax(0,1fr) var(--current-text-panel-w);
+      transition: grid-template-columns .22s ease, gap .22s ease;
+    }
+
+    .sidebar{
+      transition: width .22s ease, min-width .22s ease, opacity .18s ease;
+    }
+    .sidebar.collapsed{
+      width: var(--sidebar-collapsed-w) !important;
+      min-width: var(--sidebar-collapsed-w) !important;
+      border-radius: 12px !important;
+      overflow: hidden;
+    }
+    .sidebar.collapsed .sidebar-toggle{
+      top: 6px;
+      right: 2px;
+      width: 14px;
+      height: 28px;
+      border-radius: 999px;
+      font-size: 10px;
+      padding: 0;
+    }
+    .sidebar.collapsed .collapsed-rail{
+      font-size: 10px;
+      letter-spacing: .02em;
+      padding: 0;
+    }
+
+    #textPanel{
+      transition: width .22s ease, min-width .22s ease, padding .22s ease, gap .22s ease;
+    }
+    #textPanel.collapsed{
+      width: var(--text-panel-collapsed-w) !important;
+      min-width: var(--text-panel-collapsed-w) !important;
+      padding: 0 !important;
+      gap: 0 !important;
+      border-radius: 12px !important;
+      overflow: hidden;
+    }
+    #textPanel.collapsed .text-toggle{
+      top: 6px;
+      left: 2px;
+      width: 14px;
+      height: 28px;
+      border-radius: 999px;
+      font-size: 10px;
+      padding: 0;
+      z-index: 8;
+    }
+    #textPanel.collapsed .text-collapsed-rail{
+      font-size: 10px;
+      letter-spacing: .02em;
+      padding: 0;
+    }
+
+    /* manuscript breathes more when both sides are collapsed */
+    .manuscript-panel{
+      transition: min-height .22s ease, height .22s ease, border-radius .22s ease;
+    }
+
+    @media (max-width: 1120px){
+      .sidebar.collapsed{
+        width: 100% !important;
+        min-width: 0 !important;
+      }
+      #textPanel.collapsed{
+        width: 100% !important;
+        min-width: 0 !important;
+      }
+    }
+
+  
+    /* Improve left selection area height */
+    .sidebar-inner{
+      min-height: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .header{
+      padding-bottom: 10px;
+    }
+    .search-wrap{
+      padding-top: 10px;
+      padding-bottom: 8px;
+    }
+    .meta{
+      padding-bottom: 6px;
+      flex: 0 0 auto;
+    }
+    .list{
+      flex: 1 1 auto;
+      min-height: 0;
+      max-height: none;
+      padding-top: 10px;
+      padding-bottom: 18px;
+    }
+    .sidebar{
+      overflow: hidden;
+    }
+
+    @media (min-width: 1121px){
+      .sidebar{
+        min-height: calc(100vh - 24px);
+      }
+      .header{
+        padding-top: 14px;
+      }
+      .title{
+        font-size: 15px;
+        line-height: 1.38;
+        margin-bottom: 4px;
+      }
+      .sub{
+        font-size: 11px;
+        line-height: 1.4;
+      }
+      .search{
+        padding: 9px 11px;
+      }
+      .meta{
+        font-size: 10px;
+        line-height: 1.4;
+      }
+      .list{
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+      .item{
+        padding: 10px 10px;
+      }
+    }
+
+  
+    /* Left selection area even taller */
+    @media (min-width: 1121px){
+      .header{
+        padding-top: 12px;
+        padding-bottom: 8px;
+      }
+      .title{
+        font-size: 14px;
+        line-height: 1.34;
+        margin-bottom: 3px;
+      }
+      .sub{
+        font-size: 10px;
+        line-height: 1.34;
+      }
+      .search-wrap{
+        padding-top: 8px;
+        padding-bottom: 6px;
+      }
+      .meta{
+        padding-top: 0;
+        padding-bottom: 4px;
+        font-size: 9.5px;
+        line-height: 1.32;
+      }
+      .list{
+        padding-top: 8px;
+        padding-bottom: 20px;
+      }
+      .item{
+        padding: 10px 9px;
+      }
+      .label{
+        font-size: 12px;
+        line-height: 1.36;
+      }
+    }
+
+  
+    /* Slightly wider collapsed rails */
+    .sidebar.collapsed .sidebar-toggle{
+      right: 4px;
+      width: 16px;
+    }
+    #textPanel.collapsed .text-toggle{
+      left: 4px;
+      width: 16px;
+    }
+
+    /* Whole collapsed rails are clickable */
+    .sidebar.collapsed,
+    #textPanel.collapsed,
+    .sidebar.collapsed .collapsed-rail,
+    #textPanel.collapsed .text-collapsed-rail{
+      cursor: pointer;
+    }
+
+  
+    /* Conservative tweak: slightly wider collapsed rails + slightly wider left hotspot */
+    #leftEdgeHotspot{
+      width: 24px !important;
+    }
+
+    .sidebar.collapsed .sidebar-toggle{
+      right: 6px !important;
+      width: 18px !important;
+      height: 30px !important;
+    }
+
+    #textPanel.collapsed .text-toggle{
+      left: 6px !important;
+      width: 18px !important;
+      height: 30px !important;
+    }
+
+    .sidebar.collapsed .collapsed-rail,
+    #textPanel.collapsed .text-collapsed-rail{
+      font-size: 11px !important;
+      letter-spacing: .02em !important;
+    }
+
+  
+    /* Hover highlight for the entire collapsed rails */
+    .sidebar.collapsed,
+    #textPanel.collapsed{
+      transition: background .16s ease, box-shadow .16s ease, border-color .16s ease, transform .16s ease;
+    }
+
+    .sidebar.collapsed:hover{
+      background: linear-gradient(180deg, rgba(255,255,255,.96) 0%, rgba(222,235,248,.92) 100%) !important;
+      border-color: rgba(170,196,222,.95) !important;
+      box-shadow:
+        0 12px 28px rgba(31,41,55,.16),
+        inset 0 0 0 1px rgba(255,255,255,.65),
+        inset 0 0 24px rgba(186,214,240,.55) !important;
+      transform: translateY(-1px);
+    }
+
+    #textPanel.collapsed:hover{
+      background: linear-gradient(180deg, rgba(255,255,255,.95) 0%, rgba(224,236,249,.90) 100%) !important;
+      border-color: rgba(170,196,222,.92) !important;
+      box-shadow:
+        0 12px 28px rgba(31,41,55,.16),
+        inset 0 0 0 1px rgba(255,255,255,.62),
+        inset 0 0 24px rgba(186,214,240,.50) !important;
+      transform: translateY(-1px);
+    }
+
+    .sidebar.collapsed:hover .collapsed-rail,
+    #textPanel.collapsed:hover .text-collapsed-rail{
+      color: #334155 !important;
+      font-weight: 600 !important;
+    }
+
+    .sidebar.collapsed:hover .sidebar-toggle,
+    #textPanel.collapsed:hover .text-toggle{
+      background: linear-gradient(180deg, rgba(255,255,255,.98) 0%, rgba(228,239,250,.92) 100%) !important;
+      border-color: rgba(170,196,222,.95) !important;
+      box-shadow: 0 6px 18px rgba(31,41,55,.12) !important;
+    }
+
+  
+    /* Wider collapsed rails and stronger hover feedback */
+    .sidebar.collapsed .sidebar-toggle{
+      right: 10px !important;
+      width: 18px !important;
+      height: 34px !important;
+    }
+
+    #textPanel.collapsed .text-toggle{
+      left: 10px !important;
+      width: 18px !important;
+      height: 34px !important;
+    }
+
+    .sidebar.collapsed .collapsed-rail,
+    #textPanel.collapsed .text-collapsed-rail{
+      font-size: 11px !important;
+      letter-spacing: .025em !important;
+    }
+
+    .sidebar.collapsed,
+    #textPanel.collapsed{
+      transition: 
+        background .16s ease, 
+        box-shadow .16s ease, 
+        border-color .16s ease, 
+        transform .16s ease,
+        filter .16s ease !important;
+    }
+
+    .sidebar.collapsed:hover{
+      background: linear-gradient(180deg, rgba(255,255,255,.99) 0%, rgba(214,231,248,.96) 100%) !important;
+      border-color: rgba(156,186,216,.98) !important;
+      box-shadow:
+        0 16px 34px rgba(31,41,55,.20),
+        0 0 0 1px rgba(184,210,234,.55),
+        inset 0 0 0 1px rgba(255,255,255,.75),
+        inset 0 0 28px rgba(178,209,239,.72) !important;
+      transform: translateY(-1px) scale(1.01);
+      filter: saturate(1.06);
+    }
+
+    #textPanel.collapsed:hover{
+      background: linear-gradient(180deg, rgba(255,255,255,.98) 0%, rgba(217,233,248,.94) 100%) !important;
+      border-color: rgba(156,186,216,.96) !important;
+      box-shadow:
+        0 16px 34px rgba(31,41,55,.20),
+        0 0 0 1px rgba(184,210,234,.52),
+        inset 0 0 0 1px rgba(255,255,255,.72),
+        inset 0 0 28px rgba(178,209,239,.68) !important;
+      transform: translateY(-1px) scale(1.01);
+      filter: saturate(1.05);
+    }
+
+    .sidebar.collapsed:hover .collapsed-rail,
+    #textPanel.collapsed:hover .text-collapsed-rail{
+      color: #1f3b57 !important;
+      font-weight: 700 !important;
+      text-shadow: 0 1px 0 rgba(255,255,255,.45);
+    }
+
+    .sidebar.collapsed:hover .sidebar-toggle,
+    #textPanel.collapsed:hover .text-toggle{
+      background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(226,239,252,.96) 100%) !important;
+      border-color: rgba(156,186,216,.98) !important;
+      box-shadow:
+        0 8px 18px rgba(31,41,55,.16),
+        inset 0 1px 0 rgba(255,255,255,.82) !important;
+      transform: translateY(-50%) scale(1.03) !important;
+    }
+
+  
+    /* Make left/right side text more legible and prominent */
+    .title{
+      font-weight: 700 !important;
+      color: #1f2937 !important;
+    }
+
+    .sub,
+    .meta{
+      color: #4b5563 !important;
+      font-weight: 500 !important;
+    }
+
+    .seq{
+      color: #475569 !important;
+      font-weight: 600 !important;
+    }
+
+    .label{
+      color: #1f2937 !important;
+      font-weight: 600 !important;
+      font-size: 13px !important;
+      letter-spacing: .01em;
+    }
+
+    .item.active .label{
+      font-weight: 700 !important;
+      color: #0f172a !important;
+    }
+
+    .collapsed-rail,
+    .text-collapsed-rail{
+      color: #334155 !important;
+      font-weight: 700 !important;
+    }
+
+    #textPanel .viewer-title,
+    #topbar .viewer-title{
+      color: #1f2937 !important;
+      font-weight: 700 !important;
+    }
+
+    #textPanel .viewer-meta,
+    #topbar .viewer-meta{
+      color: #475569 !important;
+      font-weight: 500 !important;
+    }
+
+    #textPanel .viewer-meta strong,
+    #topbar .viewer-meta strong{
+      color: #1f2937 !important;
+      font-weight: 700 !important;
+    }
+
+    /* Give the right-top info card the same reassuring hover/highlight feedback */
+    #textPanel > #topbar{
+      transition:
+        background .16s ease,
+        box-shadow .16s ease,
+        border-color .16s ease,
+        transform .16s ease,
+        filter .16s ease !important;
+    }
+
+    #textPanel > #topbar:hover{
+      background: linear-gradient(180deg, rgba(255,255,255,.98) 0%, rgba(222,235,248,.90) 100%) !important;
+      border-color: rgba(156,186,216,.96) !important;
+      box-shadow:
+        0 16px 34px rgba(31,41,55,.18),
+        0 0 0 1px rgba(184,210,234,.45),
+        inset 0 0 0 1px rgba(255,255,255,.72),
+        inset 0 0 24px rgba(178,209,239,.45) !important;
+      transform: translateY(-1px) scale(1.005);
+      filter: saturate(1.04);
+    }
+
+    #textPanel > #topbar:hover .viewer-title{
+      color: #16324a !important;
+    }
+
+    #textPanel > #topbar:hover .topbar-toggle{
+      background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(226,239,252,.96) 100%) !important;
+      border-color: rgba(156,186,216,.98) !important;
+      box-shadow:
+        0 8px 18px rgba(31,41,55,.14),
+        inset 0 1px 0 rgba(255,255,255,.82) !important;
+    }
+
+    #textPanel > #topbar:hover .btn,
+    #textPanel > #topbar:hover .tab-btn,
+    #textPanel > #topbar:hover .zoom-btn{
+      border-color: rgba(156,186,216,.88) !important;
+    }
+
+  
+    /* Visual depth: side panels forward, manuscript slightly recessed */
+    .app{
+      perspective: 1400px;
+      perspective-origin: 50% 38%;
+    }
+
+    .sidebar,
+    #textPanel{
+      position: relative;
+      z-index: 3;
+      transform: translateZ(0) translateY(-2px) scale(1.008);
+      box-shadow:
+        0 24px 48px rgba(31,41,55,.18),
+        0 8px 20px rgba(31,41,55,.10),
+        inset 0 1px 0 rgba(255,255,255,.55) !important;
+    }
+
+    .manuscript-panel{
+      position: relative;
+      z-index: 1;
+      transform: translateZ(0) scale(.992);
+      box-shadow:
+        0 10px 24px rgba(31,41,55,.10),
+        0 2px 8px rgba(31,41,55,.06),
+        inset 0 1px 0 rgba(255,255,255,.30) !important;
+      filter: saturate(.98) brightness(.995);
+    }
+
+    /* Subtle side glow to reinforce the foreground feel */
+    .sidebar::after,
+    #textPanel::after{
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      border-radius: inherit;
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.55),
+        inset 0 0 0 1px rgba(255,255,255,.18);
+    }
+
+    /* Recessed stage feeling behind the manuscript */
+    .manuscript-panel::before{
+      content: "";
+      position: absolute;
+      inset: -10px -12px -14px -12px;
+      z-index: -1;
+      border-radius: 26px;
+      background: linear-gradient(180deg, rgba(214,225,236,.28) 0%, rgba(214,225,236,.10) 100%);
+      filter: blur(6px);
+      pointer-events: none;
+    }
+
+    /* Keep hover feedback on side rails/info card strong */
+    .sidebar,
+    #textPanel,
+    .manuscript-panel{
+      transition: transform .22s ease, box-shadow .22s ease, filter .22s ease !important;
+    }
+
+    .sidebar:hover,
+    #textPanel:hover{
+      transform: translateZ(0) translateY(-3px) scale(1.01);
+    }
+
+    .manuscript-panel:hover{
+      transform: translateZ(0) scale(.994);
+      box-shadow:
+        0 12px 28px rgba(31,41,55,.11),
+        0 3px 10px rgba(31,41,55,.06),
+        inset 0 1px 0 rgba(255,255,255,.32) !important;
+    }
+
+    @media (max-width: 1120px){
+      .app{
+        perspective: none;
+      }
+      .sidebar,
+      #textPanel,
+      .manuscript-panel{
+        transform: none !important;
+      }
+      .manuscript-panel::before{
+        display: none;
+      }
+    }
+
+  
+    /* Entire right-top info card is clickable for collapse/expand */
+    #textPanel > #topbar{
+      cursor: pointer;
+    }
+
+  
+    /* Slightly larger UI text, keep layout/logic unchanged */
+    .title{
+      font-size: 17px !important;
+      line-height: 1.42 !important;
+    }
+
+    .sub{
+      font-size: 13px !important;
+      line-height: 1.52 !important;
+    }
+
+    .search{
+      font-size: 14px !important;
+    }
+
+    .meta{
+      font-size: 12px !important;
+      line-height: 1.52 !important;
+    }
+
+    .seq{
+      font-size: 12px !important;
+    }
+
+    .label{
+      font-size: 14px !important;
+      line-height: 1.44 !important;
+    }
+
+    .collapsed-rail,
+    .text-collapsed-rail{
+      font-size: 12.5px !important;
+    }
+
+    .viewer-title{
+      font-size: 19px !important;
+      line-height: 1.38 !important;
+    }
+
+    .viewer-meta{
+      font-size: 13px !important;
+      line-height: 1.54 !important;
+    }
+
+    .btn,
+    .tab-btn,
+    .zoom-btn{
+      font-size: 13px !important;
+    }
+
+    #textPanel .viewer-title,
+    #textPanel .topbar .viewer-title{
+      font-size: 15px !important;
+    }
+
+    #textPanel .viewer-meta,
+    #textPanel .topbar .viewer-meta{
+      font-size: 12px !important;
+    }
+
+    #textPanel .actions .btn,
+    #textPanel .tab-btn,
+    #textPanel .zoom-btn{
+      font-size: 12px !important;
+    }
+
+    .text-poem{
+      font-size: 20px !important;
+      line-height: 1.68 !important;
+    }
+
+    .text-poem .poem-title{
+      font-size: 21px !important;
+      line-height: 1.42 !important;
+    }
+
+    @media (max-width: 1120px){
+      .title{ font-size: 16px !important; }
+      .sub{ font-size: 12px !important; }
+      .meta{ font-size: 11px !important; }
+      .label{ font-size: 13px !important; }
+      .viewer-title{ font-size: 18px !important; }
+      .viewer-meta{ font-size: 12px !important; }
+      .text-poem{ font-size: 19px !important; }
+      .text-poem .poem-title{ font-size: 20px !important; }
+    }
+
+    @media (max-width: 720px){
+      .title{ font-size: 15px !important; }
+      .sub{ font-size: 11.5px !important; }
+      .meta{ font-size: 10.5px !important; }
+      .label{ font-size: 12.5px !important; }
+      .viewer-title{ font-size: 17px !important; }
+      .viewer-meta{ font-size: 11.5px !important; }
+      .text-poem{ font-size: 18px !important; }
+      .text-poem .poem-title{ font-size: 19px !important; }
+    }
+
+  
+    /* Fix overlap between right info card and right panel collapse button */
+    #textPanel{
+      padding-top: 48px !important;
+      position: relative;
+    }
+
+    #textPanel .text-toggle{
+      top: 12px !important;
+      left: 12px !important;
+      z-index: 12 !important;
+    }
+
+    #textPanel > #topbar{
+      margin-top: 0 !important;
+    }
+
+    @media (max-width: 1120px){
+      #textPanel{
+        padding-top: 44px !important;
+      }
+      #textPanel .text-toggle{
+        top: 10px !important;
+        left: 10px !important;
+      }
+    }
+
+  
+    /* Raise left usable area a bit more */
+    @media (min-width: 1121px){
+      .sidebar{
+        min-height: calc(100vh - 16px) !important;
+      }
+      .header{
+        padding-top: 10px !important;
+        padding-bottom: 6px !important;
+      }
+      .search-wrap{
+        padding-top: 6px !important;
+        padding-bottom: 5px !important;
+      }
+      .meta{
+        padding-bottom: 2px !important;
+        font-size: 10px !important;
+        line-height: 1.28 !important;
+      }
+      .list{
+        padding-top: 6px !important;
+        padding-bottom: 22px !important;
+      }
+      .item{
+        padding-top: 11px !important;
+        padding-bottom: 11px !important;
+      }
+    }
+
+    /* Make side collapse buttons clearer and more tactile */
+    .sidebar-toggle,
+    .text-toggle{
+      width: 30px !important;
+      height: 30px !important;
+      font-size: 15px !important;
+      font-weight: 700 !important;
+      color: #243447 !important;
+      background: linear-gradient(180deg, rgba(255,255,255,.98) 0%, rgba(230,239,249,.94) 100%) !important;
+      border: 1px solid rgba(162,185,208,.92) !important;
+      box-shadow:
+        0 8px 20px rgba(31,41,55,.16),
+        inset 0 1px 0 rgba(255,255,255,.86) !important;
+      opacity: 1 !important;
+      z-index: 15 !important;
+      transition:
+        transform .14s ease,
+        box-shadow .14s ease,
+        background .14s ease,
+        border-color .14s ease !important;
+    }
+
+    .sidebar-toggle:hover,
+    .text-toggle:hover{
+      color: #10273b !important;
+      background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(220,234,248,.98) 100%) !important;
+      border-color: rgba(139,170,201,.98) !important;
+      box-shadow:
+        0 12px 26px rgba(31,41,55,.20),
+        inset 0 1px 0 rgba(255,255,255,.92) !important;
+      transform: scale(1.05) !important;
+    }
+
+    .sidebar-toggle:active,
+    .text-toggle:active{
+      transform: scale(.97) !important;
+      box-shadow:
+        0 6px 14px rgba(31,41,55,.14),
+        inset 0 1px 0 rgba(255,255,255,.82) !important;
+    }
+
+    .sidebar.collapsed .sidebar-toggle,
+    #textPanel.collapsed .text-toggle{
+      width: 22px !important;
+      height: 38px !important;
+      font-size: 12px !important;
+      font-weight: 700 !important;
+      top: 8px !important;
+    }
+
+    .sidebar.collapsed .sidebar-toggle{
+      right: 8px !important;
+    }
+
+    #textPanel.collapsed .text-toggle{
+      left: 8px !important;
+    }
+
+    @media (max-width: 1120px){
+      .sidebar-toggle,
+      .text-toggle{
+        width: 28px !important;
+        height: 28px !important;
+        font-size: 14px !important;
+      }
+    }
+
+  
+    /* Stronger, larger side collapse buttons without covering text */
+    .sidebar-toggle,
+    .text-toggle{
+      width: 34px !important;
+      height: 34px !important;
+      font-size: 17px !important;
+      font-weight: 700 !important;
+      color: #1b3146 !important;
+      background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(225,237,249,.98) 100%) !important;
+      border: 1px solid rgba(145,171,198,.98) !important;
+      box-shadow:
+        0 12px 28px rgba(31,41,55,.24),
+        0 4px 10px rgba(31,41,55,.10),
+        inset 0 1px 0 rgba(255,255,255,.92) !important;
+      z-index: 16 !important;
+    }
+
+    .sidebar-toggle{
+      top: 10px !important;
+      right: 10px !important;
+    }
+
+    .text-toggle{
+      top: 10px !important;
+      left: 10px !important;
+    }
+
+    .sidebar-toggle:hover,
+    .text-toggle:hover{
+      color: #10273b !important;
+      background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(216,231,247,.99) 100%) !important;
+      border-color: rgba(129,159,191,.98) !important;
+      box-shadow:
+        0 16px 34px rgba(31,41,55,.28),
+        0 6px 14px rgba(31,41,55,.12),
+        inset 0 1px 0 rgba(255,255,255,.96) !important;
+      transform: scale(1.04) !important;
+    }
+
+    .sidebar-toggle:active,
+    .text-toggle:active{
+      transform: scale(.97) !important;
+      box-shadow:
+        0 8px 18px rgba(31,41,55,.18),
+        inset 0 1px 0 rgba(255,255,255,.88) !important;
+    }
+
+    .sidebar.collapsed .sidebar-toggle,
+    #textPanel.collapsed .text-toggle{
+      width: 24px !important;
+      height: 42px !important;
+      font-size: 13px !important;
+      top: 8px !important;
+    }
+
+    .sidebar.collapsed .sidebar-toggle{
+      right: 8px !important;
+    }
+
+    #textPanel.collapsed .text-toggle{
+      left: 8px !important;
+    }
+
+    /* Keep right text area clear so the larger button doesn't crowd content */
+    #textPanel{
+      padding-top: 52px !important;
+    }
+
+    @media (max-width: 1120px){
+      .sidebar-toggle,
+      .text-toggle{
+        width: 30px !important;
+        height: 30px !important;
+        font-size: 15px !important;
+      }
+      #textPanel{
+        padding-top: 46px !important;
+      }
+    }
+
+  
+    /* Hover: make side toggle buttons grow much larger */
+    .sidebar-toggle,
+    .text-toggle{
+      transform-origin: center center !important;
+      transition:
+        transform .18s ease,
+        box-shadow .18s ease,
+        background .18s ease,
+        border-color .18s ease !important;
+    }
+
+    .sidebar-toggle:hover,
+    .text-toggle:hover{
+      transform: scale(2) !important;
+      z-index: 30 !important;
+    }
+
+    .sidebar-toggle:active,
+    .text-toggle:active{
+      transform: scale(1.9) !important;
+    }
+
+    /* Keep collapsed-state buttons enlarging from their own center too */
+    .sidebar.collapsed .sidebar-toggle:hover,
+    #textPanel.collapsed .text-toggle:hover{
+      transform: scale(2) !important;
+    }
+
+    .sidebar.collapsed .sidebar-toggle:active,
+    #textPanel.collapsed .text-toggle:active{
+      transform: scale(1.9) !important;
+    }
+
+  
+    /* Let side eye-buttons float above frames without being clipped */
+    .sidebar,
+    #textPanel,
+    #textPanel > #topbar{
+      overflow: visible !important;
+    }
+    .sidebar.collapsed,
+    #textPanel.collapsed{
+      overflow: hidden !important;
+    }
+
+    /* Eye buttons */
+    .sidebar-toggle,
+    .text-toggle{
+      color: transparent !important;
+      font-size: 0 !important;
+      width: 38px !important;
+      height: 38px !important;
+      border-radius: 999px !important;
+      border: 1px solid rgba(145,171,198,.88) !important;
+      background: linear-gradient(180deg, rgba(255,255,255,.98) 0%, rgba(225,237,249,.96) 100%) !important;
+      box-shadow:
+        0 14px 30px rgba(31,41,55,.24),
+        0 4px 10px rgba(31,41,55,.10),
+        inset 0 1px 0 rgba(255,255,255,.95) !important;
+      position: absolute !important;
+      z-index: 40 !important;
+    }
+
+    .sidebar-toggle{
+      top: 10px !important;
+      right: 10px !important;
+      left: auto !important;
+    }
+
+    .text-toggle{
+      top: 10px !important;
+      left: 10px !important;
+      right: auto !important;
+    }
+
+    /* Eye white */
+    .sidebar-toggle::before,
+    .text-toggle::before{
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 22px;
+      height: 14px;
+      transform: translate(-50%, -50%);
+      border-radius: 50% / 60%;
+      background:
+        radial-gradient(circle at 50% 50%, rgba(255,255,255,1) 0 54%, rgba(240,245,251,1) 75%, rgba(214,227,240,1) 100%);
+      border: 1px solid rgba(124,149,175,.72);
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.95),
+        0 1px 2px rgba(31,41,55,.12);
+      animation: eyeBlink 2.8s ease-in-out infinite;
+      transform-origin: center center;
+    }
+
+    /* Pupil */
+    .sidebar-toggle::after,
+    .text-toggle::after{
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 7px;
+      height: 7px;
+      transform: translate(-50%, -50%);
+      border-radius: 999px;
+      background:
+        radial-gradient(circle at 35% 35%, rgba(255,255,255,.95) 0 10%, rgba(30,41,59,1) 20%, rgba(15,23,42,1) 70%, rgba(2,6,23,1) 100%);
+      box-shadow: 0 0 0 1px rgba(255,255,255,.18);
+      animation: pupilFloat 2.8s ease-in-out infinite;
+    }
+
+    @keyframes eyeBlink {
+      0%, 42%, 48%, 100% {
+        transform: translate(-50%, -50%) scaleY(1);
+      }
+      44%, 46% {
+        transform: translate(-50%, -50%) scaleY(0.08);
+      }
+    }
+
+    @keyframes pupilFloat {
+      0%, 100% {
+        transform: translate(-50%, -50%) translateX(0);
+      }
+      25% {
+        transform: translate(-50%, -50%) translateX(-1px);
+      }
+      75% {
+        transform: translate(-50%, -50%) translateX(1px);
+      }
+    }
+
+    .sidebar-toggle:hover,
+    .text-toggle:hover{
+      transform: scale(2) !important;
+      background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(216,231,247,.99) 100%) !important;
+      border-color: rgba(129,159,191,.98) !important;
+      box-shadow:
+        0 18px 38px rgba(31,41,55,.30),
+        0 8px 18px rgba(31,41,55,.14),
+        inset 0 1px 0 rgba(255,255,255,.98) !important;
+    }
+
+    .sidebar-toggle:active,
+    .text-toggle:active{
+      transform: scale(1.9) !important;
+    }
+
+    .sidebar.collapsed .sidebar-toggle,
+    #textPanel.collapsed .text-toggle{
+      width: 28px !important;
+      height: 44px !important;
+      font-size: 0 !important;
+    }
+
+    .sidebar.collapsed .sidebar-toggle::before,
+    #textPanel.collapsed .text-toggle::before{
+      width: 18px;
+      height: 12px;
+    }
+
+    .sidebar.collapsed .sidebar-toggle::after,
+    #textPanel.collapsed .text-toggle::after{
+      width: 6px;
+      height: 6px;
+    }
+
+    @media (max-width: 1120px){
+      .sidebar-toggle,
+      .text-toggle{
+        width: 34px !important;
+        height: 34px !important;
+      }
+      .sidebar-toggle::before,
+      .text-toggle::before{
+        width: 20px;
+        height: 13px;
+      }
+    }
+
+  
+    /* Redesign eye buttons: prettier lashes, unified eye shape in both states */
+    .sidebar-toggle,
+    .text-toggle{
+      width: 38px !important;
+      height: 38px !important;
+      border-radius: 999px !important;
+      background: radial-gradient(circle at 35% 30%, rgba(255,255,255,1) 0%, rgba(242,247,252,1) 42%, rgba(220,232,245,1) 100%) !important;
+      border: 1px solid rgba(148,174,201,.92) !important;
+      box-shadow:
+        0 14px 30px rgba(31,41,55,.22),
+        0 4px 10px rgba(31,41,55,.10),
+        inset 0 1px 0 rgba(255,255,255,.98) !important;
+      overflow: visible !important;
+    }
+
+    /* Keep same button shell in collapsed state too */
+    .sidebar.collapsed .sidebar-toggle,
+    #textPanel.collapsed .text-toggle{
+      width: 38px !important;
+      height: 38px !important;
+      border-radius: 999px !important;
+      top: 8px !important;
+    }
+
+    .sidebar.collapsed .sidebar-toggle{
+      right: 6px !important;
+    }
+
+    #textPanel.collapsed .text-toggle{
+      left: 6px !important;
+    }
+
+    /* Eye white: unified almond shape */
+    .sidebar-toggle::before,
+    .text-toggle::before{
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 23px !important;
+      height: 14px !important;
+      transform: translate(-50%, -50%);
+      border-radius: 50% / 62%;
+      background:
+        radial-gradient(circle at 45% 42%, rgba(255,255,255,1) 0 54%, rgba(245,248,252,1) 75%, rgba(221,230,240,1) 100%);
+      border: 1px solid rgba(111,134,160,.78);
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.98),
+        0 1px 2px rgba(31,41,55,.10);
+      animation: eyeBlinkPretty 3s ease-in-out infinite;
+      transform-origin: center center;
+      z-index: 1;
+    }
+
+    /* Iris + pupil */
+    .sidebar-toggle::after,
+    .text-toggle::after{
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 8px !important;
+      height: 8px !important;
+      transform: translate(-50%, -50%);
+      border-radius: 999px;
+      background:
+        radial-gradient(circle at 35% 35%, rgba(255,255,255,.98) 0 12%, rgba(59,130,246,.85) 18%, rgba(30,41,59,1) 56%, rgba(15,23,42,1) 100%);
+      box-shadow:
+        0 0 0 1px rgba(255,255,255,.16),
+        0 0 8px rgba(59,130,246,.18);
+      animation: pupilFloatPretty 3s ease-in-out infinite;
+      z-index: 2;
+    }
+
+    /* Eyelashes */
+    .sidebar-toggle > .eye-lashes,
+    .text-toggle > .eye-lashes{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 24px;
+      height: 16px;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      z-index: 3;
+    }
+
+    .sidebar-toggle > .eye-lashes::before,
+    .text-toggle > .eye-lashes::before{
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(65deg, transparent 0 7px, rgba(58,77,97,.92) 7px 8.5px, transparent 8.5px 100%),
+        linear-gradient(82deg, transparent 0 11px, rgba(58,77,97,.96) 11px 12.5px, transparent 12.5px 100%),
+        linear-gradient(100deg, transparent 0 15px, rgba(58,77,97,.92) 15px 16.5px, transparent 16.5px 100%);
+      clip-path: inset(0 0 55% 0);
+      opacity: .95;
+      filter: drop-shadow(0 1px 0 rgba(255,255,255,.25));
+    }
+
+    .sidebar-toggle > .eye-lashes::after,
+    .text-toggle > .eye-lashes::after{
+      content: "";
+      position: absolute;
+      left: 1px;
+      right: 1px;
+      top: 2px;
+      height: 3px;
+      border-radius: 999px;
+      background: linear-gradient(180deg, rgba(71,85,105,.95) 0%, rgba(51,65,85,.88) 100%);
+      opacity: .9;
+    }
+
+    @keyframes eyeBlinkPretty {
+      0%, 40%, 47%, 100% {
+        transform: translate(-50%, -50%) scaleY(1);
+      }
+      43%, 45% {
+        transform: translate(-50%, -50%) scaleY(0.08);
+      }
+    }
+
+    @keyframes pupilFloatPretty {
+      0%, 100% {
+        transform: translate(-50%, -50%) translateX(0);
+      }
+      20% {
+        transform: translate(-50%, -50%) translateX(-1px);
+      }
+      65% {
+        transform: translate(-50%, -50%) translateX(1px);
+      }
+    }
+
+    .sidebar-toggle:hover,
+    .text-toggle:hover{
+      transform: scale(2) !important;
+      box-shadow:
+        0 18px 38px rgba(31,41,55,.28),
+        0 8px 18px rgba(31,41,55,.14),
+        inset 0 1px 0 rgba(255,255,255,1) !important;
+    }
+
+    .sidebar-toggle:hover > .eye-lashes::before,
+    .text-toggle:hover > .eye-lashes::before{
+      opacity: 1;
+    }
+
+    @media (max-width: 1120px){
+      .sidebar-toggle,
+      .text-toggle,
+      .sidebar.collapsed .sidebar-toggle,
+      #textPanel.collapsed .text-toggle{
+        width: 34px !important;
+        height: 34px !important;
+      }
+
+      .sidebar-toggle::before,
+      .text-toggle::before{
+        width: 21px !important;
+        height: 13px !important;
+      }
+    }
+
+  
+    /* Restore arrows on the previous version */
+    .sidebar-toggle,
+    .text-toggle{
+      color: #16324a !important;
+      font-size: 17px !important;
+      font-weight: 700 !important;
+      line-height: 1 !important;
+      text-indent: 0 !important;
+      letter-spacing: 0 !important;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Noto Sans JP", sans-serif !important;
+    }
+
+    .sidebar-toggle::before,
+    .sidebar-toggle::after,
+    .text-toggle::before,
+    .text-toggle::after,
+    .sidebar-toggle > .eye-lashes,
+    .text-toggle > .eye-lashes{
+      display: none !important;
+      content: none !important;
+      animation: none !important;
+    }
+
+    .sidebar.collapsed .sidebar-toggle,
+    #textPanel.collapsed .text-toggle{
+      font-size: 13px !important;
+    }
+
+  
+    /* Align side toggles lower to better match the manuscript viewer round controls */
+    .sidebar-toggle{
+      top: 22px !important;
+      right: 10px !important;
+    }
+
+    .text-toggle{
+      top: 22px !important;
+      left: 10px !important;
+    }
+
+    /* Keep collapsed-state buttons slightly lower too */
+    .sidebar.collapsed .sidebar-toggle{
+      top: 18px !important;
+    }
+
+    #textPanel.collapsed .text-toggle{
+      top: 18px !important;
+    }
+
+    /* Nudge right content downward to harmonize with the lowered button */
+    #textPanel{
+      padding-top: 62px !important;
+    }
+
+    #textPanel > #topbar{
+      margin-top: 2px !important;
+    }
+
+    #textPanel .text-body{
+      padding-top: 20px !important;
+    }
+
+    @media (max-width: 1120px){
+      .sidebar-toggle{
+        top: 16px !important;
+      }
+
+      .text-toggle{
+        top: 16px !important;
+      }
+
+      .sidebar.collapsed .sidebar-toggle,
+      #textPanel.collapsed .text-toggle{
+        top: 12px !important;
+      }
+
+      #textPanel{
+        padding-top: 52px !important;
+      }
+    }
+
+  
+    /* Make the English line under the left title smaller and calmer */
+    .header .sub{
+      font-size: 11px !important;
+      line-height: 1.36 !important;
+    }
+    .header .sub:first-of-type{
+      margin-top: 6px !important;
+    }
+
+    /* Make the right-top info card a bit thicker/taller so two-line title fits better */
+    #textPanel > #topbar{
+      border-width: 1.5px !important;
+      box-shadow:
+        0 10px 24px rgba(17,24,39,.08),
+        inset 0 1px 0 rgba(255,255,255,.50) !important;
+    }
+
+    #textPanel .topbar-head{
+      padding: 14px 42px 14px 14px !important;
+    }
+
+    #textPanel .viewer-title{
+      font-size: 15px !important;
+      line-height: 1.45 !important;
+      min-height: 2.9em;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    #textPanel .viewer-meta{
+      gap: 6px !important;
+    }
+
+    #textPanel .actions{
+      padding-top: 14px !important;
+      padding-bottom: 16px !important;
+    }
+
+    @media (max-width: 1120px){
+      .header .sub{
+        font-size: 10.5px !important;
+      }
+
+      #textPanel .topbar-head{
+        padding: 13px 40px 13px 13px !important;
+      }
+
+      #textPanel .viewer-title{
+        font-size: 14px !important;
+        min-height: 2.8em;
+      }
+    }
+
+  
+    /* Make the top-left explanatory block less crowded */
+    .header{
+      padding-bottom: 8px !important;
+    }
+
+    .header .title{
+      margin-bottom: 4px !important;
+    }
+
+    .header .sub{
+      font-size: 10.5px !important;
+      line-height: 1.28 !important;
+      margin-top: 3px !important;
+      color: #5b6675 !important;
+    }
+
+    .header .sub br{
+      display: none;
+    }
+
+    .search-wrap{
+      padding-top: 6px !important;
+      padding-bottom: 5px !important;
+    }
+
+    .meta{
+      padding-top: 0 !important;
+      padding-bottom: 3px !important;
+      font-size: 11px !important;
+      line-height: 1.34 !important;
+    }
+
+    /* Make the right-top info card noticeably thicker */
+    #textPanel > #topbar{
+      border-width: 1.5px !important;
+      box-shadow:
+        0 12px 28px rgba(17,24,39,.10),
+        inset 0 1px 0 rgba(255,255,255,.55) !important;
+    }
+
+    #textPanel .topbar-head{
+      padding: 16px 42px 16px 14px !important;
+    }
+
+    #textPanel .viewer-title{
+      font-size: 15px !important;
+      line-height: 1.48 !important;
+      min-height: 3.2em !important;
+    }
+
+    #textPanel .viewer-meta{
+      gap: 7px !important;
+      font-size: 12px !important;
+      line-height: 1.56 !important;
+    }
+
+    #textPanel .actions{
+      padding-top: 15px !important;
+      padding-bottom: 18px !important;
+    }
+
+    @media (max-width: 1120px){
+      .header .sub{
+        font-size: 10px !important;
+        line-height: 1.24 !important;
+      }
+      .meta{
+        font-size: 10.5px !important;
+      }
+      #textPanel .topbar-head{
+        padding: 14px 40px 14px 13px !important;
+      }
+      #textPanel .viewer-title{
+        min-height: 3em !important;
+      }
+    }
+
+  
+    /* Left English explanations much smaller and calmer */
+    .header .sub{
+      font-size: 9px !important;
+      line-height: 1.18 !important;
+      color: #667085 !important;
+      letter-spacing: 0 !important;
+    }
+
+    .header .sub:first-of-type{
+      margin-top: 4px !important;
+    }
+
+    .search-wrap{
+      padding-top: 4px !important;
+      padding-bottom: 4px !important;
+    }
+
+    /* Right-top info card collapsed state: visually twice as strong */
+    #textPanel > #topbar.collapsed{
+      height: 50px !important;
+      border-width: 2px !important;
+      box-shadow:
+        0 14px 30px rgba(17,24,39,.14),
+        0 0 0 1px rgba(184,210,234,.38),
+        inset 0 1px 0 rgba(255,255,255,.72) !important;
+    }
+
+    #textPanel > #topbar.collapsed .topbar-head{
+      padding: 13px 44px 13px 14px !important;
+      background: linear-gradient(180deg, rgba(255,255,255,.99) 0%, rgba(222,235,248,.92) 100%) !important;
+    }
+
+    #textPanel > #topbar.collapsed .viewer-title{
+      font-size: 15px !important;
+      font-weight: 800 !important;
+      line-height: 1.2 !important;
+      min-height: auto !important;
+      margin-bottom: 0 !important;
+      color: #16324a !important;
+    }
+
+    #textPanel > #topbar.collapsed .topbar-toggle{
+      width: 28px !important;
+      height: 28px !important;
+      box-shadow:
+        0 8px 18px rgba(31,41,55,.16),
+        inset 0 1px 0 rgba(255,255,255,.86) !important;
+    }
+
+    @media (max-width: 1120px){
+      .header .sub{
+        font-size: 8.5px !important;
+        line-height: 1.15 !important;
+      }
+
+      #textPanel > #topbar.collapsed{
+        height: 48px !important;
+      }
+
+      #textPanel > #topbar.collapsed .viewer-title{
+        font-size: 14px !important;
+      }
+    }
+
+  
+    /* Make the left-top English collection title smaller */
+    .header .title{
+      font-size: 16px !important;
+      line-height: 1.34 !important;
+    }
+
+    @media (min-width: 1121px){
+      .header .title{
+        font-size: 15px !important;
+        line-height: 1.3 !important;
+      }
+    }
+
+    @media (max-width: 1120px){
+      .header .title{
+        font-size: 14px !important;
+        line-height: 1.28 !important;
+      }
+    }
+
+  
+    /* Make the expanded right-top info card more compact; keep collapsed state unchanged */
+    #textPanel > #topbar:not(.collapsed) .topbar-head{
+      padding: 12px 42px 10px 14px !important;
+    }
+
+    #textPanel > #topbar:not(.collapsed) .viewer-title{
+      font-size: 14px !important;
+      line-height: 1.36 !important;
+      min-height: 2.7em !important;
+      margin-bottom: 6px !important;
+    }
+
+    #textPanel > #topbar:not(.collapsed) .viewer-meta{
+      gap: 5px !important;
+      font-size: 11.5px !important;
+      line-height: 1.44 !important;
+    }
+
+    #textPanel > #topbar:not(.collapsed) .actions{
+      padding: 10px 14px 12px !important;
+      gap: 7px !important;
+    }
+
+    #textPanel > #topbar:not(.collapsed) .topbar-controls{
+      gap: 8px !important;
+    }
+
+    #textPanel > #topbar:not(.collapsed) .topbar-controls .text-tabs{
+      gap: 6px !important;
+    }
+
+    #textPanel > #topbar:not(.collapsed) .topbar-controls .text-zoom{
+      gap: 6px !important;
+    }
+
+    #textPanel > #topbar:not(.collapsed) .actions .btn,
+    #textPanel > #topbar:not(.collapsed) .tab-btn,
+    #textPanel > #topbar:not(.collapsed) .zoom-btn{
+      min-height: 34px !important;
+      padding: 7px 9px !important;
+      font-size: 11px !important;
+    }
+
+    @media (max-width: 1120px){
+      #textPanel > #topbar:not(.collapsed) .topbar-head{
+        padding: 11px 40px 10px 13px !important;
+      }
+
+      #textPanel > #topbar:not(.collapsed) .viewer-title{
+        font-size: 13.5px !important;
+        min-height: 2.6em !important;
+      }
+
+      #textPanel > #topbar:not(.collapsed) .viewer-meta{
+        font-size: 11px !important;
+      }
+
+      #textPanel > #topbar:not(.collapsed) .actions{
+        padding: 9px 12px 11px !important;
+      }
+    }
+
+  
+    /* Stronger depth separation: side panels heavier than manuscript center */
+    .sidebar,
+    #textPanel{
+      box-shadow:
+        0 28px 56px rgba(31,41,55,.24),
+        0 10px 24px rgba(31,41,55,.14),
+        inset 0 1px 0 rgba(255,255,255,.58) !important;
+    }
+
+    .sidebar::after,
+    #textPanel::after{
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.60),
+        inset 0 0 0 1px rgba(255,255,255,.22),
+        inset 0 0 22px rgba(255,255,255,.08);
+    }
+
+    .sidebar:hover,
+    #textPanel:hover{
+      box-shadow:
+        0 34px 64px rgba(31,41,55,.28),
+        0 14px 30px rgba(31,41,55,.16),
+        inset 0 1px 0 rgba(255,255,255,.62) !important;
+    }
+
+    .manuscript-panel{
+      box-shadow:
+        0 10px 22px rgba(31,41,55,.09),
+        0 2px 8px rgba(31,41,55,.05),
+        inset 0 1px 0 rgba(255,255,255,.28) !important;
+    }
+
+    .manuscript-panel:hover{
+      box-shadow:
+        0 12px 26px rgba(31,41,55,.10),
+        0 3px 10px rgba(31,41,55,.06),
+        inset 0 1px 0 rgba(255,255,255,.30) !important;
+    }
+
+  
+    /* Stronger perspective separation: side panels clearly forward, manuscript clearly recessed */
+    .app{
+      perspective: 1600px !important;
+      perspective-origin: 50% 34% !important;
+    }
+
+    .sidebar,
+    #textPanel{
+      position: relative;
+      z-index: 4 !important;
+      transform: translateZ(0) translateY(-5px) scale(1.02) !important;
+      box-shadow:
+        0 42px 78px rgba(31,41,55,.34),
+        0 18px 38px rgba(31,41,55,.20),
+        0 4px 10px rgba(31,41,55,.10),
+        inset 0 1px 0 rgba(255,255,255,.64) !important;
+      filter: saturate(1.04) brightness(1.01) !important;
+    }
+
+    .sidebar::after,
+    #textPanel::after{
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.68),
+        inset 0 0 0 1px rgba(255,255,255,.24),
+        inset 0 0 28px rgba(255,255,255,.10),
+        0 0 36px rgba(255,255,255,.06);
+    }
+
+    .sidebar:hover,
+    #textPanel:hover{
+      transform: translateZ(0) translateY(-7px) scale(1.024) !important;
+      box-shadow:
+        0 50px 88px rgba(31,41,55,.38),
+        0 22px 44px rgba(31,41,55,.22),
+        0 6px 14px rgba(31,41,55,.12),
+        inset 0 1px 0 rgba(255,255,255,.68) !important;
+      filter: saturate(1.06) brightness(1.015) !important;
+    }
+
+    .manuscript-panel{
+      position: relative;
+      z-index: 1 !important;
+      transform: translateZ(0) translateY(4px) scale(.982) !important;
+      box-shadow:
+        0 8px 18px rgba(31,41,55,.08),
+        0 2px 6px rgba(31,41,55,.04),
+        inset 0 1px 0 rgba(255,255,255,.24) !important;
+      filter: saturate(.96) brightness(.988) !important;
+    }
+
+    .manuscript-panel::before{
+      content: "";
+      position: absolute;
+      inset: -18px -22px -24px -22px;
+      z-index: -1;
+      border-radius: 30px;
+      background: linear-gradient(180deg, rgba(180,197,214,.26) 0%, rgba(180,197,214,.08) 100%);
+      filter: blur(10px);
+      pointer-events: none;
+    }
+
+    .manuscript-panel:hover{
+      transform: translateZ(0) translateY(3px) scale(.984) !important;
+      box-shadow:
+        0 10px 22px rgba(31,41,55,.09),
+        0 3px 8px rgba(31,41,55,.05),
+        inset 0 1px 0 rgba(255,255,255,.26) !important;
+    }
+
+    @media (max-width: 1120px){
+      .app{
+        perspective: none !important;
+      }
+      .sidebar,
+      #textPanel,
+      .manuscript-panel{
+        transform: none !important;
+        filter: none !important;
+      }
+      .manuscript-panel::before{
+        display: none !important;
+      }
+    }
+
+  
+    /* Move text mode / font-size controls back into the lower text box */
+    #textPanel .text-head{
+      display: block !important;
+      padding: 12px 14px 10px 48px !important;
+      border-bottom: 1px solid rgba(255,255,255,.28) !important;
+      background: linear-gradient(180deg, rgba(255,255,255,.50) 0%, rgba(255,255,255,.30) 100%) !important;
+      backdrop-filter: blur(18px) saturate(145%);
+      -webkit-backdrop-filter: blur(18px) saturate(145%);
+    }
+
+    #textPanel .text-toolbar{
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      gap: 10px !important;
+      flex-direction: row !important;
+    }
+
+    #textPanel .text-tabs{
+      display: flex !important;
+      flex-wrap: wrap !important;
+      gap: 6px !important;
+      align-items: center !important;
+    }
+
+    #textPanel .text-zoom{
+      display: flex !important;
+      flex-wrap: wrap !important;
+      gap: 6px !important;
+      align-items: center !important;
+      justify-content: flex-end !important;
+    }
+
+    #textPanel .tab-btn,
+    #textPanel .zoom-btn{
+      min-height: 34px !important;
+      padding: 7px 11px !important;
+      font-size: 11.5px !important;
+      border-radius: 999px !important;
+      width: auto !important;
+      flex: 0 0 auto !important;
+    }
+
+    #textPanel .text-body{
+      padding-top: 14px !important;
+    }
+
+    /* Make the top info card purely informational again */
+    #textPanel > #topbar:not(.collapsed) .actions{
+      display: grid !important;
+      grid-template-columns: 1fr 1fr !important;
+      gap: 8px !important;
+      padding: 10px 14px 12px !important;
+    }
+
+    #textPanel > #topbar:not(.collapsed) .topbar-controls{
+      display: none !important;
+    }
+
+    @media (max-width: 1120px){
+      #textPanel .text-head{
+        padding: 10px 12px 10px 44px !important;
+      }
+      #textPanel .text-toolbar{
+        flex-direction: column !important;
+        align-items: stretch !important;
+      }
+      #textPanel .text-tabs,
+      #textPanel .text-zoom{
+        width: 100% !important;
+        justify-content: flex-start !important;
+      }
+      #textPanel .tab-btn,
+      #textPanel .zoom-btn{
+        min-height: 36px !important;
+        font-size: 11px !important;
+      }
+    }
+
+  
+    /* Simplified right text panel controls */
+    #textPanel .text-head{
+      display: block !important;
+      padding: 12px 14px 10px 44px !important;
+      border-bottom: 1px solid rgba(255,255,255,.28) !important;
+      background: linear-gradient(180deg, rgba(255,255,255,.50) 0%, rgba(255,255,255,.30) 100%) !important;
+      backdrop-filter: blur(18px) saturate(145%);
+      -webkit-backdrop-filter: blur(18px) saturate(145%);
+    }
+
+    #textPanel .text-mode-switch{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      align-items: stretch;
+    }
+
+    #textPanel .text-mode-switch .tab-btn{
+      width: 100%;
+      min-height: 38px !important;
+      padding: 8px 12px !important;
+      font-size: 12px !important;
+      font-weight: 600 !important;
+      border-radius: 12px !important;
+    }
+
+    #textPanel .text-mode-switch .tab-btn.active{
+      background: linear-gradient(180deg, rgba(255,255,255,.99) 0%, rgba(214,231,248,.96) 100%) !important;
+      border-color: rgba(156,186,216,.98) !important;
+      box-shadow:
+        0 10px 22px rgba(31,41,55,.12),
+        inset 0 1px 0 rgba(255,255,255,.88),
+        inset 0 0 18px rgba(186,214,240,.28) !important;
+      color: #12324a !important;
+      font-weight: 700 !important;
+    }
+
+    #textPanel .text-body{
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    #textPanel #textContent{
+      flex: 1 1 auto;
+      min-height: 0;
+    }
+
+    #textPanel .text-bottom-controls{
+      flex: 0 0 auto;
+      padding-top: 8px;
+      border-top: 1px solid rgba(223,229,236,.65);
+    }
+
+    #textPanel .bottom-zoom{
+      display: grid !important;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px !important;
+      align-items: stretch;
+    }
+
+    #textPanel .bottom-zoom .zoom-btn{
+      width: 100%;
+      min-height: 36px !important;
+      padding: 8px 10px !important;
+      font-size: 11.5px !important;
+      border-radius: 12px !important;
+    }
+
+    @media (max-width: 1120px){
+      #textPanel .text-head{
+        padding: 10px 12px 10px 44px !important;
+      }
+
+      #textPanel .text-mode-switch .tab-btn{
+        min-height: 36px !important;
+        font-size: 11.5px !important;
+      }
+
+      #textPanel .bottom-zoom .zoom-btn{
+        min-height: 36px !important;
+        font-size: 11px !important;
+      }
+    }
+
+  
+    /* Only adjust the two top buttons in the lower-right text box */
+    #textPanel .text-mode-switch,
+    #textPanel .text-tabs{
+      display: grid !important;
+      grid-template-columns: 1fr 1fr !important;
+      gap: 10px !important;
+      align-items: stretch !important;
+      justify-content: center !important;
+      width: 100% !important;
+    }
+
+    #textPanel .text-mode-switch .tab-btn,
+    #textPanel .text-tabs .tab-btn{
+      width: 100% !important;
+      justify-self: stretch !important;
+      text-align: center !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      min-height: 38px !important;
+      border-radius: 12px !important;
+      white-space: nowrap !important;
+    }
+
+    @media (max-width: 1120px){
+      #textPanel .text-mode-switch,
+      #textPanel .text-tabs{
+        gap: 8px !important;
+      }
+
+      #textPanel .text-mode-switch .tab-btn,
+      #textPanel .text-tabs .tab-btn{
+        min-height: 36px !important;
+      }
+    }
+
+  
+    /* Make the top control row itself truly centered and symmetric */
+    #textPanel .text-head{
+      padding: 12px 18px 10px 18px !important;
+    }
+
+    #textPanel .text-mode-switch,
+    #textPanel .text-tabs{
+      display: grid !important;
+      grid-template-columns: 1fr 1fr !important;
+      gap: 10px !important;
+      align-items: stretch !important;
+      justify-content: center !important;
+      width: 100% !important;
+      margin: 0 auto !important;
+    }
+
+    #textPanel .text-mode-switch .tab-btn,
+    #textPanel .text-tabs .tab-btn{
+      width: 100% !important;
+      justify-self: stretch !important;
+      text-align: center !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      min-height: 38px !important;
+      border-radius: 12px !important;
+      white-space: nowrap !important;
+    }
+
+    @media (max-width: 1120px){
+      #textPanel .text-head{
+        padding: 10px 14px 10px 14px !important;
+      }
+
+      #textPanel .text-mode-switch,
+      #textPanel .text-tabs{
+        gap: 8px !important;
+      }
+
+      #textPanel .text-mode-switch .tab-btn,
+      #textPanel .text-tabs .tab-btn{
+        min-height: 36px !important;
+      }
+    }
+
+  
+    /* Lower the top side buttons to align better with the manuscript viewer round controls */
+    .sidebar-toggle{
+      top: 24px !important;
+    }
+
+    .text-toggle{
+      top: 24px !important;
+    }
+
+    /* Keep collapsed-state top buttons slightly lower too */
+    .sidebar.collapsed .sidebar-toggle{
+      top: 16px !important;
+    }
+
+    #textPanel.collapsed .text-toggle{
+      top: 16px !important;
+    }
+
+    @media (max-width: 1120px){
+      .sidebar-toggle,
+      .text-toggle{
+        top: 16px !important;
+      }
+
+      .sidebar.collapsed .sidebar-toggle,
+      #textPanel.collapsed .text-toggle{
+        top: 12px !important;
+      }
+    }
+
+  
+    /* Safe fix: bottom font-size controls stay at the bottom and never overlap text */
+    #textPanel .text-inner{
+      display: flex !important;
+      flex-direction: column !important;
+      min-height: 0 !important;
+      height: 100% !important;
+    }
+
+    #textPanel .text-head{
+      flex: 0 0 auto !important;
+    }
+
+    #textPanel .text-body{
+      flex: 1 1 auto !important;
+      min-height: 0 !important;
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 12px !important;
+      overflow: hidden !important;
+      padding-bottom: 10px !important;
+    }
+
+    #textPanel #textContent{
+      flex: 1 1 auto !important;
+      min-height: 0 !important;
+      overflow: auto !important;
+      white-space: pre-wrap !important;
+      overflow-wrap: anywhere !important;
+      word-break: break-word !important;
+      padding-right: 2px !important;
+    }
+
+    #textPanel .text-bottom-controls{
+      flex: 0 0 auto !important;
+      position: relative !important;
+      z-index: 2 !important;
+      padding-top: 10px !important;
+      border-top: 1px solid rgba(223,229,236,.65) !important;
+      background: linear-gradient(180deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.94) 100%) !important;
+      backdrop-filter: blur(10px) saturate(135%);
+      -webkit-backdrop-filter: blur(10px) saturate(135%);
+      box-shadow: 0 -8px 18px rgba(17,24,39,.04);
+    }
+
+    #textPanel .bottom-zoom{
+      display: grid !important;
+      grid-template-columns: repeat(3, 1fr) !important;
+      gap: 8px !important;
+      align-items: stretch !important;
+      width: 100% !important;
+    }
+
+    #textPanel .bottom-zoom .zoom-btn{
+      width: 100% !important;
+      min-height: 36px !important;
+      padding: 8px 10px !important;
+      font-size: 11.5px !important;
+      border-radius: 12px !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+    }
+
+    #textPanel #textContent::-webkit-scrollbar{
+      width: 10px;
+      height: 10px;
+    }
+    #textPanel #textContent::-webkit-scrollbar-track{
+      background: rgba(255,255,255,.20);
+      border-radius: 999px;
+    }
+    #textPanel #textContent::-webkit-scrollbar-thumb{
+      background: rgba(111,123,139,.42);
+      border-radius: 999px;
+      border: 2px solid rgba(255,255,255,.20);
+    }
+    #textPanel #textContent::-webkit-scrollbar-thumb:hover{
+      background: rgba(93,105,121,.58);
+    }
+
+    @media (max-width: 1120px){
+      #textPanel .bottom-zoom .zoom-btn{
+        min-height: 36px !important;
+        font-size: 11px !important;
+      }
+    }
+
+  
+    /* Fix: make bottom font controls actually affect the right text content */
+    #textPanel #textContent.text-poem{
+      font-size: var(--body-font) !important;
+      line-height: var(--body-line) !important;
+      letter-spacing: var(--body-letter) !important;
+    }
+
+    #textPanel #textContent.text-poem .poem-title{
+      font-size: calc(var(--body-font) + 1px) !important;
+      line-height: 1.42 !important;
+    }
+
+    #textPanel #textContent.text-poem .poem-lines{
+      font-size: inherit !important;
+      line-height: inherit !important;
+    }
+
   </style>
 </head>
 <body>
@@ -329,13 +2862,12 @@
       <div class="sidebar-inner">
         <div class="header">
           <div class="title">夏目漱石自筆の漢詩原稿・草稿コレクション<br>Autograph Kanshi Manuscripts and Drafts of Natsume Sōseki</div>
-          <div class="sub">左に目次、中央に手稿、右にテクスト。<br>Contents at left, manuscript view in the center, texts at right.</div>
           <div class="sub" style="margin-top:6px;">製作者 (Compiled by): 薄鋒 (BO Feng)</div>
+          <div class="sub">東京大学中国語中国文学研究室博士課程<br>(Doctoral Program, Chinese Language and Literature, The University of Tokyo)</div>
         </div>
         <div class="search-wrap">
           <input id="search" class="search" type="text" placeholder="番号・題名で検索 / Search by number or title" />
         </div>
-        <div class="meta">作品を選択し、中央で手稿を、右で関連テクストを閲覧できます。<br>Select an item to view the manuscript in the center and related texts on the right.</div>
         <div id="list" class="list"></div>
       </div>
     </aside>
@@ -365,25 +2897,25 @@
         </section>
 
         <section id="textPanel" class="text-panel">
-          <button id="textToggle" class="text-toggle" title="テクスト欄を折りたたむ / Collapse Texts">◀</button>
+          <button id="textToggle" class="text-toggle" title="テクスト欄を折りたたむ / Collapse Texts">▶</button>
           <div class="text-collapsed-rail">テクスト (Texts)</div>
           <div class="text-inner">
-            <div class="text-head">
-              <div class="text-toolbar">
-                <div class="text-tabs">
-                  <button class="tab-btn active" data-mode="completed">完成テクスト (Completed Text)</button>
-                  <button class="tab-btn" data-mode="thirdparty">他者による添削 (Third-Party Corrections)</button>
-                  <button class="tab-btn" data-mode="authorial">漱石自らの推敲 (Sōseki’s Authorial Revisions)</button>
-                </div>
-                <div class="text-zoom">
+            
+<div class="text-head">
+              <div class="text-mode-switch">
+                <button class="tab-btn active" data-mode="completed">完成テクスト</button>
+                <button class="tab-btn" data-mode="authorial">改稿過程</button>
+              </div>
+            </div>
+            <div class="text-body">
+              <div id="textContent" class="text-poem"></div>
+              <div class="text-bottom-controls">
+                <div class="text-zoom bottom-zoom">
                   <button id="zoomOut" class="zoom-btn" title="文字を小さく / Smaller">A−</button>
                   <button id="zoomReset" class="zoom-btn" title="初期表示 / Reset">Reset</button>
                   <button id="zoomIn" class="zoom-btn" title="文字を大きく / Larger">A+</button>
                 </div>
               </div>
-            </div>
-            <div class="text-body">
-              <div id="textContent" class="text-poem"></div>
             </div>
           </div>
         </section>
@@ -2156,19 +4688,9 @@
     btnMonth.addEventListener('click', () => openGroup('month'));
     btnYear.addEventListener('click', () => openGroup('year'));
 
-    sidebarToggle.addEventListener('click', () => {
-      sidebar.classList.toggle('collapsed');
-      sidebarToggle.textContent = sidebar.classList.contains('collapsed') ? '▶' : '◀';
-      updateLayoutVars();
-    });
     topbarToggle.addEventListener('click', () => {
       topbar.classList.toggle('collapsed');
       topbarToggle.textContent = topbar.classList.contains('collapsed') ? '▼' : '▲';
-    });
-    textToggle.addEventListener('click', () => {
-      textPanel.classList.toggle('collapsed');
-      textToggle.textContent = textPanel.classList.contains('collapsed') ? '▶' : '◀';
-      updateLayoutVars();
     });
 
     document.querySelectorAll('.tab-btn').forEach(btn => {
@@ -2198,6 +4720,216 @@
       }
     }
     init();
+
+    // Move the info card into the right text column.
+    document.addEventListener('DOMContentLoaded', () => {
+      const topbarEl = document.getElementById('topbar');
+      const textInnerEl = document.querySelector('#textPanel .text-inner');
+      const textPanelEl = document.getElementById('textPanel');
+
+      if (topbarEl && textInnerEl && textPanelEl && topbarEl.parentElement !== textPanelEl) {
+        textInnerEl.parentElement.insertBefore(topbarEl, textInnerEl);
+      }
+
+      // Move the text toolbar into the info card so the text body stays clean.
+      if (textPanelEl && topbarEl) {
+        const textToolbar = textPanelEl.querySelector('.text-toolbar');
+        const actions = topbarEl.querySelector('.actions');
+        if (textToolbar && actions && !actions.querySelector('.topbar-controls')) {
+          const holder = document.createElement('div');
+          holder.className = 'topbar-controls';
+          holder.appendChild(textToolbar);
+          actions.appendChild(holder);
+        }
+
+      }
+
+      // Entire right-top info card toggles collapse/expand.
+      if (topbarEl) {
+        topbarEl.addEventListener('click', (e) => {
+          const interactive = e.target.closest('.btn, .tab-btn, .zoom-btn, .topbar-toggle, button, input, textarea, select, a, label');
+          if (interactive) return;
+          topbarEl.classList.toggle('collapsed');
+          const topbarToggleEl = document.getElementById('topbarToggle');
+          if (topbarToggleEl) {
+            topbarToggleEl.textContent = topbarEl.classList.contains('collapsed') ? '▼' : '▲';
+          }
+        });
+      }
+
+      const topbarToggleEl = document.getElementById('topbarToggle');
+      if (topbarToggleEl && topbarEl) {
+        const clone = topbarToggleEl.cloneNode(true);
+        topbarToggleEl.parentNode.replaceChild(clone, topbarToggleEl);
+        clone.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          topbarEl.classList.toggle('collapsed');
+          clone.textContent = topbarEl.classList.contains('collapsed') ? '▼' : '▲';
+        });
+      }
+    });
+
+    // Final interaction logic:
+    // Left sidebar: manual expand / manual collapse only.
+    // Right text panel: manual expand / manual collapse only.
+    document.addEventListener('DOMContentLoaded', () => {
+      const root = document.documentElement;
+      const sidebar = document.getElementById('sidebar');
+      const textPanel = document.getElementById('textPanel');
+
+      let sidebarToggle = document.getElementById('sidebarToggle');
+      let textToggle = document.getElementById('textToggle');
+
+      // Strip any previous listeners by cloning the buttons.
+      if (sidebarToggle) {
+        const clone = sidebarToggle.cloneNode(true);
+        sidebarToggle.parentNode.replaceChild(clone, sidebarToggle);
+        sidebarToggle = clone;
+      }
+      if (textToggle) {
+        const clone = textToggle.cloneNode(true);
+        textToggle.parentNode.replaceChild(clone, textToggle);
+        textToggle = clone;
+      }
+
+      const expandedSidebar = getComputedStyle(root).getPropertyValue('--sidebar-w').trim() || '212px';
+      const collapsedSidebar = getComputedStyle(root).getPropertyValue('--sidebar-collapsed-w').trim() || '30px';
+      const expandedText = 'minmax(290px, var(--text-panel-w))';
+      const collapsedText = getComputedStyle(root).getPropertyValue('--text-panel-collapsed-w').trim() || '30px';
+
+      const isDesktop = () => window.matchMedia('(min-width: 1121px)').matches;
+
+      function syncLayout() {
+        if (!isDesktop()) {
+          root.style.setProperty('--current-sidebar-w', 'var(--sidebar-w)');
+          root.style.setProperty('--current-text-panel-w', 'minmax(290px, var(--text-panel-w))');
+          if (sidebarToggle) sidebarToggle.textContent = '◀';
+          if (textToggle) textToggle.textContent = '◀';
+          return;
+        }
+
+        const sidebarCollapsed = !!(sidebar && sidebar.classList.contains('collapsed'));
+        const textCollapsed = !!(textPanel && textPanel.classList.contains('collapsed'));
+
+        root.style.setProperty('--current-sidebar-w', sidebarCollapsed ? collapsedSidebar : expandedSidebar);
+        root.style.setProperty('--current-text-panel-w', textCollapsed ? collapsedText : expandedText);
+
+        if (sidebarToggle) sidebarToggle.textContent = sidebarCollapsed ? '▶' : '◀';
+        if (textToggle) textToggle.textContent = textCollapsed ? '◀' : '▶';
+      }
+
+      function expandSidebar() {
+        if (!sidebar || !isDesktop()) return;
+        sidebar.classList.remove('collapsed');
+        syncLayout();
+      }
+
+      function collapseSidebar() {
+        if (!sidebar || !isDesktop()) return;
+        sidebar.classList.add('collapsed');
+        syncLayout();
+      }
+
+      function expandText() {
+        if (!textPanel || !isDesktop()) return;
+        textPanel.classList.remove('collapsed');
+        syncLayout();
+      }
+
+      function collapseText() {
+        if (!textPanel || !isDesktop()) return;
+        textPanel.classList.add('collapsed');
+        syncLayout();
+      }
+
+      // Default desktop state
+      if (isDesktop()) {
+        if (sidebar) sidebar.classList.remove('collapsed');
+        if (textPanel) textPanel.classList.remove('collapsed');
+      }
+      syncLayout();
+
+      // Manual button toggles
+      if (sidebarToggle) {
+        sidebarToggle.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          if (sidebar && sidebar.classList.contains('collapsed')) expandSidebar();
+          else collapseSidebar();
+        });
+      }
+
+      if (textToggle) {
+        textToggle.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          if (textPanel && textPanel.classList.contains('collapsed')) expandText();
+          else collapseText();
+        });
+      }
+
+      // Whole collapsed rails clickable to expand
+      if (sidebar) {
+        sidebar.addEventListener('click', () => {
+          if (!isDesktop()) return;
+          if (!sidebar.classList.contains('collapsed')) return;
+          expandSidebar();
+        });
+      }
+
+      if (textPanel) {
+        textPanel.addEventListener('click', () => {
+          if (!isDesktop()) return;
+          if (!textPanel.classList.contains('collapsed')) return;
+          expandText();
+        });
+      }
+
+      window.addEventListener('resize', () => {
+        if (!isDesktop()) {
+          if (sidebar) sidebar.classList.remove('collapsed');
+          if (textPanel) textPanel.classList.remove('collapsed');
+        }
+        syncLayout();
+      });
+    });
   </script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const zoomIn = document.getElementById('zoomIn');
+  const zoomOut = document.getElementById('zoomOut');
+  const zoomReset = document.getElementById('zoomReset');
+
+  if (!zoomIn || !zoomOut || !zoomReset) return;
+
+  // If original listeners already exist, this just adds a safe fallback.
+  let panelBodyFont = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--body-font')) || 19;
+
+  function applyPanelFontSize() {
+    document.documentElement.style.setProperty('--body-font', panelBodyFont + 'px');
+  }
+
+  zoomIn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    panelBodyFont = Math.min(32, panelBodyFont + 1);
+    applyPanelFontSize();
+  });
+
+  zoomOut.addEventListener('click', (e) => {
+    e.stopPropagation();
+    panelBodyFont = Math.max(14, panelBodyFont - 1);
+    applyPanelFontSize();
+  });
+
+  zoomReset.addEventListener('click', (e) => {
+    e.stopPropagation();
+    panelBodyFont = 19;
+    applyPanelFontSize();
+  });
+});
+</script>
+
 </body>
 </html>
