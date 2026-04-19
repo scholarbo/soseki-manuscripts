@@ -83,25 +83,25 @@
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-129-w01.json/canvas/1",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-129-w01.json/canvas-129-w01",
       "type": "Canvas",
       "width": 1200,
       "height": 1600,
       "label": {
         "ja": [
-          "129. 〔題自画〕大正四年十一月"
+          "129 第1頁"
         ]
       },
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-129-w01.json/page/1",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-129-w01.json/canvas-129-w01/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-129-w01.json/annotation/1",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-129-w01.json/canvas-129-w01/annotation",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-129-w01.json/canvas/1",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-129-w01.json/canvas-129-w01",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/129-w01.jpg",
                 "type": "Image",
@@ -114,5 +114,10 @@
         }
       ]
     }
-  ]
+  ],
+  "summary": {
+    "ja": [
+      "【原文】\n机上蕉堅稿\n門前碧玉竿\n喫茶三盌後\n雲影入窗寒"
+    ]
+  }
 }

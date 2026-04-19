@@ -95,25 +95,25 @@
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-188-w01.json/canvas/1",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-188-w01.json/canvas-188-w01",
       "type": "Canvas",
       "width": 1200,
       "height": 1600,
       "label": {
         "ja": [
-          "188. 〔無題〕大正五年十月十日"
+          "188 第1頁"
         ]
       },
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-188-w01.json/page/1",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-188-w01.json/canvas-188-w01/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-188-w01.json/annotation/1",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-188-w01.json/canvas-188-w01/annotation",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-188-w01.json/canvas/1",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-188-w01.json/canvas-188-w01",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/188-w01.jpg",
                 "type": "Image",
@@ -126,5 +126,10 @@
         }
       ]
     }
-  ]
+  ],
+  "summary": {
+    "ja": [
+      "【原文】\n忽怪空中躍百愁\n百愁躍処主人休\n点春成仏江梅柳\n食草訂交風馬牛\n途上相逢忘旧識\n天涯遠別報深仇\n長磨一剣剣将尽\n独使龍鳴復入秋"
+    ]
+  }
 }

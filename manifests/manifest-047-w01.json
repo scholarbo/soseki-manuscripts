@@ -71,25 +71,25 @@
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-047-w01.json/canvas/1",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-047-w01.json/canvas-047-w01",
       "type": "Canvas",
       "width": 1200,
       "height": 1600,
       "label": {
         "ja": [
-          "047. 帰途口号〔二首·其一〕明治二十三年九月"
+          "047 第1頁"
         ]
       },
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-047-w01.json/page/1",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-047-w01.json/canvas-047-w01/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-047-w01.json/annotation/1",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-047-w01.json/canvas-047-w01/annotation",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-047-w01.json/canvas/1",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-047-w01.json/canvas-047-w01",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/047-w01.jpg",
                 "type": "Image",
@@ -102,5 +102,10 @@
         }
       ]
     }
-  ]
+  ],
+  "summary": {
+    "ja": [
+      "【原文】\n得閑廿日去塵寰\n囊里無銭自識還\n自称仙人多俗累\n黄金用尽出青山"
+    ]
+  }
 }

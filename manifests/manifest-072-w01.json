@@ -71,25 +71,25 @@
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-072-w01.json/canvas/1",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-072-w01.json/canvas-072-w01",
       "type": "Canvas",
       "width": 1200,
       "height": 1600,
       "label": {
         "ja": [
-          "072. 失題明治三十二年四月"
+          "072 第1頁"
         ]
       },
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-072-w01.json/page/1",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-072-w01.json/canvas-072-w01/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-072-w01.json/annotation/1",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-072-w01.json/canvas-072-w01/annotation",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-072-w01.json/canvas/1",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-072-w01.json/canvas-072-w01",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/072-w01.jpg",
                 "type": "Image",
@@ -102,5 +102,10 @@
         }
       ]
     }
-  ]
+  ],
+  "summary": {
+    "ja": [
+      "【原文】\n仰瞻日月懸\n俯瞰河岳連\n曠哉天地際\n浩気塞大千\n往来暫逍遥\n出処唯随縁\n称師愧呫嗶\n拝官足緡錢\n澹蕩愛遅日\n蕭散送流年\n古意寄白雲\n永懐撫朱絃\n興尽何所欲\n曲肱空堂眠\n鼾声撼屋梁\n炊粱颺黄煙\n被髪駕神飆\n寥泬昆侖巓\n長嘯抱珠去\n飲泣蛟龍淵\n寤寐終帰一\n盈歇自後先\n胡僧說頓漸\n老子談太玄\n物命有常理\n紫府孰求仙\n眇然無倚托\n俛仰地与天"
+    ]
+  }
 }

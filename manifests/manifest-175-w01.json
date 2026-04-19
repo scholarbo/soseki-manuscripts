@@ -95,25 +95,25 @@
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-175-w01.json/canvas/1",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-175-w01.json/canvas-175-w01",
       "type": "Canvas",
       "width": 1200,
       "height": 1600,
       "label": {
         "ja": [
-          "175. 〔無題〕大正五年九月二十五日"
+          "175 第1頁"
         ]
       },
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-175-w01.json/page/1",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-175-w01.json/canvas-175-w01/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-175-w01.json/annotation/1",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-175-w01.json/canvas-175-w01/annotation",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-175-w01.json/canvas/1",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-175-w01.json/canvas-175-w01",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/175-w01.jpg",
                 "type": "Image",
@@ -126,5 +126,10 @@
         }
       ]
     }
-  ]
+  ],
+  "summary": {
+    "ja": [
+      "【原文】\n孤臥独行無友朋\n又看雲樹影層層\n白浮薄暮三叉水\n青破重陰一点燈\n入定誰聴風外磬\n作詩時訪月前僧\n閑居近寺多幽意\n礼仏只言最上乘"
+    ]
+  }
 }

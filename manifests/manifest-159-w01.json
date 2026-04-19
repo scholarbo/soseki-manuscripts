@@ -95,25 +95,25 @@
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-159-w01.json/canvas/1",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-159-w01.json/canvas-159-w01",
       "type": "Canvas",
       "width": 1200,
       "height": 1600,
       "label": {
         "ja": [
-          "159. 〔無題〕大正五年九月九日"
+          "159 第1頁"
         ]
       },
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-159-w01.json/page/1",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-159-w01.json/canvas-159-w01/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-159-w01.json/annotation/1",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-159-w01.json/canvas-159-w01/annotation",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-159-w01.json/canvas/1",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-159-w01.json/canvas-159-w01",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/159-w01.jpg",
                 "type": "Image",
@@ -126,5 +126,10 @@
         }
       ]
     }
-  ]
+  ],
+  "summary": {
+    "ja": [
+      "【原文】\n曾見人間今見天\n醍醐上味色空辺\n白蓮暁破詩僧夢\n翠柳長吹精舍縁\n道到虚明長語絶\n煙帰曖曃妙香伝\n入門還愛無他事\n手折幽花供仏前"
+    ]
+  }
 }

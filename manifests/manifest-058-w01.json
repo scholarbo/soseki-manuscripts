@@ -83,25 +83,25 @@
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-058-w01.json/canvas/1",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-058-w01.json/canvas-058-w01",
       "type": "Canvas",
       "width": 1200,
       "height": 1600,
       "label": {
         "ja": [
-          "058. 〔無題〕明治二十九年一月十二日"
+          "058 第1頁"
         ]
       },
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-058-w01.json/page/1",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-058-w01.json/canvas-058-w01/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-058-w01.json/annotation/1",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-058-w01.json/canvas-058-w01/annotation",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-058-w01.json/canvas/1",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-058-w01.json/canvas-058-w01",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/058-w01.jpg",
                 "type": "Image",
@@ -114,5 +114,10 @@
         }
       ]
     }
-  ]
+  ],
+  "summary": {
+    "ja": [
+      "【原文】\n海南千里遠\n欲別暮天寒\n鉄笛吹紅雪\n火輪沸紫瀾\n為君憂国易\n作客到家難\n三十巽還坎\n功名夢半残"
+    ]
+  }
 }

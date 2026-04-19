@@ -83,25 +83,25 @@
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-059-w01.json/canvas/1",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-059-w01.json/canvas-059-w01",
       "type": "Canvas",
       "width": 1200,
       "height": 1600,
       "label": {
         "ja": [
-          "059. 丙申五月、恕卿所居、庭前生霊芝。恕卿因徵余詩。余辞以不文。恕卿不聴。賦以為贈。恕卿者片嶺氏、余僚友也。〔五首・其一〕明治二十九年十一月十五日"
+          "059 第1頁"
         ]
       },
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-059-w01.json/page/1",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-059-w01.json/canvas-059-w01/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-059-w01.json/annotation/1",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-059-w01.json/canvas-059-w01/annotation",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-059-w01.json/canvas/1",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-059-w01.json/canvas-059-w01",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/059-w01.jpg",
                 "type": "Image",
@@ -114,5 +114,10 @@
         }
       ]
     }
-  ]
+  ],
+  "summary": {
+    "ja": [
+      "【原文】\n階前一李樹\n其下生霊芝\n想当天長節\n李紅芝紫時"
+    ]
+  }
 }

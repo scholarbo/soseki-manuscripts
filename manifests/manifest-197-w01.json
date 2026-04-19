@@ -95,25 +95,25 @@
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-197-w01.json/canvas/1",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-197-w01.json/canvas-197-w01",
       "type": "Canvas",
       "width": 1200,
       "height": 1600,
       "label": {
         "ja": [
-          "197. 〔無題〕大正五年十月二十一日"
+          "197 第1頁"
         ]
       },
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-197-w01.json/page/1",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-197-w01.json/canvas-197-w01/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-197-w01.json/annotation/1",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-197-w01.json/canvas-197-w01/annotation",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-197-w01.json/canvas/1",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-197-w01.json/canvas-197-w01",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/197-w01.jpg",
                 "type": "Image",
@@ -126,5 +126,10 @@
         }
       ]
     }
-  ]
+  ],
+  "summary": {
+    "ja": [
+      "【原文】\n吾失天時併失愚\n吾今会道道離吾\n人間忽尽聡明死\n魔界猶存正義臞\n擲地鏗鏘金錯剣\n砕空燦爛夜光珠\n独吞涕涙長踌躇\n怙恃両亡立広衢"
+    ]
+  }
 }

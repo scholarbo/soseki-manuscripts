@@ -95,25 +95,25 @@
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-163-w01.json/canvas/1",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-163-w01.json/canvas-163-w01",
       "type": "Canvas",
       "width": 1200,
       "height": 1600,
       "label": {
         "ja": [
-          "163. 〔無題〕大正五年九月十三日"
+          "163 第1頁"
         ]
       },
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-163-w01.json/page/1",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-163-w01.json/canvas-163-w01/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-163-w01.json/annotation/1",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-163-w01.json/canvas-163-w01/annotation",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-163-w01.json/canvas/1",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-163-w01.json/canvas-163-w01",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/163-w01.jpg",
                 "type": "Image",
@@ -126,5 +126,10 @@
         }
       ]
     }
-  ]
+  ],
+  "summary": {
+    "ja": [
+      "【原文】\n挂剣微思不自知\n誤為季子愧無期\n秋風破尽芭蕉夢\n寒雨打成流落詩\n天下何狂投笔起\n人間有道挺身之\n吾当死処吾当死\n一日元来十二時"
+    ]
+  }
 }

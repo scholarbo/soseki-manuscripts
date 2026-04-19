@@ -71,25 +71,25 @@
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-035-w01.json/canvas/1",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-035-w01.json/canvas-035-w01",
       "type": "Canvas",
       "width": 1200,
       "height": 1600,
       "label": {
         "ja": [
-          "035. 〔無題〕明治二十三年八月末"
+          "035 第1頁"
         ]
       },
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-035-w01.json/page/1",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-035-w01.json/canvas-035-w01/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-035-w01.json/annotation/1",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-035-w01.json/canvas-035-w01/annotation",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-035-w01.json/canvas/1",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-035-w01.json/canvas-035-w01",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/035-w01.jpg",
                 "type": "Image",
@@ -102,5 +102,10 @@
         }
       ]
     }
-  ]
+  ],
+  "summary": {
+    "ja": [
+      "【原文】\n仙人堕俗界\n遂不免喜悲\n啼血又吐血\n憔悴憐君姿\n漱石又枕石\n固陋歓吾痴\n君痾猶可癒\n僕痴不可医\n素懐定沈鬱\n愁緒乱如糸\n浩歌時幾曲\n〔一句欠〕\n一曲唾壺砕\n二曲双涙垂\n曲闋呼咄咄\n衷情欲訴誰\n白雲蓬勃起\n天際看蛟螭\n笑指函山頂\n去臥葦湖湄\n歳月固悠久\n宇宙独無涯\n蜉蝣飛湫上\n大鵬嗤其卑\n嗤者亦泯滅\n得喪皆一時\n寄語功名客\n役役欲何為"
+    ]
+  }
 }

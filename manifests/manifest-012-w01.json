@@ -83,25 +83,25 @@
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-012-w01.json/canvas/1",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-012-w01.json/canvas-012-w01",
       "type": "Canvas",
       "width": 979,
       "height": 800,
       "label": {
         "ja": [
-          "012. 〔「『七草集』評」より九首・其四〕明治二十二年五月"
+          "012 第1頁"
         ]
       },
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-012-w01.json/page/1",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-012-w01.json/canvas-012-w01/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-012-w01.json/annotation/1",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-012-w01.json/canvas-012-w01/annotation",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-012-w01.json/canvas/1",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-012-w01.json/canvas-012-w01",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/012-w01.jpg",
                 "type": "Image",
@@ -114,5 +114,10 @@
         }
       ]
     }
-  ]
+  ],
+  "summary": {
+    "ja": [
+      "【原文】\n艶骨化成塚上苔\n于今江上杜鵑哀\n憐君多病多情処\n偏弔梅児薄命来"
+    ]
+  }
 }

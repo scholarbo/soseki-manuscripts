@@ -59,25 +59,25 @@
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-004-w01.json/canvas/1",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-004-w01.json/canvas-004-w01",
       "type": "Canvas",
       "width": 1200,
       "height": 1600,
       "label": {
         "ja": [
-          "004. 送奥田詞兄帰国"
+          "004 第1頁"
         ]
       },
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-004-w01.json/page/1",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-004-w01.json/canvas-004-w01/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-004-w01.json/annotation/1",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-004-w01.json/canvas-004-w01/annotation",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-004-w01.json/canvas/1",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-004-w01.json/canvas-004-w01",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/004-w01.jpg",
                 "type": "Image",
@@ -90,5 +90,10 @@
         }
       ]
     }
-  ]
+  ],
+  "summary": {
+    "ja": [
+      "【原文】\n汽笛声長十里烟\n烟残人逝暗悽然\n一朝締好雖新識\n廿日罄歓是宿縁\n小別無端温緑酒\n蕪詩何事上紅箋\n又憐今夜刀川客\n夢冷篷窓聴雨眠"
+    ]
+  }
 }

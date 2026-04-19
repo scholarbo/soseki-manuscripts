@@ -71,25 +71,25 @@
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-071-w01.json/canvas/1",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-071-w01.json/canvas-071-w01",
       "type": "Canvas",
       "width": 1200,
       "height": 1600,
       "label": {
         "ja": [
-          "071. 古別離明治三十二年四月"
+          "071 第1頁"
         ]
       },
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-071-w01.json/page/1",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-071-w01.json/canvas-071-w01/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-071-w01.json/annotation/1",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-071-w01.json/canvas-071-w01/annotation",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-071-w01.json/canvas/1",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-071-w01.json/canvas-071-w01",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/071-w01.jpg",
                 "type": "Image",
@@ -102,5 +102,10 @@
         }
       ]
     }
-  ]
+  ],
+  "summary": {
+    "ja": [
+      "【原文】\n上楼湘水緑\n捲簾明月来\n双袖薔薇香\n千金琥珀杯\n窈窕鳴紫篴\n徙倚暗涙催\n二八纔画眉\n早識别離哀\n再会期何日\n臨江思邈哉\n徒道不相忘\n君心曷得回\n迢迢従此去\n前路白雲堆\n撫君金錯刀\n憐君奪錦才\n不贈貂襜褕\n却報英瓊瑰\n春風吹翠鬟\n悵忉下高台\n欲遺君子佩\n蘭渚起徘徊"
+    ]
+  }
 }

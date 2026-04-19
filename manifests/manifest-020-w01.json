@@ -83,25 +83,25 @@
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-020-w01.json/canvas/1",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-020-w01.json/canvas-020-w01",
       "type": "Canvas",
       "width": 1536,
       "height": 1197,
       "label": {
         "ja": [
-          "020. 〔『木屑録』より十四首・其三〕明治二十二年九月"
+          "020 第1頁"
         ]
       },
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-020-w01.json/page/1",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-020-w01.json/canvas-020-w01/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-020-w01.json/annotation/1",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-020-w01.json/canvas-020-w01/annotation",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-020-w01.json/canvas/1",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-020-w01.json/canvas-020-w01",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/020-w01.jpg",
                 "type": "Image",
@@ -114,5 +114,10 @@
         }
       ]
     }
-  ]
+  ],
+  "summary": {
+    "ja": [
+      "【原文】\n二十余年住帝京\n倪黄遺墨暗傷情\n如今閑却壁間画\n百里丹青入眼明"
+    ]
+  }
 }

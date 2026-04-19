@@ -83,25 +83,25 @@
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-028-w01.json/canvas/1",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-028-w01.json/canvas-028-w01",
       "type": "Canvas",
       "width": 1536,
       "height": 1197,
       "label": {
         "ja": [
-          "028. 〔『木屑録』より十四首・其十一〕天明舟達三堀旗亭即事"
+          "028 第1頁"
         ]
       },
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-028-w01.json/page/1",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-028-w01.json/canvas-028-w01/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-028-w01.json/annotation/1",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-028-w01.json/canvas-028-w01/annotation",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-028-w01.json/canvas/1",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-028-w01.json/canvas-028-w01",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/028-w01.jpg",
                 "type": "Image",
@@ -114,5 +114,10 @@
         }
       ]
     }
-  ]
+  ],
+  "summary": {
+    "ja": [
+      "【原文】\n烟霧夢夢見不看\n黎明人倚碧欄干\n江村雨後加秋意\n蕭瑟風吹衰草寒"
+    ]
+  }
 }

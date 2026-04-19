@@ -83,25 +83,25 @@
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-024-w01.json/canvas/1",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-024-w01.json/canvas-024-w01",
       "type": "Canvas",
       "width": 1536,
       "height": 1197,
       "label": {
         "ja": [
-          "024. 〔『木屑録』より十四首・其七〕明治二十二年九月"
+          "024 第1頁"
         ]
       },
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-024-w01.json/page/1",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-024-w01.json/canvas-024-w01/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-024-w01.json/annotation/1",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-024-w01.json/canvas-024-w01/annotation",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-024-w01.json/canvas/1",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-024-w01.json/canvas-024-w01",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/024-w01.jpg",
                 "type": "Image",
@@ -114,5 +114,10 @@
         }
       ]
     }
-  ]
+  ],
+  "summary": {
+    "ja": [
+      "【原文】\n鋸山如鋸碧崔嵬\n上有伽藍倚曲隈\n山僧日高猶未起\n落葉不掃白雲堆\n吾是北来帝京客\n登臨此日懐往昔\n咨嗟一千五百年\n十二僧院空無迹\n只有古仏坐磅磄\n雨蝕苔蒸閲桑滄\n似嗤浮世荣枯事\n冷眼下瞰太平洋"
+    ]
+  }
 }

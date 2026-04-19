@@ -83,25 +83,25 @@
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-025-w01.json/canvas/1",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-025-w01.json/canvas-025-w01",
       "type": "Canvas",
       "width": 1536,
       "height": 1197,
       "label": {
         "ja": [
-          "025. 〔『木屑録』より十四首・其八〕明治二十二年九月"
+          "025 第1頁"
         ]
       },
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-025-w01.json/page/1",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-025-w01.json/canvas-025-w01/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-025-w01.json/annotation/1",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-025-w01.json/canvas-025-w01/annotation",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-025-w01.json/canvas/1",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-025-w01.json/canvas-025-w01",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/025-w01.jpg",
                 "type": "Image",
@@ -114,5 +114,10 @@
         }
       ]
     }
-  ]
+  ],
+  "summary": {
+    "ja": [
+      "【原文】\n君不見鋸山全身石稜稜\n古松為髪髪鬅鬙\n横断房総三十里\n海濤洗麓声渤漰\n別有人造圧天造\n劈巌鑿石作隧道\n窟老苔厚龍気腥\n蒼崖水滴多行潦\n洞中遥望洞外山\n洞外又見洞中湾\n出洞入洞幾曲折\n洞洞相望似連環\n連環断処岸嶄窄\n還喜奇勝天外落\n頭上之石脚底濤\n石圧頭兮濤濯脚"
+    ]
+  }
 }

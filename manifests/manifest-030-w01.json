@@ -83,25 +83,25 @@
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-030-w01.json/canvas/1",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-030-w01.json/canvas-030-w01",
       "type": "Canvas",
       "width": 1536,
       "height": 1197,
       "label": {
         "ja": [
-          "030. 〔『木屑録』より十四首・其十三〕別後憶京中諸友"
+          "030 第1頁"
         ]
       },
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-030-w01.json/page/1",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-030-w01.json/canvas-030-w01/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-030-w01.json/annotation/1",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-030-w01.json/canvas-030-w01/annotation",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-030-w01.json/canvas/1",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-030-w01.json/canvas-030-w01",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/030-w01.jpg",
                 "type": "Image",
@@ -114,5 +114,10 @@
         }
       ]
     }
-  ]
+  ],
+  "summary": {
+    "ja": [
+      "【原文】\n魂飛千里墨江湄\n湄上画楼楊柳枝\n酒帯離愁醒更早\n詩含別恨唱殊遅\n銀釭照夢見蛾聚\n素月匿秋知雨随\n料得洛陽才子伴\n錦箋応写断腸詞"
+    ]
+  }
 }

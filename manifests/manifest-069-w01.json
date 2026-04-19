@@ -83,25 +83,25 @@
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-069-w01.json/canvas/1",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-069-w01.json/canvas-069-w01",
       "type": "Canvas",
       "width": 1200,
       "height": 1600,
       "label": {
         "ja": [
-          "069. 客中逢春寄子規"
+          "069 第1頁"
         ]
       },
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-069-w01.json/page/1",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-069-w01.json/canvas-069-w01/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-069-w01.json/annotation/1",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-069-w01.json/canvas-069-w01/annotation",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-069-w01.json/canvas/1",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-069-w01.json/canvas-069-w01",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/069-w01.jpg",
                 "type": "Image",
@@ -114,5 +114,10 @@
         }
       ]
     }
-  ]
+  ],
+  "summary": {
+    "ja": [
+      "【原文】\n春風遍東皋\n門前碧蕪新\n我懐在君子\n君子隔嶙峋\n嶙峋不可跋\n君子空穆忞\n悵望不可就\n碧蕪徒傷神\n憶昔交游日\n共許管鮑貧\n斗酒凌乾坤\n豪気逼星辰\n而今天一涯\n索居負我真\n客土我問礼\n旧廬君賦春\n二百余里別\n三十一年塵\n塵纓無由濯\n徘徊滄浪津\n寄語子規子\n莫為官遊人"
+    ]
+  }
 }

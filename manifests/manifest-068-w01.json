@@ -71,25 +71,25 @@
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-068-w01.json/canvas/1",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-068-w01.json/canvas-068-w01",
       "type": "Canvas",
       "width": 1200,
       "height": 1600,
       "label": {
         "ja": [
-          "068. 菜花黄明治三十一年三月"
+          "068 第1頁"
         ]
       },
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-068-w01.json/page/1",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-068-w01.json/canvas-068-w01/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-068-w01.json/annotation/1",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-068-w01.json/canvas-068-w01/annotation",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-068-w01.json/canvas/1",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-068-w01.json/canvas-068-w01",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/068-w01.jpg",
                 "type": "Image",
@@ -102,5 +102,10 @@
         }
       ]
     }
-  ]
+  ],
+  "summary": {
+    "ja": [
+      "【原文】\n菜花黄朝暾\n菜花黄夕陽\n菜花黄裏人\n晨昏喜欲狂\n曠懐随雲雀\n冲融入彼蒼\n縹緲近天都\n迢逓凌塵郷\n斯心不可道\n厥楽自潢洋\n恨未化為鳥\n啼尽菜花黄"
+    ]
+  }
 }

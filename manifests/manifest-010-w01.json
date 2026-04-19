@@ -83,25 +83,25 @@
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-010-w01.json/canvas/1",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-010-w01.json/canvas-010-w01",
       "type": "Canvas",
       "width": 979,
       "height": 800,
       "label": {
         "ja": [
-          "010. 〔「『七草集』評」より九首・其二〕明治二十二年五月"
+          "010 第1頁"
         ]
       },
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-010-w01.json/page/1",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-010-w01.json/canvas-010-w01/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-010-w01.json/annotation/1",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-010-w01.json/canvas-010-w01/annotation",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-010-w01.json/canvas/1",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-010-w01.json/canvas-010-w01",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/010-w01.jpg",
                 "type": "Image",
@@ -114,5 +114,10 @@
         }
       ]
     }
-  ]
+  ],
+  "summary": {
+    "ja": [
+      "【原文】\n幾年零落亦風流\n好賃江頭香月楼\n麦緑菜黄吟欲尽\n又逢紅蓼白蘋秋"
+    ]
+  }
 }

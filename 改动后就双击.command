@@ -12,7 +12,9 @@ else
 fi
 
 MASTER_BUILDER="$REPO/build_master_json_portable.py"
-MANIFEST_BUILDER="$REPO/build_manifests_portable.py"
+TEXT_BUILDER="$REPO/build_completed_texts_from_xlsx_portable.py"
+MANIFEST_BUILDER="$REPO/build_manifests_portable_updated.py"
+COLLECTION_BUILDER="$REPO/build_collection_all_portable.py"
 
 STATE_DIR="$REPO/.auto_state"
 STATE_FILE="$STATE_DIR/last_run_state.json"
@@ -20,15 +22,12 @@ STATE_FILE="$STATE_DIR/last_run_state.json"
 mkdir -p "$STATE_DIR"
 cd "$REPO"
 
-if [ ! -f "$MASTER_BUILDER" ]; then
-  echo "缺少脚本: $MASTER_BUILDER"
-  exit 1
-fi
-
-if [ ! -f "$MANIFEST_BUILDER" ]; then
-  echo "缺少脚本: $MANIFEST_BUILDER"
-  exit 1
-fi
+for f in "$MASTER_BUILDER" "$TEXT_BUILDER" "$MANIFEST_BUILDER" "$COLLECTION_BUILDER"; do
+  if [ ! -f "$f" ]; then
+    echo "缺少脚本: $f"
+    exit 1
+  fi
+done
 
 get_mtime() {
   local target="$1"
@@ -54,63 +53,60 @@ get_latest_tree_mtime() {
   echo "${val:-0}"
 }
 
-LAST_MASTER_XLSX=0
-LAST_IMAGES_MASTER_XLSX=0
-LAST_IMAGES_TREE=0
+read_state() {
+  local key="$1"
+  if [ -f "$STATE_FILE" ]; then
+    "$PYTHON" - <<'PY' "$STATE_FILE" "$key"
+import json,sys
+p,key = sys.argv[1], sys.argv[2]
+try:
+    d=json.load(open(p,'r',encoding='utf-8'))
+    print(d.get(key,0))
+except Exception:
+    print(0)
+PY
+  else
+    echo "0"
+  fi
+}
 
-if [ -f "$STATE_FILE" ]; then
-  LAST_MASTER_XLSX=$($PYTHON - <<'PY' "$STATE_FILE"
-import json,sys
-p=sys.argv[1]
-try:
-    d=json.load(open(p,'r',encoding='utf-8'))
-    print(d.get('master_xlsx_mtime',0))
-except Exception:
-    print(0)
-PY
-)
-  LAST_IMAGES_MASTER_XLSX=$($PYTHON - <<'PY' "$STATE_FILE"
-import json,sys
-p=sys.argv[1]
-try:
-    d=json.load(open(p,'r',encoding='utf-8'))
-    print(d.get('images_master_xlsx_mtime',0))
-except Exception:
-    print(0)
-PY
-)
-  LAST_IMAGES_TREE=$($PYTHON - <<'PY' "$STATE_FILE"
-import json,sys
-p=sys.argv[1]
-try:
-    d=json.load(open(p,'r',encoding='utf-8'))
-    print(d.get('images_tree_mtime',0))
-except Exception:
-    print(0)
-PY
-)
-fi
+LAST_MASTER_XLSX=$(read_state "master_xlsx_mtime")
+LAST_IMAGES_MASTER_XLSX=$(read_state "images_master_xlsx_mtime")
+LAST_TEXT_MASTER_XLSX=$(read_state "text_master_xlsx_mtime")
+LAST_IMAGES_TREE=$(read_state "images_tree_mtime")
 
 NOW_MASTER_XLSX=$(get_mtime "$REPO/master.xlsx")
 NOW_IMAGES_MASTER_XLSX=$(get_mtime "$REPO/images_master.xlsx")
+NOW_TEXT_MASTER_XLSX=$(get_mtime "$REPO/soseki-manuscripts-text-master.xlsx")
 NOW_IMAGES_TREE=$(get_latest_tree_mtime "$REPO/images")
 
 echo "== 变更检查 =="
-echo "master.xlsx        : $LAST_MASTER_XLSX -> $NOW_MASTER_XLSX"
-echo "images_master.xlsx : $LAST_IMAGES_MASTER_XLSX -> $NOW_IMAGES_MASTER_XLSX"
-echo "images/            : $LAST_IMAGES_TREE -> $NOW_IMAGES_TREE"
+echo "master.xlsx                      : $LAST_MASTER_XLSX -> $NOW_MASTER_XLSX"
+echo "images_master.xlsx               : $LAST_IMAGES_MASTER_XLSX -> $NOW_IMAGES_MASTER_XLSX"
+echo "soseki-manuscripts-text-master.xlsx : $LAST_TEXT_MASTER_XLSX -> $NOW_TEXT_MASTER_XLSX"
+echo "images/                          : $LAST_IMAGES_TREE -> $NOW_IMAGES_TREE"
 echo
 
 NEED_MASTER=0
+NEED_TEXT=0
 NEED_MANIFEST=0
+NEED_COLLECTION=0
 
 if [ "$NOW_MASTER_XLSX" != "$LAST_MASTER_XLSX" ] || [ "$NOW_IMAGES_MASTER_XLSX" != "$LAST_IMAGES_MASTER_XLSX" ]; then
   NEED_MASTER=1
   NEED_MANIFEST=1
+  NEED_COLLECTION=1
+fi
+
+if [ "$NOW_TEXT_MASTER_XLSX" != "$LAST_TEXT_MASTER_XLSX" ]; then
+  NEED_TEXT=1
+  NEED_MANIFEST=1
+  NEED_COLLECTION=1
 fi
 
 if [ "$NOW_IMAGES_TREE" != "$LAST_IMAGES_TREE" ]; then
   NEED_MANIFEST=1
+  NEED_COLLECTION=1
 fi
 
 if [ "$NEED_MASTER" -eq 1 ]; then
@@ -122,39 +118,58 @@ else
   echo
 fi
 
-if [ "$NEED_MANIFEST" -eq 1 ]; then
-  echo "== 2. 更新 manifests =="
-  "$PYTHON" "$MANIFEST_BUILDER"
+if [ "$NEED_TEXT" -eq 1 ]; then
+  echo "== 2. 从文本主表生成 completed_texts.json =="
+  "$PYTHON" "$TEXT_BUILDER"
   echo
 else
-  echo "== 2. manifests 无需更新 =="
+  echo "== 2. completed_texts.json 无需更新 =="
   echo
 fi
 
-$PYTHON - <<'PY' "$STATE_FILE" "$NOW_MASTER_XLSX" "$NOW_IMAGES_MASTER_XLSX" "$NOW_IMAGES_TREE"
+if [ "$NEED_MANIFEST" -eq 1 ]; then
+  echo "== 3. 更新 manifests =="
+  "$PYTHON" "$MANIFEST_BUILDER"
+  echo
+else
+  echo "== 3. manifests 无需更新 =="
+  echo
+fi
+
+if [ "$NEED_COLLECTION" -eq 1 ]; then
+  echo "== 4. 更新 collection-all.json =="
+  "$PYTHON" "$COLLECTION_BUILDER"
+  echo
+else
+  echo "== 4. collection-all.json 无需更新 =="
+  echo
+fi
+
+$PYTHON - <<'PY' "$STATE_FILE" "$NOW_MASTER_XLSX" "$NOW_IMAGES_MASTER_XLSX" "$NOW_TEXT_MASTER_XLSX" "$NOW_IMAGES_TREE"
 import json, sys
-p, a, b, c = sys.argv[1:]
-with open(p, "w", encoding="utf-8") as f:
+p, a, b, c, d = sys.argv[1:]
+with open(p, 'w', encoding='utf-8') as f:
     json.dump({
-        "master_xlsx_mtime": int(a),
-        "images_master_xlsx_mtime": int(b),
-        "images_tree_mtime": int(c),
+        'master_xlsx_mtime': int(a),
+        'images_master_xlsx_mtime': int(b),
+        'text_master_xlsx_mtime': int(c),
+        'images_tree_mtime': int(d),
     }, f, ensure_ascii=False, indent=2)
 PY
 
-echo "== 3. Git 状态 =="
+echo "== 5. Git 状态 =="
 git status --short
 echo
 
-if [ "$NEED_MASTER" -eq 1 ] || [ "$NEED_MANIFEST" -eq 1 ] || [ -n "$(git status --porcelain)" ]; then
-  echo "== 4. 暂存全部仓库变更 =="
+if [ "$NEED_MASTER" -eq 1 ] || [ "$NEED_TEXT" -eq 1 ] || [ "$NEED_MANIFEST" -eq 1 ] || [ "$NEED_COLLECTION" -eq 1 ] || [ -n "$(git status --porcelain)" ]; then
+  echo "== 6. 暂存全部仓库变更 =="
   git add -A
   echo
-  echo "== 5. 提交并推送到云端仓库 =="
+  echo "== 7. 提交并推送到云端仓库 =="
   if git diff --cached --quiet; then
     echo "没有可提交的变更。"
   else
-    git commit -m "Auto update master.json, manifests, and repo contents"
+    git commit -m "Auto update text master, master.json, manifests, and collection-all"
     git push origin main
   fi
 else

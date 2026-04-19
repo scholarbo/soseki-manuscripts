@@ -5258,7 +5258,7 @@
         return;
       }
       const title = data.title || '';
-      const body = data.text || data.text_kanbun || '';
+      const body = data.text || data.body || data.text_kanbun || data.text_block || '';
       textContent.innerHTML = `<div class="poem-title">${escapeHtml(title)}</div><div class="poem-lines">${escapeHtml(body)}</div>`;
     }
     function escapeHtml(str='') {

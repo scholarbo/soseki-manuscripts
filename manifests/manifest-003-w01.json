@@ -59,25 +59,25 @@
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-003-w01.json/canvas/1",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-003-w01.json/canvas-003-w01",
       "type": "Canvas",
       "width": 1200,
       "height": 1600,
       "label": {
         "ja": [
-          "003. 題画"
+          "003 第1頁"
         ]
       },
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-003-w01.json/page/1",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-003-w01.json/canvas-003-w01/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-003-w01.json/annotation/1",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-003-w01.json/canvas-003-w01/annotation",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-003-w01.json/canvas/1",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-003-w01.json/canvas-003-w01",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/003-w01.jpg",
                 "type": "Image",
@@ -90,5 +90,10 @@
         }
       ]
     }
-  ]
+  ],
+  "summary": {
+    "ja": [
+      "【原文】\n何人鎮日掩柴扃\n也是乾坤一草亭\n村静牧童翻野笛\n簷虚闘雀蹴金鈴\n渓南秀竹雲垂地\n林後老槐風満庭\n春去夏来無好興\n夢魂回処気冷冷"
+    ]
+  }
 }

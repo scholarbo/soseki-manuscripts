@@ -83,25 +83,25 @@
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-049-w01.json/canvas/1",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-049-w01.json/canvas-049-w01",
       "type": "Canvas",
       "width": 1200,
       "height": 1600,
       "label": {
         "ja": [
-          "049. 謝正岡子規見惠小照次其所贈詩韵却呈明治二十三年十月二十四日"
+          "049 第1頁"
         ]
       },
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-049-w01.json/page/1",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-049-w01.json/canvas-049-w01/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-049-w01.json/annotation/1",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-049-w01.json/canvas-049-w01/annotation",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-049-w01.json/canvas/1",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-049-w01.json/canvas-049-w01",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/049-w01.jpg",
                 "type": "Image",
@@ -114,5 +114,10 @@
         }
       ]
     }
-  ]
+  ],
+  "summary": {
+    "ja": [
+      "【原文】\n非是求名滞帝城\n唯憐病羸帰思生\n憑親黄巻忘栄辱\n悔負青山休耨耕\n銀燭繡屏吟瘦影\n竹風蕉雨聴秋声\n多情縦住絃歌巷\n漠漠塵中傲骨清"
+    ]
+  }
 }

@@ -59,25 +59,25 @@
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-073-w01.json/canvas/1",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-073-w01.json/canvas-073-w01",
       "type": "Canvas",
       "width": 1200,
       "height": 1600,
       "label": {
         "ja": [
-          "073. 〔無題〕明治三十三年"
+          "073 第1頁"
         ]
       },
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-073-w01.json/page/1",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-073-w01.json/canvas-073-w01/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-073-w01.json/annotation/1",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-073-w01.json/canvas-073-w01/annotation",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-073-w01.json/canvas/1",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-073-w01.json/canvas-073-w01",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/073-w01.jpg",
                 "type": "Image",
@@ -90,5 +90,10 @@
         }
       ]
     }
-  ]
+  ],
+  "summary": {
+    "ja": [
+      "【原文】\n長風解纜古瀛洲\n欲破滄溟掃暗愁\n縹緲離懐憐野鶴\n蹉跎宿志愧沙鷗\n酔捫北斗三杯酒\n笑指西天一葉舟\n万里蒼茫航路杳\n烟波深処賦高秋"
+    ]
+  }
 }

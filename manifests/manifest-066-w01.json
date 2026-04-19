@@ -83,25 +83,25 @@
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-066-w01.json/canvas/1",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-066-w01.json/canvas-066-w01",
       "type": "Canvas",
       "width": 5262,
       "height": 3456,
       "label": {
         "ja": [
-          "066. 失題明治三十一年三月"
+          "066 第1頁"
         ]
       },
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-066-w01.json/page/1",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-066-w01.json/canvas-066-w01/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-066-w01.json/annotation/1",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-066-w01.json/canvas-066-w01/annotation",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-066-w01.json/canvas/1",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-066-w01.json/canvas-066-w01",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/066-w01.jpg",
                 "type": "Image",
@@ -114,5 +114,10 @@
         }
       ]
     }
-  ]
+  ],
+  "summary": {
+    "ja": [
+      "【原文】\n吾心若有苦\n求之遂難求\n俯仰天地際\n胡為発哀声\n春花幾开落\n世事幾迭更\n烏兎促髩髪\n意気軽功名\n昨夜生月暈\n飆風朝満城\n夢醒枕上聴\n孤剣匣底鳴\n慨然振衣起\n登楼望前程\n前程望不見\n漠漠愁雲横"
+    ]
+  }
 }

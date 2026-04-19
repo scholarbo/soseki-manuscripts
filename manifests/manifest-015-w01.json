@@ -83,25 +83,25 @@
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-015-w01.json/canvas/1",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-015-w01.json/canvas-015-w01",
       "type": "Canvas",
       "width": 979,
       "height": 800,
       "label": {
         "ja": [
-          "015. 〔「『七草集』評」より九首・其七〕明治二十二年五月"
+          "015 第1頁"
         ]
       },
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-015-w01.json/page/1",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-015-w01.json/canvas-015-w01/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-015-w01.json/annotation/1",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-015-w01.json/canvas-015-w01/annotation",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-015-w01.json/canvas/1",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-015-w01.json/canvas-015-w01",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/015-w01.jpg",
                 "type": "Image",
@@ -114,5 +114,10 @@
         }
       ]
     }
-  ]
+  ],
+  "summary": {
+    "ja": [
+      "【原文】\n洗尽塵懐忘我物\n只看窓外古松鬱\n乾坤深夜闃無声\n黙坐空房如古仏"
+    ]
+  }
 }

@@ -83,25 +83,25 @@
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-011-w01.json/canvas/1",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-011-w01.json/canvas-011-w01",
       "type": "Canvas",
       "width": 979,
       "height": 800,
       "label": {
         "ja": [
-          "011. 〔「『七草集』評」より九首・其三〕明治二十二年五月"
+          "011 第1頁"
         ]
       },
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-011-w01.json/page/1",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-011-w01.json/canvas-011-w01/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-011-w01.json/annotation/1",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-011-w01.json/canvas-011-w01/annotation",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-011-w01.json/canvas/1",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-011-w01.json/canvas-011-w01",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/011-w01.jpg",
                 "type": "Image",
@@ -114,5 +114,10 @@
         }
       ]
     }
-  ]
+  ],
+  "summary": {
+    "ja": [
+      "【原文】\n江東避俗養天真\n一代風流餞逝春\n誰知今日惜花客\n却是当年剣舞人"
+    ]
+  }
 }

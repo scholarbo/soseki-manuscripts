@@ -83,25 +83,25 @@
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-014-w01.json/canvas/1",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-014-w01.json/canvas-014-w01",
       "type": "Canvas",
       "width": 979,
       "height": 800,
       "label": {
         "ja": [
-          "014. 〔「『七草集』評」より九首・其六〕明治二十二年五月"
+          "014 第1頁"
         ]
       },
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-014-w01.json/page/1",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-014-w01.json/canvas-014-w01/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-014-w01.json/annotation/1",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-014-w01.json/canvas-014-w01/annotation",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-014-w01.json/canvas/1",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-014-w01.json/canvas-014-w01",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/014-w01.jpg",
                 "type": "Image",
@@ -114,5 +114,10 @@
         }
       ]
     }
-  ]
+  ],
+  "summary": {
+    "ja": [
+      "【原文】\n浴罷微吟敲枕函\n江楼日落月光含\n想君此際苦無事\n漫数篝燈一二三"
+    ]
+  }
 }

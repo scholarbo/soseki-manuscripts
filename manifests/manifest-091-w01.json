@@ -95,25 +95,25 @@
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-091-w01.json/canvas/1",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-091-w01.json/canvas-091-w01",
       "type": "Canvas",
       "width": 1200,
       "height": 1600,
       "label": {
         "ja": [
-          "091. 〔無題〕明治四十三年十月十六日"
+          "091 第1頁"
         ]
       },
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-091-w01.json/page/1",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-091-w01.json/canvas-091-w01/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-091-w01.json/annotation/1",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-091-w01.json/canvas-091-w01/annotation",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-091-w01.json/canvas/1",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-091-w01.json/canvas-091-w01",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/091-w01.jpg",
                 "type": "Image",
@@ -126,5 +126,10 @@
         }
       ]
     }
-  ]
+  ],
+  "summary": {
+    "ja": [
+      "【原文】\n縹緲玄黄外\n死生交謝時\n寄託冥然去\n我心何所之\n帰来覓命根\n杳窅竟難知\n孤愁空遶夢\n宛動蕭瑟悲\n江山秋已老\n粥藥髩将衰\n廓寥天尚在\n高樹独余枝\n晚懐如此澹\n風露入詩遅"
+    ]
+  }
 }

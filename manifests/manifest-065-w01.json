@@ -71,25 +71,25 @@
   ],
   "items": [
     {
-      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-065-w01.json/canvas/1",
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-065-w01.json/canvas-065-w01",
       "type": "Canvas",
       "width": 1200,
       "height": 1600,
       "label": {
         "ja": [
-          "065. 〔春興〕明治三十一年三月"
+          "065 第1頁"
         ]
       },
       "items": [
         {
-          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-065-w01.json/page/1",
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-065-w01.json/canvas-065-w01/page",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-065-w01.json/annotation/1",
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-065-w01.json/canvas-065-w01/annotation",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-065-w01.json/canvas/1",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-065-w01.json/canvas-065-w01",
               "body": {
                 "id": "https://scholarbo.github.io/soseki-manuscripts/images/065-w01.jpg",
                 "type": "Image",
@@ -102,5 +102,10 @@
         }
       ]
     }
-  ]
+  ],
+  "summary": {
+    "ja": [
+      "【原文】\n出門多所思\n春風吹吾衣\n芳草生車轍\n癈道入霞微\n停筇而矚目\n万象帯晴暉\n聴黄鳥宛転\n睹落英紛霏\n行尽平蕪遠\n題詩古寺扉\n孤愁高雲際\n大空断鴻帰\n寸心何窈窕\n縹緲忘是非\n三十我欲老\n韶光猶依依\n逍遥随物化\n悠然対芬菲"
+    ]
+  }
 }
