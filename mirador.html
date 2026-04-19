@@ -46,7 +46,7 @@
       ? manifests
           .map((m) => {
             if (typeof m === "string" && m.trim() !== "") {
-              return { manifestId: m };
+              return { manifestId: m, maximized: true };
             }
 
             if (
@@ -55,7 +55,7 @@
               typeof m.manifest_url === "string" &&
               m.manifest_url.trim() !== ""
             ) {
-              return { manifestId: m.manifest_url };
+              return { manifestId: m.manifest_url, maximized: true };
             }
 
             return null;

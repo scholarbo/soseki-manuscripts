@@ -3417,7 +3417,208 @@
       margin:0 !important;
     }
 
-  </style>
+  
+
+  /* ===== silky stable patch (2026-04-20) ===== */
+  @media (min-width: 901px) {
+    html, body {
+      height: 100%;
+      overflow: hidden;
+      scrollbar-gutter: stable both-edges;
+    }
+
+    .app {
+      height: 100dvh !important;
+      min-height: 100dvh !important;
+      overflow: hidden !important;
+    }
+
+    .sidebar,
+    .main {
+      min-height: 0 !important;
+      max-height: none !important;
+      height: auto !important;
+    }
+
+    .main {
+      overflow: auto !important;
+      scrollbar-gutter: stable;
+      overscroll-behavior: contain;
+    }
+
+    .workarea {
+      min-height: 0 !important;
+      overflow: hidden;
+    }
+
+    .sidebar:hover,
+    #textPanel:hover {
+      transform: translateZ(0) translateY(-1px) scale(1.004) !important;
+    }
+
+    .manuscript-panel:hover {
+      transform: translateZ(0) scale(.9955) !important;
+    }
+
+    #textPanel > #topbar:hover {
+      transform: translateY(-0.5px) scale(1.002) !important;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .mobile-overlay,
+    .mobile-dock,
+    .mobile-top-strip {
+      display: none !important;
+      pointer-events: none !important;
+    }
+
+    html, body {
+      height: auto !important;
+      overflow-x: hidden !important;
+      overflow-y: auto !important;
+    }
+
+    body.mobile-device,
+    body.mobile-lock {
+      padding-bottom: 0 !important;
+      overflow: auto !important;
+      touch-action: auto !important;
+    }
+
+    .app {
+      display: grid !important;
+      grid-template-columns: 1fr !important;
+      grid-template-rows: auto auto 1fr !important;
+      min-height: 100% !important;
+      height: auto !important;
+      padding: 12px !important;
+      gap: 12px !important;
+      align-items: initial !important;
+      perspective: none !important;
+    }
+
+    .sidebar,
+    .main,
+    #textPanel,
+    .manuscript-panel {
+      transform: none !important;
+      max-height: none !important;
+    }
+
+    .sidebar {
+      position: relative !important;
+      top: auto !important;
+      left: auto !important;
+      right: auto !important;
+      bottom: auto !important;
+      width: 100% !important;
+      height: auto !important;
+      min-height: 0 !important;
+      max-height: min(40vh, 420px) !important;
+      z-index: auto !important;
+      border-radius: 18px !important;
+      overflow: hidden !important;
+    }
+
+    body.mobile-sidebar-open .sidebar {
+      transform: none !important;
+    }
+
+    .sidebar.collapsed {
+      width: 100% !important;
+      min-width: 0 !important;
+      min-height: 44px !important;
+      max-height: 44px !important;
+    }
+
+    .sidebar.collapsed .sidebar-inner {
+      display: none !important;
+    }
+
+    .sidebar.collapsed .collapsed-rail {
+      display: flex !important;
+      writing-mode: horizontal-tb !important;
+      width: 100%;
+      padding: 0 48px 0 14px;
+      justify-content: flex-start;
+    }
+
+    .main {
+      min-height: 0 !important;
+      overflow: visible !important;
+      gap: 10px !important;
+    }
+
+    .workarea {
+      display: grid !important;
+      grid-template-columns: 1fr !important;
+      grid-template-rows: auto auto !important;
+      gap: 10px !important;
+      min-height: 0 !important;
+      overflow: visible !important;
+    }
+
+    .manuscript-panel {
+      min-height: 58vh !important;
+      height: 58vh !important;
+      border-radius: 18px !important;
+      overflow: hidden !important;
+    }
+
+    #textPanel {
+      position: relative !important;
+      left: auto !important;
+      right: auto !important;
+      bottom: auto !important;
+      width: 100% !important;
+      min-width: 0 !important;
+      height: auto !important;
+      min-height: 280px !important;
+      max-height: none !important;
+      z-index: auto !important;
+      transform: none !important;
+      padding: 46px 10px 10px !important;
+      gap: 10px !important;
+      border-radius: 18px !important;
+      overflow: hidden !important;
+    }
+
+    body.mobile-text-open #textPanel {
+      transform: none !important;
+    }
+
+    #textPanel.collapsed {
+      width: 100% !important;
+      min-width: 0 !important;
+      min-height: 44px !important;
+      height: auto !important;
+      padding: 0 !important;
+      gap: 0 !important;
+      overflow: hidden !important;
+    }
+
+    #textPanel.collapsed > #topbar,
+    #textPanel.collapsed .text-inner {
+      display: none !important;
+    }
+
+    #textPanel.collapsed .text-collapsed-rail {
+      display: flex !important;
+      writing-mode: horizontal-tb !important;
+      width: 100%;
+      padding: 0 14px 0 48px;
+      justify-content: flex-start;
+    }
+
+    #textPanel .text-toggle {
+      top: 10px !important;
+      left: 10px !important;
+      transform: none !important;
+    }
+  }
+
+</style>
 </head>
 <body>
   <div class="app">
@@ -5288,7 +5489,7 @@
         return;
       }
       const payload = encodeURIComponent(JSON.stringify(clean));
-      frame.src = `${base}/mirador-frame-multi-20260416-012702-f65f15.html?manifests=${payload}`;
+      frame.src = `${base}/mirador.html?manifests=${payload}`;
       currentMode.textContent = modeLabel;
     }
     function openSingle(item) {
@@ -5858,7 +6059,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function isMobile() {
-    return window.matchMedia('(max-width: 900px)').matches;
+    return false;
   }
 
   function closeMobilePanels() {
