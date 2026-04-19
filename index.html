@@ -19,9 +19,9 @@
       --sidebar-collapsed-w: 38px;
       --current-sidebar-w: var(--sidebar-w);
       --topbar-h: 132px;
-      --text-panel-w: 24%;
+      --text-panel-w: 31%;
       --text-panel-collapsed-w: 38px;
-      --current-text-panel-w: minmax(290px, var(--text-panel-w));
+      --current-text-panel-w: minmax(420px, var(--text-panel-w));
       --body-font: 19px;
       --body-line: 1.52;
       --body-letter: 0.01em;
@@ -3411,6 +3411,12 @@
       }
     }
 
+    /* Hide poem title in right text panel */
+    #textPanel #textContent.text-poem .poem-title{
+      display:none !important;
+      margin:0 !important;
+    }
+
   </style>
 </head>
 <body>
@@ -3432,8 +3438,8 @@
     </aside>
 
     <main class="main">
-      <section id="topbar" class="topbar">
-        <button id="topbarToggle" class="topbar-toggle" title="情報欄を折りたたむ / Collapse Info">▲</button>
+      <section id="topbar" class="topbar collapsed">
+        <button id="topbarToggle" class="topbar-toggle" title="情報欄を折りたたむ / Collapse Info">▼</button>
         <div class="topbar-head">
           <div id="currentTitle" class="viewer-title">読み込み中… / Loading…</div>
           <div class="viewer-meta">
@@ -3469,7 +3475,7 @@
               <div class="text-display-switch" id="textDisplaySwitch">
                 <button class="text-display-btn active" data-display-mode="whole">整首</button>
                 <button class="text-display-btn" data-display-mode="lines">按行</button>
-                <button class="text-display-btn" data-display-mode="chars">按字</button>
+                <button class="text-display-btn active" data-display-mode="chars">按字</button>
               </div>
               <div class="text-display-switch" id="textScriptSwitch">
                 <button class="text-display-btn active" data-script-mode="kanbun">原文</button>
@@ -3501,7 +3507,7 @@
     let completedTextLines = {};
     let completedTextChars = {};
     let currentTextMode = "completed";
-    let currentDisplayMode = "whole";
+    let currentDisplayMode = "chars";
     let currentScriptMode = "kanbun";
     let bodyFont = 18;
 
@@ -5146,7 +5152,7 @@
     function updateLayoutVars() {
       const root = document.documentElement;
       root.style.setProperty('--current-sidebar-w', sidebar.classList.contains('collapsed') ? 'var(--sidebar-collapsed-w)' : 'var(--sidebar-w)');
-      root.style.setProperty('--current-text-panel-w', textPanel.classList.contains('collapsed') ? 'var(--text-panel-collapsed-w)' : 'minmax(340px, var(--text-panel-w))');
+      root.style.setProperty('--current-text-panel-w', textPanel.classList.contains('collapsed') ? 'var(--text-panel-collapsed-w)' : 'minmax(420px, var(--text-panel-w))');
     }
 
     const btnSingle = document.getElementById("btnSingle");
@@ -5678,6 +5684,8 @@
       if (isDesktop()) {
         if (sidebar) sidebar.classList.remove('collapsed');
         if (textPanel) textPanel.classList.remove('collapsed');
+        if (topbar) topbar.classList.add('collapsed');
+        if (topbarToggle) topbarToggle.textContent = '▼';
       }
       syncLayout();
 
