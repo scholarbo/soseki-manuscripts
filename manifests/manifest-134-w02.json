@@ -1,0 +1,130 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-134-w02.json",
+  "type": "Manifest",
+  "label": {
+    "ja": [
+      "134. 〔無題〕大正五年八月十四日夜"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "ja": [
+          "作品ID"
+        ]
+      },
+      "value": {
+        "ja": [
+          "134"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "作品名"
+        ]
+      },
+      "value": {
+        "ja": [
+          "134. 〔無題〕大正五年八月十四日夜"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "Witness"
+        ]
+      },
+      "value": {
+        "ja": [
+          "w02"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "source"
+        ]
+      },
+      "value": {
+        "ja": [
+          "東北大学附属図書館漱石文庫蔵"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_year"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_month"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-08"
+        ]
+      }
+    },
+    {
+      "label": {
+        "ja": [
+          "date_day"
+        ]
+      },
+      "value": {
+        "ja": [
+          "1916-08-14"
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-134-w02.json/canvas/1",
+      "type": "Canvas",
+      "width": 8688,
+      "height": 5792,
+      "label": {
+        "ja": [
+          "134. 〔無題〕大正五年八月十四日夜"
+        ]
+      },
+      "items": [
+        {
+          "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-134-w02.json/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-134-w02.json/annotation/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "target": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-134-w02.json/canvas/1",
+              "body": {
+                "id": "https://scholarbo.github.io/soseki-manuscripts/images/134/134-w02.jpeg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "width": 8688,
+                "height": 5792
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
