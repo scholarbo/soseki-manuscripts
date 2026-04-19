@@ -2852,6 +2852,152 @@
       line-height: inherit !important;
     }
 
+  
+    /* Make the view-mode buttons in the top info bar match the normal button feedback */
+    #topbar .actions .btn.primary{
+      background: linear-gradient(180deg, rgba(255,255,255,.72) 0%, rgba(255,255,255,.52) 100%) !important;
+      color: var(--text) !important;
+      border: 1px solid rgba(255,255,255,.52) !important;
+      box-shadow: 0 6px 16px rgba(31,41,55,.07), inset 0 1px 0 rgba(255,255,255,.55) !important;
+    }
+
+    #topbar .actions .btn.primary:hover{
+      background: linear-gradient(180deg, rgba(255,255,255,.82) 0%, rgba(255,255,255,.60) 100%) !important;
+      color: var(--text) !important;
+      border-color: rgba(255,255,255,.52) !important;
+      box-shadow: 0 6px 16px rgba(31,41,55,.07), inset 0 1px 0 rgba(255,255,255,.55) !important;
+    }
+
+    #topbar .actions .btn.primary:active{
+      transform: translateY(0) !important;
+    }
+
+  
+    /* Persistent active-state feedback for topbar view-mode buttons */
+    #topbar .actions .btn.is-active{
+      background: linear-gradient(180deg, rgba(255,255,255,.99) 0%, rgba(214,231,248,.96) 100%) !important;
+      border-color: rgba(156,186,216,.98) !important;
+      box-shadow:
+        0 10px 22px rgba(31,41,55,.12),
+        inset 0 1px 0 rgba(255,255,255,.88),
+        inset 0 0 18px rgba(186,214,240,.28) !important;
+      color: #12324a !important;
+      font-weight: 700 !important;
+    }
+
+    #topbar .actions .btn.is-active:hover{
+      background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(220,234,248,.98) 100%) !important;
+      border-color: rgba(156,186,216,.98) !important;
+      color: #12324a !important;
+    }
+
+  
+    
+    
+    
+    }
+
+    }
+}
+}
+}
+
+  
+    }
+
+  
+    /* Subtle one-line copyright footer */
+    .site-copyright{
+      width: 100%;
+      margin-top: 14px;
+      padding: 8px 4px 2px;
+      text-align: center;
+      font-size: 10px;
+      line-height: 1.5;
+      color: rgba(71, 85, 105, .50);
+      letter-spacing: .01em;
+      user-select: text;
+      white-space: nowrap;
+      overflow-x: auto;
+      overflow-y: hidden;
+    }
+
+    @media (max-width: 1120px){
+      .site-copyright{
+        font-size: 9.5px;
+        padding: 6px 2px 2px;
+      }
+    }
+
+  
+    #textPanel > #topbar .topbar-copyright{
+        top: 11px;
+        right: 42px;
+        max-width: 130px;
+        font-size: 7.8px;
+        line-height: 1.25;
+      }
+    }
+
+  
+    /* Copyright note above the right info bar, outside it, non-overlapping */
+    #textPanel{
+      position: relative !important;
+    }
+
+    #textPanel .panel-top-note{
+      position: absolute;
+      top: 10px;
+      right: 18px;
+      z-index: 20;
+      width: 214px;
+      font-size: 7.9px;
+      line-height: 1.18;
+      color: rgba(71, 85, 105, .52);
+      text-align: right;
+      letter-spacing: 0;
+      user-select: text;
+      white-space: normal;
+      pointer-events: none;
+      margin: 0;
+    }
+
+    @media (max-width: 1120px){
+      #textPanel .panel-top-note{
+        top: 10px;
+        right: 14px;
+        width: 146px;
+        font-size: 7.2px;
+        line-height: 1.16;
+        margin: 0;
+      }
+    }
+
+  
+    /* Make copyright note share the same coordinate system as the nearby top controls */
+    #textPanel{
+      position: relative !important;
+      padding-top: 52px !important;
+    }
+
+    @media (max-width: 1120px){
+      #textPanel{
+        padding-top: 46px !important;
+      }
+    }
+
+  
+    /* Lower only the right-side top button slightly more to match the left directory button visually */
+    #textPanel .text-toggle{
+      top: 22px !important;
+    }
+
+    @media (max-width: 1120px){
+      #textPanel .text-toggle{
+        top: 16px !important;
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -2863,7 +3009,7 @@
         <div class="header">
           <div class="title">夏目漱石自筆の漢詩原稿・草稿コレクション<br>Autograph Kanshi Manuscripts and Drafts of Natsume Sōseki</div>
           <div class="sub" style="margin-top:6px;">製作者 (Compiled by): 薄鋒 (BO Feng)</div>
-          <div class="sub">東京大学中国語中国文学研究室博士課程<br>(Doctoral Program, Chinese Language and Literature, The University of Tokyo)</div>
+<div class="sub">東京大学中国語中国文学研究室博士課程<br>(Doctoral Program, Chinese Language and Literature, The University of Tokyo)</div>
         </div>
         <div class="search-wrap">
           <input id="search" class="search" type="text" placeholder="番号・題名で検索 / Search by number or title" />
@@ -2899,6 +3045,7 @@
         <section id="textPanel" class="text-panel">
           <button id="textToggle" class="text-toggle" title="テクスト欄を折りたたむ / Collapse Texts">▶</button>
           <div class="text-collapsed-rail">テクスト (Texts)</div>
+          <div class="panel-top-note">© 2026 薄鋒（BO Feng）<br>テクスト整理・注記・データ構成・インターフェース設計：薄鋒<br>資料画像・底本テクストの権利：各所蔵機関・刊行元・原権利者</div>
           <div class="text-inner">
             
 <div class="text-head">
@@ -2945,6 +3092,30 @@
     const topbarToggle = document.getElementById("topbarToggle");
     const textPanel = document.getElementById("textPanel");
     const textToggle = document.getElementById("textToggle");
+    
+    function getNumericSeq(item) {
+      if (!item) return Number.POSITIVE_INFINITY;
+      const candidates = [
+        item.seq, item.sequence, item.number, item.no, item.id,
+        item.label, item.title, item.manifest, item.slug
+      ];
+      for (const val of candidates) {
+        if (val === undefined || val === null) continue;
+        const m = String(val).match(/\d+/);
+        if (m) return parseInt(m[0], 10);
+      }
+      return Number.POSITIVE_INFINITY;
+    }
+
+    function sortItemsByNumericSeq(arr) {
+      return [...arr].sort((a, b) => {
+        const na = getNumericSeq(a);
+        const nb = getNumericSeq(b);
+        if (na !== nb) return na - nb;
+        return String(a?.title || a?.label || '').localeCompare(String(b?.title || b?.label || ''), 'ja');
+      });
+    }
+
     const rawFallbackKanshi = String.raw`夏目漱石の漢詩
 原文
 1.鴻　台　〔其　一〕　　鴻の台　〔其の一〕
@@ -4608,6 +4779,42 @@
         el.classList.toggle('active', currentItem && el.dataset.id === currentItem.id);
       });
     }
+    
+    function getSeqNumber(item) {
+      if (!item) return Number.POSITIVE_INFINITY;
+      const raw = item.id ?? item.seq ?? item.sequence ?? item.number ?? item.no ?? item.title ?? '';
+      const m = String(raw).match(/\d+/);
+      return m ? parseInt(m[0], 10) : Number.POSITIVE_INFINITY;
+    }
+
+    function sortGroupBySeq(group) {
+      return [...group].sort((a, b) => {
+        const na = getSeqNumber(a);
+        const nb = getSeqNumber(b);
+        if (na !== nb) return na - nb;
+        return String(a?.id || a?.title || '').localeCompare(String(b?.id || b?.title || ''), 'ja');
+      });
+    }
+
+    
+    function updateGroupCountLabels() {
+      if (!currentItem) return;
+
+      const dayCount = currentItem.date_day
+        ? items.filter(x => x.date_day === currentItem.date_day).length
+        : 0;
+      const monthCount = currentItem.date_month
+        ? items.filter(x => x.date_month === currentItem.date_month).length
+        : 0;
+      const yearCount = currentItem.date_year
+        ? items.filter(x => x.date_year === currentItem.date_year).length
+        : 0;
+
+      if (btnDay) btnDay.textContent = `同日並列 (Parallel: Same Day)〔${dayCount}〕`;
+      if (btnMonth) btnMonth.textContent = `同月並列 (Parallel: Same Month)〔${monthCount}〕`;
+      if (btnYear) btnYear.textContent = `同年並列 (Parallel: Same Year)〔${yearCount}〕`;
+    }
+
     function setButtons() {
       const dayCount = currentItem && currentItem.date_day ? items.filter(x => x.date_day === currentItem.date_day).length : 0;
       const monthCount = currentItem && currentItem.date_month ? items.filter(x => x.date_month === currentItem.date_month).length : 0;
@@ -4642,6 +4849,7 @@
       highlightCurrent();
       setButtons();
       setActiveMode(btnSingle);
+      updateGroupCountLabels();
     }
     function openGroup(kind) {
       if (!currentItem) return;
@@ -4651,6 +4859,7 @@
       else if (kind === 'month' && currentItem.date_month) { group = items.filter(x => x.date_month === currentItem.date_month); label = `同月並列 / Parallel: Same Month (${currentItem.date_month})`; }
       else if (kind === 'year' && currentItem.date_year) { group = items.filter(x => x.date_year === currentItem.date_year); label = `同年並列 / Parallel: Same Year (${currentItem.date_year})`; }
       if (!group.length) return;
+      group = sortGroupBySeq(group);
       loadManifests(group.map(x => getDefaultManifest(x)), label);
       setActiveMode(kind === 'day' ? btnDay : kind === 'month' ? btnMonth : btnYear);
     }
@@ -4928,6 +5137,57 @@ document.addEventListener('DOMContentLoaded', () => {
     panelBodyFont = 19;
     applyPanelFontSize();
   });
+});
+</script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const modeButtons = [
+    document.getElementById('btnSingle'),
+    document.getElementById('btnDay'),
+    document.getElementById('btnMonth'),
+    document.getElementById('btnYear')
+  ].filter(Boolean);
+
+  function syncTopbarModeState() {
+    modeButtons.forEach(btn => btn.classList.remove('is-active'));
+    const modeText = (document.getElementById('currentMode')?.textContent || '').trim();
+    const single = document.getElementById('btnSingle');
+    const day = document.getElementById('btnDay');
+    const month = document.getElementById('btnMonth');
+    const year = document.getElementById('btnYear');
+
+    if (/single|単独/i.test(modeText) && single) single.classList.add('is-active');
+    else if (/same day|同日/i.test(modeText) && day) day.classList.add('is-active');
+    else if (/same month|同月/i.test(modeText) && month) month.classList.add('is-active');
+    else if (/same year|同年/i.test(modeText) && year) year.classList.add('is-active');
+  }
+
+  modeButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      setTimeout(syncTopbarModeState, 0);
+      setTimeout(syncTopbarModeState, 80);
+    });
+  });
+
+  syncTopbarModeState();
+  const currentModeEl = document.getElementById('currentMode');
+  if (currentModeEl && 'MutationObserver' in window) {
+    const obs = new MutationObserver(() => syncTopbarModeState());
+    obs.observe(currentModeEl, { childList: true, subtree: true, characterData: true });
+  }
+});
+</script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  // Safe patch: whenever parallel view collections are computed later,
+  // keep same-day / same-month / same-year displays ordered left-to-right by numeric sequence.
+  if (typeof window.sortItemsByNumericSeq === 'undefined' && typeof sortItemsByNumericSeq === 'function') {
+    window.sortItemsByNumericSeq = sortItemsByNumericSeq;
+  }
 });
 </script>
 
