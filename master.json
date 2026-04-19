@@ -3207,7 +3207,8 @@
     "date_day": "1916-08-14",
     "default_witness": "w01",
     "witness_list": [
-      "w01"
+      "w01",
+      "w02"
     ],
     "manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-134-w01.json",
     "default_manifest": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-134-w01.json",
@@ -3216,6 +3217,11 @@
         "witness_id": "w01",
         "manifest_id": "manifest-134-w01",
         "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-134-w01.json"
+      },
+      {
+        "witness_id": "w02",
+        "manifest_id": "manifest-134-w02",
+        "manifest_url": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-134-w02.json"
       }
     ],
     "witness_count": "1",
