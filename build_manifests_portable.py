@@ -122,6 +122,29 @@ def resolve_relative_path(row: dict) -> str:
 
 
 
+def resolve_existing_image_path(rel_path: str) -> tuple[str, Path] | tuple[None, None]:
+    rel_path = clean(rel_path)
+    if not rel_path:
+        return None, None
+
+    candidate = REPO_ROOT / rel_path
+    if candidate.exists():
+        return rel_path, candidate
+
+    rel_obj = Path(rel_path)
+    suffix = rel_obj.suffix.lower()
+    if suffix:
+        stem = rel_obj.stem
+        parent = REPO_ROOT / rel_obj.parent
+        for ext in SUPPORTED_IMAGE_FORMATS.keys():
+            alt = parent / f"{stem}{ext}"
+            if alt.exists():
+                rel_alt = str(rel_obj.parent / alt.name) if str(rel_obj.parent) not in ('', '.') else alt.name
+                return rel_alt.replace('\\', '/'), alt
+
+    return None, None
+
+
 def resolve_public_url(rel_or_url: str) -> str:
     rel_or_url = clean(rel_or_url)
     if not rel_or_url:
@@ -197,8 +220,8 @@ def main():
             warnings.append(f"跳过 {work_id}/{witness_id}/p{row.get('page')}: 缺少可用图片路径")
             continue
 
-        local_path = REPO_ROOT / rel_path
-        if not local_path.exists():
+        resolved_rel_path, local_path = resolve_existing_image_path(rel_path)
+        if not local_path:
             warnings.append(f"跳过 {work_id}/{witness_id}/p{row.get('page')}: 图片不存在 {rel_path}")
             continue
 
@@ -209,7 +232,7 @@ def main():
             continue
 
         width, height = image_size(local_path)
-        public_url = resolve_public_url(rel_path)
+        public_url = resolve_public_url(resolved_rel_path)
         canvas_id = clean(row.get("canvas_id")) or f"canvas-{work_id}-{witness_id}" + ("" if page_num == 1 else f"-p{page_num}")
         grouped[manifest_id].append(
             {
@@ -219,7 +242,7 @@ def main():
                 "label": clean(row.get("label")),
                 "manifest_id": manifest_id,
                 "canvas_id": canvas_id,
-                "rel_path": rel_path,
+                "rel_path": resolved_rel_path,
                 "local_path": local_path,
                 "public_url": public_url,
                 "width": width,
