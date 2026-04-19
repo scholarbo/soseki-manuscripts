@@ -13,7 +13,7 @@ fi
 
 MASTER_BUILDER="$REPO/build_master_json_portable.py"
 TEXT_BUILDER="$REPO/build_completed_texts_from_xlsx_portable.py"
-MANIFEST_BUILDER="$REPO/build_manifests_portable_updated.py"
+MANIFEST_BUILDER="$REPO/build_manifests_portable.py"
 COLLECTION_BUILDER="$REPO/build_collection_all_portable.py"
 
 STATE_DIR="$REPO/.auto_state"

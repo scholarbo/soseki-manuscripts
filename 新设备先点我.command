@@ -22,6 +22,8 @@ echo "== 安装依赖 =="
 echo "== 设置执行权限 =="
 chmod +x "$REPO/build_master_json_portable.py" || true
 chmod +x "$REPO/build_manifests_portable.py" || true
+chmod +x "$REPO/build_completed_texts_from_xlsx_portable.py" || true
+chmod +x "$REPO/build_collection_all_portable.py" || true
 chmod +x "$REPO/改动后就双击.command" || true
 chmod +x "$REPO/新设备先点我.command" || true
 

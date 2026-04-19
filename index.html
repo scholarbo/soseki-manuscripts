@@ -205,11 +205,17 @@
     .text-toolbar {
       display:flex; align-items:center; justify-content:space-between; gap:10px;
     }
-    .tab-btn, .zoom-btn {
+    .tab-btn, .zoom-btn, .text-display-btn {
       appearance:none; border:1px solid var(--line); background:#fff; color:var(--text); border-radius:999px;
       padding:7px 12px; font-size:12px; cursor:pointer; transition:.15s ease;
     }
-    .tab-btn.active, .zoom-btn.active { background: var(--accent-soft); border-color:#cad6e3; }
+    .tab-btn.active, .zoom-btn.active, .text-display-btn.active { background: var(--accent-soft); border-color:#cad6e3; }
+    .text-display-switch {
+      display:flex; flex-wrap:wrap; gap:6px; margin-top:8px;
+    }
+    .text-display-btn[disabled] {
+      opacity:.45; cursor:not-allowed;
+    }
     .text-body {
       flex:1; min-height:0; overflow:auto; padding: 14px 16px 16px; -webkit-overflow-scrolling: touch; overscroll-behavior: contain;
     }
@@ -221,6 +227,34 @@
       font-weight: 700; font-size: calc(var(--body-font) + 1px); line-height: 1.45; margin-bottom: 10px;
     }
     .text-poem .poem-lines { white-space: pre-wrap; }
+    .poem-lines-mode { display:flex; flex-direction:column; gap:8px; }
+    .poem-line-row { display:grid; grid-template-columns: 2.1em 1fr; gap:6px; align-items:start; }
+    .poem-line-no { color: var(--muted); font-size: .85em; line-height: 1.6; user-select:none; }
+    .poem-line-text { white-space: pre-wrap; }
+    .poem-chars-mode { display:flex; flex-direction:column; gap:8px; }
+    .poem-char-line { display:grid; grid-template-columns: 2.6em 1fr; gap:10px; align-items:start; }
+    .poem-char-track { display:flex; flex-wrap:wrap; gap:2px; }
+    .poem-char { display:inline-flex; align-items:center; justify-content:center; min-width:.9em; padding:0 .02em; border-radius:4px; }
+    .poem-char.is-space { min-width:.6em; opacity:.45; }
+    .poem-script-panels { display:grid; grid-template-columns: 1fr 1fr; gap:12px; }
+    .poem-script-panel { border:1px solid rgba(223,229,236,.9); border-radius:14px; background:rgba(255,255,255,.6); overflow:hidden; }
+    .poem-script-label { padding:8px 12px; font-size:.85em; font-weight:700; color:var(--muted); border-bottom:1px solid rgba(223,229,236,.9); background:rgba(255,255,255,.5); }
+    .poem-line-both-head, .poem-line-both-row { display:grid; grid-template-columns: 2.2em minmax(0,1fr) minmax(0,1fr); gap:8px; align-items:start; }
+    .poem-line-both-head { margin-bottom:4px; font-size:.82em; color:var(--muted); font-weight:700; }
+    .poem-line-both-row { margin-bottom:6px; }
+    .poem-line-both-cell { white-space:pre-wrap; }
+    .poem-char-grid { overflow:auto; }
+    .poem-char-grid-table { display:grid; gap:0; width:max-content; min-width:100%; border-top:1px solid rgba(223,229,236,.9); border-left:1px solid rgba(223,229,236,.9); }
+    .poem-char-grid-cell { min-height:2.2em; padding:4px 6px; border-right:1px solid rgba(223,229,236,.9); border-bottom:1px solid rgba(223,229,236,.9); display:flex; align-items:center; justify-content:center; }
+    .poem-char-grid-head { position:sticky; top:0; background:rgba(248,250,252,.96); z-index:2; font-size:.82em; color:var(--muted); font-weight:700; }
+    .poem-char-grid-line { position:sticky; left:0; background:rgba(248,250,252,.96); z-index:1; font-size:.82em; color:var(--muted); font-weight:700; }
+    .poem-char-grid-char { font-variant-east-asian: normal; }
+    .poem-char-grid-char.is-space { color:transparent; }
+    @media (max-width: 900px) {
+      .poem-script-panels { grid-template-columns: 1fr; }
+      .poem-line-row { grid-template-columns: 2.1em 1fr; gap:6px; }
+      .poem-line-both-head, .poem-line-both-row { grid-template-columns: 2.1em minmax(0,1fr) minmax(0,1fr); gap:6px; }
+    }
     .placeholder { color: var(--muted); font-size: 13px; line-height: 1.6; }
     iframe { width:100%; height:100%; border:0; background:#fff; }
 
@@ -294,7 +328,7 @@
         width: 100%;
       }
       .text-tabs { gap: 8px; }
-      .tab-btn, .zoom-btn, .btn {
+      .tab-btn, .zoom-btn, .text-display-btn, .btn {
         min-height: 38px;
       }
     }
@@ -3432,6 +3466,16 @@
                 <button class="tab-btn active" data-mode="completed">完成テクスト</button>
                 <button class="tab-btn" data-mode="authorial">改稿過程</button>
               </div>
+              <div class="text-display-switch" id="textDisplaySwitch">
+                <button class="text-display-btn active" data-display-mode="whole">整首</button>
+                <button class="text-display-btn" data-display-mode="lines">按行</button>
+                <button class="text-display-btn" data-display-mode="chars">按字</button>
+              </div>
+              <div class="text-display-switch" id="textScriptSwitch">
+                <button class="text-display-btn active" data-script-mode="kanbun">原文</button>
+                <button class="text-display-btn" data-script-mode="kundoku">訓読</button>
+                <button class="text-display-btn" data-script-mode="both">并列</button>
+              </div>
             </div>
             <div class="text-body">
               <div id="textContent" class="text-poem"></div>
@@ -3454,7 +3498,11 @@
     let items = [];
     let currentItem = null;
     let completedTexts = {};
+    let completedTextLines = {};
+    let completedTextChars = {};
     let currentTextMode = "completed";
+    let currentDisplayMode = "whole";
+    let currentScriptMode = "kanbun";
     let bodyFont = 18;
 
     const list = document.getElementById("list");
@@ -5112,14 +5160,35 @@
       items = await res.json();
     }
 
+    function toIdMap(arr) {
+      return Object.fromEntries((Array.isArray(arr) ? arr : []).map(x => [String(x.id || x.work_id || '').padStart(3, '0'), x]).filter(x => x[0]));
+    }
+
     async function loadCompletedTexts() {
       try {
-        const res = await fetch(`${base}/completed_texts.json?t=${Date.now()}`);
+        const stamp = Date.now();
+        const res = await fetch(`${base}/completed_texts.json?t=${stamp}`);
         if (!res.ok) throw new Error();
         const arr = await res.json();
-        completedTexts = Object.fromEntries(arr.map(x => [String(x.id).padStart(3, '0'), x]));
+        completedTexts = toIdMap(arr);
       } catch (_) {
         completedTexts = { ...fallbackCompletedTexts };
+      }
+
+      try {
+        const res = await fetch(`${base}/completed_texts_lines.json?t=${Date.now()}`);
+        if (!res.ok) throw new Error();
+        completedTextLines = toIdMap(await res.json());
+      } catch (_) {
+        completedTextLines = {};
+      }
+
+      try {
+        const res = await fetch(`${base}/completed_texts_chars.json?t=${Date.now()}`);
+        if (!res.ok) throw new Error();
+        completedTextChars = toIdMap(await res.json());
+      } catch (_) {
+        completedTextChars = {};
       }
     }
 
@@ -5242,6 +5311,156 @@
       loadManifests(group.map(x => getDefaultManifest(x)), label);
       setActiveMode(kind === 'day' ? btnDay : kind === 'month' ? btnMonth : btnYear);
     }
+    function getWholeTextEntry(id) {
+      return completedTexts[id] || fallbackCompletedTexts[id] || null;
+    }
+
+    function getLineObjects(id, whole) {
+      const data = completedTextLines[id];
+      if (data && Array.isArray(data.lines) && data.lines.length) return data.lines;
+      const kanbun = String(whole?.text_kanbun || '').split(/\n+/);
+      const kundoku = String(whole?.text_kundoku || '').split(/\n+/);
+      const pair = String(whole?.text || whole?.body || whole?.text_block || '').split(/\n+/);
+      const maxLen = Math.max(kanbun.length, kundoku.length, pair.length);
+      return Array.from({length:maxLen}, (_, i) => ({
+        line_no: i + 1,
+        kanbun: kanbun[i] || '',
+        kundoku: kundoku[i] || '',
+        pair: pair[i] || ''
+      })).filter(line => line.kanbun || line.kundoku || line.pair);
+    }
+
+    function getCharLines(id, whole) {
+      const data = completedTextChars[id];
+      if (data && Array.isArray(data.lines) && data.lines.length) return data.lines;
+      const lines = getLineObjects(id, whole);
+      return lines.map(line => {
+        const toChars = (source) => Array.from(String(source || '')).map((ch, idx) => ({
+          char_no: idx + 1,
+          char: ch,
+          is_space: /\s/.test(ch),
+          is_punctuation: /[、。．，！？；：,.!?;:'"「」『』（）()〔〕［］【】〈〉《》…—・]/.test(ch)
+        }));
+        return {
+          line_no: line.line_no,
+          layers: {
+            kanbun: toChars(line.kanbun || line.pair || ''),
+            kundoku: toChars(line.kundoku || line.pair || ''),
+            pair: toChars(line.pair || line.kanbun || line.kundoku || '')
+          }
+        };
+      });
+    }
+
+    function getDisplayTitle(data) {
+      if (currentScriptMode === 'kundoku') return data.title_kundoku || data.title || data.title_raw || '';
+      return data.title_raw || data.title || data.title_kundoku || '';
+    }
+
+    function getWholeBody(data) {
+      if (currentScriptMode === 'kundoku') return data.text_kundoku || data.body || data.text || '';
+      return data.text_kanbun || data.text || data.body || data.text_block || '';
+    }
+
+    function renderWholeText(data) {
+      const title = getDisplayTitle(data);
+      if (currentScriptMode === 'both') {
+        const kanbun = data.text_kanbun || data.text || data.body || data.text_block || '';
+        const kundoku = data.text_kundoku || data.body || data.text || '';
+        textContent.innerHTML = `<div class="poem-title">${escapeHtml(title)}</div>
+          <div class="poem-script-panels">
+            <div class="poem-script-panel"><div class="poem-script-label">原文</div><div class="poem-lines">${escapeHtml(kanbun)}</div></div>
+            <div class="poem-script-panel"><div class="poem-script-label">訓読</div><div class="poem-lines">${escapeHtml(kundoku)}</div></div>
+          </div>`;
+        return;
+      }
+      const body = getWholeBody(data);
+      textContent.innerHTML = `<div class="poem-title">${escapeHtml(title)}</div><div class="poem-lines">${escapeHtml(body)}</div>`;
+    }
+
+    function renderLinesText(data, id) {
+      const title = getDisplayTitle(data);
+      const lines = getLineObjects(id, data);
+      if (!lines.length) return renderWholeText(data);
+      if (currentScriptMode === 'both') {
+        const html = [
+          `<div class="poem-line-both-head"><div></div><div>原文</div><div>訓読</div></div>`,
+          ...lines.map(line => `<div class="poem-line-both-row"><div class="poem-line-no">${escapeHtml(String(line.line_no || ''))}</div><div class="poem-line-both-cell">${escapeHtml(line.kanbun || line.pair || '')}</div><div class="poem-line-both-cell">${escapeHtml(line.kundoku || line.pair || '')}</div></div>`)
+        ].join('');
+        textContent.innerHTML = `<div class="poem-title">${escapeHtml(title)}</div><div class="poem-lines-mode">${html}</div>`;
+        return;
+      }
+      const html = lines.map(line => {
+        const content = currentScriptMode === 'kundoku'
+          ? (line.kundoku || line.pair || line.kanbun || '')
+          : (line.kanbun || line.pair || line.kundoku || '');
+        return `<div class="poem-line-row"><div class="poem-line-no">${escapeHtml(String(line.line_no || ''))}</div><div class="poem-line-text">${escapeHtml(content)}</div></div>`;
+      }).join('');
+      textContent.innerHTML = `<div class="poem-title">${escapeHtml(title)}</div><div class="poem-lines-mode">${html}</div>`;
+    }
+
+    function renderCharGrid(lines, selector) {
+      const sourceLines = lines.map(line => {
+        const layers = line.layers || {};
+        return { line_no: line.line_no, chars: selector(layers) || [] };
+      });
+      const maxCols = Math.max(0, ...sourceLines.map(line => line.chars.length));
+      const cols = Math.max(maxCols, 1);
+      const template = `2.8em repeat(${cols}, minmax(1.8em, auto))`;
+      const cells = [];
+      cells.push(`<div class="poem-char-grid-cell"></div>`);
+      for (let i = 1; i <= cols; i++) {
+        cells.push(`<div class="poem-char-grid-cell poem-char-grid-head">${i}</div>`);
+      }
+      for (const line of sourceLines) {
+        cells.push(`<div class="poem-char-grid-cell poem-char-grid-line">${escapeHtml(String(line.line_no || ''))}</div>`);
+        for (let i = 0; i < cols; i++) {
+          const ch = line.chars[i];
+          const charText = !ch ? '' : (ch.char === ' ' ? '&nbsp;' : escapeHtml(String(ch.char || '')));
+          const cls = ['poem-char-grid-cell', 'poem-char-grid-char'];
+          if (ch && ch.is_space) cls.push('is-space');
+          cells.push(`<div class="${cls.join(' ')}" data-char-no="${escapeHtml(String(ch?.char_no || i+1))}">${charText}</div>`);
+        }
+      }
+      return `<div class="poem-char-grid"><div class="poem-char-grid-table" style="grid-template-columns:${template}">${cells.join('')}</div></div>`;
+    }
+
+    function renderCharsText(data, id) {
+      const title = getDisplayTitle(data);
+      const lines = getCharLines(id, data);
+      if (!lines.length) return renderLinesText(data, id);
+      if (currentScriptMode === 'both') {
+        const kanbunGrid = renderCharGrid(lines, layers => layers.kanbun || layers.pair || []);
+        const kundokuGrid = renderCharGrid(lines, layers => layers.kundoku || layers.pair || []);
+        textContent.innerHTML = `<div class="poem-title">${escapeHtml(title)}</div>
+          <div class="poem-script-panels">
+            <div class="poem-script-panel"><div class="poem-script-label">原文</div>${kanbunGrid}</div>
+            <div class="poem-script-panel"><div class="poem-script-label">訓読</div>${kundokuGrid}</div>
+          </div>`;
+        return;
+      }
+      const grid = currentScriptMode === 'kundoku'
+        ? renderCharGrid(lines, layers => layers.kundoku || layers.pair || layers.kanbun || [])
+        : renderCharGrid(lines, layers => layers.kanbun || layers.pair || layers.kundoku || []);
+      textContent.innerHTML = `<div class="poem-title">${escapeHtml(title)}</div>${grid}`;
+    }
+
+    function updateDisplayButtons() {
+      const btns = document.querySelectorAll('[data-display-mode]');
+      btns.forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.displayMode === currentDisplayMode);
+        btn.disabled = currentTextMode !== 'completed';
+      });
+    }
+
+    function updateScriptButtons() {
+      const btns = document.querySelectorAll('[data-script-mode]');
+      btns.forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.scriptMode === currentScriptMode);
+        btn.disabled = currentTextMode !== 'completed';
+      });
+    }
+
     function renderText(workId) {
       const id = String(workId).padStart(3, '0');
       if (currentTextMode !== 'completed') {
@@ -5249,17 +5468,23 @@
           thirdparty: '他者による添削 (Third-Party Corrections)',
           authorial: '漱石自らの推敲 (Sōseki’s Authorial Revisions)'
         };
+        updateDisplayButtons();
+        updateScriptButtons();
         textContent.innerHTML = `<div class="placeholder">${labelMap[currentTextMode]}<br><br>この項目のテクストはまだ未登録です。<br>The text for this section has not yet been prepared.</div>`;
         return;
       }
-      const data = completedTexts[id] || fallbackCompletedTexts[id];
+      const data = getWholeTextEntry(id);
       if (!data) {
+        updateDisplayButtons();
+        updateScriptButtons();
         textContent.innerHTML = `<div class="placeholder">完成テクストがまだ登録されていません。<br>Completed text has not yet been registered.</div>`;
         return;
       }
-      const title = data.title || '';
-      const body = data.text || data.body || data.text_kanbun || data.text_block || '';
-      textContent.innerHTML = `<div class="poem-title">${escapeHtml(title)}</div><div class="poem-lines">${escapeHtml(body)}</div>`;
+      updateDisplayButtons();
+      updateScriptButtons();
+      if (currentDisplayMode === 'lines') return renderLinesText(data, id);
+      if (currentDisplayMode === 'chars') return renderCharsText(data, id);
+      return renderWholeText(data);
     }
     function escapeHtml(str='') {
       return str.replace(/[&<>"']/g, s => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[s]));
@@ -5281,11 +5506,29 @@
       topbarToggle.textContent = topbar.classList.contains('collapsed') ? '▼' : '▲';
     });
 
-    document.querySelectorAll('.tab-btn').forEach(btn => {
+    document.querySelectorAll('.text-mode-switch .tab-btn').forEach(btn => {
       btn.addEventListener('click', () => {
-        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.text-mode-switch .tab-btn').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         currentTextMode = btn.dataset.mode;
+        renderText(currentItem ? currentItem.id : '001');
+      });
+    });
+
+    document.querySelectorAll('[data-display-mode]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        if (currentTextMode !== 'completed') return;
+        currentDisplayMode = btn.dataset.displayMode || 'whole';
+        updateDisplayButtons();
+        renderText(currentItem ? currentItem.id : '001');
+      });
+    });
+
+    document.querySelectorAll('[data-script-mode]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        if (currentTextMode !== 'completed') return;
+        currentScriptMode = btn.dataset.scriptMode || 'kanbun';
+        updateScriptButtons();
         renderText(currentItem ? currentItem.id : '001');
       });
     });

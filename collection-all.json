@@ -1224,7 +1224,16 @@
       "type": "Manifest",
       "label": {
         "ja": [
-          "134. 〔無題〕大正五年八月十四日夜"
+          "134. 〔無題〕大正五年八月十四日夜 第1版"
+        ]
+      }
+    },
+    {
+      "id": "https://scholarbo.github.io/soseki-manuscripts/manifests/manifest-134-w02.json",
+      "type": "Manifest",
+      "label": {
+        "ja": [
+          "134. 〔無題〕大正五年八月十四日夜 第2版"
         ]
       }
     },
