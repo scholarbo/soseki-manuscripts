@@ -2998,6 +2998,385 @@
       }
     }
 
+  
+
+    /* ===== Mobile adaptation patch (2026-04-19) ===== */
+    .mobile-overlay,
+    .mobile-dock,
+    .mobile-top-strip{
+      display: none;
+    }
+
+    @media (hover: none), (pointer: coarse) {
+      .sidebar-toggle:hover,
+      .text-toggle:hover,
+      .sidebar.collapsed:hover,
+      #textPanel.collapsed:hover,
+      #textPanel > #topbar:hover,
+      .sidebar:hover,
+      #textPanel:hover,
+      .manuscript-panel:hover {
+        transform: none !important;
+        filter: none !important;
+      }
+    }
+
+    @media (max-width: 900px) {
+      :root {
+        --radius: 16px;
+        --body-font: 18px;
+      }
+
+      html, body {
+        min-height: 100%;
+        overflow-x: hidden;
+      }
+
+      body.mobile-device {
+        padding-bottom: calc(82px + env(safe-area-inset-bottom, 0px));
+      }
+
+      body.mobile-lock {
+        overflow: hidden !important;
+        touch-action: none;
+      }
+
+      .app {
+        display: block;
+        min-height: 100vh;
+        padding: 10px;
+        gap: 0;
+        align-items: initial;
+        perspective: none;
+      }
+
+      .sidebar,
+      .main,
+      #textPanel,
+      .manuscript-panel {
+        transform: none !important;
+        max-height: none !important;
+      }
+
+      .sidebar {
+        position: fixed;
+        top: max(10px, env(safe-area-inset-top, 0px));
+        left: 10px;
+        width: min(88vw, 360px) !important;
+        height: calc(100dvh - max(20px, env(safe-area-inset-top, 0px)) - 18px);
+        min-height: 0 !important;
+        max-height: none !important;
+        z-index: 1200;
+        transform: translateX(calc(-100% - 24px)) !important;
+        transition: transform .26s ease, box-shadow .2s ease !important;
+        border-radius: 18px !important;
+        overflow: hidden !important;
+      }
+
+      body.mobile-sidebar-open .sidebar {
+        transform: translateX(0) !important;
+      }
+
+      .sidebar.collapsed {
+        width: min(88vw, 360px) !important;
+        min-width: 0 !important;
+      }
+
+      .sidebar.collapsed .sidebar-inner {
+        display: flex !important;
+      }
+
+      .sidebar.collapsed .collapsed-rail {
+        display: none !important;
+      }
+
+      .main {
+        min-height: 0;
+        gap: 10px;
+      }
+
+      .topbar {
+        border-radius: 16px !important;
+      }
+
+      .topbar-head {
+        padding: 12px 14px 10px 14px !important;
+      }
+
+      .viewer-title {
+        font-size: 17px !important;
+        line-height: 1.42 !important;
+        padding-right: 36px;
+      }
+
+      .viewer-meta {
+        grid-template-columns: 1fr !important;
+        gap: 4px !important;
+        font-size: 12px !important;
+      }
+
+      .actions {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        padding: 10px 12px 12px !important;
+      }
+
+      .btn {
+        min-height: 42px;
+        border-radius: 12px !important;
+      }
+
+      .workarea {
+        display: block !important;
+        min-height: 0;
+      }
+
+      .manuscript-panel {
+        min-height: 52svh !important;
+        height: 52svh !important;
+        border-radius: 18px !important;
+        overflow: hidden !important;
+      }
+
+      #textPanel {
+        position: fixed !important;
+        left: 10px;
+        right: 10px;
+        bottom: calc(10px + env(safe-area-inset-bottom, 0px));
+        width: auto !important;
+        min-width: 0 !important;
+        height: min(72dvh, 680px) !important;
+        min-height: 320px !important;
+        max-height: min(72dvh, 680px) !important;
+        z-index: 1250;
+        transform: translateY(calc(100% + 22px)) !important;
+        transition: transform .28s ease !important;
+        padding: 52px 10px 10px !important;
+        gap: 10px !important;
+        border-radius: 18px !important;
+        overflow: hidden !important;
+      }
+
+      body.mobile-text-open #textPanel {
+        transform: translateY(0) !important;
+      }
+
+      #textPanel.collapsed {
+        width: auto !important;
+        min-width: 0 !important;
+        padding: 52px 10px 10px !important;
+        gap: 10px !important;
+        overflow: hidden !important;
+      }
+
+      #textPanel.collapsed .text-inner,
+      #textPanel.collapsed > #topbar {
+        display: block !important;
+      }
+
+      #textPanel.collapsed .text-collapsed-rail {
+        display: none !important;
+      }
+
+      #textPanel .text-toggle {
+        top: 10px !important;
+        left: 10px !important;
+        width: 34px !important;
+        height: 34px !important;
+        transform: none !important;
+        z-index: 20 !important;
+      }
+
+      #textPanel .topbar {
+        display: block !important;
+        margin: 0 !important;
+      }
+
+      #textPanel .topbar-head {
+        padding: 12px 44px 10px 14px !important;
+      }
+
+      #textPanel .viewer-title {
+        font-size: 15px !important;
+        line-height: 1.42 !important;
+        margin-bottom: 6px !important;
+        padding-right: 0;
+      }
+
+      #textPanel .viewer-meta {
+        font-size: 11.5px !important;
+      }
+
+      #textPanel .actions {
+        grid-template-columns: 1fr 1fr !important;
+      }
+
+      #textPanel .text-inner {
+        min-height: 0;
+        flex: 1 1 auto;
+      }
+
+      #textPanel .text-head {
+        padding: 10px 12px 10px 44px !important;
+      }
+
+      #textPanel .text-body {
+        padding: 14px 14px 16px !important;
+      }
+
+      #textPanel .text-poem {
+        font-size: 18px !important;
+        line-height: 1.7 !important;
+      }
+
+      .panel-top-note {
+        display: none !important;
+      }
+
+      .mobile-overlay {
+        display: block;
+        position: fixed;
+        inset: 0;
+        background: rgba(15, 23, 42, .28);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity .24s ease;
+        z-index: 1100;
+      }
+
+      body.mobile-sidebar-open .mobile-overlay,
+      body.mobile-text-open .mobile-overlay {
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      .mobile-dock {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+        position: fixed;
+        left: 10px;
+        right: 10px;
+        bottom: calc(10px + env(safe-area-inset-bottom, 0px));
+        z-index: 1300;
+        padding: 8px;
+        border-radius: 18px;
+        background: linear-gradient(180deg, rgba(255,255,255,.86) 0%, rgba(245,248,252,.82) 100%);
+        backdrop-filter: blur(18px) saturate(150%);
+        -webkit-backdrop-filter: blur(18px) saturate(150%);
+        border: 1px solid rgba(255,255,255,.56);
+        box-shadow: 0 16px 36px rgba(31,41,55,.16), 0 4px 14px rgba(31,41,55,.08);
+      }
+
+      body.mobile-text-open .mobile-dock,
+      body.mobile-sidebar-open .mobile-dock {
+        opacity: .96;
+      }
+
+      .mobile-dock button {
+        appearance: none;
+        border: 1px solid rgba(203, 213, 225, .9);
+        background: rgba(255,255,255,.88);
+        color: #1f2937;
+        min-height: 44px;
+        border-radius: 12px;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: .01em;
+        box-shadow: 0 4px 14px rgba(31,41,55,.08);
+      }
+
+      .mobile-dock button.is-active {
+        background: linear-gradient(180deg, rgba(47,58,73,.94) 0%, rgba(34,44,59,.96) 100%);
+        color: #fff;
+        border-color: rgba(47,58,73,.8);
+      }
+
+      .mobile-top-strip {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 8px 2px 2px;
+        color: #475569;
+        font-size: 11.5px;
+      }
+
+      .mobile-top-strip .mobile-caption {
+        min-width: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .sidebar-toggle,
+      .text-toggle,
+      .topbar-toggle {
+        width: 32px !important;
+        height: 32px !important;
+      }
+
+      .sidebar-toggle::before,
+      .sidebar-toggle::after,
+      .text-toggle::before,
+      .text-toggle::after {
+        animation-duration: 3.2s !important;
+      }
+    }
+
+    @media (max-width: 640px) {
+      body.mobile-device {
+        padding-bottom: calc(88px + env(safe-area-inset-bottom, 0px));
+      }
+
+      .app {
+        padding: 8px;
+      }
+
+      .topbar-head {
+        padding: 11px 12px 9px 12px !important;
+      }
+
+      .viewer-title {
+        font-size: 16px !important;
+      }
+
+      .actions {
+        grid-template-columns: 1fr 1fr !important;
+      }
+
+      .manuscript-panel {
+        min-height: 46svh !important;
+        height: 46svh !important;
+      }
+
+      #textPanel {
+        left: 8px;
+        right: 8px;
+        bottom: calc(8px + env(safe-area-inset-bottom, 0px));
+        height: min(76dvh, 720px) !important;
+        max-height: min(76dvh, 720px) !important;
+        padding: 50px 8px 8px !important;
+      }
+
+      .mobile-dock {
+        left: 8px;
+        right: 8px;
+        bottom: calc(8px + env(safe-area-inset-bottom, 0px));
+      }
+
+      .mobile-dock button {
+        font-size: 12.5px;
+      }
+
+      #textPanel .text-poem {
+        font-size: 17.5px !important;
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -5188,6 +5567,138 @@ document.addEventListener('DOMContentLoaded', () => {
   if (typeof window.sortItemsByNumericSeq === 'undefined' && typeof sortItemsByNumericSeq === 'function') {
     window.sortItemsByNumericSeq = sortItemsByNumericSeq;
   }
+});
+</script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const body = document.body;
+  const sidebar = document.getElementById('sidebar');
+  const textPanel = document.getElementById('textPanel');
+  const sidebarToggle = document.getElementById('sidebarToggle');
+  const textToggle = document.getElementById('textToggle');
+  const currentTitle = document.getElementById('currentTitle');
+
+  if (!body || !sidebar || !textPanel) return;
+
+  const overlay = document.createElement('div');
+  overlay.className = 'mobile-overlay';
+  body.appendChild(overlay);
+
+  const dock = document.createElement('div');
+  dock.className = 'mobile-dock';
+  dock.innerHTML = `
+    <button type="button" data-mobile-action="toc">目次</button>
+    <button type="button" data-mobile-action="text">テクスト</button>
+    <button type="button" data-mobile-action="top">上へ</button>
+  `;
+  body.appendChild(dock);
+
+  const main = document.querySelector('.main');
+  if (main) {
+    const strip = document.createElement('div');
+    strip.className = 'mobile-top-strip';
+    strip.innerHTML = `
+      <div class="mobile-caption">Mobile View</div>
+      <div>手稿を優先表示</div>
+    `;
+    main.insertBefore(strip, main.firstChild);
+  }
+
+  function isMobile() {
+    return window.matchMedia('(max-width: 900px)').matches;
+  }
+
+  function closeMobilePanels() {
+    body.classList.remove('mobile-sidebar-open', 'mobile-text-open', 'mobile-lock');
+    syncDock();
+  }
+
+  function syncDock() {
+    const tocBtn = dock.querySelector('[data-mobile-action="toc"]');
+    const textBtn = dock.querySelector('[data-mobile-action="text"]');
+    if (tocBtn) tocBtn.classList.toggle('is-active', body.classList.contains('mobile-sidebar-open'));
+    if (textBtn) textBtn.classList.toggle('is-active', body.classList.contains('mobile-text-open'));
+
+    const cap = document.querySelector('.mobile-caption');
+    if (cap) {
+      cap.textContent = currentTitle?.textContent?.trim() || 'Mobile View';
+    }
+  }
+
+  function ensureMobileBaseState() {
+    body.classList.toggle('mobile-device', isMobile());
+    if (!isMobile()) {
+      closeMobilePanels();
+    }
+    if (isMobile()) {
+      sidebar.classList.remove('collapsed');
+      textPanel.classList.remove('collapsed');
+    }
+    syncDock();
+  }
+
+  dock.addEventListener('click', (e) => {
+    const btn = e.target.closest('button[data-mobile-action]');
+    if (!btn) return;
+    const action = btn.getAttribute('data-mobile-action');
+    if (action === 'toc') {
+      if (!isMobile()) return;
+      const willOpen = !body.classList.contains('mobile-sidebar-open');
+      body.classList.toggle('mobile-sidebar-open', willOpen);
+      body.classList.remove('mobile-text-open');
+      body.classList.toggle('mobile-lock', willOpen);
+      syncDock();
+    }
+    if (action === 'text') {
+      if (!isMobile()) return;
+      const willOpen = !body.classList.contains('mobile-text-open');
+      body.classList.toggle('mobile-text-open', willOpen);
+      body.classList.remove('mobile-sidebar-open');
+      body.classList.toggle('mobile-lock', willOpen);
+      syncDock();
+    }
+    if (action === 'top') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      closeMobilePanels();
+    }
+  });
+
+  overlay.addEventListener('click', () => closeMobilePanels());
+
+  if (sidebarToggle) {
+    sidebarToggle.addEventListener('click', (e) => {
+      if (!isMobile()) return;
+      e.preventDefault();
+      e.stopPropagation();
+      const willOpen = !body.classList.contains('mobile-sidebar-open');
+      body.classList.toggle('mobile-sidebar-open', willOpen);
+      body.classList.remove('mobile-text-open');
+      body.classList.toggle('mobile-lock', willOpen);
+      syncDock();
+    }, true);
+  }
+
+  if (textToggle) {
+    textToggle.addEventListener('click', (e) => {
+      if (!isMobile()) return;
+      e.preventDefault();
+      e.stopPropagation();
+      const willOpen = !body.classList.contains('mobile-text-open');
+      body.classList.toggle('mobile-text-open', willOpen);
+      body.classList.remove('mobile-sidebar-open');
+      body.classList.toggle('mobile-lock', willOpen);
+      syncDock();
+    }, true);
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeMobilePanels();
+  });
+
+  window.addEventListener('resize', ensureMobileBaseState);
+  ensureMobileBaseState();
 });
 </script>
 
