@@ -98,17 +98,19 @@
       manifests = [];
     }
 
-    const windows = Array.isArray(manifests)
-      ? manifests.map(m => {
-          if (typeof m === "string") {
-            return { manifestId: m, maximized: true };
-          }
-          if (m && m.manifest_url) {
-            return { manifestId: m.manifest_url, maximized: true };
-          }
-          return null;
-        }).filter(Boolean)
-      : [];
+    const isSingleWindow = Array.isArray(manifests) && manifests.length === 1;
+
+  const windows = Array.isArray(manifests)
+    ? manifests.map(m => {
+        if (typeof m === "string") {
+          return { manifestId: m, maximized: isSingleWindow };
+        }
+        if (m && m.manifest_url) {
+          return { manifestId: m.manifest_url, maximized: isSingleWindow };
+        }
+        return null;
+      }).filter(Boolean)
+    : [];
 
     if (windows.length > 0) {
       Mirador.viewer({
