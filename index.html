@@ -5372,7 +5372,7 @@
         return;
       }
       const payload = encodeURIComponent(JSON.stringify(clean));
-      frame.src = `${base}/mirador-frame-multi-20260416-012702-f65f15.html?manifests=${payload}`;
+      frame.src = `${base}/mirador.html?manifests=${payload}`;
       currentMode.textContent = modeLabel;
     }
     function openSingle(item) {
