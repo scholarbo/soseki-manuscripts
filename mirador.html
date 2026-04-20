@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mirador Frame Multi</title>
+  <title>Mirador</title>
+
   <script src="https://unpkg.com/mirador@3.3.0/dist/mirador.min.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/mirador@3.3.0/dist/css/mirador-combined.min.css" />
+
   <style>
     html, body, #viewer {
       margin: 0;
@@ -14,19 +16,73 @@
       height: 100%;
       background: #fff;
     }
-    .msg {
-      padding: 20px;
-      color: #6b7280;
-      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
-      line-height: 1.8;
+
+    /* ===== 顶部栏：彻底隐藏 ===== */
+    .mirador-window-top-bar,
+    .MuiToolbar-root.MuiToolbar-dense.mirador-window-top-bar{
+      display: none !important;
+      height: 0 !important;
+      min-height: 0 !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      overflow: hidden !important;
+      border: 0 !important;
+      box-shadow: none !important;
     }
-    .msg code {
-      background: #f3f4f6;
-      padding: 2px 6px;
-      border-radius: 4px;
+
+    /* 防止顶部留白 */
+    .mirador-viewer,
+    .mirador-workspace,
+    .mirador-workspace-viewport,
+    .mirador-window,
+    .mirador-osd-container{
+      margin-top: 0 !important;
+      padding-top: 0 !important;
     }
+
+    /* ===== 底部栏透明化 ===== */
+    .mirador-canvas-nav,
+    .MuiPaper-root.mirador-canvas-nav{
+      background: transparent !important;
+      box-shadow: none !important;
+      border: 0 !important;
+    }
+
+    .mirador77,
+    .mirador-osd-navigation,
+    .mirador-osd-info{
+      background: transparent !important;
+      box-shadow: none !important;
+      border: 0 !important;
+    }
+
+    /* 页码文字 */
+    .mirador-canvas-count,
+    .mirador-canvas-label{
+      color: rgba(20,20,20,0.78) !important;
+      text-shadow: 0 1px 2px rgba(255,255,255,.55);
+    }
+
+    /* 按钮轻量悬浮 */
+    .mirador-canvas-nav .MuiIconButton-root{
+      background: rgba(255,255,255,.18) !important;
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      border-radius: 999px;
+    }
+
+    .mirador-canvas-nav .MuiIconButton-root:hover{
+      background: rgba(255,255,255,.32) !important;
+    }
+
+    .mirador75{
+      background: transparent !important;
+      border: 0 !important;
+    }
+
   </style>
 </head>
+
 <body>
   <div id="viewer"></div>
 
@@ -43,28 +99,16 @@
     }
 
     const windows = Array.isArray(manifests)
-      ? manifests
-          .map((m) => {
-            if (typeof m === "string" && m.trim() !== "") {
-              return { manifestId: m, maximized: true };
-            }
-
-            if (
-              m &&
-              typeof m === "object" &&
-              typeof m.manifest_url === "string" &&
-              m.manifest_url.trim() !== ""
-            ) {
-              return { manifestId: m.manifest_url, maximized: true };
-            }
-
-            return null;
-          })
-          .filter(Boolean)
+      ? manifests.map(m => {
+          if (typeof m === "string") {
+            return { manifestId: m, maximized: true };
+          }
+          if (m && m.manifest_url) {
+            return { manifestId: m.manifest_url, maximized: true };
+          }
+          return null;
+        }).filter(Boolean)
       : [];
-
-    console.log("manifests:", manifests);
-    console.log("windows:", windows);
 
     if (windows.length > 0) {
       Mirador.viewer({
@@ -82,9 +126,8 @@
       });
     } else {
       document.body.innerHTML = `
-        <div class="msg">
-          manifest が指定されていません。<br>
-          URL パラメータ <code>?manifests=...</code> を確認してください。
+        <div style="padding:20px;color:#666;">
+          manifest が指定されていません
         </div>
       `;
     }
